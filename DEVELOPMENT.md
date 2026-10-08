@@ -37,3 +37,7 @@ localStorage 主鍵固定為 TAIXU_ASCEND_V2_SAVE，version 固定為 2。v3 是
 Render Build Command：node --test tests/*.test.cjs && node scripts/build.cjs。
 
 功能改動需新增涵蓋失敗條件的測試，例如資源不足、重複領取、離線成熟、每地圖隔離。UI 測試不要在正式網址建立新角色覆蓋玩家進度。
+
+## ComfyUI 美術
+
+本機 ComfyUI 工作流程、模型與 seed 記錄於 `art/README.md` 和 `art/workflows/`。遊戲使用 `src/assets/art/` 的 WebP 素材，建置時檢查所有必要素材存在。頭像偏好以新增 `portrait` 欄位保存在原角色資料，無效或缺少偏好會顯示預設頭像。點擊頭像可切換；圖片不影響角色數值。
