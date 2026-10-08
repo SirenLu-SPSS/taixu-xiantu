@@ -24,3 +24,7 @@ h1,h2,h3,.brand,.panel-title{font-family:'Noto Serif TC','Microsoft JhengHei',se
 .atlas-map{display:block;width:100%;height:auto;margin-top:18px;border:1px solid #72948766;border-radius:12px}
 .ni{font-family:serif;color:#d9c89d}.pet-icon,.item .ico{filter:saturate(.45)}
 @media(max-width:760px){.scene-tools button{font-size:9px;letter-spacing:0}.resources span{white-space:normal}.cultivation-buttons .btn{min-height:44px}}
+
+/* Battle notices occupy the former movement pad without blocking skills. */
+.world #toast.toast{position:absolute;top:auto;left:12px;bottom:12px;right:auto;transform:none;max-width:calc(100% - 146px);max-height:110px;overflow:hidden;padding:10px 12px;line-height:1.6;text-align:left;z-index:6;overflow-wrap:anywhere}.world canvas{touch-action:none;cursor:crosshair}.toast.manage-notice{position:fixed;top:auto;bottom:100px;left:12px;right:12px;transform:none;width:fit-content;max-width:calc(100% - 24px);margin:auto;z-index:40}
+@media(min-width:761px){.world #toast.toast{max-width:calc(100% - 310px)}}
