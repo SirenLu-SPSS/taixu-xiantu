@@ -41,3 +41,9 @@ Render Build Command：node --test tests/*.test.cjs && node scripts/build.cjs。
 ## ComfyUI 美術
 
 本機 ComfyUI 工作流程、模型與 seed 記錄於 `art/README.md` 和 `art/workflows/`。遊戲使用 `src/assets/art/` 的 WebP 素材，建置時檢查所有必要素材存在。頭像偏好以新增 `portrait` 欄位保存在原角色資料，無效或缺少偏好會顯示預設頭像。點擊頭像可切換；圖片不影響角色數值。
+
+## 戰鬥美術與功能圖示
+
+`src/ui/battle-art.js` 是展示層，在 v3 整合腳本之後載入，替換場景與角色繪製，不修改戰鬥計算。地面及場景物件按地圖快取，人物與物件按 y 座標排序，技能特效使用 Canvas 基本圖形。主角形象跟隨原存檔 portrait 偏好；八個功能圖示與手機導覽共用素材。
+
+`tests/battle-art.test.cjs` 檢查五張地圖與各類特效可繪製、幾何參數有效且不改寫角色、敵人或效果資料。瀏覽器實測仍需涵蓋點擊移動、手機功能列、技能施放與地圖切換。逐幀動畫與後三張地圖的專屬妖獸素材尚待後續擴充。

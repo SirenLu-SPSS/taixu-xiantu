@@ -1,0 +1,98 @@
+{
+  "1": {
+    "class_type": "UNETLoader",
+    "inputs": {
+      "unet_name": "qwen_image_2.1_int8_convrot.safetensors",
+      "weight_dtype": "default"
+    }
+  },
+  "2": {
+    "class_type": "CLIPLoader",
+    "inputs": {
+      "clip_name": "qwen3vl_8b_int8_convrot.safetensors",
+      "type": "qwen_image"
+    }
+  },
+  "3": {
+    "class_type": "VAELoader",
+    "inputs": {
+      "vae_name": "qwen_image_2.1_vae_bf16.safetensors"
+    }
+  },
+  "4": {
+    "class_type": "TextEncodeQwenImage21",
+    "inputs": {
+      "clip": [
+        "2",
+        0
+      ],
+      "prompt": "Create a Chinese xianxia 2D game sprite sheet using the four characters in reference image 1. Exact 2 by 2 grid, four equal quadrants on PURE WHITE background, no dividing lines. Each quadrant contains one complete full-body standing chibi game character, all visible from head to feet, with broad white empty margins on every side. Top left black haired male jade and ivory swordsman holding one slender sword. Top right black haired female jade cultivator holding a slender sword. Bottom left silver haired older male sage in deep teal robes. Bottom right white haired female immortal in ivory gold robes. Match faces, hair and costumes to reference but use adorable elegant game proportions, head larger, simplified clear small-scale silhouette, hand painted watercolor RPG style, slightly elevated three-quarter frontal view. No portraits, no text, no letters, no shadow, no ground, no glow outside silhouettes, no border.",
+      "negative_prompt": "low quality, blurry, cropped feet, clipped silhouette, text, watermark, bad anatomy, duplicate creatures",
+      "resolution": 768,
+      "vae": [
+        "3",
+        0
+      ],
+      "images.image_1": [
+        "8",
+        0
+      ]
+    }
+  },
+  "5": {
+    "class_type": "KSampler",
+    "inputs": {
+      "model": [
+        "1",
+        0
+      ],
+      "seed": 881301,
+      "steps": 24,
+      "cfg": 4,
+      "sampler_name": "euler",
+      "scheduler": "simple",
+      "positive": [
+        "4",
+        0
+      ],
+      "negative": [
+        "4",
+        1
+      ],
+      "latent_image": [
+        "4",
+        2
+      ],
+      "denoise": 1
+    }
+  },
+  "6": {
+    "class_type": "VAEDecode",
+    "inputs": {
+      "samples": [
+        "5",
+        0
+      ],
+      "vae": [
+        "3",
+        0
+      ]
+    }
+  },
+  "7": {
+    "class_type": "SaveImage",
+    "inputs": {
+      "images": [
+        "6",
+        0
+      ],
+      "filename_prefix": "Taixu_v3_battle/cultivators"
+    }
+  },
+  "8": {
+    "class_type": "LoadImage",
+    "inputs": {
+      "image": "taixu-portraits-reference.png"
+    }
+  }
+}

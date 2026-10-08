@@ -1,0 +1,84 @@
+{
+  "1": {
+    "class_type": "UNETLoader",
+    "inputs": {
+      "unet_name": "qwen_image_2.1_int8_convrot.safetensors",
+      "weight_dtype": "default"
+    }
+  },
+  "2": {
+    "class_type": "CLIPLoader",
+    "inputs": {
+      "clip_name": "qwen3vl_8b_int8_convrot.safetensors",
+      "type": "qwen_image"
+    }
+  },
+  "3": {
+    "class_type": "VAELoader",
+    "inputs": {
+      "vae_name": "qwen_image_2.1_vae_bf16.safetensors"
+    }
+  },
+  "4": {
+    "class_type": "TextEncodeQwenImage21",
+    "inputs": {
+      "clip": [
+        "2",
+        0
+      ],
+      "prompt": "Premium hand painted watercolor Chinese xianxia 2D RPG environment sprite sheet, exactly 2 by 2 grid of four isolated props on PURE WHITE background. Top left graceful cluster of five slender jade green bamboo stalks and delicate layered leaves. Top right cluster of weathered grey green mossy boulders. Bottom left small ancient Chinese pavilion with jade tiled curved roof and antique gold detailing, seen from a slightly elevated three quarter angle, whole building visible. Bottom right lush fern and grass tuft with a few small pale golden flowers. Each entire prop contained within its equal quadrant with generous white margins all around. Delicate detailed ink outlines, elegant jade green and muted gold palette, clear silhouettes suitable for mobile game. No text, no grid lines, no shadow, no scenery, no watermark.",
+      "negative_prompt": "low quality, blurry, cropped feet, clipped silhouette, text, watermark, bad anatomy, duplicate creatures",
+      "resolution": 768
+    }
+  },
+  "5": {
+    "class_type": "KSampler",
+    "inputs": {
+      "model": [
+        "1",
+        0
+      ],
+      "seed": 881303,
+      "steps": 24,
+      "cfg": 4,
+      "sampler_name": "euler",
+      "scheduler": "simple",
+      "positive": [
+        "4",
+        0
+      ],
+      "negative": [
+        "4",
+        1
+      ],
+      "latent_image": [
+        "4",
+        2
+      ],
+      "denoise": 1
+    }
+  },
+  "6": {
+    "class_type": "VAEDecode",
+    "inputs": {
+      "samples": [
+        "5",
+        0
+      ],
+      "vae": [
+        "3",
+        0
+      ]
+    }
+  },
+  "7": {
+    "class_type": "SaveImage",
+    "inputs": {
+      "images": [
+        "6",
+        0
+      ],
+      "filename_prefix": "Taixu_v3_battle/forest-props"
+    }
+  }
+}
