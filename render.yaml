@@ -1,0 +1,13 @@
+services:
+  - type: web
+    name: taixu-xiantu
+    runtime: static
+    repo: https://github.com/SirenLu-SPSS/taixu-xiantu
+    branch: main
+    autoDeployTrigger: commit
+    buildCommand: node scripts/build.cjs
+    staticPublishPath: ./dist
+    headers:
+      - path: /*
+        name: Cache-Control
+        value: no-cache
