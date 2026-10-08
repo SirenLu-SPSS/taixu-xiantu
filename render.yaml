@@ -5,7 +5,7 @@ services:
     repo: https://github.com/SirenLu-SPSS/taixu-xiantu
     branch: main
     autoDeployTrigger: commit
-    buildCommand: node --test tests/compatibility.test.cjs && node scripts/build.cjs
+    buildCommand: node --test tests/*.test.cjs && node scripts/build.cjs
     staticPublishPath: ./dist
     headers:
       - path: /*

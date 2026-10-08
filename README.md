@@ -1,4 +1,4 @@
-# 太虛仙途・山海問道
+# 太虛仙途 v3.0・山海行旅
 
 純 HTML / CSS / JavaScript 修仙遊戲。Node.js 22 以上只用於檢查與打包，沒有套件依賴。
 
@@ -14,7 +14,7 @@
 
 ## 自動部署
 
-既有 Render 服務必須透過已連接的 GitHub 帳號綁定本倉庫 main 分支，Auto-Deploy 設為 On Commit，Build Command 設為 node scripts/build.cjs，Publish Directory 設為 dist。單純使用 Public Git Repository URL 不支援自動部署。render.yaml 提供可重建設定；單獨提交它不會更改既有非 Blueprint 服務。
+既有 Render 服務必須透過已連接的 GitHub 帳號綁定本倉庫 main 分支，Auto-Deploy 設為 On Commit，Build Command 設為 node --test tests/*.test.cjs && node scripts/build.cjs，Publish Directory 設為 dist。單純使用 Public Git Repository URL 不支援自動部署。render.yaml 提供可重建設定；單獨提交它不會更改既有非 Blueprint 服務。
 
 ## 存檔保護
 

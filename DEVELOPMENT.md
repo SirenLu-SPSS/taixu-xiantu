@@ -1,0 +1,39 @@
+# 太虛仙途 v3.0 開發規範
+
+方向：B 的 2D 探索、C 的洞府經營，保留 A 的自動修煉、打怪與養成。現階段為單人瀏覽器遊戲，沒有伺服器帳號或雲端角色同步。
+
+## 程式分工
+
+- index.html：頁面結構與無障礙名稱。
+- src/data/catalog.js：既有境界、技能、裝備、靈寵與五張地圖。
+- src/systems/progression.js：可在 Node 測試的存檔擴充、地點狀態、靈田、山門收益及自動施法規則。
+- src/game.js：既有即時戰鬥、輸入、Canvas 主循環與存檔。
+- src/ui/v3.js：v3 系統整合、探索導航、洞府 UI、技能狀態與突破結果。
+- src/styles/game.css：保留既有版型；src/styles/v3.css 定義新版視覺及手機雙畫面。
+
+載入順序為 catalog → progression → game → v3。沿用 classic script 的共用狀態；v3 整合層以包裝既有入口來保留舊玩法。後續應逐個抽離戰鬥、存檔、渲染，切勿同時重寫所有系統。
+
+## 存檔相容性
+
+localStorage 主鍵固定為 TAIXU_ASCEND_V2_SAVE，version 固定為 2。v3 是遊戲版本，並非存檔格式版本。新增 exploration、estate、breakthroughs 欄位；normalize 保留既有與未知欄位。首次載入既有角色時另存 TAIXU_ASCEND_V2_SAVE_PRE_V3。
+
+同網址同瀏覽器可以延續角色。不可清空網站儲存資料，或把玩家存檔提交到公開 GitHub。轉移網址或裝置使用設定匯出／匯入 JSON。不得將移除資料作為 migration。
+
+## 探索與經營
+
+世界座標 1500 × 900。每張既有地圖含靈泉、草坡、礦脈、古修遺跡四種地點，抵達 100 單位範圍可發現與互動。山海圖卷可導航；手動方向鍵取消導航。到達後暫緩自動追敵，讓玩家可以互動。遺跡獎勵每張地圖一次，其餘地點使用獨立冷卻。
+
+三塊靈田：播種花費 12 靈石、90 秒成熟、收穫 4 + 山門階數株靈草。使用時間戳支援离線生長。山門最高五階；建造或升級花費 180 × 下一階數靈石，收益每階每分鐘 3 靈石，最多累積四小時，領取後不可重複入帳。
+
+目前導航是直線移動，尚未實作障礙物尋路、多區塊無縫世界、門人個別排程或多階段秘境。新增這些內容應擴充系統模組，不可只新增空的選單。
+
+## 驗證與部署
+
+1. Node.js 22 以上，執行 node --test tests/*.test.cjs。
+2. 執行 node scripts/build.cjs，檢查全部腳本可解析並輸出 dist。
+3. 在本機測試新角色、舊角色、匯入／匯出、地點互動、播種／收穫、突破及自動战鬥；手機測 390px 與 320px，再檢查桌面佈局。
+4. 提交 main 後，既有 Render 服務自動發布 dist；檢查部署 trigger=new_commit 且 status=live，確認首頁與 JS/CSS 回應 200。
+
+Render Build Command：node --test tests/*.test.cjs && node scripts/build.cjs。
+
+功能改動需新增涵蓋失敗條件的測試，例如資源不足、重複領取、離線成熟、每地圖隔離。UI 測試不要在正式網址建立新角色覆蓋玩家進度。
