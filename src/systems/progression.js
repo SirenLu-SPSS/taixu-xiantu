@@ -10,7 +10,10 @@ const Progression = (() => {
   ];
   function normalize(player) {
     if (!player || player.version !== 2 || !Array.isArray(player.inventory) || !player.equipment) throw Error('存檔格式不相容');
-    const result = {...player};
+    const result = {...player,inventory:player.inventory.map(entry=>({...entry}))};
+    if(!player.materialsInBag){const herb=result.inventory.find(entry=>entry.id==='herb');const total=Math.max(herb?.count||0,player.herbs||0);if(herb)herb.count=total;else if(total>0)result.inventory.push({id:'herb',count:total});result.materialsInBag=true;}
+    result.herbs=result.inventory.find(entry=>entry.id==='herb')?.count||0;
+    result.autoGather=player.autoGather!==false;
     result.exploration = {...(player.exploration || {}),visited:{...(player.exploration?.visited || {})},cooldowns:{...(player.exploration?.cooldowns || {})},claimed:{...(player.exploration?.claimed || {})}};
     result.estate = {plots:[null,null,null],sect:0,incomeAt:Date.now(),...(player.estate || {})};
     result.estate.plots = Array.from({length:3},(_,i)=>result.estate.plots?.[i] || null);
@@ -32,7 +35,7 @@ const Progression = (() => {
     const plot=player.estate.plots[index];
     if(!plot||plot.readyAt>now) return 0;
     const amount=4+player.estate.sect;
-    player.herbs+=amount; player.estate.plots[index]=null; return amount;
+    if(!addItem(player,'herb',amount))return 0; player.estate.plots[index]=null; return amount;
   }
   function income(player,now=Date.now()) {
     if(!player.estate.sect) return 0;
@@ -46,11 +49,44 @@ const Progression = (() => {
     if(player.stones<cost||player.estate.sect>=5) return false;
     income(player,now); player.stones-=cost; player.estate.sect++;player.estate.incomeAt=now;return true;
   }
+
+  function canStore(player,id){return player.inventory.some(entry=>entry.id===id)||player.inventory.length<40;}
+  function addItem(player,id,amount=1){
+    if(!Number.isSafeInteger(amount)||amount<1||!canStore(player,id))return false;
+    const entry=player.inventory.find(item=>item.id===id);
+    if(entry){if(!Number.isSafeInteger(entry.count+amount))return false;entry.count+=amount;}else player.inventory.push({id,count:amount});
+    if(id==='herb')player.herbs=player.inventory.find(item=>item.id==='herb').count;
+    return true;
+  }
+  function takeItem(player,id,amount=1){
+    const entry=player.inventory.find(item=>item.id===id);
+    if(!Number.isSafeInteger(amount)||amount<1||!entry||entry.count<amount)return false;
+    entry.count-=amount;if(entry.count===0)player.inventory.splice(player.inventory.indexOf(entry),1);
+    if(id==='herb')player.herbs=player.inventory.find(item=>item.id==='herb')?.count||0;
+    return true;
+  }
+  function sellItem(player,id,amount,price){
+    const gain=amount*price;
+    if(!Number.isSafeInteger(price)||price<1||!Number.isSafeInteger(gain)||!Number.isSafeInteger(player.stones+gain))return {ok:false};
+    if(!takeItem(player,id,amount))return {ok:false};
+    player.stones+=gain;return {ok:true,amount,gain};
+  }
+  function collectLandmark(player,map,point,maxVitals,now=Date.now()){
+    if(!landmarkState(player,map,point,now).ready)return {ok:false,reason:'cooldown'};
+    const result={ok:true,kind:point.kind,stones:0};
+    if(point.kind==='herbs'){if(!addItem(player,'herb',3))return {ok:false,reason:'full'};result.herbs=3;}
+    else if(point.kind==='ore'){if(!addItem(player,'wood',2))return {ok:false,reason:'full'};result.wood=2;result.stones=25*(map+1);player.stones+=result.stones;}
+    else if(point.kind==='ruins'){result.stones=60*(map+1);player.stones+=result.stones;player.jade+=5;player.exploration.claimed[key(map,point.id)]=true;}
+    else if(point.kind==='spring'){player.hp=maxVitals.hp;player.mp=maxVitals.mp;}
+    else return {ok:false,reason:'unknown'};
+    player.exploration.cooldowns[key(map,point.id)]=now+point.cooldown;
+    return result;
+  }
   function canAutoCast(which,mp,hp,maxHp) {
     if(which===0) return true;
     return mp>=[0,14,25,20][which] && (which!==3 || hp<maxHp*.55);
   }
   function effectRadius(time) {return (1-Math.max(0,Math.min(1,time)))*65+20;}
-  return {worldWidth,worldHeight,landmarks,normalize,key,landmarkState,plant,harvest,income,establish,canAutoCast,effectRadius};
+  return {worldWidth,worldHeight,landmarks,normalize,key,landmarkState,plant,harvest,income,establish,canAutoCast,effectRadius,canStore,addItem,takeItem,sellItem,collectLandmark};
 })();
 if(typeof module !== 'undefined') module.exports=Progression;
