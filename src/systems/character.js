@@ -1,7 +1,7 @@
 'use strict';
 // Authoritative inventory remains inventory / ownedTreasures / levelPet.
 const CharacterSystem=(()=>{
- const slots={head:'頭冠',earrings:'耳環',inner:'內衣',weapon:'武器',legs:'護腿',necklace:'項鍊',bracelet:'手環',robe:'外衣',ring:'戒指',boots:'鞋靴'};
+ const slots={head:'頭冠',earrings:'耳環',inner:'內衣',weapon:'武器',legs:'護腿',necklace:'項鍊',bracelet:'手環',robe:'外衣',ring:'戒指',boots:'鞋靴',belt:'腰帶',charm:'護符'};
  const categories={equipment:'裝備',treasures:'法寶',pets:'靈寵',consumables:'丹藥',materials:'材料'};
  const gear=['jadeSword','starRobe','sword','robe','crown','boots','ring','earrings','inner','legs','necklace','bracelet'];
  function category(id,catalog={}){const type=catalog[id]?.type;return type==='equip'||gear.includes(id)?'equipment':type==='pill'||['pill','heal','trib'].includes(id)?'consumables':'materials'}

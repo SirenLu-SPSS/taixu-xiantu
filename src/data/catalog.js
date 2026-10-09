@@ -13,3 +13,5 @@ Object.assign(ITEMS,{earrings:{id:"earrings",name:"凝露耳墜",type:"equip",sl
 for(const list of [PETS,TREASURES])list.forEach((unit,i)=>{unit.rarity=i<2?1:2});
 
 Object.assign(ITEMS,{jadeSword:{id:"jadeSword",name:"碧霄仙劍",type:"equip",slot:"weapon",atk:22,rarity:2,realm:0,price:100,desc:"碧霄劍氣，鋒芒內斂"},starRobe:{id:"starRobe",name:"星紋法衣",type:"equip",slot:"robe",def:16,hp:65,rarity:2,realm:1,price:140,desc:"築基修士使用的星紋護身法衣"}});
+
+Object.assign(ITEMS,{belt:{id:'belt',name:'雲紋腰帶',type:'equip',slot:'belt',hp:20,def:3,rarity:0,realm:0,price:40,desc:'束氣護身'},charm:{id:'charm',name:'護身靈符',type:'equip',slot:'charm',atk:3,def:2,rarity:0,realm:0,price:40,desc:'守護神識'}});
