@@ -58,3 +58,11 @@ Qwen Image 2.1 經區域網路 ComfyUI 製作 5 組圖集：16 款裝備／消�
 原圖命名 icons.png、companions.png、backdrop.png、bodies.png、outfits.png。`python art/process-character-art.py <來源目錄>` 可重建素材，僅需 Pillow、NumPy。ICON 只去除連接邊緣的深色背景；人物只去除連接邊緣的白底，保留白袍。實際伙伴圖集出現 4×3 排列，擷取第一列靈寵及第三列法寶，避免重複或截斷。人物圖集為 2×2，順序劍修、玉修、仙翁、月仙。
 
 外衣穿戴切換至專用 outfit 全身素材；卸下回到 body 素材。配件圖層獨立存在，精確服裝裁片／骨骼動畫留待後续製作。圖片與數值分開，換圖不改变攻擊、CD、傷害或存檔。
+
+## 品階動畫外框（2026-10-09）
+
+五種外框以 LAN ComfyUI Qwen Image 2.1 生成，工作流、提示詞及 seed 保存於 `workflows/quality-*.json`，來源圖集保存於 `quality-sources/`。白／藍／紫採輕微明暗循環；金品採金色流光，傳說採橙色流光。生成圖集格位不完全一致，後處理選用完整邊框並沿原圖周邊做明暗逐格合成，避免格位抖動。未使用影片模型。
+
+重建：`python art/process-quality-frames.py art/quality-sources`。驗證：`python art/verify-quality-frames.py`（Pillow、NumPy）。256px RGBA master 幀及 128px animated WebP 位於 `src/assets/quality-frames/`；CSV／JSON 提供 asset_id、幀數及 SHA-256。白／藍／紫各 8 幀，金／傳說各 16 幀，150ms／幀。所有品階均有靜態備用圖，遵循減少動態設定。
+
+角色裝備、兩側夥伴配置與背包共用品階樣式；3px 實色粗框確保素材載入前仍可識別，裝飾限於邊緣且 pointer-events:none，不遮擋名稱或點擊。空欄不顯示品階框。本次沒有改動存檔與戰鬥數值。

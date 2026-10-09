@@ -1,0 +1,42 @@
+[
+  {
+    "asset_id": "quality_frame_white",
+    "file": "src/assets/quality-frames/white.webp",
+    "frames": 8,
+    "duration_ms": 1200,
+    "source": "ComfyUI Qwen Image 2.1",
+    "sha256": "66b017155bc2f7d191a37d9c01fb3f4a3a00cc560645485d3c9df70c5a54103b"
+  },
+  {
+    "asset_id": "quality_frame_blue",
+    "file": "src/assets/quality-frames/blue.webp",
+    "frames": 8,
+    "duration_ms": 1200,
+    "source": "ComfyUI Qwen Image 2.1",
+    "sha256": "4d180f922c2828f2b4e57bd1557224119a929dc9fd8dc3ddc555040014a329a0"
+  },
+  {
+    "asset_id": "quality_frame_purple",
+    "file": "src/assets/quality-frames/purple.webp",
+    "frames": 8,
+    "duration_ms": 1200,
+    "source": "ComfyUI Qwen Image 2.1",
+    "sha256": "b7187025d715f25ccc93170bdf7614c00fba9e9edf556b8b1f4951908759236c"
+  },
+  {
+    "asset_id": "quality_frame_gold",
+    "file": "src/assets/quality-frames/gold.webp",
+    "frames": 16,
+    "duration_ms": 2400,
+    "source": "ComfyUI Qwen Image 2.1",
+    "sha256": "1f1380e2ad0ee446aef2697d13b76e10e3b735443661d592c78592dc6099ede4"
+  },
+  {
+    "asset_id": "quality_frame_legend",
+    "file": "src/assets/quality-frames/legend.webp",
+    "frames": 16,
+    "duration_ms": 2400,
+    "source": "ComfyUI Qwen Image 2.1",
+    "sha256": "2e274de1f0c03651ccb2d654e7b968edb989e949233f087eaf6409047aac93a0"
+  }
+]

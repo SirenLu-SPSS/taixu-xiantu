@@ -1,0 +1,14 @@
+/* ComfyUI ornamental frames. Overlay is decorative and cannot intercept taps. */
+:is(.character-slot,.character-companion,.character-item)[class*="rare"]{position:relative;isolation:isolate;border-width:3px;box-sizing:border-box}
+.rare0{--quality-color:#e9f2f3;--quality-frame:url('../assets/quality-frames/white.webp');border-color:var(--quality-color)!important}
+.rare1{--quality-color:#38baff;--quality-frame:url('../assets/quality-frames/blue.webp');border-color:var(--quality-color)!important}
+.rare2{--quality-color:#c879ff;--quality-frame:url('../assets/quality-frames/purple.webp');border-color:var(--quality-color)!important}
+.rare3{--quality-color:#ffce36;--quality-frame:url('../assets/quality-frames/gold.webp');border-color:var(--quality-color)!important}
+.rare4{--quality-color:#ff861f;--quality-frame:url('../assets/quality-frames/legend.webp');border-color:var(--quality-color)!important}
+:is(.character-slot,.character-companion,.character-item)[class*="rare"]::after{content:'';position:absolute;inset:-3px;z-index:3;border-radius:inherit;background-image:var(--quality-frame);background-size:100% 100%;background-repeat:no-repeat;pointer-events:none;animation:quality-breathe 3s ease-in-out infinite}
+:is(.character-slot,.character-companion,.character-item):is(.rare3,.rare4){box-shadow:inset 0 0 10px color-mix(in srgb,var(--quality-color) 20%,transparent),0 0 8px color-mix(in srgb,var(--quality-color) 45%,transparent)}
+:is(.character-slot,.character-companion,.character-item):focus-visible{outline:3px solid #fff;outline-offset:2px}
+@keyframes quality-breathe{0%,100%{opacity:.78}50%{opacity:1}}
+@media(prefers-reduced-motion:reduce){:is(.character-slot,.character-companion,.character-item)[class*="rare"]::after{animation:none}.rare3{--quality-frame:url('../assets/quality-frames/gold-still.webp')}.rare4{--quality-frame:url('../assets/quality-frames/legend-still.webp')}}
+:is(.character-slot,.character-companion,.character-item)[class*="rare"]::after{padding:6px;box-sizing:border-box;-webkit-mask:linear-gradient(#fff 0 0) content-box,linear-gradient(#fff 0 0);-webkit-mask-composite:xor;mask:linear-gradient(#fff 0 0) content-box,linear-gradient(#fff 0 0);mask-composite:exclude}
+@media(prefers-reduced-motion:reduce){.rare0{--quality-frame:url('../assets/quality-frames/white-still.webp')}.rare1{--quality-frame:url('../assets/quality-frames/blue-still.webp')}.rare2{--quality-frame:url('../assets/quality-frames/purple-still.webp')}}

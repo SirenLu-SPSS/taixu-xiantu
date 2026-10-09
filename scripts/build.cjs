@@ -7,6 +7,7 @@ for(const name of ['portrait-sword','portrait-jade','portrait-sage','portrait-mo
 for(const theme of ['ember','frost','grove','sand','void'])for(const role of ['floor','mob','elite','boss','rage']){const asset=path.join(root,'src/assets/art','rift-'+theme+'-'+role+'.webp');if(!fs.existsSync(asset)||fs.statSync(asset).size<100)throw Error('Missing rift artwork: '+asset);}
 for(const name of ['character-backdrop',...['sword','jade','sage','moon'].flatMap(id=>['character-body-'+id,'character-outfit-'+id]),...Array.from({length:16},(_,i)=>'character-item-'+i),...Array.from({length:8},(_,i)=>'character-companion-'+i)])if(!fs.existsSync(path.join(root,'src/assets/art',name+'.webp')))throw Error('Missing character art '+name);
 for(const asset of ['map-scorpion','map-python','map-sword-spirit',...Array.from({length:5},(_,i)=>'cultivator-'+i),...Array.from({length:5},(_,i)=>'dark-pet-'+i)])if(!fs.existsSync(path.join(root,'src/assets/art',asset+'.webp')))throw Error('Missing ComfyUI dark art '+asset);
+for(const name of ['white','blue','purple','gold','legend','gold-still','legend-still'])if(!fs.existsSync(path.join(root,'src/assets/quality-frames',name+'.webp')))throw Error('Missing ComfyUI quality frame '+name);
 fs.mkdirSync(path.join(root,'dist'),{recursive:true});
 fs.copyFileSync(path.join(root,'index.html'),path.join(root,'dist/index.html'));
 fs.cpSync(path.join(root,'src'),path.join(root,'dist/src'),{recursive:true});
