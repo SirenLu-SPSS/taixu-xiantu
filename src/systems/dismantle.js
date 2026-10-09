@@ -1,0 +1,11 @@
+'use strict';
+const Dismantle=(()=>{
+ const E=typeof Economy!=='undefined'?Economy:require('./economy.js'),D=typeof EconomyData!=='undefined'?EconomyData:require('../data/economy.js');
+ const config={stoneYield:[2,5,12,25,60],gemChance:[0,0,.35,.60,.85],gemTiers:[[0,0],[0,0],[1,3],[2,5],[4,6]],gemCounts:[[0,0],[0,0],[1,2],[2,3],[3,5]]};
+ function quote(p,id){const it=p.economy?.instances[id],t=it&&(D.templates[it.baseId]||it.template);if(!it||!['equip','treasure'].includes(t?.type)||it.dismantled||!E.held(p,id))return {ok:false,reason:'物品已不存在'};if(it.locked||p.bag?.locked?.[id])return {ok:false,reason:'請先解鎖物品'};return {ok:true,stones:config.stoneYield[it.quality]+Math.floor(it.enhancement/5),chance:config.gemChance[it.quality],tiers:config.gemTiers[it.quality],counts:config.gemCounts[it.quality],socketGems:it.sockets.filter(Boolean)};}
+ function attempt(p,id,random=Math.random){const q=quote(p,id);if(!q.ok)return q;const rolls=Array.from({length:4},()=>random());if(rolls.some(n=>!Number.isFinite(n)||n<0||n>=1))return {ok:false,reason:'亂數來源異常'};const it=p.economy.instances[id],t=D.templates[it.baseId]||it.template,rewards=[{id:'forgeDust',count:q.stones}],bonus=rolls[0]<q.chance;if(bonus){const tier=q.tiers[0]+Math.floor(rolls[1]*(q.tiers[1]-q.tiers[0]+1)),n=q.counts[0]+Math.floor(rolls[2]*(q.counts[1]-q.counts[0]+1)),kind=D.gemTypes[Math.floor(rolls[3]*D.gemTypes.length)][0];rewards.push({id:'gem_'+kind+'_'+tier,count:n});}for(const gem of q.socketGems)rewards.push({id:gem,count:1});
+ if(t.type==='equip'){const slot=Object.keys(p.equipment).find(k=>p.equipment[k]===id);if(slot)p.equipment[slot]=null;else if(!E.take(p,id,1))return {ok:false,reason:'物品已變動'};}else {p.ownedTreasures=p.ownedTreasures.filter(k=>k!==id);if(p.activeTreasure===id)p.activeTreasure=null;if(p.companions){for(const field of ['order','deployed'])p.companions[field]=p.companions[field].filter(k=>k!=='treasure:'+id);}p.economy.loadout.treasures=p.economy.loadout.treasures.map(k=>k===id?null:k);}
+ it.dismantled=true;it.sockets=it.sockets.map(()=>null);for(const r of rewards)if(!E.addStack(p,r.id,r.count))p.economy.mail.push({...r,source:'拆解回收'});p.economy.dismantleLog=[...(p.economy.dismantleLog||[]),{id,rewards,at:Date.now()}];return {ok:true,rewards,bonus};}
+ return {config,quote,attempt};
+})();
+if(typeof module!=='undefined')module.exports=Dismantle;
