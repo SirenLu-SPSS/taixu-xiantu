@@ -1,0 +1,12 @@
+'use strict';
+const BagTools=(()=>{
+ const E=typeof Economy!=='undefined'?Economy:require('./economy.js'),P=typeof Progression!=='undefined'?Progression:require('./progression.js');
+ function locked(p,id){return !!(p.bag?.locked?.[id]||p.economy?.instances[id]?.locked);}
+ function lock(p,id){p.bag={...p.bag,locked:{...p.bag?.locked,[id]:!locked(p,id)}};if(p.economy?.instances[id])p.economy.instances[id].locked=p.bag.locked[id];return p.bag.locked[id];}
+ function preview(p,quality,catalog){if(![0,1].includes(quality))return {entries:[],count:0,total:0};const entries=p.inventory.filter(e=>{const it=p.economy?.instances[e.id],meta=catalog[e.id];return meta?.type==='equip'&&(it?.quality??meta.rarity??0)===quality&&!locked(p,e.id)&&!Object.values(p.equipment).includes(e.id)&&!(it?.enhancement>0)&&!it?.sockets.some(Boolean)&&Number.isSafeInteger(e.count)&&e.count>0;}).map(e=>({id:e.id,count:e.count,price:catalog[e.id].price||8}));return {entries,count:entries.reduce((n,e)=>n+e.count,0),total:entries.reduce((n,e)=>n+e.count*e.price,0)};}
+ function sell(p,quality,catalog){const q=preview(p,quality,catalog);if(!q.count||!Number.isSafeInteger(q.total)||!Number.isSafeInteger(p.stones+q.total))return {ok:false};const snapshot=JSON.stringify(p);for(const e of q.entries)if(!P.sellItem(p,e.id,e.count,e.price).ok){Object.assign(p,JSON.parse(snapshot));return {ok:false};}return {ok:true,count:q.count,total:q.total};}
+ function organize(p,catalog){const map=new Map(),other=[];for(const e of p.inventory){if(p.economy?.instances[e.id]){other.push(e);continue;}const old=map.get(e.id);if(old&&Number.isSafeInteger(old.count+e.count))old.count+=e.count;else if(!old)map.set(e.id,{...e});else other.push(e);}p.inventory=[...map.values(),...other].sort((a,b)=>(catalog[b.id]?.rarity||0)-(catalog[a.id]?.rarity||0)||String(catalog[a.id]?.name||a.id).localeCompare(String(catalog[b.id]?.name||b.id),'zh-Hant'));p.herbs=p.inventory.filter(e=>e.id==='herb').reduce((n,e)=>n+e.count,0);}
+ function receive(p,id,count,catalog){E.normalize(p);if(!Number.isSafeInteger(count)||count<1)return false;if(P.addItem(p,id,count,catalog))return true;const existing=p.economy.mail.find(e=>typeof e==='object'&&e.id===id);if(existing&&Number.isSafeInteger(existing.count+count))existing.count+=count;else p.economy.mail.push({id,count,source:'滿格掉落'});return true;}
+ return {locked,lock,preview,sell,organize,receive};
+})();
+if(typeof module!=='undefined')module.exports=BagTools;

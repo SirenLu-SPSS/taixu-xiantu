@@ -51,9 +51,9 @@ const Progression = (() => {
     income(player,now); player.stones-=cost; player.estate.sect++;player.estate.incomeAt=now;return true;
   }
 
-  function canStore(player,id){return bags?bags.canStore(player,id,typeof ITEMS!=='undefined'?ITEMS:{}):player.inventory.some(entry=>entry.id===id)||player.inventory.length<40;}
-  function addItem(player,id,amount=1){
-    if(!Number.isSafeInteger(amount)||amount<1||!canStore(player,id))return false;
+  function canStore(player,id,catalog=typeof ITEMS!=='undefined'?ITEMS:{}){return bags?bags.canStore(player,id,catalog):player.inventory.some(entry=>entry.id===id)||player.inventory.length<40;}
+  function addItem(player,id,amount=1,catalog){
+    if(!Number.isSafeInteger(amount)||amount<1||!canStore(player,id,catalog))return false;
     const entry=player.inventory.find(item=>item.id===id);
     if(entry){if(!Number.isSafeInteger(entry.count+amount))return false;entry.count+=amount;}else player.inventory.push({id,count:amount});
     if(id==='herb')player.herbs=player.inventory.find(item=>item.id==='herb').count;
@@ -67,6 +67,7 @@ const Progression = (() => {
     return true;
   }
   function sellItem(player,id,amount,price){
+    if(player.bag?.locked?.[id]||player.economy?.instances[id]?.locked)return {ok:false};
     const gain=amount*price;
     if(!Number.isSafeInteger(price)||price<1||!Number.isSafeInteger(gain)||!Number.isSafeInteger(player.stones+gain))return {ok:false};
     if(!takeItem(player,id,amount))return {ok:false};
