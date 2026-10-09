@@ -1,0 +1,84 @@
+{
+  "1": {
+    "class_type": "UNETLoader",
+    "inputs": {
+      "unet_name": "qwen_image_2.1_int8_convrot.safetensors",
+      "weight_dtype": "default"
+    }
+  },
+  "2": {
+    "class_type": "CLIPLoader",
+    "inputs": {
+      "clip_name": "qwen3vl_8b_int8_convrot.safetensors",
+      "type": "qwen_image"
+    }
+  },
+  "3": {
+    "class_type": "VAELoader",
+    "inputs": {
+      "vae_name": "qwen_image_2.1_vae_bf16.safetensors"
+    }
+  },
+  "4": {
+    "class_type": "TextEncodeQwenImage21",
+    "inputs": {
+      "clip": [
+        "2",
+        0
+      ],
+      "prompt": "An exact 4 column by 3 row grid of twelve separate Chinese xianxia game sprites and inventory icons. Each object centered completely inside its own equal cell, pure white background, generous blank margins, no text, no borders, no shadows outside objects. Read left to right top to bottom: 1. black armored giant scorpion; 2. large coiled cyan scaled python; 3. ghostly armored sword spirit warrior floating above ground; 4. crimson black mountain demonic swordsman, full body standing combat pose, wielding a floating magic weapon; 5. dark emerald bamboo forest sinister Taoist, full body standing combat pose, wielding a floating magic weapon; 6. purple black underground poison sorcerer, full body standing combat pose, wielding a floating magic weapon; 7. indigo jade marsh demonic cultivator with water robes, full body standing combat pose, wielding a floating magic weapon; 8. ivory black ancient sword tomb fallen sword immortal, full body standing combat pose, wielding a floating magic weapon; 9. blood red spectral wolf; 10. dark emerald spectral fox; 11. purple armored poisonous scorpion; 12. large cyan scaled python. Elegant highly detailed Chinese ink watercolor fantasy illustration, dark teal crimson purple and gold, clean strong silhouettes, suitable for transparent cutouts.",
+      "negative_prompt": "blurry, low quality, watermark, text, deformed, extra limbs",
+      "resolution": 1024
+    }
+  },
+  "5": {
+    "class_type": "KSampler",
+    "inputs": {
+      "model": [
+        "1",
+        0
+      ],
+      "seed": 20261009180,
+      "steps": 24,
+      "cfg": 4,
+      "sampler_name": "euler",
+      "scheduler": "simple",
+      "positive": [
+        "4",
+        0
+      ],
+      "negative": [
+        "4",
+        1
+      ],
+      "latent_image": [
+        "4",
+        2
+      ],
+      "denoise": 1
+    }
+  },
+  "6": {
+    "class_type": "VAEDecode",
+    "inputs": {
+      "samples": [
+        "5",
+        0
+      ],
+      "vae": [
+        "3",
+        0
+      ]
+    }
+  },
+  "7": {
+    "class_type": "SaveImage",
+    "inputs": {
+      "images": [
+        "6",
+        0
+      ],
+      "filename_prefix": "Taixu_dark/dark-0"
+    }
+  }
+}

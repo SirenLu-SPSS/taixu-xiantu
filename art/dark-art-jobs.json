@@ -1,0 +1,194 @@
+[
+  {
+    "name": "dark-0",
+    "cells": [
+      {
+        "id": "map-scorpion",
+        "prompt": "black armored giant scorpion"
+      },
+      {
+        "id": "map-python",
+        "prompt": "large coiled cyan scaled python"
+      },
+      {
+        "id": "map-sword-spirit",
+        "prompt": "ghostly armored sword spirit warrior floating above ground"
+      },
+      {
+        "id": "cultivator-0",
+        "prompt": "crimson black mountain demonic swordsman, full body standing combat pose, wielding a floating magic weapon"
+      },
+      {
+        "id": "cultivator-1",
+        "prompt": "dark emerald bamboo forest sinister Taoist, full body standing combat pose, wielding a floating magic weapon"
+      },
+      {
+        "id": "cultivator-2",
+        "prompt": "purple black underground poison sorcerer, full body standing combat pose, wielding a floating magic weapon"
+      },
+      {
+        "id": "cultivator-3",
+        "prompt": "indigo jade marsh demonic cultivator with water robes, full body standing combat pose, wielding a floating magic weapon"
+      },
+      {
+        "id": "cultivator-4",
+        "prompt": "ivory black ancient sword tomb fallen sword immortal, full body standing combat pose, wielding a floating magic weapon"
+      },
+      {
+        "id": "dark-pet-0",
+        "prompt": "blood red spectral wolf"
+      },
+      {
+        "id": "dark-pet-1",
+        "prompt": "dark emerald spectral fox"
+      },
+      {
+        "id": "dark-pet-2",
+        "prompt": "purple armored poisonous scorpion"
+      },
+      {
+        "id": "dark-pet-3",
+        "prompt": "large cyan scaled python"
+      }
+    ]
+  },
+  {
+    "name": "dark-1",
+    "cells": [
+      {
+        "id": "dark-pet-4",
+        "prompt": "silver spectral eagle"
+      },
+      {
+        "id": "dark_legend_0_0",
+        "prompt": "crimson black mountain demonic swordsman 頭冠"
+      },
+      {
+        "id": "dark_legend_0_1",
+        "prompt": "crimson black mountain demonic swordsman 耳環"
+      },
+      {
+        "id": "dark_legend_0_2",
+        "prompt": "crimson black mountain demonic swordsman 項鍊"
+      },
+      {
+        "id": "dark_legend_0_3",
+        "prompt": "crimson black mountain demonic swordsman 手環"
+      },
+      {
+        "id": "dark_legend_0_4",
+        "prompt": "crimson black mountain demonic swordsman ornate magical soul seal"
+      },
+      {
+        "id": "dark_legend_0_5",
+        "prompt": "crimson black mountain demonic swordsman blood red spectral wolf"
+      },
+      {
+        "id": "dark_legend_1_0",
+        "prompt": "dark emerald bamboo forest sinister Taoist 內衣"
+      },
+      {
+        "id": "dark_legend_1_1",
+        "prompt": "dark emerald bamboo forest sinister Taoist 外衣"
+      },
+      {
+        "id": "dark_legend_1_2",
+        "prompt": "dark emerald bamboo forest sinister Taoist 護腿"
+      },
+      {
+        "id": "dark_legend_1_3",
+        "prompt": "dark emerald bamboo forest sinister Taoist 鞋靴"
+      },
+      {
+        "id": "dark_legend_1_4",
+        "prompt": "dark emerald bamboo forest sinister Taoist ornate magical soul seal"
+      }
+    ]
+  },
+  {
+    "name": "dark-2",
+    "cells": [
+      {
+        "id": "dark_legend_1_5",
+        "prompt": "dark emerald bamboo forest sinister Taoist dark emerald spectral fox"
+      },
+      {
+        "id": "dark_legend_2_0",
+        "prompt": "purple black underground poison sorcerer 戒指"
+      },
+      {
+        "id": "dark_legend_2_1",
+        "prompt": "purple black underground poison sorcerer 武器"
+      },
+      {
+        "id": "dark_legend_2_2",
+        "prompt": "purple black underground poison sorcerer 腰帶"
+      },
+      {
+        "id": "dark_legend_2_3",
+        "prompt": "purple black underground poison sorcerer 護符"
+      },
+      {
+        "id": "dark_legend_2_4",
+        "prompt": "purple black underground poison sorcerer ornate magical soul seal"
+      },
+      {
+        "id": "dark_legend_2_5",
+        "prompt": "purple black underground poison sorcerer purple armored poisonous scorpion"
+      },
+      {
+        "id": "dark_legend_3_0",
+        "prompt": "indigo jade marsh demonic cultivator with water robes 頭冠"
+      },
+      {
+        "id": "dark_legend_3_1",
+        "prompt": "indigo jade marsh demonic cultivator with water robes 耳環"
+      },
+      {
+        "id": "dark_legend_3_2",
+        "prompt": "indigo jade marsh demonic cultivator with water robes 項鍊"
+      },
+      {
+        "id": "dark_legend_3_3",
+        "prompt": "indigo jade marsh demonic cultivator with water robes 手環"
+      },
+      {
+        "id": "dark_legend_3_4",
+        "prompt": "indigo jade marsh demonic cultivator with water robes ornate magical soul seal"
+      }
+    ]
+  },
+  {
+    "name": "dark-3",
+    "cells": [
+      {
+        "id": "dark_legend_3_5",
+        "prompt": "indigo jade marsh demonic cultivator with water robes large cyan scaled python"
+      },
+      {
+        "id": "dark_legend_4_0",
+        "prompt": "ivory black ancient sword tomb fallen sword immortal 內衣"
+      },
+      {
+        "id": "dark_legend_4_1",
+        "prompt": "ivory black ancient sword tomb fallen sword immortal 外衣"
+      },
+      {
+        "id": "dark_legend_4_2",
+        "prompt": "ivory black ancient sword tomb fallen sword immortal 護腿"
+      },
+      {
+        "id": "dark_legend_4_3",
+        "prompt": "ivory black ancient sword tomb fallen sword immortal 鞋靴"
+      },
+      {
+        "id": "dark_legend_4_4",
+        "prompt": "ivory black ancient sword tomb fallen sword immortal ornate magical soul seal"
+      },
+      {
+        "id": "dark_legend_4_5",
+        "prompt": "ivory black ancient sword tomb fallen sword immortal silver spectral eagle"
+      }
+    ]
+  }
+]
