@@ -1,0 +1,223 @@
+asset_id,name,type,version,master,runtime,workflow,cell
+gear_head_0,青雲頭冠,equip,economy-v2.0,src/assets/economy/master/gear_head_0.png,src/assets/economy/runtime/gear_head_0.png,art/workflows/economy-equipment-0-api.json,0
+gear_earrings_0,青雲耳環,equip,economy-v2.0,src/assets/economy/master/gear_earrings_0.png,src/assets/economy/runtime/gear_earrings_0.png,art/workflows/economy-equipment-0-api.json,1
+gear_necklace_0,青雲項鍊,equip,economy-v2.0,src/assets/economy/master/gear_necklace_0.png,src/assets/economy/runtime/gear_necklace_0.png,art/workflows/economy-equipment-0-api.json,2
+gear_bracelet_0,青雲手環,equip,economy-v2.0,src/assets/economy/master/gear_bracelet_0.png,src/assets/economy/runtime/gear_bracelet_0.png,art/workflows/economy-equipment-0-api.json,3
+gear_inner_0,青雲內衣,equip,economy-v2.0,src/assets/economy/master/gear_inner_0.png,src/assets/economy/runtime/gear_inner_0.png,art/workflows/economy-equipment-0-api.json,4
+gear_robe_0,青雲外衣,equip,economy-v2.0,src/assets/economy/master/gear_robe_0.png,src/assets/economy/runtime/gear_robe_0.png,art/workflows/economy-equipment-0-api.json,5
+gear_legs_0,青雲護腿,equip,economy-v2.0,src/assets/economy/master/gear_legs_0.png,src/assets/economy/runtime/gear_legs_0.png,art/workflows/economy-equipment-0-api.json,6
+gear_boots_0,青雲鞋靴,equip,economy-v2.0,src/assets/economy/master/gear_boots_0.png,src/assets/economy/runtime/gear_boots_0.png,art/workflows/economy-equipment-0-api.json,7
+gear_ring_0,青雲戒指,equip,economy-v2.0,src/assets/economy/master/gear_ring_0.png,src/assets/economy/runtime/gear_ring_0.png,art/workflows/economy-equipment-0-api.json,8
+gear_weapon_0,青雲武器,equip,economy-v2.0,src/assets/economy/master/gear_weapon_0.png,src/assets/economy/runtime/gear_weapon_0.png,art/workflows/economy-equipment-0-api.json,9
+gear_belt_0,青雲腰帶,equip,economy-v2.0,src/assets/economy/master/gear_belt_0.png,src/assets/economy/runtime/gear_belt_0.png,art/workflows/economy-equipment-0-api.json,10
+gear_charm_0,青雲護符,equip,economy-v2.0,src/assets/economy/master/gear_charm_0.png,src/assets/economy/runtime/gear_charm_0.png,art/workflows/economy-equipment-0-api.json,11
+gear_head_1,凝露頭冠,equip,economy-v2.0,src/assets/economy/master/gear_head_1.png,src/assets/economy/runtime/gear_head_1.png,art/workflows/economy-equipment-1-api.json,0
+gear_earrings_1,凝露耳環,equip,economy-v2.0,src/assets/economy/master/gear_earrings_1.png,src/assets/economy/runtime/gear_earrings_1.png,art/workflows/economy-equipment-1-api.json,1
+gear_necklace_1,凝露項鍊,equip,economy-v2.0,src/assets/economy/master/gear_necklace_1.png,src/assets/economy/runtime/gear_necklace_1.png,art/workflows/economy-equipment-1-api.json,2
+gear_bracelet_1,凝露手環,equip,economy-v2.0,src/assets/economy/master/gear_bracelet_1.png,src/assets/economy/runtime/gear_bracelet_1.png,art/workflows/economy-equipment-1-api.json,3
+gear_inner_1,凝露內衣,equip,economy-v2.0,src/assets/economy/master/gear_inner_1.png,src/assets/economy/runtime/gear_inner_1.png,art/workflows/economy-equipment-1-api.json,4
+gear_robe_1,凝露外衣,equip,economy-v2.0,src/assets/economy/master/gear_robe_1.png,src/assets/economy/runtime/gear_robe_1.png,art/workflows/economy-equipment-1-api.json,5
+gear_legs_1,凝露護腿,equip,economy-v2.0,src/assets/economy/master/gear_legs_1.png,src/assets/economy/runtime/gear_legs_1.png,art/workflows/economy-equipment-1-api.json,6
+gear_boots_1,凝露鞋靴,equip,economy-v2.0,src/assets/economy/master/gear_boots_1.png,src/assets/economy/runtime/gear_boots_1.png,art/workflows/economy-equipment-1-api.json,7
+gear_ring_1,凝露戒指,equip,economy-v2.0,src/assets/economy/master/gear_ring_1.png,src/assets/economy/runtime/gear_ring_1.png,art/workflows/economy-equipment-1-api.json,8
+gear_weapon_1,凝露武器,equip,economy-v2.0,src/assets/economy/master/gear_weapon_1.png,src/assets/economy/runtime/gear_weapon_1.png,art/workflows/economy-equipment-1-api.json,9
+gear_belt_1,凝露腰帶,equip,economy-v2.0,src/assets/economy/master/gear_belt_1.png,src/assets/economy/runtime/gear_belt_1.png,art/workflows/economy-equipment-1-api.json,10
+gear_charm_1,凝露護符,equip,economy-v2.0,src/assets/economy/master/gear_charm_1.png,src/assets/economy/runtime/gear_charm_1.png,art/workflows/economy-equipment-1-api.json,11
+gear_head_2,碧霄頭冠,equip,economy-v2.0,src/assets/economy/master/gear_head_2.png,src/assets/economy/runtime/gear_head_2.png,art/workflows/economy-equipment-2-api.json,0
+gear_earrings_2,碧霄耳環,equip,economy-v2.0,src/assets/economy/master/gear_earrings_2.png,src/assets/economy/runtime/gear_earrings_2.png,art/workflows/economy-equipment-2-api.json,1
+gear_necklace_2,碧霄項鍊,equip,economy-v2.0,src/assets/economy/master/gear_necklace_2.png,src/assets/economy/runtime/gear_necklace_2.png,art/workflows/economy-equipment-2-api.json,2
+gear_bracelet_2,碧霄手環,equip,economy-v2.0,src/assets/economy/master/gear_bracelet_2.png,src/assets/economy/runtime/gear_bracelet_2.png,art/workflows/economy-equipment-2-api.json,3
+gear_inner_2,碧霄內衣,equip,economy-v2.0,src/assets/economy/master/gear_inner_2.png,src/assets/economy/runtime/gear_inner_2.png,art/workflows/economy-equipment-2-api.json,4
+gear_robe_2,碧霄外衣,equip,economy-v2.0,src/assets/economy/master/gear_robe_2.png,src/assets/economy/runtime/gear_robe_2.png,art/workflows/economy-equipment-2-api.json,5
+gear_legs_2,碧霄護腿,equip,economy-v2.0,src/assets/economy/master/gear_legs_2.png,src/assets/economy/runtime/gear_legs_2.png,art/workflows/economy-equipment-2-api.json,6
+gear_boots_2,碧霄鞋靴,equip,economy-v2.0,src/assets/economy/master/gear_boots_2.png,src/assets/economy/runtime/gear_boots_2.png,art/workflows/economy-equipment-2-api.json,7
+gear_ring_2,碧霄戒指,equip,economy-v2.0,src/assets/economy/master/gear_ring_2.png,src/assets/economy/runtime/gear_ring_2.png,art/workflows/economy-equipment-2-api.json,8
+gear_weapon_2,碧霄武器,equip,economy-v2.0,src/assets/economy/master/gear_weapon_2.png,src/assets/economy/runtime/gear_weapon_2.png,art/workflows/economy-equipment-2-api.json,9
+gear_belt_2,碧霄腰帶,equip,economy-v2.0,src/assets/economy/master/gear_belt_2.png,src/assets/economy/runtime/gear_belt_2.png,art/workflows/economy-equipment-2-api.json,10
+gear_charm_2,碧霄護符,equip,economy-v2.0,src/assets/economy/master/gear_charm_2.png,src/assets/economy/runtime/gear_charm_2.png,art/workflows/economy-equipment-2-api.json,11
+gear_head_3,星紋頭冠,equip,economy-v2.0,src/assets/economy/master/gear_head_3.png,src/assets/economy/runtime/gear_head_3.png,art/workflows/economy-equipment-3-api.json,0
+gear_earrings_3,星紋耳環,equip,economy-v2.0,src/assets/economy/master/gear_earrings_3.png,src/assets/economy/runtime/gear_earrings_3.png,art/workflows/economy-equipment-3-api.json,1
+gear_necklace_3,星紋項鍊,equip,economy-v2.0,src/assets/economy/master/gear_necklace_3.png,src/assets/economy/runtime/gear_necklace_3.png,art/workflows/economy-equipment-3-api.json,2
+gear_bracelet_3,星紋手環,equip,economy-v2.0,src/assets/economy/master/gear_bracelet_3.png,src/assets/economy/runtime/gear_bracelet_3.png,art/workflows/economy-equipment-3-api.json,3
+gear_inner_3,星紋內衣,equip,economy-v2.0,src/assets/economy/master/gear_inner_3.png,src/assets/economy/runtime/gear_inner_3.png,art/workflows/economy-equipment-3-api.json,4
+gear_robe_3,星紋外衣,equip,economy-v2.0,src/assets/economy/master/gear_robe_3.png,src/assets/economy/runtime/gear_robe_3.png,art/workflows/economy-equipment-3-api.json,5
+gear_legs_3,星紋護腿,equip,economy-v2.0,src/assets/economy/master/gear_legs_3.png,src/assets/economy/runtime/gear_legs_3.png,art/workflows/economy-equipment-3-api.json,6
+gear_boots_3,星紋鞋靴,equip,economy-v2.0,src/assets/economy/master/gear_boots_3.png,src/assets/economy/runtime/gear_boots_3.png,art/workflows/economy-equipment-3-api.json,7
+gear_ring_3,星紋戒指,equip,economy-v2.0,src/assets/economy/master/gear_ring_3.png,src/assets/economy/runtime/gear_ring_3.png,art/workflows/economy-equipment-3-api.json,8
+gear_weapon_3,星紋武器,equip,economy-v2.0,src/assets/economy/master/gear_weapon_3.png,src/assets/economy/runtime/gear_weapon_3.png,art/workflows/economy-equipment-3-api.json,9
+gear_belt_3,星紋腰帶,equip,economy-v2.0,src/assets/economy/master/gear_belt_3.png,src/assets/economy/runtime/gear_belt_3.png,art/workflows/economy-equipment-3-api.json,10
+gear_charm_3,星紋護符,equip,economy-v2.0,src/assets/economy/master/gear_charm_3.png,src/assets/economy/runtime/gear_charm_3.png,art/workflows/economy-equipment-3-api.json,11
+gear_head_4,玄冰頭冠,equip,economy-v2.0,src/assets/economy/master/gear_head_4.png,src/assets/economy/runtime/gear_head_4.png,art/workflows/economy-equipment-4-api.json,0
+gear_earrings_4,玄冰耳環,equip,economy-v2.0,src/assets/economy/master/gear_earrings_4.png,src/assets/economy/runtime/gear_earrings_4.png,art/workflows/economy-equipment-4-api.json,1
+gear_necklace_4,玄冰項鍊,equip,economy-v2.0,src/assets/economy/master/gear_necklace_4.png,src/assets/economy/runtime/gear_necklace_4.png,art/workflows/economy-equipment-4-api.json,2
+gear_bracelet_4,玄冰手環,equip,economy-v2.0,src/assets/economy/master/gear_bracelet_4.png,src/assets/economy/runtime/gear_bracelet_4.png,art/workflows/economy-equipment-4-api.json,3
+gear_inner_4,玄冰內衣,equip,economy-v2.0,src/assets/economy/master/gear_inner_4.png,src/assets/economy/runtime/gear_inner_4.png,art/workflows/economy-equipment-4-api.json,4
+gear_robe_4,玄冰外衣,equip,economy-v2.0,src/assets/economy/master/gear_robe_4.png,src/assets/economy/runtime/gear_robe_4.png,art/workflows/economy-equipment-4-api.json,5
+gear_legs_4,玄冰護腿,equip,economy-v2.0,src/assets/economy/master/gear_legs_4.png,src/assets/economy/runtime/gear_legs_4.png,art/workflows/economy-equipment-4-api.json,6
+gear_boots_4,玄冰鞋靴,equip,economy-v2.0,src/assets/economy/master/gear_boots_4.png,src/assets/economy/runtime/gear_boots_4.png,art/workflows/economy-equipment-4-api.json,7
+gear_ring_4,玄冰戒指,equip,economy-v2.0,src/assets/economy/master/gear_ring_4.png,src/assets/economy/runtime/gear_ring_4.png,art/workflows/economy-equipment-4-api.json,8
+gear_weapon_4,玄冰武器,equip,economy-v2.0,src/assets/economy/master/gear_weapon_4.png,src/assets/economy/runtime/gear_weapon_4.png,art/workflows/economy-equipment-4-api.json,9
+gear_belt_4,玄冰腰帶,equip,economy-v2.0,src/assets/economy/master/gear_belt_4.png,src/assets/economy/runtime/gear_belt_4.png,art/workflows/economy-equipment-4-api.json,10
+gear_charm_4,玄冰護符,equip,economy-v2.0,src/assets/economy/master/gear_charm_4.png,src/assets/economy/runtime/gear_charm_4.png,art/workflows/economy-equipment-4-api.json,11
+gear_head_5,紫電頭冠,equip,economy-v2.0,src/assets/economy/master/gear_head_5.png,src/assets/economy/runtime/gear_head_5.png,art/workflows/economy-equipment-5-api.json,0
+gear_earrings_5,紫電耳環,equip,economy-v2.0,src/assets/economy/master/gear_earrings_5.png,src/assets/economy/runtime/gear_earrings_5.png,art/workflows/economy-equipment-5-api.json,1
+gear_necklace_5,紫電項鍊,equip,economy-v2.0,src/assets/economy/master/gear_necklace_5.png,src/assets/economy/runtime/gear_necklace_5.png,art/workflows/economy-equipment-5-api.json,2
+gear_bracelet_5,紫電手環,equip,economy-v2.0,src/assets/economy/master/gear_bracelet_5.png,src/assets/economy/runtime/gear_bracelet_5.png,art/workflows/economy-equipment-5-api.json,3
+gear_inner_5,紫電內衣,equip,economy-v2.0,src/assets/economy/master/gear_inner_5.png,src/assets/economy/runtime/gear_inner_5.png,art/workflows/economy-equipment-5-api.json,4
+gear_robe_5,紫電外衣,equip,economy-v2.0,src/assets/economy/master/gear_robe_5.png,src/assets/economy/runtime/gear_robe_5.png,art/workflows/economy-equipment-5-api.json,5
+gear_legs_5,紫電護腿,equip,economy-v2.0,src/assets/economy/master/gear_legs_5.png,src/assets/economy/runtime/gear_legs_5.png,art/workflows/economy-equipment-5-api.json,6
+gear_boots_5,紫電鞋靴,equip,economy-v2.0,src/assets/economy/master/gear_boots_5.png,src/assets/economy/runtime/gear_boots_5.png,art/workflows/economy-equipment-5-api.json,7
+gear_ring_5,紫電戒指,equip,economy-v2.0,src/assets/economy/master/gear_ring_5.png,src/assets/economy/runtime/gear_ring_5.png,art/workflows/economy-equipment-5-api.json,8
+gear_weapon_5,紫電武器,equip,economy-v2.0,src/assets/economy/master/gear_weapon_5.png,src/assets/economy/runtime/gear_weapon_5.png,art/workflows/economy-equipment-5-api.json,9
+gear_belt_5,紫電腰帶,equip,economy-v2.0,src/assets/economy/master/gear_belt_5.png,src/assets/economy/runtime/gear_belt_5.png,art/workflows/economy-equipment-5-api.json,10
+gear_charm_5,紫電護符,equip,economy-v2.0,src/assets/economy/master/gear_charm_5.png,src/assets/economy/runtime/gear_charm_5.png,art/workflows/economy-equipment-5-api.json,11
+gear_head_6,幽冥頭冠,equip,economy-v2.0,src/assets/economy/master/gear_head_6.png,src/assets/economy/runtime/gear_head_6.png,art/workflows/economy-equipment-6-api.json,0
+gear_earrings_6,幽冥耳環,equip,economy-v2.0,src/assets/economy/master/gear_earrings_6.png,src/assets/economy/runtime/gear_earrings_6.png,art/workflows/economy-equipment-6-api.json,1
+gear_necklace_6,幽冥項鍊,equip,economy-v2.0,src/assets/economy/master/gear_necklace_6.png,src/assets/economy/runtime/gear_necklace_6.png,art/workflows/economy-equipment-6-api.json,2
+gear_bracelet_6,幽冥手環,equip,economy-v2.0,src/assets/economy/master/gear_bracelet_6.png,src/assets/economy/runtime/gear_bracelet_6.png,art/workflows/economy-equipment-6-api.json,3
+gear_inner_6,幽冥內衣,equip,economy-v2.0,src/assets/economy/master/gear_inner_6.png,src/assets/economy/runtime/gear_inner_6.png,art/workflows/economy-equipment-6-api.json,4
+gear_robe_6,幽冥外衣,equip,economy-v2.0,src/assets/economy/master/gear_robe_6.png,src/assets/economy/runtime/gear_robe_6.png,art/workflows/economy-equipment-6-api.json,5
+gear_legs_6,幽冥護腿,equip,economy-v2.0,src/assets/economy/master/gear_legs_6.png,src/assets/economy/runtime/gear_legs_6.png,art/workflows/economy-equipment-6-api.json,6
+gear_boots_6,幽冥鞋靴,equip,economy-v2.0,src/assets/economy/master/gear_boots_6.png,src/assets/economy/runtime/gear_boots_6.png,art/workflows/economy-equipment-6-api.json,7
+gear_ring_6,幽冥戒指,equip,economy-v2.0,src/assets/economy/master/gear_ring_6.png,src/assets/economy/runtime/gear_ring_6.png,art/workflows/economy-equipment-6-api.json,8
+gear_weapon_6,幽冥武器,equip,economy-v2.0,src/assets/economy/master/gear_weapon_6.png,src/assets/economy/runtime/gear_weapon_6.png,art/workflows/economy-equipment-6-api.json,9
+gear_belt_6,幽冥腰帶,equip,economy-v2.0,src/assets/economy/master/gear_belt_6.png,src/assets/economy/runtime/gear_belt_6.png,art/workflows/economy-equipment-6-api.json,10
+gear_charm_6,幽冥護符,equip,economy-v2.0,src/assets/economy/master/gear_charm_6.png,src/assets/economy/runtime/gear_charm_6.png,art/workflows/economy-equipment-6-api.json,11
+gear_head_7,赤霄頭冠,equip,economy-v2.0,src/assets/economy/master/gear_head_7.png,src/assets/economy/runtime/gear_head_7.png,art/workflows/economy-equipment-7-api.json,0
+gear_earrings_7,赤霄耳環,equip,economy-v2.0,src/assets/economy/master/gear_earrings_7.png,src/assets/economy/runtime/gear_earrings_7.png,art/workflows/economy-equipment-7-api.json,1
+gear_necklace_7,赤霄項鍊,equip,economy-v2.0,src/assets/economy/master/gear_necklace_7.png,src/assets/economy/runtime/gear_necklace_7.png,art/workflows/economy-equipment-7-api.json,2
+gear_bracelet_7,赤霄手環,equip,economy-v2.0,src/assets/economy/master/gear_bracelet_7.png,src/assets/economy/runtime/gear_bracelet_7.png,art/workflows/economy-equipment-7-api.json,3
+gear_inner_7,赤霄內衣,equip,economy-v2.0,src/assets/economy/master/gear_inner_7.png,src/assets/economy/runtime/gear_inner_7.png,art/workflows/economy-equipment-7-api.json,4
+gear_robe_7,赤霄外衣,equip,economy-v2.0,src/assets/economy/master/gear_robe_7.png,src/assets/economy/runtime/gear_robe_7.png,art/workflows/economy-equipment-7-api.json,5
+gear_legs_7,赤霄護腿,equip,economy-v2.0,src/assets/economy/master/gear_legs_7.png,src/assets/economy/runtime/gear_legs_7.png,art/workflows/economy-equipment-7-api.json,6
+gear_boots_7,赤霄鞋靴,equip,economy-v2.0,src/assets/economy/master/gear_boots_7.png,src/assets/economy/runtime/gear_boots_7.png,art/workflows/economy-equipment-7-api.json,7
+gear_ring_7,赤霄戒指,equip,economy-v2.0,src/assets/economy/master/gear_ring_7.png,src/assets/economy/runtime/gear_ring_7.png,art/workflows/economy-equipment-7-api.json,8
+gear_weapon_7,赤霄武器,equip,economy-v2.0,src/assets/economy/master/gear_weapon_7.png,src/assets/economy/runtime/gear_weapon_7.png,art/workflows/economy-equipment-7-api.json,9
+gear_belt_7,赤霄腰帶,equip,economy-v2.0,src/assets/economy/master/gear_belt_7.png,src/assets/economy/runtime/gear_belt_7.png,art/workflows/economy-equipment-7-api.json,10
+gear_charm_7,赤霄護符,equip,economy-v2.0,src/assets/economy/master/gear_charm_7.png,src/assets/economy/runtime/gear_charm_7.png,art/workflows/economy-equipment-7-api.json,11
+gear_head_8,太虛頭冠,equip,economy-v2.0,src/assets/economy/master/gear_head_8.png,src/assets/economy/runtime/gear_head_8.png,art/workflows/economy-equipment-8-api.json,0
+gear_earrings_8,太虛耳環,equip,economy-v2.0,src/assets/economy/master/gear_earrings_8.png,src/assets/economy/runtime/gear_earrings_8.png,art/workflows/economy-equipment-8-api.json,1
+gear_necklace_8,太虛項鍊,equip,economy-v2.0,src/assets/economy/master/gear_necklace_8.png,src/assets/economy/runtime/gear_necklace_8.png,art/workflows/economy-equipment-8-api.json,2
+gear_bracelet_8,太虛手環,equip,economy-v2.0,src/assets/economy/master/gear_bracelet_8.png,src/assets/economy/runtime/gear_bracelet_8.png,art/workflows/economy-equipment-8-api.json,3
+gear_inner_8,太虛內衣,equip,economy-v2.0,src/assets/economy/master/gear_inner_8.png,src/assets/economy/runtime/gear_inner_8.png,art/workflows/economy-equipment-8-api.json,4
+gear_robe_8,太虛外衣,equip,economy-v2.0,src/assets/economy/master/gear_robe_8.png,src/assets/economy/runtime/gear_robe_8.png,art/workflows/economy-equipment-8-api.json,5
+gear_legs_8,太虛護腿,equip,economy-v2.0,src/assets/economy/master/gear_legs_8.png,src/assets/economy/runtime/gear_legs_8.png,art/workflows/economy-equipment-8-api.json,6
+gear_boots_8,太虛鞋靴,equip,economy-v2.0,src/assets/economy/master/gear_boots_8.png,src/assets/economy/runtime/gear_boots_8.png,art/workflows/economy-equipment-8-api.json,7
+gear_ring_8,太虛戒指,equip,economy-v2.0,src/assets/economy/master/gear_ring_8.png,src/assets/economy/runtime/gear_ring_8.png,art/workflows/economy-equipment-8-api.json,8
+gear_weapon_8,太虛武器,equip,economy-v2.0,src/assets/economy/master/gear_weapon_8.png,src/assets/economy/runtime/gear_weapon_8.png,art/workflows/economy-equipment-8-api.json,9
+gear_belt_8,太虛腰帶,equip,economy-v2.0,src/assets/economy/master/gear_belt_8.png,src/assets/economy/runtime/gear_belt_8.png,art/workflows/economy-equipment-8-api.json,10
+gear_charm_8,太虛護符,equip,economy-v2.0,src/assets/economy/master/gear_charm_8.png,src/assets/economy/runtime/gear_charm_8.png,art/workflows/economy-equipment-8-api.json,11
+gear_head_9,混元頭冠,equip,economy-v2.0,src/assets/economy/master/gear_head_9.png,src/assets/economy/runtime/gear_head_9.png,art/workflows/economy-equipment-9-api.json,0
+gear_earrings_9,混元耳環,equip,economy-v2.0,src/assets/economy/master/gear_earrings_9.png,src/assets/economy/runtime/gear_earrings_9.png,art/workflows/economy-equipment-9-api.json,1
+gear_necklace_9,混元項鍊,equip,economy-v2.0,src/assets/economy/master/gear_necklace_9.png,src/assets/economy/runtime/gear_necklace_9.png,art/workflows/economy-equipment-9-api.json,2
+gear_bracelet_9,混元手環,equip,economy-v2.0,src/assets/economy/master/gear_bracelet_9.png,src/assets/economy/runtime/gear_bracelet_9.png,art/workflows/economy-equipment-9-api.json,3
+gear_inner_9,混元內衣,equip,economy-v2.0,src/assets/economy/master/gear_inner_9.png,src/assets/economy/runtime/gear_inner_9.png,art/workflows/economy-equipment-9-api.json,4
+gear_robe_9,混元外衣,equip,economy-v2.0,src/assets/economy/master/gear_robe_9.png,src/assets/economy/runtime/gear_robe_9.png,art/workflows/economy-equipment-9-api.json,5
+gear_legs_9,混元護腿,equip,economy-v2.0,src/assets/economy/master/gear_legs_9.png,src/assets/economy/runtime/gear_legs_9.png,art/workflows/economy-equipment-9-api.json,6
+gear_boots_9,混元鞋靴,equip,economy-v2.0,src/assets/economy/master/gear_boots_9.png,src/assets/economy/runtime/gear_boots_9.png,art/workflows/economy-equipment-9-api.json,7
+gear_ring_9,混元戒指,equip,economy-v2.0,src/assets/economy/master/gear_ring_9.png,src/assets/economy/runtime/gear_ring_9.png,art/workflows/economy-equipment-9-api.json,8
+gear_weapon_9,混元武器,equip,economy-v2.0,src/assets/economy/master/gear_weapon_9.png,src/assets/economy/runtime/gear_weapon_9.png,art/workflows/economy-equipment-9-api.json,9
+gear_belt_9,混元腰帶,equip,economy-v2.0,src/assets/economy/master/gear_belt_9.png,src/assets/economy/runtime/gear_belt_9.png,art/workflows/economy-equipment-9-api.json,10
+gear_charm_9,混元護符,equip,economy-v2.0,src/assets/economy/master/gear_charm_9.png,src/assets/economy/runtime/gear_charm_9.png,art/workflows/economy-equipment-9-api.json,11
+pet_0,青靈狐,pet,economy-v2.0,src/assets/economy/master/pet_0.png,src/assets/economy/runtime/pet_0.png,art/workflows/economy-pet-api.json,0
+pet_1,赤焰狼,pet,economy-v2.0,src/assets/economy/master/pet_1.png,src/assets/economy/runtime/pet_1.png,art/workflows/economy-pet-api.json,1
+pet_2,玄冰蛇,pet,economy-v2.0,src/assets/economy/master/pet_2.png,src/assets/economy/runtime/pet_2.png,art/workflows/economy-pet-api.json,2
+pet_3,雷羽鷹,pet,economy-v2.0,src/assets/economy/master/pet_3.png,src/assets/economy/runtime/pet_3.png,art/workflows/economy-pet-api.json,3
+pet_4,碧玉鹿,pet,economy-v2.0,src/assets/economy/master/pet_4.png,src/assets/economy/runtime/pet_4.png,art/workflows/economy-pet-api.json,4
+pet_5,九尾靈狐,pet,economy-v2.0,src/assets/economy/master/pet_5.png,src/assets/economy/runtime/pet_5.png,art/workflows/economy-pet-api.json,5
+pet_6,玄甲靈龜,pet,economy-v2.0,src/assets/economy/master/pet_6.png,src/assets/economy/runtime/pet_6.png,art/workflows/economy-pet-api.json,6
+pet_7,紫焰靈雀,pet,economy-v2.0,src/assets/economy/master/pet_7.png,src/assets/economy/runtime/pet_7.png,art/workflows/economy-pet-api.json,7
+pet_8,幽冥虎,pet,economy-v2.0,src/assets/economy/master/pet_8.png,src/assets/economy/runtime/pet_8.png,art/workflows/economy-pet-api.json,8
+pet_9,金翅鵬,pet,economy-v2.0,src/assets/economy/master/pet_9.png,src/assets/economy/runtime/pet_9.png,art/workflows/economy-pet-api.json,9
+pet_10,青龍幼靈,pet,economy-v2.0,src/assets/economy/master/pet_10.png,src/assets/economy/runtime/pet_10.png,art/workflows/economy-pet-api.json,10
+pet_11,火鳳幼靈,pet,economy-v2.0,src/assets/economy/master/pet_11.png,src/assets/economy/runtime/pet_11.png,art/workflows/economy-pet-api.json,11
+treasure_0,青霄飛劍,treasure,economy-v2.0,src/assets/economy/master/treasure_0.png,src/assets/economy/runtime/treasure_0.png,art/workflows/economy-treasure-api.json,0
+treasure_1,玄天寶印,treasure,economy-v2.0,src/assets/economy/master/treasure_1.png,src/assets/economy/runtime/treasure_1.png,art/workflows/economy-treasure-api.json,1
+treasure_2,攝魂鈴,treasure,economy-v2.0,src/assets/economy/master/treasure_2.png,src/assets/economy/runtime/treasure_2.png,art/workflows/economy-treasure-api.json,2
+treasure_3,九龍神火罩,treasure,economy-v2.0,src/assets/economy/master/treasure_3.png,src/assets/economy/runtime/treasure_3.png,art/workflows/economy-treasure-api.json,3
+treasure_4,太乙拂塵,treasure,economy-v2.0,src/assets/economy/master/treasure_4.png,src/assets/economy/runtime/treasure_4.png,art/workflows/economy-treasure-api.json,4
+treasure_5,乾坤鏡,treasure,economy-v2.0,src/assets/economy/master/treasure_5.png,src/assets/economy/runtime/treasure_5.png,art/workflows/economy-treasure-api.json,5
+treasure_6,聚靈寶珠,treasure,economy-v2.0,src/assets/economy/master/treasure_6.png,src/assets/economy/runtime/treasure_6.png,art/workflows/economy-treasure-api.json,6
+treasure_7,玄冰葫蘆,treasure,economy-v2.0,src/assets/economy/master/treasure_7.png,src/assets/economy/runtime/treasure_7.png,art/workflows/economy-treasure-api.json,7
+treasure_8,萬魂幡,treasure,economy-v2.0,src/assets/economy/master/treasure_8.png,src/assets/economy/runtime/treasure_8.png,art/workflows/economy-treasure-api.json,8
+treasure_9,紫電雷珠,treasure,economy-v2.0,src/assets/economy/master/treasure_9.png,src/assets/economy/runtime/treasure_9.png,art/workflows/economy-treasure-api.json,9
+treasure_10,山河社稷圖,treasure,economy-v2.0,src/assets/economy/master/treasure_10.png,src/assets/economy/runtime/treasure_10.png,art/workflows/economy-treasure-api.json,10
+treasure_11,混元金鐘,treasure,economy-v2.0,src/assets/economy/master/treasure_11.png,src/assets/economy/runtime/treasure_11.png,art/workflows/economy-treasure-api.json,11
+gem_fire_1,赤炎石 1階,gem,economy-v2.0,src/assets/economy/master/gem_fire_1.png,src/assets/economy/runtime/gem_fire_1.png,art/workflows/economy-gems-1-api.json,0
+gem_blast_1,爆炎石 1階,gem,economy-v2.0,src/assets/economy/master/gem_blast_1.png,src/assets/economy/runtime/gem_blast_1.png,art/workflows/economy-gems-1-api.json,1
+gem_life_1,回春石 1階,gem,economy-v2.0,src/assets/economy/master/gem_life_1.png,src/assets/economy/runtime/gem_life_1.png,art/workflows/economy-gems-1-api.json,2
+gem_mana_1,聚靈石 1階,gem,economy-v2.0,src/assets/economy/master/gem_mana_1.png,src/assets/economy/runtime/gem_mana_1.png,art/workflows/economy-gems-1-api.json,3
+gem_wisdom_1,悟道石 1階,gem,economy-v2.0,src/assets/economy/master/gem_wisdom_1.png,src/assets/economy/runtime/gem_wisdom_1.png,art/workflows/economy-gems-1-api.json,4
+gem_thunder_1,雷晶石 1階,gem,economy-v2.0,src/assets/economy/master/gem_thunder_1.png,src/assets/economy/runtime/gem_thunder_1.png,art/workflows/economy-gems-1-api.json,5
+gem_wind_1,迅風石 1階,gem,economy-v2.0,src/assets/economy/master/gem_wind_1.png,src/assets/economy/runtime/gem_wind_1.png,art/workflows/economy-gems-1-api.json,6
+gem_armor_1,玄甲石 1階,gem,economy-v2.0,src/assets/economy/master/gem_armor_1.png,src/assets/economy/runtime/gem_armor_1.png,art/workflows/economy-gems-1-api.json,7
+gem_blood_1,噬血石 1階,gem,economy-v2.0,src/assets/economy/master/gem_blood_1.png,src/assets/economy/runtime/gem_blood_1.png,art/workflows/economy-gems-1-api.json,8
+gem_frost_1,寒霜石 1階,gem,economy-v2.0,src/assets/economy/master/gem_frost_1.png,src/assets/economy/runtime/gem_frost_1.png,art/workflows/economy-gems-1-api.json,9
+gem_pierce_1,破軍石 1階,gem,economy-v2.0,src/assets/economy/master/gem_pierce_1.png,src/assets/economy/runtime/gem_pierce_1.png,art/workflows/economy-gems-1-api.json,10
+gem_vital_1,生機石 1階,gem,economy-v2.0,src/assets/economy/master/gem_vital_1.png,src/assets/economy/runtime/gem_vital_1.png,art/workflows/economy-gems-1-api.json,11
+gem_fire_2,赤炎石 2階,gem,economy-v2.0,src/assets/economy/master/gem_fire_2.png,src/assets/economy/runtime/gem_fire_2.png,art/workflows/economy-gems-2-api.json,0
+gem_blast_2,爆炎石 2階,gem,economy-v2.0,src/assets/economy/master/gem_blast_2.png,src/assets/economy/runtime/gem_blast_2.png,art/workflows/economy-gems-2-api.json,1
+gem_life_2,回春石 2階,gem,economy-v2.0,src/assets/economy/master/gem_life_2.png,src/assets/economy/runtime/gem_life_2.png,art/workflows/economy-gems-2-api.json,2
+gem_mana_2,聚靈石 2階,gem,economy-v2.0,src/assets/economy/master/gem_mana_2.png,src/assets/economy/runtime/gem_mana_2.png,art/workflows/economy-gems-2-api.json,3
+gem_wisdom_2,悟道石 2階,gem,economy-v2.0,src/assets/economy/master/gem_wisdom_2.png,src/assets/economy/runtime/gem_wisdom_2.png,art/workflows/economy-gems-2-api.json,4
+gem_thunder_2,雷晶石 2階,gem,economy-v2.0,src/assets/economy/master/gem_thunder_2.png,src/assets/economy/runtime/gem_thunder_2.png,art/workflows/economy-gems-2-api.json,5
+gem_wind_2,迅風石 2階,gem,economy-v2.0,src/assets/economy/master/gem_wind_2.png,src/assets/economy/runtime/gem_wind_2.png,art/workflows/economy-gems-2-api.json,6
+gem_armor_2,玄甲石 2階,gem,economy-v2.0,src/assets/economy/master/gem_armor_2.png,src/assets/economy/runtime/gem_armor_2.png,art/workflows/economy-gems-2-api.json,7
+gem_blood_2,噬血石 2階,gem,economy-v2.0,src/assets/economy/master/gem_blood_2.png,src/assets/economy/runtime/gem_blood_2.png,art/workflows/economy-gems-2-api.json,8
+gem_frost_2,寒霜石 2階,gem,economy-v2.0,src/assets/economy/master/gem_frost_2.png,src/assets/economy/runtime/gem_frost_2.png,art/workflows/economy-gems-2-api.json,9
+gem_pierce_2,破軍石 2階,gem,economy-v2.0,src/assets/economy/master/gem_pierce_2.png,src/assets/economy/runtime/gem_pierce_2.png,art/workflows/economy-gems-2-api.json,10
+gem_vital_2,生機石 2階,gem,economy-v2.0,src/assets/economy/master/gem_vital_2.png,src/assets/economy/runtime/gem_vital_2.png,art/workflows/economy-gems-2-api.json,11
+gem_fire_3,赤炎石 3階,gem,economy-v2.0,src/assets/economy/master/gem_fire_3.png,src/assets/economy/runtime/gem_fire_3.png,art/workflows/economy-gems-3-api.json,0
+gem_blast_3,爆炎石 3階,gem,economy-v2.0,src/assets/economy/master/gem_blast_3.png,src/assets/economy/runtime/gem_blast_3.png,art/workflows/economy-gems-3-api.json,1
+gem_life_3,回春石 3階,gem,economy-v2.0,src/assets/economy/master/gem_life_3.png,src/assets/economy/runtime/gem_life_3.png,art/workflows/economy-gems-3-api.json,2
+gem_mana_3,聚靈石 3階,gem,economy-v2.0,src/assets/economy/master/gem_mana_3.png,src/assets/economy/runtime/gem_mana_3.png,art/workflows/economy-gems-3-api.json,3
+gem_wisdom_3,悟道石 3階,gem,economy-v2.0,src/assets/economy/master/gem_wisdom_3.png,src/assets/economy/runtime/gem_wisdom_3.png,art/workflows/economy-gems-3-api.json,4
+gem_thunder_3,雷晶石 3階,gem,economy-v2.0,src/assets/economy/master/gem_thunder_3.png,src/assets/economy/runtime/gem_thunder_3.png,art/workflows/economy-gems-3-api.json,5
+gem_wind_3,迅風石 3階,gem,economy-v2.0,src/assets/economy/master/gem_wind_3.png,src/assets/economy/runtime/gem_wind_3.png,art/workflows/economy-gems-3-api.json,6
+gem_armor_3,玄甲石 3階,gem,economy-v2.0,src/assets/economy/master/gem_armor_3.png,src/assets/economy/runtime/gem_armor_3.png,art/workflows/economy-gems-3-api.json,7
+gem_blood_3,噬血石 3階,gem,economy-v2.0,src/assets/economy/master/gem_blood_3.png,src/assets/economy/runtime/gem_blood_3.png,art/workflows/economy-gems-3-api.json,8
+gem_frost_3,寒霜石 3階,gem,economy-v2.0,src/assets/economy/master/gem_frost_3.png,src/assets/economy/runtime/gem_frost_3.png,art/workflows/economy-gems-3-api.json,9
+gem_pierce_3,破軍石 3階,gem,economy-v2.0,src/assets/economy/master/gem_pierce_3.png,src/assets/economy/runtime/gem_pierce_3.png,art/workflows/economy-gems-3-api.json,10
+gem_vital_3,生機石 3階,gem,economy-v2.0,src/assets/economy/master/gem_vital_3.png,src/assets/economy/runtime/gem_vital_3.png,art/workflows/economy-gems-3-api.json,11
+gem_fire_4,赤炎石 4階,gem,economy-v2.0,src/assets/economy/master/gem_fire_4.png,src/assets/economy/runtime/gem_fire_4.png,art/workflows/economy-gems-4-api.json,0
+gem_blast_4,爆炎石 4階,gem,economy-v2.0,src/assets/economy/master/gem_blast_4.png,src/assets/economy/runtime/gem_blast_4.png,art/workflows/economy-gems-4-api.json,1
+gem_life_4,回春石 4階,gem,economy-v2.0,src/assets/economy/master/gem_life_4.png,src/assets/economy/runtime/gem_life_4.png,art/workflows/economy-gems-4-api.json,2
+gem_mana_4,聚靈石 4階,gem,economy-v2.0,src/assets/economy/master/gem_mana_4.png,src/assets/economy/runtime/gem_mana_4.png,art/workflows/economy-gems-4-api.json,3
+gem_wisdom_4,悟道石 4階,gem,economy-v2.0,src/assets/economy/master/gem_wisdom_4.png,src/assets/economy/runtime/gem_wisdom_4.png,art/workflows/economy-gems-4-api.json,4
+gem_thunder_4,雷晶石 4階,gem,economy-v2.0,src/assets/economy/master/gem_thunder_4.png,src/assets/economy/runtime/gem_thunder_4.png,art/workflows/economy-gems-4-api.json,5
+gem_wind_4,迅風石 4階,gem,economy-v2.0,src/assets/economy/master/gem_wind_4.png,src/assets/economy/runtime/gem_wind_4.png,art/workflows/economy-gems-4-api.json,6
+gem_armor_4,玄甲石 4階,gem,economy-v2.0,src/assets/economy/master/gem_armor_4.png,src/assets/economy/runtime/gem_armor_4.png,art/workflows/economy-gems-4-api.json,7
+gem_blood_4,噬血石 4階,gem,economy-v2.0,src/assets/economy/master/gem_blood_4.png,src/assets/economy/runtime/gem_blood_4.png,art/workflows/economy-gems-4-api.json,8
+gem_frost_4,寒霜石 4階,gem,economy-v2.0,src/assets/economy/master/gem_frost_4.png,src/assets/economy/runtime/gem_frost_4.png,art/workflows/economy-gems-4-api.json,9
+gem_pierce_4,破軍石 4階,gem,economy-v2.0,src/assets/economy/master/gem_pierce_4.png,src/assets/economy/runtime/gem_pierce_4.png,art/workflows/economy-gems-4-api.json,10
+gem_vital_4,生機石 4階,gem,economy-v2.0,src/assets/economy/master/gem_vital_4.png,src/assets/economy/runtime/gem_vital_4.png,art/workflows/economy-gems-4-api.json,11
+gem_fire_5,赤炎石 5階,gem,economy-v2.0,src/assets/economy/master/gem_fire_5.png,src/assets/economy/runtime/gem_fire_5.png,art/workflows/economy-gems-5-api.json,0
+gem_blast_5,爆炎石 5階,gem,economy-v2.0,src/assets/economy/master/gem_blast_5.png,src/assets/economy/runtime/gem_blast_5.png,art/workflows/economy-gems-5-api.json,1
+gem_life_5,回春石 5階,gem,economy-v2.0,src/assets/economy/master/gem_life_5.png,src/assets/economy/runtime/gem_life_5.png,art/workflows/economy-gems-5-api.json,2
+gem_mana_5,聚靈石 5階,gem,economy-v2.0,src/assets/economy/master/gem_mana_5.png,src/assets/economy/runtime/gem_mana_5.png,art/workflows/economy-gems-5-api.json,3
+gem_wisdom_5,悟道石 5階,gem,economy-v2.0,src/assets/economy/master/gem_wisdom_5.png,src/assets/economy/runtime/gem_wisdom_5.png,art/workflows/economy-gems-5-api.json,4
+gem_thunder_5,雷晶石 5階,gem,economy-v2.0,src/assets/economy/master/gem_thunder_5.png,src/assets/economy/runtime/gem_thunder_5.png,art/workflows/economy-gems-5-api.json,5
+gem_wind_5,迅風石 5階,gem,economy-v2.0,src/assets/economy/master/gem_wind_5.png,src/assets/economy/runtime/gem_wind_5.png,art/workflows/economy-gems-5-api.json,6
+gem_armor_5,玄甲石 5階,gem,economy-v2.0,src/assets/economy/master/gem_armor_5.png,src/assets/economy/runtime/gem_armor_5.png,art/workflows/economy-gems-5-api.json,7
+gem_blood_5,噬血石 5階,gem,economy-v2.0,src/assets/economy/master/gem_blood_5.png,src/assets/economy/runtime/gem_blood_5.png,art/workflows/economy-gems-5-api.json,8
+gem_frost_5,寒霜石 5階,gem,economy-v2.0,src/assets/economy/master/gem_frost_5.png,src/assets/economy/runtime/gem_frost_5.png,art/workflows/economy-gems-5-api.json,9
+gem_pierce_5,破軍石 5階,gem,economy-v2.0,src/assets/economy/master/gem_pierce_5.png,src/assets/economy/runtime/gem_pierce_5.png,art/workflows/economy-gems-5-api.json,10
+gem_vital_5,生機石 5階,gem,economy-v2.0,src/assets/economy/master/gem_vital_5.png,src/assets/economy/runtime/gem_vital_5.png,art/workflows/economy-gems-5-api.json,11
+gem_fire_6,赤炎石 6階,gem,economy-v2.0,src/assets/economy/master/gem_fire_6.png,src/assets/economy/runtime/gem_fire_6.png,art/workflows/economy-gems-6-api.json,0
+gem_blast_6,爆炎石 6階,gem,economy-v2.0,src/assets/economy/master/gem_blast_6.png,src/assets/economy/runtime/gem_blast_6.png,art/workflows/economy-gems-6-api.json,1
+gem_life_6,回春石 6階,gem,economy-v2.0,src/assets/economy/master/gem_life_6.png,src/assets/economy/runtime/gem_life_6.png,art/workflows/economy-gems-6-api.json,2
+gem_mana_6,聚靈石 6階,gem,economy-v2.0,src/assets/economy/master/gem_mana_6.png,src/assets/economy/runtime/gem_mana_6.png,art/workflows/economy-gems-6-api.json,3
+gem_wisdom_6,悟道石 6階,gem,economy-v2.0,src/assets/economy/master/gem_wisdom_6.png,src/assets/economy/runtime/gem_wisdom_6.png,art/workflows/economy-gems-6-api.json,4
+gem_thunder_6,雷晶石 6階,gem,economy-v2.0,src/assets/economy/master/gem_thunder_6.png,src/assets/economy/runtime/gem_thunder_6.png,art/workflows/economy-gems-6-api.json,5
+gem_wind_6,迅風石 6階,gem,economy-v2.0,src/assets/economy/master/gem_wind_6.png,src/assets/economy/runtime/gem_wind_6.png,art/workflows/economy-gems-6-api.json,6
+gem_armor_6,玄甲石 6階,gem,economy-v2.0,src/assets/economy/master/gem_armor_6.png,src/assets/economy/runtime/gem_armor_6.png,art/workflows/economy-gems-6-api.json,7
+gem_blood_6,噬血石 6階,gem,economy-v2.0,src/assets/economy/master/gem_blood_6.png,src/assets/economy/runtime/gem_blood_6.png,art/workflows/economy-gems-6-api.json,8
+gem_frost_6,寒霜石 6階,gem,economy-v2.0,src/assets/economy/master/gem_frost_6.png,src/assets/economy/runtime/gem_frost_6.png,art/workflows/economy-gems-6-api.json,9
+gem_pierce_6,破軍石 6階,gem,economy-v2.0,src/assets/economy/master/gem_pierce_6.png,src/assets/economy/runtime/gem_pierce_6.png,art/workflows/economy-gems-6-api.json,10
+gem_vital_6,生機石 6階,gem,economy-v2.0,src/assets/economy/master/gem_vital_6.png,src/assets/economy/runtime/gem_vital_6.png,art/workflows/economy-gems-6-api.json,11
+feature_shop,feature_shop,feature,economy-v2.0,src/assets/economy/master/feature_shop.png,src/assets/economy/runtime/feature_shop.png,art/workflows/economy-features-api.json,0
+feature_forge,feature_forge,feature,economy-v2.0,src/assets/economy/master/feature_forge.png,src/assets/economy/runtime/feature_forge.png,art/workflows/economy-features-api.json,1
+feature_encounter,feature_encounter,feature,economy-v2.0,src/assets/economy/master/feature_encounter.png,src/assets/economy/runtime/feature_encounter.png,art/workflows/economy-features-api.json,2
+feature_world,feature_world,feature,economy-v2.0,src/assets/economy/master/feature_world.png,src/assets/economy/runtime/feature_world.png,art/workflows/economy-features-api.json,3
+feature_pet,feature_pet,feature,economy-v2.0,src/assets/economy/master/feature_pet.png,src/assets/economy/runtime/feature_pet.png,art/workflows/economy-features-api.json,4
+feature_treasure,feature_treasure,feature,economy-v2.0,src/assets/economy/master/feature_treasure.png,src/assets/economy/runtime/feature_treasure.png,art/workflows/economy-features-api.json,5

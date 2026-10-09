@@ -1,0 +1,84 @@
+{
+  "1": {
+    "class_type": "UNETLoader",
+    "inputs": {
+      "unet_name": "qwen_image_2.1_int8_convrot.safetensors",
+      "weight_dtype": "default"
+    }
+  },
+  "2": {
+    "class_type": "CLIPLoader",
+    "inputs": {
+      "clip_name": "qwen3vl_8b_int8_convrot.safetensors",
+      "type": "qwen_image"
+    }
+  },
+  "3": {
+    "class_type": "VAELoader",
+    "inputs": {
+      "vae_name": "qwen_image_2.1_vae_bf16.safetensors"
+    }
+  },
+  "4": {
+    "class_type": "TextEncodeQwenImage21",
+    "inputs": {
+      "clip": [
+        "2",
+        0
+      ],
+      "prompt": "An EXACT 4 column by 3 row grid of twelve separate Chinese xianxia mobile RPG inventory icons, equal cells. Plain pure white backgrounds, objects centered fully inside their own cells, generous margins, no shadows outside the object, no grid lines, no frames, no letters. Read left to right top to bottom: 1. red pointed flame teardrop crystal, simple small; 2. orange spherical explosive fiery crystal, simple small; 3. green elongated oval healing crystal, simple small; 4. blue faceted diamond mana crystal, simple small; 5. purple tall hexagonal wisdom crystal, simple small; 6. gold yellow jagged lightning crystal, simple small; 7. cyan wing shaped crystal, simple small; 8. white shield shaped crystal, simple small; 9. pink heart shaped crystal, simple small; 10. deep blue snowflake crystal, simple small; 11. yellow spearhead crystal, simple small; 12. emerald green leaf shaped crystal, simple small. Elegant hand painted Chinese ink watercolor fantasy game illustration, detailed gold accents, clean distinct silhouettes, unified style, high contrast suitable for dark UI, no text or watermark. Gem functional colors must stay exactly as listed.",
+      "negative_prompt": "blurry, low quality, watermark, text, deformed, extra limbs",
+      "resolution": 1024
+    }
+  },
+  "5": {
+    "class_type": "KSampler",
+    "inputs": {
+      "model": [
+        "1",
+        0
+      ],
+      "seed": 20261009012,
+      "steps": 24,
+      "cfg": 4,
+      "sampler_name": "euler",
+      "scheduler": "simple",
+      "positive": [
+        "4",
+        0
+      ],
+      "negative": [
+        "4",
+        1
+      ],
+      "latent_image": [
+        "4",
+        2
+      ],
+      "denoise": 1
+    }
+  },
+  "6": {
+    "class_type": "VAEDecode",
+    "inputs": {
+      "samples": [
+        "5",
+        0
+      ],
+      "vae": [
+        "3",
+        0
+      ]
+    }
+  },
+  "7": {
+    "class_type": "SaveImage",
+    "inputs": {
+      "images": [
+        "6",
+        0
+      ],
+      "filename_prefix": "Taixu_economy_v2/gems-1"
+    }
+  }
+}

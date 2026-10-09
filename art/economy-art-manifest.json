@@ -1,0 +1,6000 @@
+{
+  "generator": "ComfyUI Qwen Image 2.1",
+  "version": "economy-v2.0",
+  "assets": [
+    {
+      "asset_id": "gear_head_0",
+      "version": "economy-v2.0",
+      "workflow": "art/workflows/economy-equipment-0-api.json",
+      "atlas": "equipment-0",
+      "cell": 0,
+      "master": {
+        "path": "src/assets/economy/master/gear_head_0.png",
+        "sha256": "58df98fb497e6b7a419cdbefff6e3af2b8c708c8826b5297a01de1646163fd5e",
+        "bytes": 59488,
+        "size": [
+          256,
+          256
+        ],
+        "mode": "RGBA"
+      },
+      "runtime": {
+        "path": "src/assets/economy/runtime/gear_head_0.png",
+        "sha256": "b11a64e06295c71055d633608ba634d3ccbc25fcfd5881a40e593277983da6fb",
+        "bytes": 5794,
+        "size": [
+          64,
+          64
+        ],
+        "mode": "RGBA"
+      }
+    },
+    {
+      "asset_id": "gear_earrings_0",
+      "version": "economy-v2.0",
+      "workflow": "art/workflows/economy-equipment-0-api.json",
+      "atlas": "equipment-0",
+      "cell": 1,
+      "master": {
+        "path": "src/assets/economy/master/gear_earrings_0.png",
+        "sha256": "6d072a1fb06606d2d927d8d7557bdf0aca0a4e6255cd6d5f51e4634c88225ad8",
+        "bytes": 33939,
+        "size": [
+          256,
+          256
+        ],
+        "mode": "RGBA"
+      },
+      "runtime": {
+        "path": "src/assets/economy/runtime/gear_earrings_0.png",
+        "sha256": "f8e3ddeb1ae681c1b19d891cd78ead3bf7124d0d7b34a6fd67999d50e7946a17",
+        "bytes": 4150,
+        "size": [
+          64,
+          64
+        ],
+        "mode": "RGBA"
+      }
+    },
+    {
+      "asset_id": "gear_inner_0",
+      "version": "economy-v2.0",
+      "workflow": "art/workflows/economy-equipment-0-api.json",
+      "atlas": "equipment-0",
+      "cell": 4,
+      "master": {
+        "path": "src/assets/economy/master/gear_inner_0.png",
+        "sha256": "333b8f6b6c2591e04f42e596d0d9b77eb5c0379ba2aa591fe2a4025ead988c30",
+        "bytes": 63014,
+        "size": [
+          256,
+          256
+        ],
+        "mode": "RGBA"
+      },
+      "runtime": {
+        "path": "src/assets/economy/runtime/gear_inner_0.png",
+        "sha256": "dbdbe1f64a46499827846c49f617ac554d69ea389f07092e92f9bba3c477c899",
+        "bytes": 6005,
+        "size": [
+          64,
+          64
+        ],
+        "mode": "RGBA"
+      }
+    },
+    {
+      "asset_id": "gear_robe_0",
+      "version": "economy-v2.0",
+      "workflow": "art/workflows/economy-equipment-0-api.json",
+      "atlas": "equipment-0",
+      "cell": 5,
+      "master": {
+        "path": "src/assets/economy/master/gear_robe_0.png",
+        "sha256": "ce5fd59d800024ffeff7b5cf477d2c8fab6e4d1b2e6205293f9aa3d64673bdff",
+        "bytes": 68120,
+        "size": [
+          256,
+          256
+        ],
+        "mode": "RGBA"
+      },
+      "runtime": {
+        "path": "src/assets/economy/runtime/gear_robe_0.png",
+        "sha256": "ce6816ad60f45f267002703472ecc596d89b6ab8a30b7942a01fd911e86fcf07",
+        "bytes": 6234,
+        "size": [
+          64,
+          64
+        ],
+        "mode": "RGBA"
+      }
+    },
+    {
+      "asset_id": "gear_legs_0",
+      "version": "economy-v2.0",
+      "workflow": "art/workflows/economy-equipment-0-api.json",
+      "atlas": "equipment-0",
+      "cell": 6,
+      "master": {
+        "path": "src/assets/economy/master/gear_legs_0.png",
+        "sha256": "3d18aa38959bed024ea167d294af9d1751a3904edf9be7a90b6c8bc8ac23520a",
+        "bytes": 42814,
+        "size": [
+          256,
+          256
+        ],
+        "mode": "RGBA"
+      },
+      "runtime": {
+        "path": "src/assets/economy/runtime/gear_legs_0.png",
+        "sha256": "b46fa284f3f71f54970c3647cbe997812d54c864ecc16e0de02b8b70e09cae59",
+        "bytes": 4383,
+        "size": [
+          64,
+          64
+        ],
+        "mode": "RGBA"
+      }
+    },
+    {
+      "asset_id": "gear_boots_0",
+      "version": "economy-v2.0",
+      "workflow": "art/workflows/economy-equipment-0-api.json",
+      "atlas": "equipment-0",
+      "cell": 7,
+      "master": {
+        "path": "src/assets/economy/master/gear_boots_0.png",
+        "sha256": "f1898b333c95def160f8dc8d9427f5d53d35836808dc01516b54fc21fcc09006",
+        "bytes": 59753,
+        "size": [
+          256,
+          256
+        ],
+        "mode": "RGBA"
+      },
+      "runtime": {
+        "path": "src/assets/economy/runtime/gear_boots_0.png",
+        "sha256": "0775169f803721a0161688f188ebfdf0407ce6442190b6483459353aa2f47357",
+        "bytes": 5642,
+        "size": [
+          64,
+          64
+        ],
+        "mode": "RGBA"
+      }
+    },
+    {
+      "asset_id": "gear_weapon_0",
+      "version": "economy-v2.0",
+      "workflow": "art/workflows/economy-equipment-0-api.json",
+      "atlas": "equipment-0",
+      "cell": 9,
+      "master": {
+        "path": "src/assets/economy/master/gear_weapon_0.png",
+        "sha256": "14f125c7162f2051a42d4986f2a5a915fc0a41b9a566da7d787549bf1e9d5362",
+        "bytes": 19629,
+        "size": [
+          256,
+          256
+        ],
+        "mode": "RGBA"
+      },
+      "runtime": {
+        "path": "src/assets/economy/runtime/gear_weapon_0.png",
+        "sha256": "9f2140703eb1d2c501d3d1aae54d0310f48022fd0ef45a3871480d9b39fea7d6",
+        "bytes": 2290,
+        "size": [
+          64,
+          64
+        ],
+        "mode": "RGBA"
+      }
+    },
+    {
+      "asset_id": "gear_belt_0",
+      "version": "economy-v2.0",
+      "workflow": "art/workflows/economy-equipment-0-api.json",
+      "atlas": "equipment-0",
+      "cell": 10,
+      "master": {
+        "path": "src/assets/economy/master/gear_belt_0.png",
+        "sha256": "5aac3de52c8d1f9444c39ad67bf5ce2dc514c77f372f537a87aa778bd4b008f5",
+        "bytes": 40306,
+        "size": [
+          256,
+          256
+        ],
+        "mode": "RGBA"
+      },
+      "runtime": {
+        "path": "src/assets/economy/runtime/gear_belt_0.png",
+        "sha256": "a767e902f342b6341054fc926a20d89447deb7debc0e7edd63130f19aa7a40e4",
+        "bytes": 4234,
+        "size": [
+          64,
+          64
+        ],
+        "mode": "RGBA"
+      }
+    },
+    {
+      "asset_id": "gear_charm_0",
+      "version": "economy-v2.0",
+      "workflow": "art/workflows/economy-equipment-0-api.json",
+      "atlas": "equipment-0",
+      "cell": 11,
+      "master": {
+        "path": "src/assets/economy/master/gear_charm_0.png",
+        "sha256": "3e23fd4a916ad5055c45b19ee058e33d2e91e8f6b82206030550bef435081d5b",
+        "bytes": 54280,
+        "size": [
+          256,
+          256
+        ],
+        "mode": "RGBA"
+      },
+      "runtime": {
+        "path": "src/assets/economy/runtime/gear_charm_0.png",
+        "sha256": "e44afbf4b4c98edff4343a2fc20e854ae7a50763fe8dd1e576434f8376e235be",
+        "bytes": 4953,
+        "size": [
+          64,
+          64
+        ],
+        "mode": "RGBA"
+      }
+    },
+    {
+      "asset_id": "gear_head_1",
+      "version": "economy-v2.0",
+      "workflow": "art/workflows/economy-equipment-1-api.json",
+      "atlas": "equipment-1",
+      "cell": 0,
+      "master": {
+        "path": "src/assets/economy/master/gear_head_1.png",
+        "sha256": "5bc2ccb10264e51fb4a8de2818dd414ef460eeee1a619a31189d26e16ea6905b",
+        "bytes": 47168,
+        "size": [
+          256,
+          256
+        ],
+        "mode": "RGBA"
+      },
+      "runtime": {
+        "path": "src/assets/economy/runtime/gear_head_1.png",
+        "sha256": "bfa14006e3f65edb254d481fd0247df3afcb6dc0d2841211484a9bbbe4beafdf",
+        "bytes": 4969,
+        "size": [
+          64,
+          64
+        ],
+        "mode": "RGBA"
+      }
+    },
+    {
+      "asset_id": "gear_earrings_1",
+      "version": "economy-v2.0",
+      "workflow": "art/workflows/economy-equipment-1-api.json",
+      "atlas": "equipment-1",
+      "cell": 1,
+      "master": {
+        "path": "src/assets/economy/master/gear_earrings_1.png",
+        "sha256": "74b822173e3b7eca901a0f47f13e13a80efad15195c138eac495c31c334fb0d1",
+        "bytes": 26038,
+        "size": [
+          256,
+          256
+        ],
+        "mode": "RGBA"
+      },
+      "runtime": {
+        "path": "src/assets/economy/runtime/gear_earrings_1.png",
+        "sha256": "d09d9c1a20f75a881482c6d78464ade884e900376a1736c8bfc142bee12fcc03",
+        "bytes": 3880,
+        "size": [
+          64,
+          64
+        ],
+        "mode": "RGBA"
+      }
+    },
+    {
+      "asset_id": "gear_inner_1",
+      "version": "economy-v2.0",
+      "workflow": "art/workflows/economy-equipment-1-api.json",
+      "atlas": "equipment-1",
+      "cell": 4,
+      "master": {
+        "path": "src/assets/economy/master/gear_inner_1.png",
+        "sha256": "b126e8b137e4a495975eb22725d8f3bbf689bd18e32638aa4faa1e154f379c4c",
+        "bytes": 50027,
+        "size": [
+          256,
+          256
+        ],
+        "mode": "RGBA"
+      },
+      "runtime": {
+        "path": "src/assets/economy/runtime/gear_inner_1.png",
+        "sha256": "9ec9340a5f1ee5329fd463d5de3d0e7c1f773aae3f0cf676a7d28dd16f88afa7",
+        "bytes": 4895,
+        "size": [
+          64,
+          64
+        ],
+        "mode": "RGBA"
+      }
+    },
+    {
+      "asset_id": "gear_robe_1",
+      "version": "economy-v2.0",
+      "workflow": "art/workflows/economy-equipment-1-api.json",
+      "atlas": "equipment-1",
+      "cell": 5,
+      "master": {
+        "path": "src/assets/economy/master/gear_robe_1.png",
+        "sha256": "a4e8a78a166ba4ae5960c8cb0844b1b28e8b562b52dca9e56c7af79180ab5e7c",
+        "bytes": 59439,
+        "size": [
+          256,
+          256
+        ],
+        "mode": "RGBA"
+      },
+      "runtime": {
+        "path": "src/assets/economy/runtime/gear_robe_1.png",
+        "sha256": "fe7bed2fc63bf5b8a88fc76486f9f071cb85aae876da4ce6b2a9c147a9bfe011",
+        "bytes": 5461,
+        "size": [
+          64,
+          64
+        ],
+        "mode": "RGBA"
+      }
+    },
+    {
+      "asset_id": "gear_legs_1",
+      "version": "economy-v2.0",
+      "workflow": "art/workflows/economy-equipment-1-api.json",
+      "atlas": "equipment-1",
+      "cell": 6,
+      "master": {
+        "path": "src/assets/economy/master/gear_legs_1.png",
+        "sha256": "a5fd75a00e0b685d5fb9133709080af1ca71a40951d93a5e722e15530a5e5c0d",
+        "bytes": 39351,
+        "size": [
+          256,
+          256
+        ],
+        "mode": "RGBA"
+      },
+      "runtime": {
+        "path": "src/assets/economy/runtime/gear_legs_1.png",
+        "sha256": "c55c57ec539e4a4b80ccf04e301b695d261dbedf932dcd4ce81aee613e692b14",
+        "bytes": 4145,
+        "size": [
+          64,
+          64
+        ],
+        "mode": "RGBA"
+      }
+    },
+    {
+      "asset_id": "gear_boots_1",
+      "version": "economy-v2.0",
+      "workflow": "art/workflows/economy-equipment-1-api.json",
+      "atlas": "equipment-1",
+      "cell": 7,
+      "master": {
+        "path": "src/assets/economy/master/gear_boots_1.png",
+        "sha256": "08a604d0b4ec651d8f1676f105ca7fa9548a1cbed4223d79cb6b7bae568b0890",
+        "bytes": 48203,
+        "size": [
+          256,
+          256
+        ],
+        "mode": "RGBA"
+      },
+      "runtime": {
+        "path": "src/assets/economy/runtime/gear_boots_1.png",
+        "sha256": "96b73a3ffb52ece9aaed2f16509f6da5b0284a9c3a82feda1238b604594d3316",
+        "bytes": 5327,
+        "size": [
+          64,
+          64
+        ],
+        "mode": "RGBA"
+      }
+    },
+    {
+      "asset_id": "gear_weapon_1",
+      "version": "economy-v2.0",
+      "workflow": "art/workflows/economy-equipment-1-api.json",
+      "atlas": "equipment-1",
+      "cell": 9,
+      "master": {
+        "path": "src/assets/economy/master/gear_weapon_1.png",
+        "sha256": "0c134f2dea31eabcd8289528e597bb7656e4b52c399cd5a8c144cf1992114914",
+        "bytes": 20342,
+        "size": [
+          256,
+          256
+        ],
+        "mode": "RGBA"
+      },
+      "runtime": {
+        "path": "src/assets/economy/runtime/gear_weapon_1.png",
+        "sha256": "be076e84399792e61e556826af1e46701619ea41c315e9321a74afe9c5e4a02e",
+        "bytes": 2353,
+        "size": [
+          64,
+          64
+        ],
+        "mode": "RGBA"
+      }
+    },
+    {
+      "asset_id": "gear_belt_1",
+      "version": "economy-v2.0",
+      "workflow": "art/workflows/economy-equipment-1-api.json",
+      "atlas": "equipment-1",
+      "cell": 10,
+      "master": {
+        "path": "src/assets/economy/master/gear_belt_1.png",
+        "sha256": "68003adf01d21ada1962907c0f4c70596cffb8ad23bbb8abe4c31dc18ee270c6",
+        "bytes": 29261,
+        "size": [
+          256,
+          256
+        ],
+        "mode": "RGBA"
+      },
+      "runtime": {
+        "path": "src/assets/economy/runtime/gear_belt_1.png",
+        "sha256": "0629e8eeec7bc6e40ba9befa0813692a3d3eab16784afe04192c998c3c5507af",
+        "bytes": 3066,
+        "size": [
+          64,
+          64
+        ],
+        "mode": "RGBA"
+      }
+    },
+    {
+      "asset_id": "gear_charm_1",
+      "version": "economy-v2.0",
+      "workflow": "art/workflows/economy-equipment-1-api.json",
+      "atlas": "equipment-1",
+      "cell": 11,
+      "master": {
+        "path": "src/assets/economy/master/gear_charm_1.png",
+        "sha256": "4b17038c69195a0f6c445fe60da0bcc95feb43cc699d835f0ef02d051dbfc8df",
+        "bytes": 46373,
+        "size": [
+          256,
+          256
+        ],
+        "mode": "RGBA"
+      },
+      "runtime": {
+        "path": "src/assets/economy/runtime/gear_charm_1.png",
+        "sha256": "c0b8a03b92cd850ae00cd419e1d1c9696d6aa9aa8b2fb9e3d6e5cbd935ff583e",
+        "bytes": 4293,
+        "size": [
+          64,
+          64
+        ],
+        "mode": "RGBA"
+      }
+    },
+    {
+      "asset_id": "gear_head_2",
+      "version": "economy-v2.0",
+      "workflow": "art/workflows/economy-equipment-2-api.json",
+      "atlas": "equipment-2",
+      "cell": 0,
+      "master": {
+        "path": "src/assets/economy/master/gear_head_2.png",
+        "sha256": "baf3355fbdd5e2c160ece241df018f21333ba9d7ee8e92e80fa76e842eb90081",
+        "bytes": 49394,
+        "size": [
+          256,
+          256
+        ],
+        "mode": "RGBA"
+      },
+      "runtime": {
+        "path": "src/assets/economy/runtime/gear_head_2.png",
+        "sha256": "75a90f703c94958831a9b368dc97a1a127f25ea4a4f433d433cbcb120298bc59",
+        "bytes": 5262,
+        "size": [
+          64,
+          64
+        ],
+        "mode": "RGBA"
+      }
+    },
+    {
+      "asset_id": "gear_earrings_2",
+      "version": "economy-v2.0",
+      "workflow": "art/workflows/economy-equipment-2-api.json",
+      "atlas": "equipment-2",
+      "cell": 1,
+      "master": {
+        "path": "src/assets/economy/master/gear_earrings_2.png",
+        "sha256": "9ed31b0021d797b14db25f108dfb4a17a1d2c8c81488ac532f8b05d1e96dd99f",
+        "bytes": 24663,
+        "size": [
+          256,
+          256
+        ],
+        "mode": "RGBA"
+      },
+      "runtime": {
+        "path": "src/assets/economy/runtime/gear_earrings_2.png",
+        "sha256": "80f5638e10bf5cf2c49342e03bf081bb338ff7547940f8f073c1224ed3dd2194",
+        "bytes": 3733,
+        "size": [
+          64,
+          64
+        ],
+        "mode": "RGBA"
+      }
+    },
+    {
+      "asset_id": "gear_inner_2",
+      "version": "economy-v2.0",
+      "workflow": "art/workflows/economy-equipment-2-api.json",
+      "atlas": "equipment-2",
+      "cell": 4,
+      "master": {
+        "path": "src/assets/economy/master/gear_inner_2.png",
+        "sha256": "990c08247d26c440709a07c745e20ee9363bb0fe778bc7b50ab8089479dc4b00",
+        "bytes": 53275,
+        "size": [
+          256,
+          256
+        ],
+        "mode": "RGBA"
+      },
+      "runtime": {
+        "path": "src/assets/economy/runtime/gear_inner_2.png",
+        "sha256": "7d87d0519aa89c5e519057c246c55c0df71a6c19bcd5fb906202752e556b4996",
+        "bytes": 5384,
+        "size": [
+          64,
+          64
+        ],
+        "mode": "RGBA"
+      }
+    },
+    {
+      "asset_id": "gear_robe_2",
+      "version": "economy-v2.0",
+      "workflow": "art/workflows/economy-equipment-2-api.json",
+      "atlas": "equipment-2",
+      "cell": 5,
+      "master": {
+        "path": "src/assets/economy/master/gear_robe_2.png",
+        "sha256": "667a5274eafbebba84e2c8781c3c8ba3f6641ed30b0b4b21ed1907ff9d01f16e",
+        "bytes": 60093,
+        "size": [
+          256,
+          256
+        ],
+        "mode": "RGBA"
+      },
+      "runtime": {
+        "path": "src/assets/economy/runtime/gear_robe_2.png",
+        "sha256": "254d51bdf98145cc910b4fefc794c3862044d4fa708e13c4dcfc64fd734674fc",
+        "bytes": 5502,
+        "size": [
+          64,
+          64
+        ],
+        "mode": "RGBA"
+      }
+    },
+    {
+      "asset_id": "gear_legs_2",
+      "version": "economy-v2.0",
+      "workflow": "art/workflows/economy-equipment-2-api.json",
+      "atlas": "equipment-2",
+      "cell": 6,
+      "master": {
+        "path": "src/assets/economy/master/gear_legs_2.png",
+        "sha256": "ce5100e6c70a71bb801c74cbd81412ca5df6710fdafd67112ebdfa6364f10d90",
+        "bytes": 40369,
+        "size": [
+          256,
+          256
+        ],
+        "mode": "RGBA"
+      },
+      "runtime": {
+        "path": "src/assets/economy/runtime/gear_legs_2.png",
+        "sha256": "2273cc6a0a910a9a1089237be19e9b787140bf7b695ffc79c7aaa29b86d993a4",
+        "bytes": 4168,
+        "size": [
+          64,
+          64
+        ],
+        "mode": "RGBA"
+      }
+    },
+    {
+      "asset_id": "gear_boots_2",
+      "version": "economy-v2.0",
+      "workflow": "art/workflows/economy-equipment-2-api.json",
+      "atlas": "equipment-2",
+      "cell": 7,
+      "master": {
+        "path": "src/assets/economy/master/gear_boots_2.png",
+        "sha256": "f89ed0aae744d72a79a3672378b5d4c19faafd12b846b40d937052ffaaaefb13",
+        "bytes": 50905,
+        "size": [
+          256,
+          256
+        ],
+        "mode": "RGBA"
+      },
+      "runtime": {
+        "path": "src/assets/economy/runtime/gear_boots_2.png",
+        "sha256": "1f4fd42afbab5e6d7feb8744c125ba21eea84a8daf23deeff884dc800755c489",
+        "bytes": 5524,
+        "size": [
+          64,
+          64
+        ],
+        "mode": "RGBA"
+      }
+    },
+    {
+      "asset_id": "gear_weapon_2",
+      "version": "economy-v2.0",
+      "workflow": "art/workflows/economy-equipment-2-api.json",
+      "atlas": "equipment-2",
+      "cell": 9,
+      "master": {
+        "path": "src/assets/economy/master/gear_weapon_2.png",
+        "sha256": "6f2a8b81e83cc578509a3be0dca0b1677f30f7f7d6b3dcebb46a9c22e75683ee",
+        "bytes": 20603,
+        "size": [
+          256,
+          256
+        ],
+        "mode": "RGBA"
+      },
+      "runtime": {
+        "path": "src/assets/economy/runtime/gear_weapon_2.png",
+        "sha256": "d043eab23af6dbc6a18d902122606fc8f95f8b2a776044d0ce858bf37d1185f0",
+        "bytes": 2355,
+        "size": [
+          64,
+          64
+        ],
+        "mode": "RGBA"
+      }
+    },
+    {
+      "asset_id": "gear_belt_2",
+      "version": "economy-v2.0",
+      "workflow": "art/workflows/economy-equipment-2-api.json",
+      "atlas": "equipment-2",
+      "cell": 10,
+      "master": {
+        "path": "src/assets/economy/master/gear_belt_2.png",
+        "sha256": "ef32a2d9467070ac866024176ec76c4d6d299cc64502170164cf0c225f27b5a5",
+        "bytes": 29277,
+        "size": [
+          256,
+          256
+        ],
+        "mode": "RGBA"
+      },
+      "runtime": {
+        "path": "src/assets/economy/runtime/gear_belt_2.png",
+        "sha256": "83c45bc64f27f7a0fd7e446d2e0ede15c759b7a40839527f24da614a0bfd24a4",
+        "bytes": 3156,
+        "size": [
+          64,
+          64
+        ],
+        "mode": "RGBA"
+      }
+    },
+    {
+      "asset_id": "gear_charm_2",
+      "version": "economy-v2.0",
+      "workflow": "art/workflows/economy-equipment-2-api.json",
+      "atlas": "equipment-2",
+      "cell": 11,
+      "master": {
+        "path": "src/assets/economy/master/gear_charm_2.png",
+        "sha256": "2df2ec30dc732ffc2aa7cb115798f739066fd4678748d883004a9b11c37efc70",
+        "bytes": 51543,
+        "size": [
+          256,
+          256
+        ],
+        "mode": "RGBA"
+      },
+      "runtime": {
+        "path": "src/assets/economy/runtime/gear_charm_2.png",
+        "sha256": "f27f0d18199f04a02329f7a0a45c5475097eaa384aa462810126d83936b5d9bb",
+        "bytes": 4833,
+        "size": [
+          64,
+          64
+        ],
+        "mode": "RGBA"
+      }
+    },
+    {
+      "asset_id": "gear_head_3",
+      "version": "economy-v2.0",
+      "workflow": "art/workflows/economy-equipment-3-api.json",
+      "atlas": "equipment-3",
+      "cell": 0,
+      "master": {
+        "path": "src/assets/economy/master/gear_head_3.png",
+        "sha256": "8e1c5c9418909bae0c411ba53b6c6d84a4321a80e56fbaa12334cbefe435664d",
+        "bytes": 55519,
+        "size": [
+          256,
+          256
+        ],
+        "mode": "RGBA"
+      },
+      "runtime": {
+        "path": "src/assets/economy/runtime/gear_head_3.png",
+        "sha256": "91db4e7270b6ab16a47e9998d4fabf45e659869d4cc531fe5ad16198a9187be2",
+        "bytes": 5575,
+        "size": [
+          64,
+          64
+        ],
+        "mode": "RGBA"
+      }
+    },
+    {
+      "asset_id": "gear_earrings_3",
+      "version": "economy-v2.0",
+      "workflow": "art/workflows/economy-equipment-3-api.json",
+      "atlas": "equipment-3",
+      "cell": 1,
+      "master": {
+        "path": "src/assets/economy/master/gear_earrings_3.png",
+        "sha256": "e3e4c85b64e1eacbddea740e349035b5beef6b835bdc84065e88c3286c3f5dde",
+        "bytes": 32466,
+        "size": [
+          256,
+          256
+        ],
+        "mode": "RGBA"
+      },
+      "runtime": {
+        "path": "src/assets/economy/runtime/gear_earrings_3.png",
+        "sha256": "5de0e65f913da84fcc43b9291fe098a1c25b4f5d0cf2e55e594f8498564a173d",
+        "bytes": 4411,
+        "size": [
+          64,
+          64
+        ],
+        "mode": "RGBA"
+      }
+    },
+    {
+      "asset_id": "gear_inner_3",
+      "version": "economy-v2.0",
+      "workflow": "art/workflows/economy-equipment-3-api.json",
+      "atlas": "equipment-3",
+      "cell": 4,
+      "master": {
+        "path": "src/assets/economy/master/gear_inner_3.png",
+        "sha256": "d6280398940cd6b02d272758a9db80c70f9950f06e8a8712bced8856913c6f83",
+        "bytes": 58758,
+        "size": [
+          256,
+          256
+        ],
+        "mode": "RGBA"
+      },
+      "runtime": {
+        "path": "src/assets/economy/runtime/gear_inner_3.png",
+        "sha256": "f0aa660eaadde004823b56098fe6cbb91c5973970c63b833cbb6bad169b04339",
+        "bytes": 5570,
+        "size": [
+          64,
+          64
+        ],
+        "mode": "RGBA"
+      }
+    },
+    {
+      "asset_id": "gear_robe_3",
+      "version": "economy-v2.0",
+      "workflow": "art/workflows/economy-equipment-3-api.json",
+      "atlas": "equipment-3",
+      "cell": 5,
+      "master": {
+        "path": "src/assets/economy/master/gear_robe_3.png",
+        "sha256": "b5019988a66fd59ebac3e7a1eedb20a75120e47b1e260cb861f8404a95ae85fd",
+        "bytes": 59686,
+        "size": [
+          256,
+          256
+        ],
+        "mode": "RGBA"
+      },
+      "runtime": {
+        "path": "src/assets/economy/runtime/gear_robe_3.png",
+        "sha256": "83a97a398734564eec297f8cd397ee95f6faf4e0231e685ef8455ef2bbe98d7d",
+        "bytes": 5593,
+        "size": [
+          64,
+          64
+        ],
+        "mode": "RGBA"
+      }
+    },
+    {
+      "asset_id": "gear_legs_3",
+      "version": "economy-v2.0",
+      "workflow": "art/workflows/economy-equipment-3-api.json",
+      "atlas": "equipment-3",
+      "cell": 6,
+      "master": {
+        "path": "src/assets/economy/master/gear_legs_3.png",
+        "sha256": "fc235d279b4bda400852407d36e91ff173bb5e065898ef306a05e1a57700cde1",
+        "bytes": 40154,
+        "size": [
+          256,
+          256
+        ],
+        "mode": "RGBA"
+      },
+      "runtime": {
+        "path": "src/assets/economy/runtime/gear_legs_3.png",
+        "sha256": "3e14d8f2fca287216a2b1d9fa0436c06488e9fe85e1c4aa51c6e881d12cfe4ac",
+        "bytes": 4150,
+        "size": [
+          64,
+          64
+        ],
+        "mode": "RGBA"
+      }
+    },
+    {
+      "asset_id": "gear_boots_3",
+      "version": "economy-v2.0",
+      "workflow": "art/workflows/economy-equipment-3-api.json",
+      "atlas": "equipment-3",
+      "cell": 7,
+      "master": {
+        "path": "src/assets/economy/master/gear_boots_3.png",
+        "sha256": "f7242f176444ffacb5b32fadc4b88773908396d8384d2bc3b309767d3d3b955c",
+        "bytes": 55038,
+        "size": [
+          256,
+          256
+        ],
+        "mode": "RGBA"
+      },
+      "runtime": {
+        "path": "src/assets/economy/runtime/gear_boots_3.png",
+        "sha256": "056cc8e9c812be568a20a23402f7a7b74293290548fc6529c83172b569372197",
+        "bytes": 6104,
+        "size": [
+          64,
+          64
+        ],
+        "mode": "RGBA"
+      }
+    },
+    {
+      "asset_id": "gear_weapon_3",
+      "version": "economy-v2.0",
+      "workflow": "art/workflows/economy-equipment-3-api.json",
+      "atlas": "equipment-3",
+      "cell": 9,
+      "master": {
+        "path": "src/assets/economy/master/gear_weapon_3.png",
+        "sha256": "8af222aed51a30326ee2324a9113743319b5fa0e4bc9bd05a7f23b5b19770da6",
+        "bytes": 20918,
+        "size": [
+          256,
+          256
+        ],
+        "mode": "RGBA"
+      },
+      "runtime": {
+        "path": "src/assets/economy/runtime/gear_weapon_3.png",
+        "sha256": "bb643015d8acc0ef053023e57f58389204daec9dca71a0cd83c54f76f3ff6065",
+        "bytes": 2344,
+        "size": [
+          64,
+          64
+        ],
+        "mode": "RGBA"
+      }
+    },
+    {
+      "asset_id": "gear_belt_3",
+      "version": "economy-v2.0",
+      "workflow": "art/workflows/economy-equipment-3-api.json",
+      "atlas": "equipment-3",
+      "cell": 10,
+      "master": {
+        "path": "src/assets/economy/master/gear_belt_3.png",
+        "sha256": "42e3b8106782b3af04d26a196338d171c93e6dd2772221fa1fbd9bc1ca2bccab",
+        "bytes": 40163,
+        "size": [
+          256,
+          256
+        ],
+        "mode": "RGBA"
+      },
+      "runtime": {
+        "path": "src/assets/economy/runtime/gear_belt_3.png",
+        "sha256": "fd5d0fa43e563db92a0ed25f0dc78866f3afd3eef86c529af0c4c61f3efe3d4e",
+        "bytes": 4270,
+        "size": [
+          64,
+          64
+        ],
+        "mode": "RGBA"
+      }
+    },
+    {
+      "asset_id": "gear_charm_3",
+      "version": "economy-v2.0",
+      "workflow": "art/workflows/economy-equipment-3-api.json",
+      "atlas": "equipment-3",
+      "cell": 11,
+      "master": {
+        "path": "src/assets/economy/master/gear_charm_3.png",
+        "sha256": "54f3f7efbf35a35f538b1ffb8ed77a1d03e7d10e6e6f1123a4179c8f41390b69",
+        "bytes": 47750,
+        "size": [
+          256,
+          256
+        ],
+        "mode": "RGBA"
+      },
+      "runtime": {
+        "path": "src/assets/economy/runtime/gear_charm_3.png",
+        "sha256": "91dfb199854b2058ceeb6a34e4278e5c00afcfe8d848cda799ea2d59853ce74f",
+        "bytes": 4469,
+        "size": [
+          64,
+          64
+        ],
+        "mode": "RGBA"
+      }
+    },
+    {
+      "asset_id": "gear_head_4",
+      "version": "economy-v2.0",
+      "workflow": "art/workflows/economy-equipment-4-api.json",
+      "atlas": "equipment-4",
+      "cell": 0,
+      "master": {
+        "path": "src/assets/economy/master/gear_head_4.png",
+        "sha256": "33a8393623df77c039827fc7f509669a74eae65f66837e9524059b420e43564c",
+        "bytes": 47984,
+        "size": [
+          256,
+          256
+        ],
+        "mode": "RGBA"
+      },
+      "runtime": {
+        "path": "src/assets/economy/runtime/gear_head_4.png",
+        "sha256": "2602698a6dd0aff85cf55d930306a4fc4a5e25ba6a6509fcf58d788b3d8d53aa",
+        "bytes": 5062,
+        "size": [
+          64,
+          64
+        ],
+        "mode": "RGBA"
+      }
+    },
+    {
+      "asset_id": "gear_earrings_4",
+      "version": "economy-v2.0",
+      "workflow": "art/workflows/economy-equipment-4-api.json",
+      "atlas": "equipment-4",
+      "cell": 1,
+      "master": {
+        "path": "src/assets/economy/master/gear_earrings_4.png",
+        "sha256": "17f83b795bc803228ed9abc829fa8760e2456ff6eb7b9573de4a0b63b4e0f571",
+        "bytes": 31764,
+        "size": [
+          256,
+          256
+        ],
+        "mode": "RGBA"
+      },
+      "runtime": {
+        "path": "src/assets/economy/runtime/gear_earrings_4.png",
+        "sha256": "182e4ed73c21d118061c3be61c49970968ba294a5caafc00daf65226105cd048",
+        "bytes": 4258,
+        "size": [
+          64,
+          64
+        ],
+        "mode": "RGBA"
+      }
+    },
+    {
+      "asset_id": "gear_inner_4",
+      "version": "economy-v2.0",
+      "workflow": "art/workflows/economy-equipment-4-api.json",
+      "atlas": "equipment-4",
+      "cell": 4,
+      "master": {
+        "path": "src/assets/economy/master/gear_inner_4.png",
+        "sha256": "c9cbca01d32193d4acd78912eb360dd160e90d7980100c7c79aa88f2be783fa9",
+        "bytes": 57458,
+        "size": [
+          256,
+          256
+        ],
+        "mode": "RGBA"
+      },
+      "runtime": {
+        "path": "src/assets/economy/runtime/gear_inner_4.png",
+        "sha256": "37a1f87b62099943cb5e4eece8dfc387f571587a3485cb6a6db8e7fda4d84a09",
+        "bytes": 5496,
+        "size": [
+          64,
+          64
+        ],
+        "mode": "RGBA"
+      }
+    },
+    {
+      "asset_id": "gear_robe_4",
+      "version": "economy-v2.0",
+      "workflow": "art/workflows/economy-equipment-4-api.json",
+      "atlas": "equipment-4",
+      "cell": 5,
+      "master": {
+        "path": "src/assets/economy/master/gear_robe_4.png",
+        "sha256": "4efd80121117bd4d380dc4151010491704a2e42720253ef466d315692b8420ce",
+        "bytes": 61179,
+        "size": [
+          256,
+          256
+        ],
+        "mode": "RGBA"
+      },
+      "runtime": {
+        "path": "src/assets/economy/runtime/gear_robe_4.png",
+        "sha256": "8449fd9373d1816a977edfb94ed4b5716cb60cce3f385dfe02592a03908110bc",
+        "bytes": 5680,
+        "size": [
+          64,
+          64
+        ],
+        "mode": "RGBA"
+      }
+    },
+    {
+      "asset_id": "gear_legs_4",
+      "version": "economy-v2.0",
+      "workflow": "art/workflows/economy-equipment-4-api.json",
+      "atlas": "equipment-4",
+      "cell": 6,
+      "master": {
+        "path": "src/assets/economy/master/gear_legs_4.png",
+        "sha256": "2b610ce046de85ffa8da1696dba2c30c16f51b704e3c7d8a27b6cab6aed8005c",
+        "bytes": 38426,
+        "size": [
+          256,
+          256
+        ],
+        "mode": "RGBA"
+      },
+      "runtime": {
+        "path": "src/assets/economy/runtime/gear_legs_4.png",
+        "sha256": "94cb2809bf3fc0531b0c1b9eae5cbd7cb268b0ec05964eec3448fb7b150564a9",
+        "bytes": 4063,
+        "size": [
+          64,
+          64
+        ],
+        "mode": "RGBA"
+      }
+    },
+    {
+      "asset_id": "gear_boots_4",
+      "version": "economy-v2.0",
+      "workflow": "art/workflows/economy-equipment-4-api.json",
+      "atlas": "equipment-4",
+      "cell": 7,
+      "master": {
+        "path": "src/assets/economy/master/gear_boots_4.png",
+        "sha256": "d5984852c5e97683490b3e35fd5eaa0243b128ac4c8ce7d4f64f13a0f74f23a7",
+        "bytes": 51266,
+        "size": [
+          256,
+          256
+        ],
+        "mode": "RGBA"
+      },
+      "runtime": {
+        "path": "src/assets/economy/runtime/gear_boots_4.png",
+        "sha256": "ebd12f7dfe20be40da2d7e362ca2465a4c914d5b68501de66fe72c954151207d",
+        "bytes": 5804,
+        "size": [
+          64,
+          64
+        ],
+        "mode": "RGBA"
+      }
+    },
+    {
+      "asset_id": "gear_weapon_4",
+      "version": "economy-v2.0",
+      "workflow": "art/workflows/economy-equipment-4-api.json",
+      "atlas": "equipment-4",
+      "cell": 9,
+      "master": {
+        "path": "src/assets/economy/master/gear_weapon_4.png",
+        "sha256": "0fb24cbadf5525152569c7748db3e6de8a9626ce8a106b8091010e9c2db28da3",
+        "bytes": 21946,
+        "size": [
+          256,
+          256
+        ],
+        "mode": "RGBA"
+      },
+      "runtime": {
+        "path": "src/assets/economy/runtime/gear_weapon_4.png",
+        "sha256": "5be784f8c73db630e6516a846cffc4adc3356fc90aaef5968375bb79092ab010",
+        "bytes": 2406,
+        "size": [
+          64,
+          64
+        ],
+        "mode": "RGBA"
+      }
+    },
+    {
+      "asset_id": "gear_belt_4",
+      "version": "economy-v2.0",
+      "workflow": "art/workflows/economy-equipment-4-api.json",
+      "atlas": "equipment-4",
+      "cell": 10,
+      "master": {
+        "path": "src/assets/economy/master/gear_belt_4.png",
+        "sha256": "175650a6306472a6d713658745d9271f18a1e7c6c7216a420ceb95ae072236ad",
+        "bytes": 35923,
+        "size": [
+          256,
+          256
+        ],
+        "mode": "RGBA"
+      },
+      "runtime": {
+        "path": "src/assets/economy/runtime/gear_belt_4.png",
+        "sha256": "2cbc46833e6d6ce90a93507bc15e83f23f1562b3e374e432d67a159706e067ed",
+        "bytes": 3532,
+        "size": [
+          64,
+          64
+        ],
+        "mode": "RGBA"
+      }
+    },
+    {
+      "asset_id": "gear_charm_4",
+      "version": "economy-v2.0",
+      "workflow": "art/workflows/economy-equipment-4-api.json",
+      "atlas": "equipment-4",
+      "cell": 11,
+      "master": {
+        "path": "src/assets/economy/master/gear_charm_4.png",
+        "sha256": "3788ec453a8b46ab97bc9b6b39d00019c0192ef3f740e72d9ce981311a473024",
+        "bytes": 47271,
+        "size": [
+          256,
+          256
+        ],
+        "mode": "RGBA"
+      },
+      "runtime": {
+        "path": "src/assets/economy/runtime/gear_charm_4.png",
+        "sha256": "b9ed05215ffc26ca9868b42fbdb4fb6fddb3f7a3d150fdafc79a329be2db2cb9",
+        "bytes": 4484,
+        "size": [
+          64,
+          64
+        ],
+        "mode": "RGBA"
+      }
+    },
+    {
+      "asset_id": "gear_head_5",
+      "version": "economy-v2.0",
+      "workflow": "art/workflows/economy-equipment-5-api.json",
+      "atlas": "equipment-5",
+      "cell": 0,
+      "master": {
+        "path": "src/assets/economy/master/gear_head_5.png",
+        "sha256": "87d24becff9a8dbc33534bee015395561de38c2ff9ea559aa715ef4ff281ae37",
+        "bytes": 61930,
+        "size": [
+          256,
+          256
+        ],
+        "mode": "RGBA"
+      },
+      "runtime": {
+        "path": "src/assets/economy/runtime/gear_head_5.png",
+        "sha256": "a77d9831ac65c2a7592faa9b326993e60f5c8f7413b9b8f0f3e2ffc6a9733469",
+        "bytes": 6202,
+        "size": [
+          64,
+          64
+        ],
+        "mode": "RGBA"
+      }
+    },
+    {
+      "asset_id": "gear_earrings_5",
+      "version": "economy-v2.0",
+      "workflow": "art/workflows/economy-equipment-5-api.json",
+      "atlas": "equipment-5",
+      "cell": 1,
+      "master": {
+        "path": "src/assets/economy/master/gear_earrings_5.png",
+        "sha256": "f83575d7928b2a0de62f297033e20191d9c56afca4c46067ae8369e6c57b3731",
+        "bytes": 41149,
+        "size": [
+          256,
+          256
+        ],
+        "mode": "RGBA"
+      },
+      "runtime": {
+        "path": "src/assets/economy/runtime/gear_earrings_5.png",
+        "sha256": "6dbe71404bfe81c25adf299ae36024846a375f0fc68f1386f1b029a1126fdfae",
+        "bytes": 4717,
+        "size": [
+          64,
+          64
+        ],
+        "mode": "RGBA"
+      }
+    },
+    {
+      "asset_id": "gear_inner_5",
+      "version": "economy-v2.0",
+      "workflow": "art/workflows/economy-equipment-5-api.json",
+      "atlas": "equipment-5",
+      "cell": 4,
+      "master": {
+        "path": "src/assets/economy/master/gear_inner_5.png",
+        "sha256": "f852d10642b8fe608b0861fe5f9abd9731db1b7a7f913f3810a6f2cfbdd69f57",
+        "bytes": 59937,
+        "size": [
+          256,
+          256
+        ],
+        "mode": "RGBA"
+      },
+      "runtime": {
+        "path": "src/assets/economy/runtime/gear_inner_5.png",
+        "sha256": "0f0db6c2feec3213042c1573989e1a369333cd8a49ecd39fd7de64f99f8e38dd",
+        "bytes": 5734,
+        "size": [
+          64,
+          64
+        ],
+        "mode": "RGBA"
+      }
+    },
+    {
+      "asset_id": "gear_robe_5",
+      "version": "economy-v2.0",
+      "workflow": "art/workflows/economy-equipment-5-api.json",
+      "atlas": "equipment-5",
+      "cell": 5,
+      "master": {
+        "path": "src/assets/economy/master/gear_robe_5.png",
+        "sha256": "38d0d92240b3423e231d9c4f29ffc03ea4090fcd33c09748400408bc2167f566",
+        "bytes": 66703,
+        "size": [
+          256,
+          256
+        ],
+        "mode": "RGBA"
+      },
+      "runtime": {
+        "path": "src/assets/economy/runtime/gear_robe_5.png",
+        "sha256": "756344c721eccd4a3e4a084c5c069aaabb20401e2aa504b51454f80e0bcc621b",
+        "bytes": 6163,
+        "size": [
+          64,
+          64
+        ],
+        "mode": "RGBA"
+      }
+    },
+    {
+      "asset_id": "gear_legs_5",
+      "version": "economy-v2.0",
+      "workflow": "art/workflows/economy-equipment-5-api.json",
+      "atlas": "equipment-5",
+      "cell": 6,
+      "master": {
+        "path": "src/assets/economy/master/gear_legs_5.png",
+        "sha256": "17e739546d68452dd3fdecf6c566b69663936fe6ed4a420fdaed41ad1a8af484",
+        "bytes": 44623,
+        "size": [
+          256,
+          256
+        ],
+        "mode": "RGBA"
+      },
+      "runtime": {
+        "path": "src/assets/economy/runtime/gear_legs_5.png",
+        "sha256": "884bf0a820d85851448f2ed4134e699115708e2c6cb795e3bd8002c60c7107e1",
+        "bytes": 4542,
+        "size": [
+          64,
+          64
+        ],
+        "mode": "RGBA"
+      }
+    },
+    {
+      "asset_id": "gear_boots_5",
+      "version": "economy-v2.0",
+      "workflow": "art/workflows/economy-equipment-5-api.json",
+      "atlas": "equipment-5",
+      "cell": 7,
+      "master": {
+        "path": "src/assets/economy/master/gear_boots_5.png",
+        "sha256": "d981afbe88782fe84653b235e96f7f58203733f1f7291aaccd6af4bc9a47dbbc",
+        "bytes": 61476,
+        "size": [
+          256,
+          256
+        ],
+        "mode": "RGBA"
+      },
+      "runtime": {
+        "path": "src/assets/economy/runtime/gear_boots_5.png",
+        "sha256": "99473adb0df5c00dabd96527837125dca97f9c2cad79dc85dcd757d5e3020c71",
+        "bytes": 6639,
+        "size": [
+          64,
+          64
+        ],
+        "mode": "RGBA"
+      }
+    },
+    {
+      "asset_id": "gear_weapon_5",
+      "version": "economy-v2.0",
+      "workflow": "art/workflows/economy-equipment-5-api.json",
+      "atlas": "equipment-5",
+      "cell": 9,
+      "master": {
+        "path": "src/assets/economy/master/gear_weapon_5.png",
+        "sha256": "901308625d8f7c4d4dbd29ef567c11aeb6705c8ef9ced6d98ceebf9af6849808",
+        "bytes": 23863,
+        "size": [
+          256,
+          256
+        ],
+        "mode": "RGBA"
+      },
+      "runtime": {
+        "path": "src/assets/economy/runtime/gear_weapon_5.png",
+        "sha256": "1d445cea777826acc65588988dbd5ebb0065e667ca87b9f042c3eadb8cf449b6",
+        "bytes": 2686,
+        "size": [
+          64,
+          64
+        ],
+        "mode": "RGBA"
+      }
+    },
+    {
+      "asset_id": "gear_belt_5",
+      "version": "economy-v2.0",
+      "workflow": "art/workflows/economy-equipment-5-api.json",
+      "atlas": "equipment-5",
+      "cell": 10,
+      "master": {
+        "path": "src/assets/economy/master/gear_belt_5.png",
+        "sha256": "e039ee8111814da95b7fc4a2778990dd69cd9fbbf32af4d911ccb66fdd8040c4",
+        "bytes": 45386,
+        "size": [
+          256,
+          256
+        ],
+        "mode": "RGBA"
+      },
+      "runtime": {
+        "path": "src/assets/economy/runtime/gear_belt_5.png",
+        "sha256": "48533d327f45db05f2510ffd075df18220347fdba9c64cbb11f821d98ffee940",
+        "bytes": 4555,
+        "size": [
+          64,
+          64
+        ],
+        "mode": "RGBA"
+      }
+    },
+    {
+      "asset_id": "gear_charm_5",
+      "version": "economy-v2.0",
+      "workflow": "art/workflows/economy-equipment-5-api.json",
+      "atlas": "equipment-5",
+      "cell": 11,
+      "master": {
+        "path": "src/assets/economy/master/gear_charm_5.png",
+        "sha256": "cceab0453e7a81d05f99ed6c61818849981fcd2ba5facb60197f19436f6746c9",
+        "bytes": 48733,
+        "size": [
+          256,
+          256
+        ],
+        "mode": "RGBA"
+      },
+      "runtime": {
+        "path": "src/assets/economy/runtime/gear_charm_5.png",
+        "sha256": "89e3fc5bf3db846eb744f51929b418fef9409ceb9991419215f593d9efa60f46",
+        "bytes": 4593,
+        "size": [
+          64,
+          64
+        ],
+        "mode": "RGBA"
+      }
+    },
+    {
+      "asset_id": "gear_head_6",
+      "version": "economy-v2.0",
+      "workflow": "art/workflows/economy-equipment-6-api.json",
+      "atlas": "equipment-6",
+      "cell": 0,
+      "master": {
+        "path": "src/assets/economy/master/gear_head_6.png",
+        "sha256": "bf4fd64ca69a92b70a79be1108a1d3607f55ccf2efd0919c3697d47660783773",
+        "bytes": 50311,
+        "size": [
+          256,
+          256
+        ],
+        "mode": "RGBA"
+      },
+      "runtime": {
+        "path": "src/assets/economy/runtime/gear_head_6.png",
+        "sha256": "8024a34fd0829b643b8d7feb5ad400135af925bf2d51c8e20381bee41c6de4b4",
+        "bytes": 5332,
+        "size": [
+          64,
+          64
+        ],
+        "mode": "RGBA"
+      }
+    },
+    {
+      "asset_id": "gear_earrings_6",
+      "version": "economy-v2.0",
+      "workflow": "art/workflows/economy-equipment-6-api.json",
+      "atlas": "equipment-6",
+      "cell": 1,
+      "master": {
+        "path": "src/assets/economy/master/gear_earrings_6.png",
+        "sha256": "2b7f317650dbf14c95116cb42778c0dbbbd66d12ae8467a95420cacd9cf3d995",
+        "bytes": 35613,
+        "size": [
+          256,
+          256
+        ],
+        "mode": "RGBA"
+      },
+      "runtime": {
+        "path": "src/assets/economy/runtime/gear_earrings_6.png",
+        "sha256": "481f2cfc11eb2f51faff3b6eb63f749aed8740c10245fbc97d35dbe042977455",
+        "bytes": 4240,
+        "size": [
+          64,
+          64
+        ],
+        "mode": "RGBA"
+      }
+    },
+    {
+      "asset_id": "gear_inner_6",
+      "version": "economy-v2.0",
+      "workflow": "art/workflows/economy-equipment-6-api.json",
+      "atlas": "equipment-6",
+      "cell": 4,
+      "master": {
+        "path": "src/assets/economy/master/gear_inner_6.png",
+        "sha256": "ec890794a0b8605cc5db7febea5bd2bcb2caee7996a34f8aea2c1b1fd00f5d96",
+        "bytes": 56778,
+        "size": [
+          256,
+          256
+        ],
+        "mode": "RGBA"
+      },
+      "runtime": {
+        "path": "src/assets/economy/runtime/gear_inner_6.png",
+        "sha256": "b30704db0c77ae7cc6d15583ef741bb0b1026664e57f64121ac093b9d9a44931",
+        "bytes": 5487,
+        "size": [
+          64,
+          64
+        ],
+        "mode": "RGBA"
+      }
+    },
+    {
+      "asset_id": "gear_robe_6",
+      "version": "economy-v2.0",
+      "workflow": "art/workflows/economy-equipment-6-api.json",
+      "atlas": "equipment-6",
+      "cell": 5,
+      "master": {
+        "path": "src/assets/economy/master/gear_robe_6.png",
+        "sha256": "3221ff292615387f59b6d058852c729f48ab26d65dbc698d0505ec3e0b337ed9",
+        "bytes": 61489,
+        "size": [
+          256,
+          256
+        ],
+        "mode": "RGBA"
+      },
+      "runtime": {
+        "path": "src/assets/economy/runtime/gear_robe_6.png",
+        "sha256": "e85e861bc3e0d5876081eddc87019f10cf278186f40a3d0dc59ff509873eac32",
+        "bytes": 5657,
+        "size": [
+          64,
+          64
+        ],
+        "mode": "RGBA"
+      }
+    },
+    {
+      "asset_id": "gear_legs_6",
+      "version": "economy-v2.0",
+      "workflow": "art/workflows/economy-equipment-6-api.json",
+      "atlas": "equipment-6",
+      "cell": 6,
+      "master": {
+        "path": "src/assets/economy/master/gear_legs_6.png",
+        "sha256": "61e08e710ddb985b896d98454b5cb26120ab20671ce47dd392b25b3622145963",
+        "bytes": 40669,
+        "size": [
+          256,
+          256
+        ],
+        "mode": "RGBA"
+      },
+      "runtime": {
+        "path": "src/assets/economy/runtime/gear_legs_6.png",
+        "sha256": "597915fa8dd9ed2315cd774ef8a37d3ea3141dc3bb18cb85e447783e59b78e95",
+        "bytes": 4235,
+        "size": [
+          64,
+          64
+        ],
+        "mode": "RGBA"
+      }
+    },
+    {
+      "asset_id": "gear_boots_6",
+      "version": "economy-v2.0",
+      "workflow": "art/workflows/economy-equipment-6-api.json",
+      "atlas": "equipment-6",
+      "cell": 7,
+      "master": {
+        "path": "src/assets/economy/master/gear_boots_6.png",
+        "sha256": "ce1ac1132076a0f3816e32b57fac76bdd5b5b7131a14e0c8104227ad13e6e8c4",
+        "bytes": 50716,
+        "size": [
+          256,
+          256
+        ],
+        "mode": "RGBA"
+      },
+      "runtime": {
+        "path": "src/assets/economy/runtime/gear_boots_6.png",
+        "sha256": "169c7836e958822f64133a6d7861400631335efe206eb8a8f98532a00fe2a512",
+        "bytes": 5629,
+        "size": [
+          64,
+          64
+        ],
+        "mode": "RGBA"
+      }
+    },
+    {
+      "asset_id": "gear_weapon_6",
+      "version": "economy-v2.0",
+      "workflow": "art/workflows/economy-equipment-6-api.json",
+      "atlas": "equipment-6",
+      "cell": 9,
+      "master": {
+        "path": "src/assets/economy/master/gear_weapon_6.png",
+        "sha256": "8e21ff866100cccca90ac5e98cea9ea3eae75e711f9f4f18bcae1dad5cb03c57",
+        "bytes": 21180,
+        "size": [
+          256,
+          256
+        ],
+        "mode": "RGBA"
+      },
+      "runtime": {
+        "path": "src/assets/economy/runtime/gear_weapon_6.png",
+        "sha256": "0c9fa2ccb8c14baa6589e8ed5c35a147f210d21782fc5d8d195d0e56543b4a1d",
+        "bytes": 2494,
+        "size": [
+          64,
+          64
+        ],
+        "mode": "RGBA"
+      }
+    },
+    {
+      "asset_id": "gear_belt_6",
+      "version": "economy-v2.0",
+      "workflow": "art/workflows/economy-equipment-6-api.json",
+      "atlas": "equipment-6",
+      "cell": 10,
+      "master": {
+        "path": "src/assets/economy/master/gear_belt_6.png",
+        "sha256": "1c8ab1724a819dfa08bb56904e4ca4583f0503a91383ad6361969db248d7e8bd",
+        "bytes": 33489,
+        "size": [
+          256,
+          256
+        ],
+        "mode": "RGBA"
+      },
+      "runtime": {
+        "path": "src/assets/economy/runtime/gear_belt_6.png",
+        "sha256": "d0ffb417cc1bc5a0c36370bee56a99806179c111df5f36eabdab9f0f83a6f378",
+        "bytes": 3778,
+        "size": [
+          64,
+          64
+        ],
+        "mode": "RGBA"
+      }
+    },
+    {
+      "asset_id": "gear_charm_6",
+      "version": "economy-v2.0",
+      "workflow": "art/workflows/economy-equipment-6-api.json",
+      "atlas": "equipment-6",
+      "cell": 11,
+      "master": {
+        "path": "src/assets/economy/master/gear_charm_6.png",
+        "sha256": "373f524ece4935c7a7bb9c2fccc523dfe558dd885cf87a0df3ad8aac927eef32",
+        "bytes": 50808,
+        "size": [
+          256,
+          256
+        ],
+        "mode": "RGBA"
+      },
+      "runtime": {
+        "path": "src/assets/economy/runtime/gear_charm_6.png",
+        "sha256": "0c49761683d6b1a93c6947f0dd0a7d6c8a6c42ae488f24f7c494ae5c5da60efa",
+        "bytes": 4607,
+        "size": [
+          64,
+          64
+        ],
+        "mode": "RGBA"
+      }
+    },
+    {
+      "asset_id": "gear_head_7",
+      "version": "economy-v2.0",
+      "workflow": "art/workflows/economy-equipment-7-api.json",
+      "atlas": "equipment-7",
+      "cell": 0,
+      "master": {
+        "path": "src/assets/economy/master/gear_head_7.png",
+        "sha256": "44e2920814b3d08dca1acedda2d6d5a90a88106e528037663ccc346ae09f8c73",
+        "bytes": 61282,
+        "size": [
+          256,
+          256
+        ],
+        "mode": "RGBA"
+      },
+      "runtime": {
+        "path": "src/assets/economy/runtime/gear_head_7.png",
+        "sha256": "7be66a834168b60cd17fb19bac5557a72bde07f48f7d84609fe33a3f1fcbd1ed",
+        "bytes": 6218,
+        "size": [
+          64,
+          64
+        ],
+        "mode": "RGBA"
+      }
+    },
+    {
+      "asset_id": "gear_earrings_7",
+      "version": "economy-v2.0",
+      "workflow": "art/workflows/economy-equipment-7-api.json",
+      "atlas": "equipment-7",
+      "cell": 1,
+      "master": {
+        "path": "src/assets/economy/master/gear_earrings_7.png",
+        "sha256": "8b28d164b2e0e0912db29e068aa60246dbc0f31b45c7f3c448b85c00ad8138e9",
+        "bytes": 33825,
+        "size": [
+          256,
+          256
+        ],
+        "mode": "RGBA"
+      },
+      "runtime": {
+        "path": "src/assets/economy/runtime/gear_earrings_7.png",
+        "sha256": "c02a0afb5cc649dcd3955fea0936256938e7ad99fb178562aa54c36009d40599",
+        "bytes": 4159,
+        "size": [
+          64,
+          64
+        ],
+        "mode": "RGBA"
+      }
+    },
+    {
+      "asset_id": "gear_inner_7",
+      "version": "economy-v2.0",
+      "workflow": "art/workflows/economy-equipment-7-api.json",
+      "atlas": "equipment-7",
+      "cell": 4,
+      "master": {
+        "path": "src/assets/economy/master/gear_inner_7.png",
+        "sha256": "e80c2e1009aea80d6118854325c34fd4cbd62614da0866f36f5bb38a5ec4429a",
+        "bytes": 60296,
+        "size": [
+          256,
+          256
+        ],
+        "mode": "RGBA"
+      },
+      "runtime": {
+        "path": "src/assets/economy/runtime/gear_inner_7.png",
+        "sha256": "250ca460b6dfcea4865c180674085a5691b0ba194dee6b75c3651f54dc491537",
+        "bytes": 5664,
+        "size": [
+          64,
+          64
+        ],
+        "mode": "RGBA"
+      }
+    },
+    {
+      "asset_id": "gear_robe_7",
+      "version": "economy-v2.0",
+      "workflow": "art/workflows/economy-equipment-7-api.json",
+      "atlas": "equipment-7",
+      "cell": 5,
+      "master": {
+        "path": "src/assets/economy/master/gear_robe_7.png",
+        "sha256": "d5a99044adcd9634915dc71d01021f378fc37d8528f2eaad9c1d06252393f53a",
+        "bytes": 64203,
+        "size": [
+          256,
+          256
+        ],
+        "mode": "RGBA"
+      },
+      "runtime": {
+        "path": "src/assets/economy/runtime/gear_robe_7.png",
+        "sha256": "25bd8ac4bd213d92aeaee3819e73f363d20d2f916a53e937a51d84e8cb1c867f",
+        "bytes": 5769,
+        "size": [
+          64,
+          64
+        ],
+        "mode": "RGBA"
+      }
+    },
+    {
+      "asset_id": "gear_legs_7",
+      "version": "economy-v2.0",
+      "workflow": "art/workflows/economy-equipment-7-api.json",
+      "atlas": "equipment-7",
+      "cell": 6,
+      "master": {
+        "path": "src/assets/economy/master/gear_legs_7.png",
+        "sha256": "f3dc874f04d73b10d52b49f5e6dea2387d01e9d0e236cf77dac4802c7ee27558",
+        "bytes": 42114,
+        "size": [
+          256,
+          256
+        ],
+        "mode": "RGBA"
+      },
+      "runtime": {
+        "path": "src/assets/economy/runtime/gear_legs_7.png",
+        "sha256": "ecd64a0f073eee33e7d5f286eb22ba51ab41ca63412043a7a87764d2adf3a0ca",
+        "bytes": 4389,
+        "size": [
+          64,
+          64
+        ],
+        "mode": "RGBA"
+      }
+    },
+    {
+      "asset_id": "gear_boots_7",
+      "version": "economy-v2.0",
+      "workflow": "art/workflows/economy-equipment-7-api.json",
+      "atlas": "equipment-7",
+      "cell": 7,
+      "master": {
+        "path": "src/assets/economy/master/gear_boots_7.png",
+        "sha256": "3d76e13baa81ead3a8e6b5c3e2e038695eba03ae898849d26a14e21c2dde4182",
+        "bytes": 62279,
+        "size": [
+          256,
+          256
+        ],
+        "mode": "RGBA"
+      },
+      "runtime": {
+        "path": "src/assets/economy/runtime/gear_boots_7.png",
+        "sha256": "de15338be34afb810d16f8c188b5b43e682a42bd441806e6c0df93a9c5f15c6c",
+        "bytes": 6081,
+        "size": [
+          64,
+          64
+        ],
+        "mode": "RGBA"
+      }
+    },
+    {
+      "asset_id": "gear_weapon_7",
+      "version": "economy-v2.0",
+      "workflow": "art/workflows/economy-equipment-7-api.json",
+      "atlas": "equipment-7",
+      "cell": 9,
+      "master": {
+        "path": "src/assets/economy/master/gear_weapon_7.png",
+        "sha256": "7d7910d49b0b1a01415bdfb32e55a75815f4792969f9466831c99ae3ffab9fe7",
+        "bytes": 19433,
+        "size": [
+          256,
+          256
+        ],
+        "mode": "RGBA"
+      },
+      "runtime": {
+        "path": "src/assets/economy/runtime/gear_weapon_7.png",
+        "sha256": "060ef1fd752586550cc8713bb7a93855ff711b9c8e03522dd0bf72aa6e93e0e7",
+        "bytes": 2311,
+        "size": [
+          64,
+          64
+        ],
+        "mode": "RGBA"
+      }
+    },
+    {
+      "asset_id": "gear_belt_7",
+      "version": "economy-v2.0",
+      "workflow": "art/workflows/economy-equipment-7-api.json",
+      "atlas": "equipment-7",
+      "cell": 10,
+      "master": {
+        "path": "src/assets/economy/master/gear_belt_7.png",
+        "sha256": "b2c277e1be602b9f74c5e14e824ab85deeb12131c6a59a3161ae5abf4f07bfa8",
+        "bytes": 37603,
+        "size": [
+          256,
+          256
+        ],
+        "mode": "RGBA"
+      },
+      "runtime": {
+        "path": "src/assets/economy/runtime/gear_belt_7.png",
+        "sha256": "319983c2edfac21a5e644b57570538b739e4da6953ffd2b75e3e7579efaedd7f",
+        "bytes": 3971,
+        "size": [
+          64,
+          64
+        ],
+        "mode": "RGBA"
+      }
+    },
+    {
+      "asset_id": "gear_charm_7",
+      "version": "economy-v2.0",
+      "workflow": "art/workflows/economy-equipment-7-api.json",
+      "atlas": "equipment-7",
+      "cell": 11,
+      "master": {
+        "path": "src/assets/economy/master/gear_charm_7.png",
+        "sha256": "7b8f37295bc2f09d99e70d9c9595189e6b1b56bf79555cdad733bed71d5310ee",
+        "bytes": 49998,
+        "size": [
+          256,
+          256
+        ],
+        "mode": "RGBA"
+      },
+      "runtime": {
+        "path": "src/assets/economy/runtime/gear_charm_7.png",
+        "sha256": "30af3abc887efd4e229b546f058f8b0b0150d67015fb22e2ebc128be10000be4",
+        "bytes": 4587,
+        "size": [
+          64,
+          64
+        ],
+        "mode": "RGBA"
+      }
+    },
+    {
+      "asset_id": "gear_head_8",
+      "version": "economy-v2.0",
+      "workflow": "art/workflows/economy-equipment-8-api.json",
+      "atlas": "equipment-8",
+      "cell": 0,
+      "master": {
+        "path": "src/assets/economy/master/gear_head_8.png",
+        "sha256": "b6fd66444ec9ea7cea17059bc16ad0fbf26953870b84ffb263c207f5d0858acf",
+        "bytes": 53433,
+        "size": [
+          256,
+          256
+        ],
+        "mode": "RGBA"
+      },
+      "runtime": {
+        "path": "src/assets/economy/runtime/gear_head_8.png",
+        "sha256": "b20010900d28ea38f290df403ae68a93afa24056df7a8c208e16a160c3d73c28",
+        "bytes": 5420,
+        "size": [
+          64,
+          64
+        ],
+        "mode": "RGBA"
+      }
+    },
+    {
+      "asset_id": "gear_earrings_8",
+      "version": "economy-v2.0",
+      "workflow": "art/workflows/economy-equipment-8-api.json",
+      "atlas": "equipment-8",
+      "cell": 1,
+      "master": {
+        "path": "src/assets/economy/master/gear_earrings_8.png",
+        "sha256": "48b84a5cbc836c2e96894980ba779e4bc683f6d6420b480d0eaf83c908eda74f",
+        "bytes": 27721,
+        "size": [
+          256,
+          256
+        ],
+        "mode": "RGBA"
+      },
+      "runtime": {
+        "path": "src/assets/economy/runtime/gear_earrings_8.png",
+        "sha256": "ddfb60a2b47426a1f61fd7af36199971b9cdcb33e8cedeb1fb2ea4b0b78859aa",
+        "bytes": 4002,
+        "size": [
+          64,
+          64
+        ],
+        "mode": "RGBA"
+      }
+    },
+    {
+      "asset_id": "gear_inner_8",
+      "version": "economy-v2.0",
+      "workflow": "art/workflows/economy-equipment-8-api.json",
+      "atlas": "equipment-8",
+      "cell": 4,
+      "master": {
+        "path": "src/assets/economy/master/gear_inner_8.png",
+        "sha256": "7f7c645f3f223499e16e8570b0011b1e7d1729bd3c663ae828f96b986aca57d2",
+        "bytes": 51540,
+        "size": [
+          256,
+          256
+        ],
+        "mode": "RGBA"
+      },
+      "runtime": {
+        "path": "src/assets/economy/runtime/gear_inner_8.png",
+        "sha256": "d4eeb711bd5815cd274f3990e17332caafdb773e38689c5c3835762238776bad",
+        "bytes": 4987,
+        "size": [
+          64,
+          64
+        ],
+        "mode": "RGBA"
+      }
+    },
+    {
+      "asset_id": "gear_robe_8",
+      "version": "economy-v2.0",
+      "workflow": "art/workflows/economy-equipment-8-api.json",
+      "atlas": "equipment-8",
+      "cell": 5,
+      "master": {
+        "path": "src/assets/economy/master/gear_robe_8.png",
+        "sha256": "c314c4eff83acd5f863abc8c0cc0cf216cf7385fff5268fe4f34c1524718936c",
+        "bytes": 58587,
+        "size": [
+          256,
+          256
+        ],
+        "mode": "RGBA"
+      },
+      "runtime": {
+        "path": "src/assets/economy/runtime/gear_robe_8.png",
+        "sha256": "e82be53c4fb28d9ea287a47f793663d1072d0a36e3d5fc96bf1d60c39cdef073",
+        "bytes": 5390,
+        "size": [
+          64,
+          64
+        ],
+        "mode": "RGBA"
+      }
+    },
+    {
+      "asset_id": "gear_legs_8",
+      "version": "economy-v2.0",
+      "workflow": "art/workflows/economy-equipment-8-api.json",
+      "atlas": "equipment-8",
+      "cell": 6,
+      "master": {
+        "path": "src/assets/economy/master/gear_legs_8.png",
+        "sha256": "809852f7dbe329fe9db25e8f0d38022d33afc997afce6d8984c50ea26b4f9b38",
+        "bytes": 39924,
+        "size": [
+          256,
+          256
+        ],
+        "mode": "RGBA"
+      },
+      "runtime": {
+        "path": "src/assets/economy/runtime/gear_legs_8.png",
+        "sha256": "31208557d5e0d9cd2fe2a2d8689748394c3f4883c6d04daa0357a575b1d79c76",
+        "bytes": 4290,
+        "size": [
+          64,
+          64
+        ],
+        "mode": "RGBA"
+      }
+    },
+    {
+      "asset_id": "gear_boots_8",
+      "version": "economy-v2.0",
+      "workflow": "art/workflows/economy-equipment-8-api.json",
+      "atlas": "equipment-8",
+      "cell": 7,
+      "master": {
+        "path": "src/assets/economy/master/gear_boots_8.png",
+        "sha256": "b2beedc4e8a812474e8d46307a116c876bf5f5716a5091ad844b72b57dafcf56",
+        "bytes": 51909,
+        "size": [
+          256,
+          256
+        ],
+        "mode": "RGBA"
+      },
+      "runtime": {
+        "path": "src/assets/economy/runtime/gear_boots_8.png",
+        "sha256": "0178b7cee9b9f9210ba1cb0efbe83f255b1668e09efe8eb5f3af726b013fdf3e",
+        "bytes": 5829,
+        "size": [
+          64,
+          64
+        ],
+        "mode": "RGBA"
+      }
+    },
+    {
+      "asset_id": "gear_weapon_8",
+      "version": "economy-v2.0",
+      "workflow": "art/workflows/economy-equipment-8-api.json",
+      "atlas": "equipment-8",
+      "cell": 9,
+      "master": {
+        "path": "src/assets/economy/master/gear_weapon_8.png",
+        "sha256": "e670d8b0bf5d0958188a281a2a53e993f8ab687a517e6fb1b835a512f2270293",
+        "bytes": 21880,
+        "size": [
+          256,
+          256
+        ],
+        "mode": "RGBA"
+      },
+      "runtime": {
+        "path": "src/assets/economy/runtime/gear_weapon_8.png",
+        "sha256": "f5270bbedf0cbcc6bc6ca30c521140ced00ea6e63b1d3a714aaa154f8ede10c8",
+        "bytes": 2382,
+        "size": [
+          64,
+          64
+        ],
+        "mode": "RGBA"
+      }
+    },
+    {
+      "asset_id": "gear_belt_8",
+      "version": "economy-v2.0",
+      "workflow": "art/workflows/economy-equipment-8-api.json",
+      "atlas": "equipment-8",
+      "cell": 10,
+      "master": {
+        "path": "src/assets/economy/master/gear_belt_8.png",
+        "sha256": "b9e20b89e6b43afcd656b239b772c8f0afa8f9e2a5f98daa3362fe621c2355d1",
+        "bytes": 34713,
+        "size": [
+          256,
+          256
+        ],
+        "mode": "RGBA"
+      },
+      "runtime": {
+        "path": "src/assets/economy/runtime/gear_belt_8.png",
+        "sha256": "0a9018a56321336d550aa98e1f11cf7578153645de222d146d9d81886d4c7090",
+        "bytes": 3485,
+        "size": [
+          64,
+          64
+        ],
+        "mode": "RGBA"
+      }
+    },
+    {
+      "asset_id": "gear_charm_8",
+      "version": "economy-v2.0",
+      "workflow": "art/workflows/economy-equipment-8-api.json",
+      "atlas": "equipment-8",
+      "cell": 11,
+      "master": {
+        "path": "src/assets/economy/master/gear_charm_8.png",
+        "sha256": "bc250419377a22f887f79108d84ebc3756fddbbd2e346824b5f3d410b4fe29d4",
+        "bytes": 48808,
+        "size": [
+          256,
+          256
+        ],
+        "mode": "RGBA"
+      },
+      "runtime": {
+        "path": "src/assets/economy/runtime/gear_charm_8.png",
+        "sha256": "e0f376f20e32b0535f6a7d1be4624a91c2468e86280b5c998c55a745632a5ec9",
+        "bytes": 4607,
+        "size": [
+          64,
+          64
+        ],
+        "mode": "RGBA"
+      }
+    },
+    {
+      "asset_id": "gear_head_9",
+      "version": "economy-v2.0",
+      "workflow": "art/workflows/economy-equipment-9-api.json",
+      "atlas": "equipment-9",
+      "cell": 0,
+      "master": {
+        "path": "src/assets/economy/master/gear_head_9.png",
+        "sha256": "d052d933e5e4e953553425900fd8badf5ab20b62136d8d6308dea36433fde10a",
+        "bytes": 50164,
+        "size": [
+          256,
+          256
+        ],
+        "mode": "RGBA"
+      },
+      "runtime": {
+        "path": "src/assets/economy/runtime/gear_head_9.png",
+        "sha256": "1378fe6fdd2f134be379a28492ef7757dd2950e5f14abb7e41e1a2fc1e4b8450",
+        "bytes": 5350,
+        "size": [
+          64,
+          64
+        ],
+        "mode": "RGBA"
+      }
+    },
+    {
+      "asset_id": "gear_earrings_9",
+      "version": "economy-v2.0",
+      "workflow": "art/workflows/economy-equipment-9-api.json",
+      "atlas": "equipment-9",
+      "cell": 1,
+      "master": {
+        "path": "src/assets/economy/master/gear_earrings_9.png",
+        "sha256": "07b1453321283da79c69eb9ce1b92c8d4e5212d62cf11f666897958cee712c33",
+        "bytes": 34638,
+        "size": [
+          256,
+          256
+        ],
+        "mode": "RGBA"
+      },
+      "runtime": {
+        "path": "src/assets/economy/runtime/gear_earrings_9.png",
+        "sha256": "e5ca170f2d795fe4e10eb6536e78c97ecde483e4c3e2265d7135c7c7f1c554b9",
+        "bytes": 4042,
+        "size": [
+          64,
+          64
+        ],
+        "mode": "RGBA"
+      }
+    },
+    {
+      "asset_id": "gear_inner_9",
+      "version": "economy-v2.0",
+      "workflow": "art/workflows/economy-equipment-9-api.json",
+      "atlas": "equipment-9",
+      "cell": 4,
+      "master": {
+        "path": "src/assets/economy/master/gear_inner_9.png",
+        "sha256": "53d3f47d3f35e933d11ebdc13b7fa80a7ed0b1cb577af953d66efc58c8d97157",
+        "bytes": 56881,
+        "size": [
+          256,
+          256
+        ],
+        "mode": "RGBA"
+      },
+      "runtime": {
+        "path": "src/assets/economy/runtime/gear_inner_9.png",
+        "sha256": "b1e9072b707db0edb25a2cceedb2063aa80887ee94be09e0218385625c3596a1",
+        "bytes": 5559,
+        "size": [
+          64,
+          64
+        ],
+        "mode": "RGBA"
+      }
+    },
+    {
+      "asset_id": "gear_robe_9",
+      "version": "economy-v2.0",
+      "workflow": "art/workflows/economy-equipment-9-api.json",
+      "atlas": "equipment-9",
+      "cell": 5,
+      "master": {
+        "path": "src/assets/economy/master/gear_robe_9.png",
+        "sha256": "3dfb0649fee48f8d03a5852258cfea05459b0dc0eac001841bfa62530fcba3c7",
+        "bytes": 59085,
+        "size": [
+          256,
+          256
+        ],
+        "mode": "RGBA"
+      },
+      "runtime": {
+        "path": "src/assets/economy/runtime/gear_robe_9.png",
+        "sha256": "60633fbfe9bc861cd39ef07b5900576a0a53cfd730c403da0a620fd15506875d",
+        "bytes": 5496,
+        "size": [
+          64,
+          64
+        ],
+        "mode": "RGBA"
+      }
+    },
+    {
+      "asset_id": "gear_legs_9",
+      "version": "economy-v2.0",
+      "workflow": "art/workflows/economy-equipment-9-api.json",
+      "atlas": "equipment-9",
+      "cell": 6,
+      "master": {
+        "path": "src/assets/economy/master/gear_legs_9.png",
+        "sha256": "09e972eb2229d8726c3bff1a3463b10a4496530f82daa79879798315f0bcea65",
+        "bytes": 41422,
+        "size": [
+          256,
+          256
+        ],
+        "mode": "RGBA"
+      },
+      "runtime": {
+        "path": "src/assets/economy/runtime/gear_legs_9.png",
+        "sha256": "3fa729a1156dbb7a16a818ce21cdaa7957d45682b45695095b0a391519b6d8c3",
+        "bytes": 4181,
+        "size": [
+          64,
+          64
+        ],
+        "mode": "RGBA"
+      }
+    },
+    {
+      "asset_id": "gear_boots_9",
+      "version": "economy-v2.0",
+      "workflow": "art/workflows/economy-equipment-9-api.json",
+      "atlas": "equipment-9",
+      "cell": 7,
+      "master": {
+        "path": "src/assets/economy/master/gear_boots_9.png",
+        "sha256": "3550493ee01d4a6b36a85260ed45f097c0375a89f783bbe59be50941c8e6dfb9",
+        "bytes": 62483,
+        "size": [
+          256,
+          256
+        ],
+        "mode": "RGBA"
+      },
+      "runtime": {
+        "path": "src/assets/economy/runtime/gear_boots_9.png",
+        "sha256": "088e1f5975cc633626c60ea6011019b6415d690b2eb81681efbb18a95ca63a2e",
+        "bytes": 5784,
+        "size": [
+          64,
+          64
+        ],
+        "mode": "RGBA"
+      }
+    },
+    {
+      "asset_id": "gear_weapon_9",
+      "version": "economy-v2.0",
+      "workflow": "art/workflows/economy-equipment-9-api.json",
+      "atlas": "equipment-9",
+      "cell": 9,
+      "master": {
+        "path": "src/assets/economy/master/gear_weapon_9.png",
+        "sha256": "554d721eecb0a754f893faa14891a164ac1d9ef35a9f39bfd01634dfb8f9eacf",
+        "bytes": 19684,
+        "size": [
+          256,
+          256
+        ],
+        "mode": "RGBA"
+      },
+      "runtime": {
+        "path": "src/assets/economy/runtime/gear_weapon_9.png",
+        "sha256": "a0ba06423bf07b64763670800cea1254a2933ce1a0542f193718c0d745961c88",
+        "bytes": 2333,
+        "size": [
+          64,
+          64
+        ],
+        "mode": "RGBA"
+      }
+    },
+    {
+      "asset_id": "gear_belt_9",
+      "version": "economy-v2.0",
+      "workflow": "art/workflows/economy-equipment-9-api.json",
+      "atlas": "equipment-9",
+      "cell": 10,
+      "master": {
+        "path": "src/assets/economy/master/gear_belt_9.png",
+        "sha256": "161baaf2e3012d8f2bacbd6e874ac5df171cd4bde56896439665cfbfb7634f8d",
+        "bytes": 37713,
+        "size": [
+          256,
+          256
+        ],
+        "mode": "RGBA"
+      },
+      "runtime": {
+        "path": "src/assets/economy/runtime/gear_belt_9.png",
+        "sha256": "5a80eb2d03998fe113c3ec2e367755d51b7b6b3ad3c6f85382c05ba064b403f8",
+        "bytes": 4075,
+        "size": [
+          64,
+          64
+        ],
+        "mode": "RGBA"
+      }
+    },
+    {
+      "asset_id": "gear_charm_9",
+      "version": "economy-v2.0",
+      "workflow": "art/workflows/economy-equipment-9-api.json",
+      "atlas": "equipment-9",
+      "cell": 11,
+      "master": {
+        "path": "src/assets/economy/master/gear_charm_9.png",
+        "sha256": "96711d061afe70159a31e0c36fa414b8e1329e328cee517c229b752d2ab4c196",
+        "bytes": 49292,
+        "size": [
+          256,
+          256
+        ],
+        "mode": "RGBA"
+      },
+      "runtime": {
+        "path": "src/assets/economy/runtime/gear_charm_9.png",
+        "sha256": "816798fae7e175f95ade4ef091e6c27dba5bf435a8a854fb831b1aa1fd0da259",
+        "bytes": 4588,
+        "size": [
+          64,
+          64
+        ],
+        "mode": "RGBA"
+      }
+    },
+    {
+      "asset_id": "pet_0",
+      "version": "economy-v2.0",
+      "workflow": "art/workflows/economy-pet-api.json",
+      "atlas": "pet",
+      "cell": 0,
+      "master": {
+        "path": "src/assets/economy/master/pet_0.png",
+        "sha256": "96228c833f4079069d8eb6bc4f02af3afb1b621d903b2020ae5a915acb653676",
+        "bytes": 42557,
+        "size": [
+          256,
+          256
+        ],
+        "mode": "RGBA"
+      },
+      "runtime": {
+        "path": "src/assets/economy/runtime/pet_0.png",
+        "sha256": "5acd94094bf9290501c1496714b3d6728a9a1e14688ec14507d7e580e36ccd85",
+        "bytes": 5191,
+        "size": [
+          64,
+          64
+        ],
+        "mode": "RGBA"
+      }
+    },
+    {
+      "asset_id": "pet_1",
+      "version": "economy-v2.0",
+      "workflow": "art/workflows/economy-pet-api.json",
+      "atlas": "pet",
+      "cell": 1,
+      "master": {
+        "path": "src/assets/economy/master/pet_1.png",
+        "sha256": "2edee52c4b3aefbd324ca71b803faeb8c5523ddf67d7e4b6d72173d3a71faa64",
+        "bytes": 69306,
+        "size": [
+          256,
+          256
+        ],
+        "mode": "RGBA"
+      },
+      "runtime": {
+        "path": "src/assets/economy/runtime/pet_1.png",
+        "sha256": "db673c34f7e29cdcf05f8c86b7769df2682229058eafa1c912bfe9bd1839e315",
+        "bytes": 7024,
+        "size": [
+          64,
+          64
+        ],
+        "mode": "RGBA"
+      }
+    },
+    {
+      "asset_id": "pet_2",
+      "version": "economy-v2.0",
+      "workflow": "art/workflows/economy-pet-api.json",
+      "atlas": "pet",
+      "cell": 2,
+      "master": {
+        "path": "src/assets/economy/master/pet_2.png",
+        "sha256": "4302b04b87e2e42c973e41882341256b1d6029f9be85323c989fe9302fe554af",
+        "bytes": 65841,
+        "size": [
+          256,
+          256
+        ],
+        "mode": "RGBA"
+      },
+      "runtime": {
+        "path": "src/assets/economy/runtime/pet_2.png",
+        "sha256": "81764947a8767c305f0668158d3ba7bd64b2f51c9dccc91e5610a32e21bba842",
+        "bytes": 7037,
+        "size": [
+          64,
+          64
+        ],
+        "mode": "RGBA"
+      }
+    },
+    {
+      "asset_id": "pet_3",
+      "version": "economy-v2.0",
+      "workflow": "art/workflows/economy-pet-api.json",
+      "atlas": "pet",
+      "cell": 3,
+      "master": {
+        "path": "src/assets/economy/master/pet_3.png",
+        "sha256": "360a5effec02496af38e2bbe9beebd24b4a02ed359e0adf8d991020eda866bff",
+        "bytes": 61948,
+        "size": [
+          256,
+          256
+        ],
+        "mode": "RGBA"
+      },
+      "runtime": {
+        "path": "src/assets/economy/runtime/pet_3.png",
+        "sha256": "12fdfae9fad2dee756182cce77a284c8f2b3eab276c25d163e70f7dd39ba7b29",
+        "bytes": 6156,
+        "size": [
+          64,
+          64
+        ],
+        "mode": "RGBA"
+      }
+    },
+    {
+      "asset_id": "pet_4",
+      "version": "economy-v2.0",
+      "workflow": "art/workflows/economy-pet-api.json",
+      "atlas": "pet",
+      "cell": 4,
+      "master": {
+        "path": "src/assets/economy/master/pet_4.png",
+        "sha256": "7ef1aa81a7846fc3746897a52b28b38473db4e2dda79acb9eeb4aa4f10c76d7e",
+        "bytes": 40987,
+        "size": [
+          256,
+          256
+        ],
+        "mode": "RGBA"
+      },
+      "runtime": {
+        "path": "src/assets/economy/runtime/pet_4.png",
+        "sha256": "ccfbcf84b4cfb718adffafcb826299064707ae6dbafe3693972964def3a8dc38",
+        "bytes": 4617,
+        "size": [
+          64,
+          64
+        ],
+        "mode": "RGBA"
+      }
+    },
+    {
+      "asset_id": "pet_5",
+      "version": "economy-v2.0",
+      "workflow": "art/workflows/economy-pet-api.json",
+      "atlas": "pet",
+      "cell": 5,
+      "master": {
+        "path": "src/assets/economy/master/pet_5.png",
+        "sha256": "b9c95ed37b5e6a9ced3f3b6e6d5741d29d6b7c174fcf90511ca6b9e5a9d6c767",
+        "bytes": 64908,
+        "size": [
+          256,
+          256
+        ],
+        "mode": "RGBA"
+      },
+      "runtime": {
+        "path": "src/assets/economy/runtime/pet_5.png",
+        "sha256": "87ae944668092efb23cc8b67aeb428189a6abb1d3f1fdc8e6d345028f8dd0b2f",
+        "bytes": 6739,
+        "size": [
+          64,
+          64
+        ],
+        "mode": "RGBA"
+      }
+    },
+    {
+      "asset_id": "pet_6",
+      "version": "economy-v2.0",
+      "workflow": "art/workflows/economy-pet-api.json",
+      "atlas": "pet",
+      "cell": 6,
+      "master": {
+        "path": "src/assets/economy/master/pet_6.png",
+        "sha256": "2c1f904b8b39bf569de6a7c842b4d1556df1a67610a3eb4ad6b6ece2d5d23a6a",
+        "bytes": 62401,
+        "size": [
+          256,
+          256
+        ],
+        "mode": "RGBA"
+      },
+      "runtime": {
+        "path": "src/assets/economy/runtime/pet_6.png",
+        "sha256": "c861f523014be7a01efa24839924585a241743d5be8feeeee23c54e8f04b234e",
+        "bytes": 6172,
+        "size": [
+          64,
+          64
+        ],
+        "mode": "RGBA"
+      }
+    },
+    {
+      "asset_id": "pet_7",
+      "version": "economy-v2.0",
+      "workflow": "art/workflows/economy-pet-api.json",
+      "atlas": "pet",
+      "cell": 7,
+      "master": {
+        "path": "src/assets/economy/master/pet_7.png",
+        "sha256": "f810d0581bd98162006f1a017258932a4e2481d4b58835d676c955b956f16eae",
+        "bytes": 52859,
+        "size": [
+          256,
+          256
+        ],
+        "mode": "RGBA"
+      },
+      "runtime": {
+        "path": "src/assets/economy/runtime/pet_7.png",
+        "sha256": "f26e1fcae7d784c0b8833e74bb9566fb11fecc880dc0614310e87ac4f169eb36",
+        "bytes": 6690,
+        "size": [
+          64,
+          64
+        ],
+        "mode": "RGBA"
+      }
+    },
+    {
+      "asset_id": "pet_8",
+      "version": "economy-v2.0",
+      "workflow": "art/workflows/economy-pet-api.json",
+      "atlas": "pet",
+      "cell": 8,
+      "master": {
+        "path": "src/assets/economy/master/pet_8.png",
+        "sha256": "cc444ec35b482443745122c0900cf114b1baacfd7c6a3d5c1a640420d5b2b36f",
+        "bytes": 83458,
+        "size": [
+          256,
+          256
+        ],
+        "mode": "RGBA"
+      },
+      "runtime": {
+        "path": "src/assets/economy/runtime/pet_8.png",
+        "sha256": "474baea44430f61ed09d55a0e94e1dae4df424c8a2848e424f9f24a7a64e3aec",
+        "bytes": 7951,
+        "size": [
+          64,
+          64
+        ],
+        "mode": "RGBA"
+      }
+    },
+    {
+      "asset_id": "pet_9",
+      "version": "economy-v2.0",
+      "workflow": "art/workflows/economy-pet-api.json",
+      "atlas": "pet",
+      "cell": 9,
+      "master": {
+        "path": "src/assets/economy/master/pet_9.png",
+        "sha256": "3d440bd2203ca9741b608b712c4586c523c39808b5282f7c752f15509747d0df",
+        "bytes": 64871,
+        "size": [
+          256,
+          256
+        ],
+        "mode": "RGBA"
+      },
+      "runtime": {
+        "path": "src/assets/economy/runtime/pet_9.png",
+        "sha256": "35120a7cd758ed0efdab71ae8d76ac992dbcc12d2d821cd03d1a889c213cf14c",
+        "bytes": 6524,
+        "size": [
+          64,
+          64
+        ],
+        "mode": "RGBA"
+      }
+    },
+    {
+      "asset_id": "pet_10",
+      "version": "economy-v2.0",
+      "workflow": "art/workflows/economy-pet-api.json",
+      "atlas": "pet",
+      "cell": 10,
+      "master": {
+        "path": "src/assets/economy/master/pet_10.png",
+        "sha256": "53ec37cb451e8b48460b8c72fae53a7e56ecb6c9a3f02d0376aaa46e3ae874f0",
+        "bytes": 70938,
+        "size": [
+          256,
+          256
+        ],
+        "mode": "RGBA"
+      },
+      "runtime": {
+        "path": "src/assets/economy/runtime/pet_10.png",
+        "sha256": "96791cb4a0de62907ec6122bcf6629d654a17e3ec9563f516d7e3f4549108c64",
+        "bytes": 6861,
+        "size": [
+          64,
+          64
+        ],
+        "mode": "RGBA"
+      }
+    },
+    {
+      "asset_id": "pet_11",
+      "version": "economy-v2.0",
+      "workflow": "art/workflows/economy-pet-api.json",
+      "atlas": "pet",
+      "cell": 11,
+      "master": {
+        "path": "src/assets/economy/master/pet_11.png",
+        "sha256": "1fdeec5beb96a9aff050f4c01f4785b151d46ee31cc02af9fb0e01efe2a2ba1d",
+        "bytes": 66872,
+        "size": [
+          256,
+          256
+        ],
+        "mode": "RGBA"
+      },
+      "runtime": {
+        "path": "src/assets/economy/runtime/pet_11.png",
+        "sha256": "8f16cbfed0f370c75bb025c8cdd171af6edcf514cdf23486d91804d40d20ce06",
+        "bytes": 6868,
+        "size": [
+          64,
+          64
+        ],
+        "mode": "RGBA"
+      }
+    },
+    {
+      "asset_id": "treasure_0",
+      "version": "economy-v2.0",
+      "workflow": "art/workflows/economy-treasure-api.json",
+      "atlas": "treasure",
+      "cell": 0,
+      "master": {
+        "path": "src/assets/economy/master/treasure_0.png",
+        "sha256": "1190cf3f6f5e066ec6ef7d703435bbdcb577b235b4cbffc0a8436cab3cc08752",
+        "bytes": 28983,
+        "size": [
+          256,
+          256
+        ],
+        "mode": "RGBA"
+      },
+      "runtime": {
+        "path": "src/assets/economy/runtime/treasure_0.png",
+        "sha256": "481c5787cea0c8cd7ef3b13dddba1d529864b0ca01688aa4b1c29db33f08c214",
+        "bytes": 3110,
+        "size": [
+          64,
+          64
+        ],
+        "mode": "RGBA"
+      }
+    },
+    {
+      "asset_id": "treasure_1",
+      "version": "economy-v2.0",
+      "workflow": "art/workflows/economy-treasure-api.json",
+      "atlas": "treasure",
+      "cell": 1,
+      "master": {
+        "path": "src/assets/economy/master/treasure_1.png",
+        "sha256": "ce97bdf5b9b8920a0aac3ceb0c0edc6d488fede4fb919b4d1c92c0cdd38aef98",
+        "bytes": 49379,
+        "size": [
+          256,
+          256
+        ],
+        "mode": "RGBA"
+      },
+      "runtime": {
+        "path": "src/assets/economy/runtime/treasure_1.png",
+        "sha256": "6c93d587ed896d51a191df7e58771a9da142fd153a9ba8ccfb568b3452b48392",
+        "bytes": 5209,
+        "size": [
+          64,
+          64
+        ],
+        "mode": "RGBA"
+      }
+    },
+    {
+      "asset_id": "treasure_2",
+      "version": "economy-v2.0",
+      "workflow": "art/workflows/economy-treasure-api.json",
+      "atlas": "treasure",
+      "cell": 2,
+      "master": {
+        "path": "src/assets/economy/master/treasure_2.png",
+        "sha256": "a27ab7cf7a0b07ff34ebb7e68663a7125fea97dfa3b545d60f10b27d2c9b9730",
+        "bytes": 52035,
+        "size": [
+          256,
+          256
+        ],
+        "mode": "RGBA"
+      },
+      "runtime": {
+        "path": "src/assets/economy/runtime/treasure_2.png",
+        "sha256": "bacc97b8fef2f72f2c2636bd986c1de030fa082b13266d5586f6fc95b22c31e3",
+        "bytes": 4820,
+        "size": [
+          64,
+          64
+        ],
+        "mode": "RGBA"
+      }
+    },
+    {
+      "asset_id": "treasure_3",
+      "version": "economy-v2.0",
+      "workflow": "art/workflows/economy-treasure-api.json",
+      "atlas": "treasure",
+      "cell": 3,
+      "master": {
+        "path": "src/assets/economy/master/treasure_3.png",
+        "sha256": "45e30588c5d6e3bc6256f21b95ac640cab0f51a5d0c9ce2c092446340135aa1d",
+        "bytes": 72818,
+        "size": [
+          256,
+          256
+        ],
+        "mode": "RGBA"
+      },
+      "runtime": {
+        "path": "src/assets/economy/runtime/treasure_3.png",
+        "sha256": "76764fdcb3603593a1d0ed1d52157ddfb02dff01944de44856616697966bbf91",
+        "bytes": 7299,
+        "size": [
+          64,
+          64
+        ],
+        "mode": "RGBA"
+      }
+    },
+    {
+      "asset_id": "treasure_4",
+      "version": "economy-v2.0",
+      "workflow": "art/workflows/economy-treasure-api.json",
+      "atlas": "treasure",
+      "cell": 4,
+      "master": {
+        "path": "src/assets/economy/master/treasure_4.png",
+        "sha256": "fd731aa062d48783a9cc24d2e1f81754bc9c5fc48cc16da817ad3863cb52aa70",
+        "bytes": 36471,
+        "size": [
+          256,
+          256
+        ],
+        "mode": "RGBA"
+      },
+      "runtime": {
+        "path": "src/assets/economy/runtime/treasure_4.png",
+        "sha256": "284162632411f3d9a1f08fd473f9476d8e08e7479296cd9df2f3100892dc4b90",
+        "bytes": 5253,
+        "size": [
+          64,
+          64
+        ],
+        "mode": "RGBA"
+      }
+    },
+    {
+      "asset_id": "treasure_5",
+      "version": "economy-v2.0",
+      "workflow": "art/workflows/economy-treasure-api.json",
+      "atlas": "treasure",
+      "cell": 5,
+      "master": {
+        "path": "src/assets/economy/master/treasure_5.png",
+        "sha256": "fd1860320805bb67207a92091c9b6b74594a793b771744cf8e5d18fef026b189",
+        "bytes": 61491,
+        "size": [
+          256,
+          256
+        ],
+        "mode": "RGBA"
+      },
+      "runtime": {
+        "path": "src/assets/economy/runtime/treasure_5.png",
+        "sha256": "241592aac85d4e62b5eb9f53f6887fdca633c4c1345322cbd04d7cd7323dbf6e",
+        "bytes": 5619,
+        "size": [
+          64,
+          64
+        ],
+        "mode": "RGBA"
+      }
+    },
+    {
+      "asset_id": "treasure_6",
+      "version": "economy-v2.0",
+      "workflow": "art/workflows/economy-treasure-api.json",
+      "atlas": "treasure",
+      "cell": 6,
+      "master": {
+        "path": "src/assets/economy/master/treasure_6.png",
+        "sha256": "396eda1da6c2f86ce89af8462579439dfb6984f4e6a3420a9b9d0b602733fb09",
+        "bytes": 21287,
+        "size": [
+          256,
+          256
+        ],
+        "mode": "RGBA"
+      },
+      "runtime": {
+        "path": "src/assets/economy/runtime/treasure_6.png",
+        "sha256": "0000505b371e3b5a94ec8502408f6cf2e87f6efee557aa5dc9e880d613bd25ae",
+        "bytes": 2864,
+        "size": [
+          64,
+          64
+        ],
+        "mode": "RGBA"
+      }
+    },
+    {
+      "asset_id": "treasure_7",
+      "version": "economy-v2.0",
+      "workflow": "art/workflows/economy-treasure-api.json",
+      "atlas": "treasure",
+      "cell": 7,
+      "master": {
+        "path": "src/assets/economy/master/treasure_7.png",
+        "sha256": "40fc1f9e1ec55c053004a56ae8d99b4f9c5653e7783e4bd175e5297daaa02d08",
+        "bytes": 60929,
+        "size": [
+          256,
+          256
+        ],
+        "mode": "RGBA"
+      },
+      "runtime": {
+        "path": "src/assets/economy/runtime/treasure_7.png",
+        "sha256": "80aa7894fce2ebc16ce2824f3bc7b3b6f6928d4335f3d6636f878796bf94f72d",
+        "bytes": 5897,
+        "size": [
+          64,
+          64
+        ],
+        "mode": "RGBA"
+      }
+    },
+    {
+      "asset_id": "treasure_8",
+      "version": "economy-v2.0",
+      "workflow": "art/workflows/economy-treasure-api.json",
+      "atlas": "treasure",
+      "cell": 8,
+      "master": {
+        "path": "src/assets/economy/master/treasure_8.png",
+        "sha256": "f2ac554c3b61c7af4063941a2551deb32490c6d92efaebc47eae4caf12cdbc21",
+        "bytes": 48596,
+        "size": [
+          256,
+          256
+        ],
+        "mode": "RGBA"
+      },
+      "runtime": {
+        "path": "src/assets/economy/runtime/treasure_8.png",
+        "sha256": "2dde93763383d79ce839025a27a24c47e316e520e59fadcff3df15aea1f590d0",
+        "bytes": 5110,
+        "size": [
+          64,
+          64
+        ],
+        "mode": "RGBA"
+      }
+    },
+    {
+      "asset_id": "treasure_9",
+      "version": "economy-v2.0",
+      "workflow": "art/workflows/economy-treasure-api.json",
+      "atlas": "treasure",
+      "cell": 9,
+      "master": {
+        "path": "src/assets/economy/master/treasure_9.png",
+        "sha256": "726cd4fcfd2a6598fcd60e335c7e8304d9b920a1faf15a7f92f043d0a617d119",
+        "bytes": 46513,
+        "size": [
+          256,
+          256
+        ],
+        "mode": "RGBA"
+      },
+      "runtime": {
+        "path": "src/assets/economy/runtime/treasure_9.png",
+        "sha256": "7d58b2958a5ce516dd56f01d45ccc9031eb8a42605e8388306fa209b0e8cc6eb",
+        "bytes": 5765,
+        "size": [
+          64,
+          64
+        ],
+        "mode": "RGBA"
+      }
+    },
+    {
+      "asset_id": "treasure_10",
+      "version": "economy-v2.0",
+      "workflow": "art/workflows/economy-treasure-api.json",
+      "atlas": "treasure",
+      "cell": 10,
+      "master": {
+        "path": "src/assets/economy/master/treasure_10.png",
+        "sha256": "f95718304c9dd3e73e7a771e91b183384bb3f894040b3cbf968f31a73614dd6d",
+        "bytes": 55203,
+        "size": [
+          256,
+          256
+        ],
+        "mode": "RGBA"
+      },
+      "runtime": {
+        "path": "src/assets/economy/runtime/treasure_10.png",
+        "sha256": "60287a2f05277b200c6527ad26b0a029aa8ab0ea70a5f2563fd217d3c159c058",
+        "bytes": 5740,
+        "size": [
+          64,
+          64
+        ],
+        "mode": "RGBA"
+      }
+    },
+    {
+      "asset_id": "treasure_11",
+      "version": "economy-v2.0",
+      "workflow": "art/workflows/economy-treasure-api.json",
+      "atlas": "treasure",
+      "cell": 11,
+      "master": {
+        "path": "src/assets/economy/master/treasure_11.png",
+        "sha256": "1d9e30da9d78b042ada5e73584962f9c28e999524b96986fd977597fc5ad8cb4",
+        "bytes": 53334,
+        "size": [
+          256,
+          256
+        ],
+        "mode": "RGBA"
+      },
+      "runtime": {
+        "path": "src/assets/economy/runtime/treasure_11.png",
+        "sha256": "2b270b6aba4aaa10570d905080e8080820aa083970d2b2cf26ef3d396f9c3175",
+        "bytes": 5242,
+        "size": [
+          64,
+          64
+        ],
+        "mode": "RGBA"
+      }
+    },
+    {
+      "asset_id": "gem_fire_1",
+      "version": "economy-v2.0",
+      "workflow": "art/workflows/economy-gems-1-api.json",
+      "atlas": "gems-1",
+      "cell": 0,
+      "master": {
+        "path": "src/assets/economy/master/gem_fire_1.png",
+        "sha256": "c7b2c6e3286240df668467d10bdb8cdca37b6a82f678773d5697c3609a84afa8",
+        "bytes": 24753,
+        "size": [
+          256,
+          256
+        ],
+        "mode": "RGBA"
+      },
+      "runtime": {
+        "path": "src/assets/economy/runtime/gem_fire_1.png",
+        "sha256": "d17fb55457282a3d0857326c93ae5cfc95809cd2ce1714fa5d9dc49a89e7c0a6",
+        "bytes": 3127,
+        "size": [
+          64,
+          64
+        ],
+        "mode": "RGBA"
+      }
+    },
+    {
+      "asset_id": "gem_blast_1",
+      "version": "economy-v2.0",
+      "workflow": "art/workflows/economy-gems-1-api.json",
+      "atlas": "gems-1",
+      "cell": 1,
+      "master": {
+        "path": "src/assets/economy/master/gem_blast_1.png",
+        "sha256": "a7b6b7dd707223b6a25e17a51a950ec0324db35e6efb055dec000f7d2ae757fb",
+        "bytes": 36579,
+        "size": [
+          256,
+          256
+        ],
+        "mode": "RGBA"
+      },
+      "runtime": {
+        "path": "src/assets/economy/runtime/gem_blast_1.png",
+        "sha256": "cbc48cbfbccc90e3366c72690836b7b363d88763305114b6ff427f5365e84deb",
+        "bytes": 4462,
+        "size": [
+          64,
+          64
+        ],
+        "mode": "RGBA"
+      }
+    },
+    {
+      "asset_id": "gem_life_1",
+      "version": "economy-v2.0",
+      "workflow": "art/workflows/economy-gems-1-api.json",
+      "atlas": "gems-1",
+      "cell": 2,
+      "master": {
+        "path": "src/assets/economy/master/gem_life_1.png",
+        "sha256": "54485ea4267b59f1b7958e7f27ebf562f8a5b3660d1d8b9c38de74cc31d229e5",
+        "bytes": 35162,
+        "size": [
+          256,
+          256
+        ],
+        "mode": "RGBA"
+      },
+      "runtime": {
+        "path": "src/assets/economy/runtime/gem_life_1.png",
+        "sha256": "17a2078a5c0dacc518382f169d3f90b7b1679d36ad8f46668da3866285b188cc",
+        "bytes": 3602,
+        "size": [
+          64,
+          64
+        ],
+        "mode": "RGBA"
+      }
+    },
+    {
+      "asset_id": "gem_mana_1",
+      "version": "economy-v2.0",
+      "workflow": "art/workflows/economy-gems-1-api.json",
+      "atlas": "gems-1",
+      "cell": 3,
+      "master": {
+        "path": "src/assets/economy/master/gem_mana_1.png",
+        "sha256": "a18679865ba4e1dbda01054d5ea9c32a1ff3d617e41bf1ebb9a9f57b178008ff",
+        "bytes": 26483,
+        "size": [
+          256,
+          256
+        ],
+        "mode": "RGBA"
+      },
+      "runtime": {
+        "path": "src/assets/economy/runtime/gem_mana_1.png",
+        "sha256": "b9a7c58bb52176adad9e017ef02c890e5353dede0bfac832f001cdfff6b172be",
+        "bytes": 3409,
+        "size": [
+          64,
+          64
+        ],
+        "mode": "RGBA"
+      }
+    },
+    {
+      "asset_id": "gem_wisdom_1",
+      "version": "economy-v2.0",
+      "workflow": "art/workflows/economy-gems-1-api.json",
+      "atlas": "gems-1",
+      "cell": 4,
+      "master": {
+        "path": "src/assets/economy/master/gem_wisdom_1.png",
+        "sha256": "72634f822483e4661ba79738f2596ca9b46010a27be84fbe2c24c61a88e8d588",
+        "bytes": 32787,
+        "size": [
+          256,
+          256
+        ],
+        "mode": "RGBA"
+      },
+      "runtime": {
+        "path": "src/assets/economy/runtime/gem_wisdom_1.png",
+        "sha256": "e8af62ba248a98f81bd34d0e59b7fc701f3cfa704c015ed0f2906310e96765af",
+        "bytes": 3506,
+        "size": [
+          64,
+          64
+        ],
+        "mode": "RGBA"
+      }
+    },
+    {
+      "asset_id": "gem_thunder_1",
+      "version": "economy-v2.0",
+      "workflow": "art/workflows/economy-gems-1-api.json",
+      "atlas": "gems-1",
+      "cell": 5,
+      "master": {
+        "path": "src/assets/economy/master/gem_thunder_1.png",
+        "sha256": "22e7a72b26f4379b663c04dad7afff865a2dd8103295c19dcfb11469868e43b7",
+        "bytes": 25472,
+        "size": [
+          256,
+          256
+        ],
+        "mode": "RGBA"
+      },
+      "runtime": {
+        "path": "src/assets/economy/runtime/gem_thunder_1.png",
+        "sha256": "a63638619595877bcf5031e41ca17f0b100bde8490e8737d06f4462d33c9fad9",
+        "bytes": 2976,
+        "size": [
+          64,
+          64
+        ],
+        "mode": "RGBA"
+      }
+    },
+    {
+      "asset_id": "gem_wind_1",
+      "version": "economy-v2.0",
+      "workflow": "art/workflows/economy-gems-1-api.json",
+      "atlas": "gems-1",
+      "cell": 6,
+      "master": {
+        "path": "src/assets/economy/master/gem_wind_1.png",
+        "sha256": "8605a6d34346b724b81c6981c07a77b382b343eb3ef0ebfd4ef90ed037ac2cf6",
+        "bytes": 26759,
+        "size": [
+          256,
+          256
+        ],
+        "mode": "RGBA"
+      },
+      "runtime": {
+        "path": "src/assets/economy/runtime/gem_wind_1.png",
+        "sha256": "439e1761aa240f5769352aef886b14efbe896d1d435a58d788e8edacb195e78b",
+        "bytes": 3044,
+        "size": [
+          64,
+          64
+        ],
+        "mode": "RGBA"
+      }
+    },
+    {
+      "asset_id": "gem_armor_1",
+      "version": "economy-v2.0",
+      "workflow": "art/workflows/economy-gems-1-api.json",
+      "atlas": "gems-1",
+      "cell": 7,
+      "master": {
+        "path": "src/assets/economy/master/gem_armor_1.png",
+        "sha256": "ea447fd174c3aec141094cbf5fa359f05f6ac8bf8952914f0867737b3d2c31bd",
+        "bytes": 29875,
+        "size": [
+          256,
+          256
+        ],
+        "mode": "RGBA"
+      },
+      "runtime": {
+        "path": "src/assets/economy/runtime/gem_armor_1.png",
+        "sha256": "0f81d883830e665d4d9d3036c0900349579ae26f45c0d36480c2ce0618a03d7d",
+        "bytes": 3287,
+        "size": [
+          64,
+          64
+        ],
+        "mode": "RGBA"
+      }
+    },
+    {
+      "asset_id": "gem_blood_1",
+      "version": "economy-v2.0",
+      "workflow": "art/workflows/economy-gems-1-api.json",
+      "atlas": "gems-1",
+      "cell": 8,
+      "master": {
+        "path": "src/assets/economy/master/gem_blood_1.png",
+        "sha256": "6747a7f6fc229559fd9798b375c41ad7ac6c8c4372970d897833dff7762edb4d",
+        "bytes": 31984,
+        "size": [
+          256,
+          256
+        ],
+        "mode": "RGBA"
+      },
+      "runtime": {
+        "path": "src/assets/economy/runtime/gem_blood_1.png",
+        "sha256": "d434513547a67f6fc934ef6b2f2c3bd082b0e739713cbf71e2b640c807099424",
+        "bytes": 3604,
+        "size": [
+          64,
+          64
+        ],
+        "mode": "RGBA"
+      }
+    },
+    {
+      "asset_id": "gem_frost_1",
+      "version": "economy-v2.0",
+      "workflow": "art/workflows/economy-gems-1-api.json",
+      "atlas": "gems-1",
+      "cell": 9,
+      "master": {
+        "path": "src/assets/economy/master/gem_frost_1.png",
+        "sha256": "364758ffae7313a56fb694db7634be0f30ec9c7e2b41af8e7d41a97ecb9e6120",
+        "bytes": 30888,
+        "size": [
+          256,
+          256
+        ],
+        "mode": "RGBA"
+      },
+      "runtime": {
+        "path": "src/assets/economy/runtime/gem_frost_1.png",
+        "sha256": "044b201f149312d544c49afca4216e49a5eba55aa40c8d6e9fd7e700158d6901",
+        "bytes": 4288,
+        "size": [
+          64,
+          64
+        ],
+        "mode": "RGBA"
+      }
+    },
+    {
+      "asset_id": "gem_pierce_1",
+      "version": "economy-v2.0",
+      "workflow": "art/workflows/economy-gems-1-api.json",
+      "atlas": "gems-1",
+      "cell": 10,
+      "master": {
+        "path": "src/assets/economy/master/gem_pierce_1.png",
+        "sha256": "0cc766d6cc7feef6c3b67b2940a8fb7e6b221cfc55cd6b1e7ef9ea603843c9d6",
+        "bytes": 20000,
+        "size": [
+          256,
+          256
+        ],
+        "mode": "RGBA"
+      },
+      "runtime": {
+        "path": "src/assets/economy/runtime/gem_pierce_1.png",
+        "sha256": "bd0a2ccbed4ed42002d90b32497122c90db8859b767a839f6b545a3b8d79f664",
+        "bytes": 2377,
+        "size": [
+          64,
+          64
+        ],
+        "mode": "RGBA"
+      }
+    },
+    {
+      "asset_id": "gem_vital_1",
+      "version": "economy-v2.0",
+      "workflow": "art/workflows/economy-gems-1-api.json",
+      "atlas": "gems-1",
+      "cell": 11,
+      "master": {
+        "path": "src/assets/economy/master/gem_vital_1.png",
+        "sha256": "c5ea42fb45d0ee45d6b81dc948bd68c8077efa2391679c8c9bfae618645c11d5",
+        "bytes": 31723,
+        "size": [
+          256,
+          256
+        ],
+        "mode": "RGBA"
+      },
+      "runtime": {
+        "path": "src/assets/economy/runtime/gem_vital_1.png",
+        "sha256": "e4dde963dcd59be6b7fbbe5e11601ade98e775cf556e323939ff94c55ea8ee60",
+        "bytes": 3625,
+        "size": [
+          64,
+          64
+        ],
+        "mode": "RGBA"
+      }
+    },
+    {
+      "asset_id": "gem_fire_2",
+      "version": "economy-v2.0",
+      "workflow": "art/workflows/economy-gems-2-api.json",
+      "atlas": "gems-2",
+      "cell": 0,
+      "master": {
+        "path": "src/assets/economy/master/gem_fire_2.png",
+        "sha256": "932e5f8d7bebfb41eee4b664cafda7ef9f20e949f1bbc043cf38c98e41e8b57c",
+        "bytes": 39997,
+        "size": [
+          256,
+          256
+        ],
+        "mode": "RGBA"
+      },
+      "runtime": {
+        "path": "src/assets/economy/runtime/gem_fire_2.png",
+        "sha256": "3786c71ef6c52b09966e60cd0a68c39e10f6ad7f1847c94be3ebe17d4c15ec05",
+        "bytes": 4157,
+        "size": [
+          64,
+          64
+        ],
+        "mode": "RGBA"
+      }
+    },
+    {
+      "asset_id": "gem_blast_2",
+      "version": "economy-v2.0",
+      "workflow": "art/workflows/economy-gems-2-api.json",
+      "atlas": "gems-2",
+      "cell": 1,
+      "master": {
+        "path": "src/assets/economy/master/gem_blast_2.png",
+        "sha256": "8f5b7b631387eb37e5fded103c969a312edc108fabec86c6227bb80ffb0d07ca",
+        "bytes": 56625,
+        "size": [
+          256,
+          256
+        ],
+        "mode": "RGBA"
+      },
+      "runtime": {
+        "path": "src/assets/economy/runtime/gem_blast_2.png",
+        "sha256": "de6190628a225f27631f98e725dd6bf71c04227f36528b1e6318a36e7eec924f",
+        "bytes": 5874,
+        "size": [
+          64,
+          64
+        ],
+        "mode": "RGBA"
+      }
+    },
+    {
+      "asset_id": "gem_life_2",
+      "version": "economy-v2.0",
+      "workflow": "art/workflows/economy-gems-2-api.json",
+      "atlas": "gems-2",
+      "cell": 2,
+      "master": {
+        "path": "src/assets/economy/master/gem_life_2.png",
+        "sha256": "ce93cf5471603a97a5606652110d2680a30d1418e7c9b27767e16a94bee83226",
+        "bytes": 37120,
+        "size": [
+          256,
+          256
+        ],
+        "mode": "RGBA"
+      },
+      "runtime": {
+        "path": "src/assets/economy/runtime/gem_life_2.png",
+        "sha256": "31a4f20b4f2ea13a9cd69790695332c8dc1d9ab3bbca08bba59a0812bafde84e",
+        "bytes": 3828,
+        "size": [
+          64,
+          64
+        ],
+        "mode": "RGBA"
+      }
+    },
+    {
+      "asset_id": "gem_mana_2",
+      "version": "economy-v2.0",
+      "workflow": "art/workflows/economy-gems-2-api.json",
+      "atlas": "gems-2",
+      "cell": 3,
+      "master": {
+        "path": "src/assets/economy/master/gem_mana_2.png",
+        "sha256": "a3f3c34a6953bfa194e074e37f85de82ffc03f2d346f048963b241abd0cb4d89",
+        "bytes": 38256,
+        "size": [
+          256,
+          256
+        ],
+        "mode": "RGBA"
+      },
+      "runtime": {
+        "path": "src/assets/economy/runtime/gem_mana_2.png",
+        "sha256": "ee868787f051a4678f6b97ae4444329c32af1baf1fb8f150b493ab97980b36b0",
+        "bytes": 4118,
+        "size": [
+          64,
+          64
+        ],
+        "mode": "RGBA"
+      }
+    },
+    {
+      "asset_id": "gem_wisdom_2",
+      "version": "economy-v2.0",
+      "workflow": "art/workflows/economy-gems-2-api.json",
+      "atlas": "gems-2",
+      "cell": 4,
+      "master": {
+        "path": "src/assets/economy/master/gem_wisdom_2.png",
+        "sha256": "c343fc9203ead230cfcf5aefb64208d1649337f4e13fc376837dd24824e4b428",
+        "bytes": 34023,
+        "size": [
+          256,
+          256
+        ],
+        "mode": "RGBA"
+      },
+      "runtime": {
+        "path": "src/assets/economy/runtime/gem_wisdom_2.png",
+        "sha256": "5e57529624daf3b9a3f0c5dbd6a665d4da6e4382a1614f80b45c3a027b256493",
+        "bytes": 3569,
+        "size": [
+          64,
+          64
+        ],
+        "mode": "RGBA"
+      }
+    },
+    {
+      "asset_id": "gem_thunder_2",
+      "version": "economy-v2.0",
+      "workflow": "art/workflows/economy-gems-2-api.json",
+      "atlas": "gems-2",
+      "cell": 5,
+      "master": {
+        "path": "src/assets/economy/master/gem_thunder_2.png",
+        "sha256": "c08afde5846334be47cab385433a1b9868f48e34b8f6db35be2cb3f130899dc8",
+        "bytes": 28534,
+        "size": [
+          256,
+          256
+        ],
+        "mode": "RGBA"
+      },
+      "runtime": {
+        "path": "src/assets/economy/runtime/gem_thunder_2.png",
+        "sha256": "87800b517d9738124f66fa8131e22204483b249e5cf8ba530f4beea12bc77dba",
+        "bytes": 3284,
+        "size": [
+          64,
+          64
+        ],
+        "mode": "RGBA"
+      }
+    },
+    {
+      "asset_id": "gem_wind_2",
+      "version": "economy-v2.0",
+      "workflow": "art/workflows/economy-gems-2-api.json",
+      "atlas": "gems-2",
+      "cell": 6,
+      "master": {
+        "path": "src/assets/economy/master/gem_wind_2.png",
+        "sha256": "1677d9d4a61e57ec7d3ade3cbebbaa4e531354ab351115cac68c23502447354a",
+        "bytes": 33828,
+        "size": [
+          256,
+          256
+        ],
+        "mode": "RGBA"
+      },
+      "runtime": {
+        "path": "src/assets/economy/runtime/gem_wind_2.png",
+        "sha256": "19c51a16ab175eb7c1cde91ec7223068e7e11eaf178418f72a07d8f846b42de2",
+        "bytes": 4675,
+        "size": [
+          64,
+          64
+        ],
+        "mode": "RGBA"
+      }
+    },
+    {
+      "asset_id": "gem_armor_2",
+      "version": "economy-v2.0",
+      "workflow": "art/workflows/economy-gems-2-api.json",
+      "atlas": "gems-2",
+      "cell": 7,
+      "master": {
+        "path": "src/assets/economy/master/gem_armor_2.png",
+        "sha256": "341c0d56b27e73e8c9bc5aa7d27ce4a88337909fa793e21d79437c70d1b702da",
+        "bytes": 20843,
+        "size": [
+          256,
+          256
+        ],
+        "mode": "RGBA"
+      },
+      "runtime": {
+        "path": "src/assets/economy/runtime/gem_armor_2.png",
+        "sha256": "750caeecd3eac26300858d605463ebaff6bbcfc0f7d26d7312a8e70f7b408485",
+        "bytes": 4328,
+        "size": [
+          64,
+          64
+        ],
+        "mode": "RGBA"
+      }
+    },
+    {
+      "asset_id": "gem_blood_2",
+      "version": "economy-v2.0",
+      "workflow": "art/workflows/economy-gems-2-api.json",
+      "atlas": "gems-2",
+      "cell": 8,
+      "master": {
+        "path": "src/assets/economy/master/gem_blood_2.png",
+        "sha256": "56412e6658af1310fb13940425d3828128aabcecaba5b19dfb9af512cb5e92e1",
+        "bytes": 48088,
+        "size": [
+          256,
+          256
+        ],
+        "mode": "RGBA"
+      },
+      "runtime": {
+        "path": "src/assets/economy/runtime/gem_blood_2.png",
+        "sha256": "37e3914a5757c5bf50198b3c726c7ec9ae358b780a5f0a84e677d921a97ab84a",
+        "bytes": 5142,
+        "size": [
+          64,
+          64
+        ],
+        "mode": "RGBA"
+      }
+    },
+    {
+      "asset_id": "gem_frost_2",
+      "version": "economy-v2.0",
+      "workflow": "art/workflows/economy-gems-2-api.json",
+      "atlas": "gems-2",
+      "cell": 9,
+      "master": {
+        "path": "src/assets/economy/master/gem_frost_2.png",
+        "sha256": "5c4b9035e676e4e2a587c746a94ff72fd9c57b45e28688152618830840a60a55",
+        "bytes": 55331,
+        "size": [
+          256,
+          256
+        ],
+        "mode": "RGBA"
+      },
+      "runtime": {
+        "path": "src/assets/economy/runtime/gem_frost_2.png",
+        "sha256": "196b37d5d717103524e512b12a800ac671410e5cb214bccd8f1519f8d26e38b1",
+        "bytes": 5806,
+        "size": [
+          64,
+          64
+        ],
+        "mode": "RGBA"
+      }
+    },
+    {
+      "asset_id": "gem_pierce_2",
+      "version": "economy-v2.0",
+      "workflow": "art/workflows/economy-gems-2-api.json",
+      "atlas": "gems-2",
+      "cell": 10,
+      "master": {
+        "path": "src/assets/economy/master/gem_pierce_2.png",
+        "sha256": "296662e7de816729f65531cf94edb77f60586be2dd659f1903420bc6533c8c1e",
+        "bytes": 20369,
+        "size": [
+          256,
+          256
+        ],
+        "mode": "RGBA"
+      },
+      "runtime": {
+        "path": "src/assets/economy/runtime/gem_pierce_2.png",
+        "sha256": "bcfdc7ec9f435fa42ae625028c2a45c267137380ee21132d885c71915a46fcca",
+        "bytes": 2439,
+        "size": [
+          64,
+          64
+        ],
+        "mode": "RGBA"
+      }
+    },
+    {
+      "asset_id": "gem_vital_2",
+      "version": "economy-v2.0",
+      "workflow": "art/workflows/economy-gems-2-api.json",
+      "atlas": "gems-2",
+      "cell": 11,
+      "master": {
+        "path": "src/assets/economy/master/gem_vital_2.png",
+        "sha256": "827f39343b3d63f6ef71eb45ed41ad85968911bc4d0e4976eedd76925692f1c9",
+        "bytes": 42764,
+        "size": [
+          256,
+          256
+        ],
+        "mode": "RGBA"
+      },
+      "runtime": {
+        "path": "src/assets/economy/runtime/gem_vital_2.png",
+        "sha256": "df123e16a01f0da29d401052ffd6ac55d68e1a90462efc5476cb2f7d5f34f286",
+        "bytes": 4311,
+        "size": [
+          64,
+          64
+        ],
+        "mode": "RGBA"
+      }
+    },
+    {
+      "asset_id": "gem_fire_3",
+      "version": "economy-v2.0",
+      "workflow": "art/workflows/economy-gems-3-api.json",
+      "atlas": "gems-3",
+      "cell": 0,
+      "master": {
+        "path": "src/assets/economy/master/gem_fire_3.png",
+        "sha256": "9a31049253fabd70a5861dd9bf9329ee4312f96183bc361b41dc2aac4f610275",
+        "bytes": 40146,
+        "size": [
+          256,
+          256
+        ],
+        "mode": "RGBA"
+      },
+      "runtime": {
+        "path": "src/assets/economy/runtime/gem_fire_3.png",
+        "sha256": "1c03eed3aecc91557fdb52d181c07cce1ba83857e82de4de829db1c8889be019",
+        "bytes": 4238,
+        "size": [
+          64,
+          64
+        ],
+        "mode": "RGBA"
+      }
+    },
+    {
+      "asset_id": "gem_blast_3",
+      "version": "economy-v2.0",
+      "workflow": "art/workflows/economy-gems-3-api.json",
+      "atlas": "gems-3",
+      "cell": 1,
+      "master": {
+        "path": "src/assets/economy/master/gem_blast_3.png",
+        "sha256": "6a364cd035be8dfb65747db5784f7f861862ca8a194fed7bb8fb8d5751dabb88",
+        "bytes": 55481,
+        "size": [
+          256,
+          256
+        ],
+        "mode": "RGBA"
+      },
+      "runtime": {
+        "path": "src/assets/economy/runtime/gem_blast_3.png",
+        "sha256": "e1a0a42a8fc416fad3bf1e0c240937821ce0911364718e34ff04d2645130f70a",
+        "bytes": 6032,
+        "size": [
+          64,
+          64
+        ],
+        "mode": "RGBA"
+      }
+    },
+    {
+      "asset_id": "gem_life_3",
+      "version": "economy-v2.0",
+      "workflow": "art/workflows/economy-gems-3-api.json",
+      "atlas": "gems-3",
+      "cell": 2,
+      "master": {
+        "path": "src/assets/economy/master/gem_life_3.png",
+        "sha256": "16fbb57c03dcebf2d580d75bda0c8f8d5e3193abffc6dd676c20a09e325c7a93",
+        "bytes": 37933,
+        "size": [
+          256,
+          256
+        ],
+        "mode": "RGBA"
+      },
+      "runtime": {
+        "path": "src/assets/economy/runtime/gem_life_3.png",
+        "sha256": "b335b182ecc9bf4a5ceadbd8de7057cecb5b198a56de7bf8d9db55f347176179",
+        "bytes": 3893,
+        "size": [
+          64,
+          64
+        ],
+        "mode": "RGBA"
+      }
+    },
+    {
+      "asset_id": "gem_mana_3",
+      "version": "economy-v2.0",
+      "workflow": "art/workflows/economy-gems-3-api.json",
+      "atlas": "gems-3",
+      "cell": 3,
+      "master": {
+        "path": "src/assets/economy/master/gem_mana_3.png",
+        "sha256": "d444a0de100396157ea635c4f578904f0bac615910dd91cd892945d3311904c2",
+        "bytes": 38369,
+        "size": [
+          256,
+          256
+        ],
+        "mode": "RGBA"
+      },
+      "runtime": {
+        "path": "src/assets/economy/runtime/gem_mana_3.png",
+        "sha256": "34dba6e372d981d780edac5b5dff10ff454415c563d4e2d82aa5ddbf5aeb7f35",
+        "bytes": 4143,
+        "size": [
+          64,
+          64
+        ],
+        "mode": "RGBA"
+      }
+    },
+    {
+      "asset_id": "gem_wisdom_3",
+      "version": "economy-v2.0",
+      "workflow": "art/workflows/economy-gems-3-api.json",
+      "atlas": "gems-3",
+      "cell": 4,
+      "master": {
+        "path": "src/assets/economy/master/gem_wisdom_3.png",
+        "sha256": "84102cc6d8a9547d904674284941bad6e0dcdd93c3aeb9e07a35121b86f91ee2",
+        "bytes": 38924,
+        "size": [
+          256,
+          256
+        ],
+        "mode": "RGBA"
+      },
+      "runtime": {
+        "path": "src/assets/economy/runtime/gem_wisdom_3.png",
+        "sha256": "d21cc22f5718ef6dc96f2a32285f5bf726773bd9df40587afb94a6286b6a7815",
+        "bytes": 3964,
+        "size": [
+          64,
+          64
+        ],
+        "mode": "RGBA"
+      }
+    },
+    {
+      "asset_id": "gem_thunder_3",
+      "version": "economy-v2.0",
+      "workflow": "art/workflows/economy-gems-3-api.json",
+      "atlas": "gems-3",
+      "cell": 5,
+      "master": {
+        "path": "src/assets/economy/master/gem_thunder_3.png",
+        "sha256": "939eb2c8a119599aad214dd43c02cfa381b5a04e3fec0472d63eda9316cef028",
+        "bytes": 30305,
+        "size": [
+          256,
+          256
+        ],
+        "mode": "RGBA"
+      },
+      "runtime": {
+        "path": "src/assets/economy/runtime/gem_thunder_3.png",
+        "sha256": "8a5759503eaf26961d69e2f35cd46c35c627d6cef4bfe01125999a80f87cd322",
+        "bytes": 3505,
+        "size": [
+          64,
+          64
+        ],
+        "mode": "RGBA"
+      }
+    },
+    {
+      "asset_id": "gem_wind_3",
+      "version": "economy-v2.0",
+      "workflow": "art/workflows/economy-gems-3-api.json",
+      "atlas": "gems-3",
+      "cell": 6,
+      "master": {
+        "path": "src/assets/economy/master/gem_wind_3.png",
+        "sha256": "77ebc5ec119bf3f6b892412e310d058abd143d438765d7d899f8daf57e398476",
+        "bytes": 40116,
+        "size": [
+          256,
+          256
+        ],
+        "mode": "RGBA"
+      },
+      "runtime": {
+        "path": "src/assets/economy/runtime/gem_wind_3.png",
+        "sha256": "ac24d5c908bdb354d923680233d1f36e1fa3501090e2a26efbecd74a71597e9c",
+        "bytes": 4930,
+        "size": [
+          64,
+          64
+        ],
+        "mode": "RGBA"
+      }
+    },
+    {
+      "asset_id": "gem_armor_3",
+      "version": "economy-v2.0",
+      "workflow": "art/workflows/economy-gems-3-api.json",
+      "atlas": "gems-3",
+      "cell": 7,
+      "master": {
+        "path": "src/assets/economy/master/gem_armor_3.png",
+        "sha256": "e4efac609623095c5ad200f358fcf1b01cd2070729f966b8eb411e78feda3db2",
+        "bytes": 42155,
+        "size": [
+          256,
+          256
+        ],
+        "mode": "RGBA"
+      },
+      "runtime": {
+        "path": "src/assets/economy/runtime/gem_armor_3.png",
+        "sha256": "d59bdfed143d28cefdce520b5448cd201c934e424335f3f70e2cb3a401e9e00e",
+        "bytes": 4713,
+        "size": [
+          64,
+          64
+        ],
+        "mode": "RGBA"
+      }
+    },
+    {
+      "asset_id": "gem_blood_3",
+      "version": "economy-v2.0",
+      "workflow": "art/workflows/economy-gems-3-api.json",
+      "atlas": "gems-3",
+      "cell": 8,
+      "master": {
+        "path": "src/assets/economy/master/gem_blood_3.png",
+        "sha256": "b2b9be540ae91a4cd24ec4a05eaf2b4e5deecc2a068bf3d13108eb211638ea45",
+        "bytes": 49418,
+        "size": [
+          256,
+          256
+        ],
+        "mode": "RGBA"
+      },
+      "runtime": {
+        "path": "src/assets/economy/runtime/gem_blood_3.png",
+        "sha256": "a8eda42c473d7ef4aebdeeed116a4e6e4c065462b8b6627e0f17a354972aaa1e",
+        "bytes": 5249,
+        "size": [
+          64,
+          64
+        ],
+        "mode": "RGBA"
+      }
+    },
+    {
+      "asset_id": "gem_frost_3",
+      "version": "economy-v2.0",
+      "workflow": "art/workflows/economy-gems-3-api.json",
+      "atlas": "gems-3",
+      "cell": 9,
+      "master": {
+        "path": "src/assets/economy/master/gem_frost_3.png",
+        "sha256": "3250c3ab7c3d2e8a77f22fd658031f9d6f840ed752eecd42ada36d686d41f4d9",
+        "bytes": 41776,
+        "size": [
+          256,
+          256
+        ],
+        "mode": "RGBA"
+      },
+      "runtime": {
+        "path": "src/assets/economy/runtime/gem_frost_3.png",
+        "sha256": "5253f6281cbfda9b822ead6bde5cc5de26ee49fe8b8f07c34dd8f0d7b6457d56",
+        "bytes": 5610,
+        "size": [
+          64,
+          64
+        ],
+        "mode": "RGBA"
+      }
+    },
+    {
+      "asset_id": "gem_pierce_3",
+      "version": "economy-v2.0",
+      "workflow": "art/workflows/economy-gems-3-api.json",
+      "atlas": "gems-3",
+      "cell": 10,
+      "master": {
+        "path": "src/assets/economy/master/gem_pierce_3.png",
+        "sha256": "74f7b09794356d4af6ece2a8e94425c6ed305d1de35236de3104e7a3a02dbe59",
+        "bytes": 22970,
+        "size": [
+          256,
+          256
+        ],
+        "mode": "RGBA"
+      },
+      "runtime": {
+        "path": "src/assets/economy/runtime/gem_pierce_3.png",
+        "sha256": "18fd4023b47fb946fc77c4ea640c1e0fffa37cb202b8e5ba7e15e1e96d23d1d4",
+        "bytes": 2739,
+        "size": [
+          64,
+          64
+        ],
+        "mode": "RGBA"
+      }
+    },
+    {
+      "asset_id": "gem_vital_3",
+      "version": "economy-v2.0",
+      "workflow": "art/workflows/economy-gems-3-api.json",
+      "atlas": "gems-3",
+      "cell": 11,
+      "master": {
+        "path": "src/assets/economy/master/gem_vital_3.png",
+        "sha256": "9ed1ac78b1ca5bc5eb6b687016d20411cbee42be00abca080d78924c7de5ae14",
+        "bytes": 46366,
+        "size": [
+          256,
+          256
+        ],
+        "mode": "RGBA"
+      },
+      "runtime": {
+        "path": "src/assets/economy/runtime/gem_vital_3.png",
+        "sha256": "0e9754ff678feef8150a09cb6baaa4640189904a83408ed111f26a3e10b92cb6",
+        "bytes": 4610,
+        "size": [
+          64,
+          64
+        ],
+        "mode": "RGBA"
+      }
+    },
+    {
+      "asset_id": "gem_fire_4",
+      "version": "economy-v2.0",
+      "workflow": "art/workflows/economy-gems-4-api.json",
+      "atlas": "gems-4",
+      "cell": 0,
+      "master": {
+        "path": "src/assets/economy/master/gem_fire_4.png",
+        "sha256": "a8cefb588f777fba23e13e9238710e12bdb18d52521a6b18aa98d4746b9e7fae",
+        "bytes": 41520,
+        "size": [
+          256,
+          256
+        ],
+        "mode": "RGBA"
+      },
+      "runtime": {
+        "path": "src/assets/economy/runtime/gem_fire_4.png",
+        "sha256": "5f768c5c68c7e6354ade4d8e3bc2e937a15bdb38b2a20303ff9e2ead4c40dbba",
+        "bytes": 4525,
+        "size": [
+          64,
+          64
+        ],
+        "mode": "RGBA"
+      }
+    },
+    {
+      "asset_id": "gem_blast_4",
+      "version": "economy-v2.0",
+      "workflow": "art/workflows/economy-gems-4-api.json",
+      "atlas": "gems-4",
+      "cell": 1,
+      "master": {
+        "path": "src/assets/economy/master/gem_blast_4.png",
+        "sha256": "25b8467b4d5d71c229bec04110b7533776508ec377ef64ac245f815787f0e348",
+        "bytes": 50972,
+        "size": [
+          256,
+          256
+        ],
+        "mode": "RGBA"
+      },
+      "runtime": {
+        "path": "src/assets/economy/runtime/gem_blast_4.png",
+        "sha256": "83994940c39674c8ceabf10b286e886de0479d900c63fe1b057d32ca1bebbcf1",
+        "bytes": 5465,
+        "size": [
+          64,
+          64
+        ],
+        "mode": "RGBA"
+      }
+    },
+    {
+      "asset_id": "gem_life_4",
+      "version": "economy-v2.0",
+      "workflow": "art/workflows/economy-gems-4-api.json",
+      "atlas": "gems-4",
+      "cell": 2,
+      "master": {
+        "path": "src/assets/economy/master/gem_life_4.png",
+        "sha256": "e40c6410044a60bad436aba36329e0966ab9c5da3685cab6f91c8cfac8529597",
+        "bytes": 40224,
+        "size": [
+          256,
+          256
+        ],
+        "mode": "RGBA"
+      },
+      "runtime": {
+        "path": "src/assets/economy/runtime/gem_life_4.png",
+        "sha256": "5e04cc818487fdd2bf45fcb7770369fb9ad247a427df40ad439dc7a23e4885f9",
+        "bytes": 4173,
+        "size": [
+          64,
+          64
+        ],
+        "mode": "RGBA"
+      }
+    },
+    {
+      "asset_id": "gem_mana_4",
+      "version": "economy-v2.0",
+      "workflow": "art/workflows/economy-gems-4-api.json",
+      "atlas": "gems-4",
+      "cell": 3,
+      "master": {
+        "path": "src/assets/economy/master/gem_mana_4.png",
+        "sha256": "40a45fb5162702f4c2163e536cc0f67f42ceb08559804750bee9caf5c8f5d95e",
+        "bytes": 41039,
+        "size": [
+          256,
+          256
+        ],
+        "mode": "RGBA"
+      },
+      "runtime": {
+        "path": "src/assets/economy/runtime/gem_mana_4.png",
+        "sha256": "0be6aec0e1d493b8738a3e3a1882ec40fbc6c7de02fd0b8a0f3b031fc7236f96",
+        "bytes": 4468,
+        "size": [
+          64,
+          64
+        ],
+        "mode": "RGBA"
+      }
+    },
+    {
+      "asset_id": "gem_wisdom_4",
+      "version": "economy-v2.0",
+      "workflow": "art/workflows/economy-gems-4-api.json",
+      "atlas": "gems-4",
+      "cell": 4,
+      "master": {
+        "path": "src/assets/economy/master/gem_wisdom_4.png",
+        "sha256": "468fbb87b6b6a0a1d91e8e8089b79ee018fac5ff7ca21a5620dca0c9cc7b6e62",
+        "bytes": 37505,
+        "size": [
+          256,
+          256
+        ],
+        "mode": "RGBA"
+      },
+      "runtime": {
+        "path": "src/assets/economy/runtime/gem_wisdom_4.png",
+        "sha256": "48569eeaf5bb464c9ece3f4f442d06614490237b8d082cab66b27765172f4484",
+        "bytes": 3880,
+        "size": [
+          64,
+          64
+        ],
+        "mode": "RGBA"
+      }
+    },
+    {
+      "asset_id": "gem_thunder_4",
+      "version": "economy-v2.0",
+      "workflow": "art/workflows/economy-gems-4-api.json",
+      "atlas": "gems-4",
+      "cell": 5,
+      "master": {
+        "path": "src/assets/economy/master/gem_thunder_4.png",
+        "sha256": "27a7bd72ab0788a84471000dfd3020b2b9483910efa101a65b59932e5d47b9dd",
+        "bytes": 30103,
+        "size": [
+          256,
+          256
+        ],
+        "mode": "RGBA"
+      },
+      "runtime": {
+        "path": "src/assets/economy/runtime/gem_thunder_4.png",
+        "sha256": "4eb18cbaa6fc87a3873785516074303031d941e64ed46549931bf28087d6f82f",
+        "bytes": 3487,
+        "size": [
+          64,
+          64
+        ],
+        "mode": "RGBA"
+      }
+    },
+    {
+      "asset_id": "gem_wind_4",
+      "version": "economy-v2.0",
+      "workflow": "art/workflows/economy-gems-4-api.json",
+      "atlas": "gems-4",
+      "cell": 6,
+      "master": {
+        "path": "src/assets/economy/master/gem_wind_4.png",
+        "sha256": "2c0632cd5d7ac2dda85ab11c6b8968637651ab56ce764d847efac9d25b268dee",
+        "bytes": 37072,
+        "size": [
+          256,
+          256
+        ],
+        "mode": "RGBA"
+      },
+      "runtime": {
+        "path": "src/assets/economy/runtime/gem_wind_4.png",
+        "sha256": "2caf139614a13074e313b359b85a589c3191ddbbced8ac02ce12ef04d5e4a271",
+        "bytes": 4864,
+        "size": [
+          64,
+          64
+        ],
+        "mode": "RGBA"
+      }
+    },
+    {
+      "asset_id": "gem_armor_4",
+      "version": "economy-v2.0",
+      "workflow": "art/workflows/economy-gems-4-api.json",
+      "atlas": "gems-4",
+      "cell": 7,
+      "master": {
+        "path": "src/assets/economy/master/gem_armor_4.png",
+        "sha256": "bc4a3f50bc54c498e84a51c2fe2a9de6ad7e23ed1674578b64c5c391047f0035",
+        "bytes": 40332,
+        "size": [
+          256,
+          256
+        ],
+        "mode": "RGBA"
+      },
+      "runtime": {
+        "path": "src/assets/economy/runtime/gem_armor_4.png",
+        "sha256": "b5aac4a6a2ed22a6cfe07f59c98114f4446d5ff9562c052dbc8bcc5f60c1953b",
+        "bytes": 4452,
+        "size": [
+          64,
+          64
+        ],
+        "mode": "RGBA"
+      }
+    },
+    {
+      "asset_id": "gem_blood_4",
+      "version": "economy-v2.0",
+      "workflow": "art/workflows/economy-gems-4-api.json",
+      "atlas": "gems-4",
+      "cell": 8,
+      "master": {
+        "path": "src/assets/economy/master/gem_blood_4.png",
+        "sha256": "9f63d00784b75c4d7c7972d9571c136574f5b6907d2719878b4eb9ae1f5eba39",
+        "bytes": 47013,
+        "size": [
+          256,
+          256
+        ],
+        "mode": "RGBA"
+      },
+      "runtime": {
+        "path": "src/assets/economy/runtime/gem_blood_4.png",
+        "sha256": "d2f0873c4f790aeee5d086f4dc184d3bd919d07bfe72a0fe06abb3179d42e1a8",
+        "bytes": 5157,
+        "size": [
+          64,
+          64
+        ],
+        "mode": "RGBA"
+      }
+    },
+    {
+      "asset_id": "gem_frost_4",
+      "version": "economy-v2.0",
+      "workflow": "art/workflows/economy-gems-4-api.json",
+      "atlas": "gems-4",
+      "cell": 9,
+      "master": {
+        "path": "src/assets/economy/master/gem_frost_4.png",
+        "sha256": "f9d0e3ea46e6171e3987e41229e949b30d1fa8f6238759b175361c2907f97648",
+        "bytes": 43769,
+        "size": [
+          256,
+          256
+        ],
+        "mode": "RGBA"
+      },
+      "runtime": {
+        "path": "src/assets/economy/runtime/gem_frost_4.png",
+        "sha256": "fdbe9d9aa58a5db4bf791233b01de1efba9081f5d659528a2220a22d953b15d5",
+        "bytes": 5951,
+        "size": [
+          64,
+          64
+        ],
+        "mode": "RGBA"
+      }
+    },
+    {
+      "asset_id": "gem_pierce_4",
+      "version": "economy-v2.0",
+      "workflow": "art/workflows/economy-gems-4-api.json",
+      "atlas": "gems-4",
+      "cell": 10,
+      "master": {
+        "path": "src/assets/economy/master/gem_pierce_4.png",
+        "sha256": "414542241c99818079de6ad19602e8fe7df34c7cb7da7cc1db2a9b0528566a82",
+        "bytes": 23149,
+        "size": [
+          256,
+          256
+        ],
+        "mode": "RGBA"
+      },
+      "runtime": {
+        "path": "src/assets/economy/runtime/gem_pierce_4.png",
+        "sha256": "d2794c218846e44f2906b53c1b341d597858ecfefc6337e4dadabdfdf749ef81",
+        "bytes": 2731,
+        "size": [
+          64,
+          64
+        ],
+        "mode": "RGBA"
+      }
+    },
+    {
+      "asset_id": "gem_vital_4",
+      "version": "economy-v2.0",
+      "workflow": "art/workflows/economy-gems-4-api.json",
+      "atlas": "gems-4",
+      "cell": 11,
+      "master": {
+        "path": "src/assets/economy/master/gem_vital_4.png",
+        "sha256": "b34cf3682086dc799f423995f8a2d68ce0dc3c8aa14298bc5d0f8699ddba088e",
+        "bytes": 44899,
+        "size": [
+          256,
+          256
+        ],
+        "mode": "RGBA"
+      },
+      "runtime": {
+        "path": "src/assets/economy/runtime/gem_vital_4.png",
+        "sha256": "c01329973ed0fed9ca7343d1d0fbf42dfeba393d170a4a026eaa00521ce35c82",
+        "bytes": 4598,
+        "size": [
+          64,
+          64
+        ],
+        "mode": "RGBA"
+      }
+    },
+    {
+      "asset_id": "gem_fire_5",
+      "version": "economy-v2.0",
+      "workflow": "art/workflows/economy-gems-5-api.json",
+      "atlas": "gems-5",
+      "cell": 0,
+      "master": {
+        "path": "src/assets/economy/master/gem_fire_5.png",
+        "sha256": "e1db57c86b865029984916631c192abfa6f5c5bfc2ab3f3361bdc7a98b921d8b",
+        "bytes": 29499,
+        "size": [
+          256,
+          256
+        ],
+        "mode": "RGBA"
+      },
+      "runtime": {
+        "path": "src/assets/economy/runtime/gem_fire_5.png",
+        "sha256": "66d6a04a66d6462274bb93ebfdc165a4f014352e3a8954cd872795ad1114f812",
+        "bytes": 4001,
+        "size": [
+          64,
+          64
+        ],
+        "mode": "RGBA"
+      }
+    },
+    {
+      "asset_id": "gem_blast_5",
+      "version": "economy-v2.0",
+      "workflow": "art/workflows/economy-gems-5-api.json",
+      "atlas": "gems-5",
+      "cell": 1,
+      "master": {
+        "path": "src/assets/economy/master/gem_blast_5.png",
+        "sha256": "c2fde2eff7496c491f5ba585ab417cf442af692b6c8d375511412871d34480ed",
+        "bytes": 36351,
+        "size": [
+          256,
+          256
+        ],
+        "mode": "RGBA"
+      },
+      "runtime": {
+        "path": "src/assets/economy/runtime/gem_blast_5.png",
+        "sha256": "ef4a6d49386514a7d5182a705e6cdfd1827e7776bc5e74c436dd0a08d7945967",
+        "bytes": 4527,
+        "size": [
+          64,
+          64
+        ],
+        "mode": "RGBA"
+      }
+    },
+    {
+      "asset_id": "gem_life_5",
+      "version": "economy-v2.0",
+      "workflow": "art/workflows/economy-gems-5-api.json",
+      "atlas": "gems-5",
+      "cell": 2,
+      "master": {
+        "path": "src/assets/economy/master/gem_life_5.png",
+        "sha256": "f7755bf2a7a88e1678ea524c071f843d765d20361069ac1fab8f722f13bbeab7",
+        "bytes": 33779,
+        "size": [
+          256,
+          256
+        ],
+        "mode": "RGBA"
+      },
+      "runtime": {
+        "path": "src/assets/economy/runtime/gem_life_5.png",
+        "sha256": "9a10a9984b4c47bad1d5498927fe438b9398cf98428cc05331017ec19412fa85",
+        "bytes": 4347,
+        "size": [
+          64,
+          64
+        ],
+        "mode": "RGBA"
+      }
+    },
+    {
+      "asset_id": "gem_mana_5",
+      "version": "economy-v2.0",
+      "workflow": "art/workflows/economy-gems-5-api.json",
+      "atlas": "gems-5",
+      "cell": 3,
+      "master": {
+        "path": "src/assets/economy/master/gem_mana_5.png",
+        "sha256": "58567b15713716ab037c1d96892a203fee4abc2c95280439380d950950c43654",
+        "bytes": 36014,
+        "size": [
+          256,
+          256
+        ],
+        "mode": "RGBA"
+      },
+      "runtime": {
+        "path": "src/assets/economy/runtime/gem_mana_5.png",
+        "sha256": "ea30dcc5e01f7bfde03c9dfdee4052553d021be6e400bad77f76ec6619f4dac6",
+        "bytes": 4174,
+        "size": [
+          64,
+          64
+        ],
+        "mode": "RGBA"
+      }
+    },
+    {
+      "asset_id": "gem_wisdom_5",
+      "version": "economy-v2.0",
+      "workflow": "art/workflows/economy-gems-5-api.json",
+      "atlas": "gems-5",
+      "cell": 4,
+      "master": {
+        "path": "src/assets/economy/master/gem_wisdom_5.png",
+        "sha256": "b495c873efdbeefcf618e27bf0878fdec34b02f8c85325c04cbda750155ed7a8",
+        "bytes": 31876,
+        "size": [
+          256,
+          256
+        ],
+        "mode": "RGBA"
+      },
+      "runtime": {
+        "path": "src/assets/economy/runtime/gem_wisdom_5.png",
+        "sha256": "10f763914240f710e1dd4565d62c06614b0474485ecc2b30e8047707e1acb762",
+        "bytes": 3544,
+        "size": [
+          64,
+          64
+        ],
+        "mode": "RGBA"
+      }
+    },
+    {
+      "asset_id": "gem_thunder_5",
+      "version": "economy-v2.0",
+      "workflow": "art/workflows/economy-gems-5-api.json",
+      "atlas": "gems-5",
+      "cell": 5,
+      "master": {
+        "path": "src/assets/economy/master/gem_thunder_5.png",
+        "sha256": "b50ee4b1edd0dd7b5766ead2755e2e43bcb142f9add00e7268019a4db0f4818c",
+        "bytes": 29905,
+        "size": [
+          256,
+          256
+        ],
+        "mode": "RGBA"
+      },
+      "runtime": {
+        "path": "src/assets/economy/runtime/gem_thunder_5.png",
+        "sha256": "bed7c991f8840021539f0ca94895252518f441fb49a50c57968fbc28665de4f3",
+        "bytes": 3657,
+        "size": [
+          64,
+          64
+        ],
+        "mode": "RGBA"
+      }
+    },
+    {
+      "asset_id": "gem_wind_5",
+      "version": "economy-v2.0",
+      "workflow": "art/workflows/economy-gems-5-api.json",
+      "atlas": "gems-5",
+      "cell": 6,
+      "master": {
+        "path": "src/assets/economy/master/gem_wind_5.png",
+        "sha256": "777bf88f01aec59f6434e37cb6aefb25be507773f1a38413736cbeced9974dee",
+        "bytes": 30199,
+        "size": [
+          256,
+          256
+        ],
+        "mode": "RGBA"
+      },
+      "runtime": {
+        "path": "src/assets/economy/runtime/gem_wind_5.png",
+        "sha256": "33ce126fbd5be7968735a693fcbc65a6c2b93283c7afd4ff84463263d3d589b4",
+        "bytes": 4271,
+        "size": [
+          64,
+          64
+        ],
+        "mode": "RGBA"
+      }
+    },
+    {
+      "asset_id": "gem_armor_5",
+      "version": "economy-v2.0",
+      "workflow": "art/workflows/economy-gems-5-api.json",
+      "atlas": "gems-5",
+      "cell": 7,
+      "master": {
+        "path": "src/assets/economy/master/gem_armor_5.png",
+        "sha256": "2059c9ebcfc5c3537666f3c1a1e8ead6c663d374693796f0999c0823871b6039",
+        "bytes": 31372,
+        "size": [
+          256,
+          256
+        ],
+        "mode": "RGBA"
+      },
+      "runtime": {
+        "path": "src/assets/economy/runtime/gem_armor_5.png",
+        "sha256": "6ee1a2d25f9f388f5ca2c492fa69e7225ee1a5cfa034d864ca5f7816ea36f50e",
+        "bytes": 4045,
+        "size": [
+          64,
+          64
+        ],
+        "mode": "RGBA"
+      }
+    },
+    {
+      "asset_id": "gem_blood_5",
+      "version": "economy-v2.0",
+      "workflow": "art/workflows/economy-gems-5-api.json",
+      "atlas": "gems-5",
+      "cell": 8,
+      "master": {
+        "path": "src/assets/economy/master/gem_blood_5.png",
+        "sha256": "da9d03dc3efacb4dc1b1af6ed2a3251537a7e4b54690ecc52af89ed609148144",
+        "bytes": 32369,
+        "size": [
+          256,
+          256
+        ],
+        "mode": "RGBA"
+      },
+      "runtime": {
+        "path": "src/assets/economy/runtime/gem_blood_5.png",
+        "sha256": "d85186cda91c7371eb2fbb91d624ae06e814b1d4a05e1d1da7e92176933aacf2",
+        "bytes": 4002,
+        "size": [
+          64,
+          64
+        ],
+        "mode": "RGBA"
+      }
+    },
+    {
+      "asset_id": "gem_frost_5",
+      "version": "economy-v2.0",
+      "workflow": "art/workflows/economy-gems-5-api.json",
+      "atlas": "gems-5",
+      "cell": 9,
+      "master": {
+        "path": "src/assets/economy/master/gem_frost_5.png",
+        "sha256": "85114df290d399bee7c8cb89990f2a0323dee160f077255e593a16e9c43ca2ae",
+        "bytes": 30832,
+        "size": [
+          256,
+          256
+        ],
+        "mode": "RGBA"
+      },
+      "runtime": {
+        "path": "src/assets/economy/runtime/gem_frost_5.png",
+        "sha256": "9a5442b94f7e90d5cf56e8a0cebf912dc0353f75916416c461a297070297ad32",
+        "bytes": 4746,
+        "size": [
+          64,
+          64
+        ],
+        "mode": "RGBA"
+      }
+    },
+    {
+      "asset_id": "gem_pierce_5",
+      "version": "economy-v2.0",
+      "workflow": "art/workflows/economy-gems-5-api.json",
+      "atlas": "gems-5",
+      "cell": 10,
+      "master": {
+        "path": "src/assets/economy/master/gem_pierce_5.png",
+        "sha256": "f21613fcee61fcf4ed51e2bb0f85f5e911d471c89d275e9a5589e386268370d6",
+        "bytes": 21806,
+        "size": [
+          256,
+          256
+        ],
+        "mode": "RGBA"
+      },
+      "runtime": {
+        "path": "src/assets/economy/runtime/gem_pierce_5.png",
+        "sha256": "69ce2ba096714cb791551f28a04468af15920d7eb85abd8e27f1dbcd26d0db60",
+        "bytes": 2836,
+        "size": [
+          64,
+          64
+        ],
+        "mode": "RGBA"
+      }
+    },
+    {
+      "asset_id": "gem_vital_5",
+      "version": "economy-v2.0",
+      "workflow": "art/workflows/economy-gems-5-api.json",
+      "atlas": "gems-5",
+      "cell": 11,
+      "master": {
+        "path": "src/assets/economy/master/gem_vital_5.png",
+        "sha256": "a5866511ef8097a7b57b0c3130993b3622bb6081df5a68b67e77eb861d267bee",
+        "bytes": 30608,
+        "size": [
+          256,
+          256
+        ],
+        "mode": "RGBA"
+      },
+      "runtime": {
+        "path": "src/assets/economy/runtime/gem_vital_5.png",
+        "sha256": "d53d0a2f3e30066bdcc7b9b1afaf9e95b7155d5913f4c14eec7880f3fc44bee6",
+        "bytes": 3952,
+        "size": [
+          64,
+          64
+        ],
+        "mode": "RGBA"
+      }
+    },
+    {
+      "asset_id": "gem_fire_6",
+      "version": "economy-v2.0",
+      "workflow": "art/workflows/economy-gems-6-api.json",
+      "atlas": "gems-6",
+      "cell": 0,
+      "master": {
+        "path": "src/assets/economy/master/gem_fire_6.png",
+        "sha256": "e89bc1f6bc9b2e092045573256112aa195435e26476daef572717cadc2c242df",
+        "bytes": 40950,
+        "size": [
+          256,
+          256
+        ],
+        "mode": "RGBA"
+      },
+      "runtime": {
+        "path": "src/assets/economy/runtime/gem_fire_6.png",
+        "sha256": "1c56fa6c355c9211a661274dfbbbebc9cfbca589d350624765085666e92586d1",
+        "bytes": 5227,
+        "size": [
+          64,
+          64
+        ],
+        "mode": "RGBA"
+      }
+    },
+    {
+      "asset_id": "gem_blast_6",
+      "version": "economy-v2.0",
+      "workflow": "art/workflows/economy-gems-6-api.json",
+      "atlas": "gems-6",
+      "cell": 1,
+      "master": {
+        "path": "src/assets/economy/master/gem_blast_6.png",
+        "sha256": "c5055362d972e2159874aa1aa643f8fde7d0354ca7f3fb2c0a1d4697f1c300cd",
+        "bytes": 50015,
+        "size": [
+          256,
+          256
+        ],
+        "mode": "RGBA"
+      },
+      "runtime": {
+        "path": "src/assets/economy/runtime/gem_blast_6.png",
+        "sha256": "6dbedb60398f13ecae5e5df65c2fdf35738cc87deaa2042d6c4ddecd7a069ac0",
+        "bytes": 5691,
+        "size": [
+          64,
+          64
+        ],
+        "mode": "RGBA"
+      }
+    },
+    {
+      "asset_id": "gem_life_6",
+      "version": "economy-v2.0",
+      "workflow": "art/workflows/economy-gems-6-api.json",
+      "atlas": "gems-6",
+      "cell": 2,
+      "master": {
+        "path": "src/assets/economy/master/gem_life_6.png",
+        "sha256": "b5c92609e2054c3e305aea06892277846c1404ef84da5e09c51c95a7a119415a",
+        "bytes": 44248,
+        "size": [
+          256,
+          256
+        ],
+        "mode": "RGBA"
+      },
+      "runtime": {
+        "path": "src/assets/economy/runtime/gem_life_6.png",
+        "sha256": "b26b68d120e0c33dd87618d1d8738d0b529f544368307d295e5faaf09e4d7c64",
+        "bytes": 4644,
+        "size": [
+          64,
+          64
+        ],
+        "mode": "RGBA"
+      }
+    },
+    {
+      "asset_id": "gem_mana_6",
+      "version": "economy-v2.0",
+      "workflow": "art/workflows/economy-gems-6-api.json",
+      "atlas": "gems-6",
+      "cell": 3,
+      "master": {
+        "path": "src/assets/economy/master/gem_mana_6.png",
+        "sha256": "b07e151b989b095029954c380a1d00c362aff0930b00ed06373bd84c891ba7ac",
+        "bytes": 44114,
+        "size": [
+          256,
+          256
+        ],
+        "mode": "RGBA"
+      },
+      "runtime": {
+        "path": "src/assets/economy/runtime/gem_mana_6.png",
+        "sha256": "b6958d44270e2b14e1d7c4544108c32fd79e90b461a52a6134fe28882c3e3194",
+        "bytes": 4866,
+        "size": [
+          64,
+          64
+        ],
+        "mode": "RGBA"
+      }
+    },
+    {
+      "asset_id": "gem_wisdom_6",
+      "version": "economy-v2.0",
+      "workflow": "art/workflows/economy-gems-6-api.json",
+      "atlas": "gems-6",
+      "cell": 4,
+      "master": {
+        "path": "src/assets/economy/master/gem_wisdom_6.png",
+        "sha256": "564d6b3903a41c59bb7d2c53a251c30ac4bb8e8d9b8a5dd81711be01fdacd75b",
+        "bytes": 39393,
+        "size": [
+          256,
+          256
+        ],
+        "mode": "RGBA"
+      },
+      "runtime": {
+        "path": "src/assets/economy/runtime/gem_wisdom_6.png",
+        "sha256": "6cbff759a974024674b18b33dd18669045784f2d9ddf55e4e84b9745bd467185",
+        "bytes": 4105,
+        "size": [
+          64,
+          64
+        ],
+        "mode": "RGBA"
+      }
+    },
+    {
+      "asset_id": "gem_thunder_6",
+      "version": "economy-v2.0",
+      "workflow": "art/workflows/economy-gems-6-api.json",
+      "atlas": "gems-6",
+      "cell": 5,
+      "master": {
+        "path": "src/assets/economy/master/gem_thunder_6.png",
+        "sha256": "e1bb20eb48f58b38fb22f10c6fcc6986079df95b29740834899951ca83db1f25",
+        "bytes": 30276,
+        "size": [
+          256,
+          256
+        ],
+        "mode": "RGBA"
+      },
+      "runtime": {
+        "path": "src/assets/economy/runtime/gem_thunder_6.png",
+        "sha256": "14dd89e3649c691262683de09467eae5dd9b7881d41cf4f45f22f03ca123196c",
+        "bytes": 3651,
+        "size": [
+          64,
+          64
+        ],
+        "mode": "RGBA"
+      }
+    },
+    {
+      "asset_id": "gem_wind_6",
+      "version": "economy-v2.0",
+      "workflow": "art/workflows/economy-gems-6-api.json",
+      "atlas": "gems-6",
+      "cell": 6,
+      "master": {
+        "path": "src/assets/economy/master/gem_wind_6.png",
+        "sha256": "611a9f00ac23fe2205eeafbfb4393e46e453a833e83bd41b7168e7798ec94367",
+        "bytes": 39527,
+        "size": [
+          256,
+          256
+        ],
+        "mode": "RGBA"
+      },
+      "runtime": {
+        "path": "src/assets/economy/runtime/gem_wind_6.png",
+        "sha256": "d43e2ab0c0b460201987dcc3d87968aa45880ecb14c8a121d26e30246a18b37e",
+        "bytes": 5069,
+        "size": [
+          64,
+          64
+        ],
+        "mode": "RGBA"
+      }
+    },
+    {
+      "asset_id": "gem_armor_6",
+      "version": "economy-v2.0",
+      "workflow": "art/workflows/economy-gems-6-api.json",
+      "atlas": "gems-6",
+      "cell": 7,
+      "master": {
+        "path": "src/assets/economy/master/gem_armor_6.png",
+        "sha256": "e095d9564c7c359f5585dff4d9f6a23251cac66e817cd2566fda65d6d67c4f27",
+        "bytes": 37862,
+        "size": [
+          256,
+          256
+        ],
+        "mode": "RGBA"
+      },
+      "runtime": {
+        "path": "src/assets/economy/runtime/gem_armor_6.png",
+        "sha256": "4b4e8a0b58f12bcca7bb2f50f643c31207da739e8292483e8514ffaf22ed1a9c",
+        "bytes": 4371,
+        "size": [
+          64,
+          64
+        ],
+        "mode": "RGBA"
+      }
+    },
+    {
+      "asset_id": "gem_blood_6",
+      "version": "economy-v2.0",
+      "workflow": "art/workflows/economy-gems-6-api.json",
+      "atlas": "gems-6",
+      "cell": 8,
+      "master": {
+        "path": "src/assets/economy/master/gem_blood_6.png",
+        "sha256": "dee79312ce5768f7166b5500ba727edf9bbcddf811b36a83e937ad9b3df56ffe",
+        "bytes": 48206,
+        "size": [
+          256,
+          256
+        ],
+        "mode": "RGBA"
+      },
+      "runtime": {
+        "path": "src/assets/economy/runtime/gem_blood_6.png",
+        "sha256": "3ecff8ef1e207ceca753cde46cf7edb9d71ccafc0101df9ff6e8c7cd794c728e",
+        "bytes": 5395,
+        "size": [
+          64,
+          64
+        ],
+        "mode": "RGBA"
+      }
+    },
+    {
+      "asset_id": "gem_frost_6",
+      "version": "economy-v2.0",
+      "workflow": "art/workflows/economy-gems-6-api.json",
+      "atlas": "gems-6",
+      "cell": 9,
+      "master": {
+        "path": "src/assets/economy/master/gem_frost_6.png",
+        "sha256": "862cd628339f5b0859d22f0e7c71fa62c0b7517856e340422e0c6fadd54ee66f",
+        "bytes": 41477,
+        "size": [
+          256,
+          256
+        ],
+        "mode": "RGBA"
+      },
+      "runtime": {
+        "path": "src/assets/economy/runtime/gem_frost_6.png",
+        "sha256": "7fed8cafadbcaf1d3449e07e36d404bec523eaa65f248cb698799a233c72b65e",
+        "bytes": 5727,
+        "size": [
+          64,
+          64
+        ],
+        "mode": "RGBA"
+      }
+    },
+    {
+      "asset_id": "gem_pierce_6",
+      "version": "economy-v2.0",
+      "workflow": "art/workflows/economy-gems-6-api.json",
+      "atlas": "gems-6",
+      "cell": 10,
+      "master": {
+        "path": "src/assets/economy/master/gem_pierce_6.png",
+        "sha256": "9057a67794c16604bace3e1f0ac1d0bbc4a5150988a3dfa4c974c46a6b43c997",
+        "bytes": 19525,
+        "size": [
+          256,
+          256
+        ],
+        "mode": "RGBA"
+      },
+      "runtime": {
+        "path": "src/assets/economy/runtime/gem_pierce_6.png",
+        "sha256": "6881f0c8f2d52d3dba0a7ecbea5fa40f8f0c244cecdaa608ee8981058ff49aac",
+        "bytes": 2579,
+        "size": [
+          64,
+          64
+        ],
+        "mode": "RGBA"
+      }
+    },
+    {
+      "asset_id": "gem_vital_6",
+      "version": "economy-v2.0",
+      "workflow": "art/workflows/economy-gems-6-api.json",
+      "atlas": "gems-6",
+      "cell": 11,
+      "master": {
+        "path": "src/assets/economy/master/gem_vital_6.png",
+        "sha256": "40762e30baa449a560f82d56d282a346cf586fb51a5e57a383468ba11f5ff0f5",
+        "bytes": 45265,
+        "size": [
+          256,
+          256
+        ],
+        "mode": "RGBA"
+      },
+      "runtime": {
+        "path": "src/assets/economy/runtime/gem_vital_6.png",
+        "sha256": "4bf7569332f4d43e3e901f5948094c7cb2091086ada93b1bdd84ac2a3ac2f578",
+        "bytes": 4691,
+        "size": [
+          64,
+          64
+        ],
+        "mode": "RGBA"
+      }
+    },
+    {
+      "asset_id": "feature_shop",
+      "version": "economy-v2.0",
+      "workflow": "art/workflows/economy-features-api.json",
+      "atlas": "features",
+      "cell": 0,
+      "master": {
+        "path": "src/assets/economy/master/feature_shop.png",
+        "sha256": "83ef9503c7b7e6d8d4a3391fed20cb352908e032e9ed6b7d7d5ea056dbe92463",
+        "bytes": 65387,
+        "size": [
+          256,
+          256
+        ],
+        "mode": "RGBA"
+      },
+      "runtime": {
+        "path": "src/assets/economy/runtime/feature_shop.png",
+        "sha256": "fcdfe188d11a65d74d33562c11771dec3293623b4deb927a3da2001c4c4b6c12",
+        "bytes": 6993,
+        "size": [
+          64,
+          64
+        ],
+        "mode": "RGBA"
+      }
+    },
+    {
+      "asset_id": "feature_forge",
+      "version": "economy-v2.0",
+      "workflow": "art/workflows/economy-features-api.json",
+      "atlas": "features",
+      "cell": 1,
+      "master": {
+        "path": "src/assets/economy/master/feature_forge.png",
+        "sha256": "ef36c29663edc515df5b643af394c85cb4ec02d2c755ba462c7e6efcaecbdfcd",
+        "bytes": 47502,
+        "size": [
+          256,
+          256
+        ],
+        "mode": "RGBA"
+      },
+      "runtime": {
+        "path": "src/assets/economy/runtime/feature_forge.png",
+        "sha256": "b629cec44028b3bee7512014690c5a25588206349c37428abf6f1c22f7e28c11",
+        "bytes": 5368,
+        "size": [
+          64,
+          64
+        ],
+        "mode": "RGBA"
+      }
+    },
+    {
+      "asset_id": "feature_encounter",
+      "version": "economy-v2.0",
+      "workflow": "art/workflows/economy-features-api.json",
+      "atlas": "features",
+      "cell": 2,
+      "master": {
+        "path": "src/assets/economy/master/feature_encounter.png",
+        "sha256": "7cfecdd62745856ed8a142290841cda2c33e90eabaa006c9e69876b1c69c9b88",
+        "bytes": 54210,
+        "size": [
+          256,
+          256
+        ],
+        "mode": "RGBA"
+      },
+      "runtime": {
+        "path": "src/assets/economy/runtime/feature_encounter.png",
+        "sha256": "360b60a09e4648d36289771b7c8561e8b8f4d68ebb5fa8be26a384e53ee36c0b",
+        "bytes": 5834,
+        "size": [
+          64,
+          64
+        ],
+        "mode": "RGBA"
+      }
+    },
+    {
+      "asset_id": "feature_world",
+      "version": "economy-v2.0",
+      "workflow": "art/workflows/economy-features-api.json",
+      "atlas": "features",
+      "cell": 3,
+      "master": {
+        "path": "src/assets/economy/master/feature_world.png",
+        "sha256": "034e0fcc49781b632da6488977a39afd8f11bb1bc17330cf3473663310cc9642",
+        "bytes": 84279,
+        "size": [
+          256,
+          256
+        ],
+        "mode": "RGBA"
+      },
+      "runtime": {
+        "path": "src/assets/economy/runtime/feature_world.png",
+        "sha256": "1241bd696d2cdea701fda2064e8959d76baa975c882d9c8f747502013230d776",
+        "bytes": 8036,
+        "size": [
+          64,
+          64
+        ],
+        "mode": "RGBA"
+      }
+    },
+    {
+      "asset_id": "feature_pet",
+      "version": "economy-v2.0",
+      "workflow": "art/workflows/economy-features-api.json",
+      "atlas": "features",
+      "cell": 4,
+      "master": {
+        "path": "src/assets/economy/master/feature_pet.png",
+        "sha256": "cc32ae8aaa28369f7b1e2e426f378902973b546cf66653b8441e7ee426db845d",
+        "bytes": 46955,
+        "size": [
+          256,
+          256
+        ],
+        "mode": "RGBA"
+      },
+      "runtime": {
+        "path": "src/assets/economy/runtime/feature_pet.png",
+        "sha256": "1d31f0b9116a3347e786380b299087e48d329a6b5aff0ba4901a5d03e9e2637b",
+        "bytes": 5158,
+        "size": [
+          64,
+          64
+        ],
+        "mode": "RGBA"
+      }
+    },
+    {
+      "asset_id": "feature_treasure",
+      "version": "economy-v2.0",
+      "workflow": "art/workflows/economy-features-api.json",
+      "atlas": "features",
+      "cell": 5,
+      "master": {
+        "path": "src/assets/economy/master/feature_treasure.png",
+        "sha256": "58cd31ad91ddb591cbd2db2b4a986ad4c036d63cb2941bdb6b505b782546e9f5",
+        "bytes": 30036,
+        "size": [
+          256,
+          256
+        ],
+        "mode": "RGBA"
+      },
+      "runtime": {
+        "path": "src/assets/economy/runtime/feature_treasure.png",
+        "sha256": "cb0fe28ec1f28d03b192fccc7d33a5dea9097cfeeee560d4ca9c29f24a6844ba",
+        "bytes": 3920,
+        "size": [
+          64,
+          64
+        ],
+        "mode": "RGBA"
+      }
+    },
+    {
+      "asset_id": "gear_necklace_0",
+      "version": "economy-v2.0",
+      "workflow": "art/workflows/economy-equipment-0-api.json",
+      "atlas": "equipment-0",
+      "cell": 2,
+      "master": {
+        "path": "src/assets/economy/master/gear_necklace_0.png",
+        "sha256": "6a5d9b20a20408178c1da565e87d21d0e5456809ae123db2f9e8493d9e440d62",
+        "bytes": 32082,
+        "size": [
+          256,
+          256
+        ],
+        "mode": "RGBA"
+      },
+      "runtime": {
+        "path": "src/assets/economy/runtime/gear_necklace_0.png",
+        "sha256": "ffebd877f2d7af8599dbdd811f73c23c54f84edc7515eba94a0c4b018351552a",
+        "bytes": 3750,
+        "size": [
+          64,
+          64
+        ],
+        "mode": "RGBA"
+      }
+    },
+    {
+      "asset_id": "gear_bracelet_0",
+      "version": "economy-v2.0",
+      "workflow": "art/workflows/economy-equipment-0-api.json",
+      "atlas": "equipment-0",
+      "cell": 3,
+      "master": {
+        "path": "src/assets/economy/master/gear_bracelet_0.png",
+        "sha256": "0a7b5ab8141dccfb9f7a0d7be74738e29b640a70627639c6a95733c7af8a0036",
+        "bytes": 38775,
+        "size": [
+          256,
+          256
+        ],
+        "mode": "RGBA"
+      },
+      "runtime": {
+        "path": "src/assets/economy/runtime/gear_bracelet_0.png",
+        "sha256": "0f2259c76735aa833de368a3568dce28c9e4463a9c0f8c2dea644e49e9af2de4",
+        "bytes": 4881,
+        "size": [
+          64,
+          64
+        ],
+        "mode": "RGBA"
+      }
+    },
+    {
+      "asset_id": "gear_ring_0",
+      "version": "economy-v2.0",
+      "workflow": "art/workflows/economy-equipment-0-api.json",
+      "atlas": "equipment-0",
+      "cell": 8,
+      "master": {
+        "path": "src/assets/economy/master/gear_ring_0.png",
+        "sha256": "54e37061308cf51277e76bee5ff18e3ad1088700c3e28f3c8f388b00a8afb81f",
+        "bytes": 39564,
+        "size": [
+          256,
+          256
+        ],
+        "mode": "RGBA"
+      },
+      "runtime": {
+        "path": "src/assets/economy/runtime/gear_ring_0.png",
+        "sha256": "f4ba11285608797a2fee82942800884fe05639e1be0c9f248e05d000777170fa",
+        "bytes": 4614,
+        "size": [
+          64,
+          64
+        ],
+        "mode": "RGBA"
+      }
+    },
+    {
+      "asset_id": "gear_necklace_1",
+      "version": "economy-v2.0",
+      "workflow": "art/workflows/economy-equipment-1-api.json",
+      "atlas": "equipment-1",
+      "cell": 2,
+      "master": {
+        "path": "src/assets/economy/master/gear_necklace_1.png",
+        "sha256": "bfe6de3dc1f2a55a2b92e91a5853b94fa2cc8923cc37f99db25f7fe986ba33dc",
+        "bytes": 24059,
+        "size": [
+          256,
+          256
+        ],
+        "mode": "RGBA"
+      },
+      "runtime": {
+        "path": "src/assets/economy/runtime/gear_necklace_1.png",
+        "sha256": "7646fc020ee0a93d712adf02017ea8f1d3390c5f1cdf501649dd2b93e7da2369",
+        "bytes": 3148,
+        "size": [
+          64,
+          64
+        ],
+        "mode": "RGBA"
+      }
+    },
+    {
+      "asset_id": "gear_bracelet_1",
+      "version": "economy-v2.0",
+      "workflow": "art/workflows/economy-equipment-1-api.json",
+      "atlas": "equipment-1",
+      "cell": 3,
+      "master": {
+        "path": "src/assets/economy/master/gear_bracelet_1.png",
+        "sha256": "57c397247547e331eb45ab70d0c7efec9aa2ad18cad64b1097c808d834f38528",
+        "bytes": 34546,
+        "size": [
+          256,
+          256
+        ],
+        "mode": "RGBA"
+      },
+      "runtime": {
+        "path": "src/assets/economy/runtime/gear_bracelet_1.png",
+        "sha256": "24feea1066e1973218fa139925ea7117051bf863366b64daa9890f6e454c4f40",
+        "bytes": 4366,
+        "size": [
+          64,
+          64
+        ],
+        "mode": "RGBA"
+      }
+    },
+    {
+      "asset_id": "gear_ring_1",
+      "version": "economy-v2.0",
+      "workflow": "art/workflows/economy-equipment-1-api.json",
+      "atlas": "equipment-1",
+      "cell": 8,
+      "master": {
+        "path": "src/assets/economy/master/gear_ring_1.png",
+        "sha256": "9675ad3341f11ada0cceb7110c042aeaea348e760083ff6f4173d0130368cb88",
+        "bytes": 33345,
+        "size": [
+          256,
+          256
+        ],
+        "mode": "RGBA"
+      },
+      "runtime": {
+        "path": "src/assets/economy/runtime/gear_ring_1.png",
+        "sha256": "6ffaf3f08d280046b716035130993b75333098c798470bf89ac99f75757497cf",
+        "bytes": 4155,
+        "size": [
+          64,
+          64
+        ],
+        "mode": "RGBA"
+      }
+    },
+    {
+      "asset_id": "gear_necklace_2",
+      "version": "economy-v2.0",
+      "workflow": "art/workflows/economy-equipment-2-api.json",
+      "atlas": "equipment-2",
+      "cell": 2,
+      "master": {
+        "path": "src/assets/economy/master/gear_necklace_2.png",
+        "sha256": "fc59576ea99a0a4d731caa3ab74a11cf54d4b8b0151eb3c3386e4a19b8991a23",
+        "bytes": 29880,
+        "size": [
+          256,
+          256
+        ],
+        "mode": "RGBA"
+      },
+      "runtime": {
+        "path": "src/assets/economy/runtime/gear_necklace_2.png",
+        "sha256": "84d69c5d870f5d612c2701f49628b8274e51e6bb727884794088a578be3697af",
+        "bytes": 3571,
+        "size": [
+          64,
+          64
+        ],
+        "mode": "RGBA"
+      }
+    },
+    {
+      "asset_id": "gear_bracelet_2",
+      "version": "economy-v2.0",
+      "workflow": "art/workflows/economy-equipment-2-api.json",
+      "atlas": "equipment-2",
+      "cell": 3,
+      "master": {
+        "path": "src/assets/economy/master/gear_bracelet_2.png",
+        "sha256": "bcd4c29e881bc1e3cb6b3f4752d303ec2d2cb67312573beb5d1aab7e26720585",
+        "bytes": 33352,
+        "size": [
+          256,
+          256
+        ],
+        "mode": "RGBA"
+      },
+      "runtime": {
+        "path": "src/assets/economy/runtime/gear_bracelet_2.png",
+        "sha256": "57f5867f7345530b9e121e49a939c932c148385250b14e6d57d34fe3e5fb6ec2",
+        "bytes": 4324,
+        "size": [
+          64,
+          64
+        ],
+        "mode": "RGBA"
+      }
+    },
+    {
+      "asset_id": "gear_ring_2",
+      "version": "economy-v2.0",
+      "workflow": "art/workflows/economy-equipment-2-api.json",
+      "atlas": "equipment-2",
+      "cell": 8,
+      "master": {
+        "path": "src/assets/economy/master/gear_ring_2.png",
+        "sha256": "c9d7bccf683cfb5a73fa4c5ce1fb14efbc69b3f6272b63a6bd05bcdcb163008b",
+        "bytes": 36186,
+        "size": [
+          256,
+          256
+        ],
+        "mode": "RGBA"
+      },
+      "runtime": {
+        "path": "src/assets/economy/runtime/gear_ring_2.png",
+        "sha256": "4d4107ad0bfc173ae5c33b208da3a29dcc4850ba67e56ce9177e4423a62d4a3c",
+        "bytes": 4268,
+        "size": [
+          64,
+          64
+        ],
+        "mode": "RGBA"
+      }
+    },
+    {
+      "asset_id": "gear_necklace_3",
+      "version": "economy-v2.0",
+      "workflow": "art/workflows/economy-equipment-3-api.json",
+      "atlas": "equipment-3",
+      "cell": 2,
+      "master": {
+        "path": "src/assets/economy/master/gear_necklace_3.png",
+        "sha256": "c7fd88cf57aac7e194834c9bfbb7774ab7c58d98c772c7297b3ca464274663b6",
+        "bytes": 32655,
+        "size": [
+          256,
+          256
+        ],
+        "mode": "RGBA"
+      },
+      "runtime": {
+        "path": "src/assets/economy/runtime/gear_necklace_3.png",
+        "sha256": "f9d7c5ef800c33df5ee021e426c82802fad18ed8af4336e4a5f1cdb759bac09e",
+        "bytes": 3790,
+        "size": [
+          64,
+          64
+        ],
+        "mode": "RGBA"
+      }
+    },
+    {
+      "asset_id": "gear_bracelet_3",
+      "version": "economy-v2.0",
+      "workflow": "art/workflows/economy-equipment-3-api.json",
+      "atlas": "equipment-3",
+      "cell": 3,
+      "master": {
+        "path": "src/assets/economy/master/gear_bracelet_3.png",
+        "sha256": "ccaf9bc1c69f7ff75e89ff0515bc2181ae6434bdb599220d9f45fc6c835a0d00",
+        "bytes": 37528,
+        "size": [
+          256,
+          256
+        ],
+        "mode": "RGBA"
+      },
+      "runtime": {
+        "path": "src/assets/economy/runtime/gear_bracelet_3.png",
+        "sha256": "c1f06d8d0b53dd4066f7dbc8a6c0b1e96278817e10f17af0ab48ee44f4aa38e1",
+        "bytes": 4622,
+        "size": [
+          64,
+          64
+        ],
+        "mode": "RGBA"
+      }
+    },
+    {
+      "asset_id": "gear_ring_3",
+      "version": "economy-v2.0",
+      "workflow": "art/workflows/economy-equipment-3-api.json",
+      "atlas": "equipment-3",
+      "cell": 8,
+      "master": {
+        "path": "src/assets/economy/master/gear_ring_3.png",
+        "sha256": "12b61b45aea62a7ae0d68a6ebe2b18d5168c7d9c93202f7f1dbc27589304ce5f",
+        "bytes": 37835,
+        "size": [
+          256,
+          256
+        ],
+        "mode": "RGBA"
+      },
+      "runtime": {
+        "path": "src/assets/economy/runtime/gear_ring_3.png",
+        "sha256": "6866c0477a136905748758511989140496549d3f33b9ce66c1f87be4ce3aaeec",
+        "bytes": 4439,
+        "size": [
+          64,
+          64
+        ],
+        "mode": "RGBA"
+      }
+    },
+    {
+      "asset_id": "gear_necklace_4",
+      "version": "economy-v2.0",
+      "workflow": "art/workflows/economy-equipment-4-api.json",
+      "atlas": "equipment-4",
+      "cell": 2,
+      "master": {
+        "path": "src/assets/economy/master/gear_necklace_4.png",
+        "sha256": "a40fec170f2e4b952244f6b485d8c6695466302c3227abfa42cde71d19e330b0",
+        "bytes": 29291,
+        "size": [
+          256,
+          256
+        ],
+        "mode": "RGBA"
+      },
+      "runtime": {
+        "path": "src/assets/economy/runtime/gear_necklace_4.png",
+        "sha256": "e0f763b928f4d8b02460f379faca680b83de8d0167b468211c0d7c70ce9c399b",
+        "bytes": 3546,
+        "size": [
+          64,
+          64
+        ],
+        "mode": "RGBA"
+      }
+    },
+    {
+      "asset_id": "gear_bracelet_4",
+      "version": "economy-v2.0",
+      "workflow": "art/workflows/economy-equipment-4-api.json",
+      "atlas": "equipment-4",
+      "cell": 3,
+      "master": {
+        "path": "src/assets/economy/master/gear_bracelet_4.png",
+        "sha256": "f0d988ed40f2362fa5422b2414c915d2f80661103115c1cf9bd673f22f645759",
+        "bytes": 35012,
+        "size": [
+          256,
+          256
+        ],
+        "mode": "RGBA"
+      },
+      "runtime": {
+        "path": "src/assets/economy/runtime/gear_bracelet_4.png",
+        "sha256": "a6e839676b5ae34a44032eae418059b2f8b338dbff2813f1c93cd8a1d0d43718",
+        "bytes": 4342,
+        "size": [
+          64,
+          64
+        ],
+        "mode": "RGBA"
+      }
+    },
+    {
+      "asset_id": "gear_ring_4",
+      "version": "economy-v2.0",
+      "workflow": "art/workflows/economy-equipment-4-api.json",
+      "atlas": "equipment-4",
+      "cell": 8,
+      "master": {
+        "path": "src/assets/economy/master/gear_ring_4.png",
+        "sha256": "0f91ee338f21c84dfea6997abe385febec733c0dc8447182f754fd0a7e912f86",
+        "bytes": 36110,
+        "size": [
+          256,
+          256
+        ],
+        "mode": "RGBA"
+      },
+      "runtime": {
+        "path": "src/assets/economy/runtime/gear_ring_4.png",
+        "sha256": "6b5e9a51f93f1594c636a20132546eba81610861feb7d5125220e107d761974a",
+        "bytes": 4260,
+        "size": [
+          64,
+          64
+        ],
+        "mode": "RGBA"
+      }
+    },
+    {
+      "asset_id": "gear_necklace_5",
+      "version": "economy-v2.0",
+      "workflow": "art/workflows/economy-equipment-5-api.json",
+      "atlas": "equipment-5",
+      "cell": 2,
+      "master": {
+        "path": "src/assets/economy/master/gear_necklace_5.png",
+        "sha256": "b9fff763cfc1662a7b3c425f0f860b1426892051392feeab9db6c37b7dcd13a8",
+        "bytes": 32606,
+        "size": [
+          256,
+          256
+        ],
+        "mode": "RGBA"
+      },
+      "runtime": {
+        "path": "src/assets/economy/runtime/gear_necklace_5.png",
+        "sha256": "85765028ab68d43e9664784a4d462d63bbb349559876cb006f4439b3e43ba977",
+        "bytes": 3823,
+        "size": [
+          64,
+          64
+        ],
+        "mode": "RGBA"
+      }
+    },
+    {
+      "asset_id": "gear_bracelet_5",
+      "version": "economy-v2.0",
+      "workflow": "art/workflows/economy-equipment-5-api.json",
+      "atlas": "equipment-5",
+      "cell": 3,
+      "master": {
+        "path": "src/assets/economy/master/gear_bracelet_5.png",
+        "sha256": "d15b6a928a4e5293e58c4458423febf85902b88f5ca4cdd23c037074e7254b52",
+        "bytes": 37767,
+        "size": [
+          256,
+          256
+        ],
+        "mode": "RGBA"
+      },
+      "runtime": {
+        "path": "src/assets/economy/runtime/gear_bracelet_5.png",
+        "sha256": "eaba935e6418169a6f8c2c7768bca694d34e5b4df18069b600b13859314e8d43",
+        "bytes": 4750,
+        "size": [
+          64,
+          64
+        ],
+        "mode": "RGBA"
+      }
+    },
+    {
+      "asset_id": "gear_ring_5",
+      "version": "economy-v2.0",
+      "workflow": "art/workflows/economy-equipment-5-api.json",
+      "atlas": "equipment-5",
+      "cell": 8,
+      "master": {
+        "path": "src/assets/economy/master/gear_ring_5.png",
+        "sha256": "2ac2c7f7c1859cf08c3b87abc8d44da644f1c7a2bd1b22e9cabe82cf37a2f810",
+        "bytes": 40081,
+        "size": [
+          256,
+          256
+        ],
+        "mode": "RGBA"
+      },
+      "runtime": {
+        "path": "src/assets/economy/runtime/gear_ring_5.png",
+        "sha256": "9095bbfa77c647bbafff2fe12efd1c0b21b295c18a1497aa21ecdfa451b27b53",
+        "bytes": 4657,
+        "size": [
+          64,
+          64
+        ],
+        "mode": "RGBA"
+      }
+    },
+    {
+      "asset_id": "gear_necklace_6",
+      "version": "economy-v2.0",
+      "workflow": "art/workflows/economy-equipment-6-api.json",
+      "atlas": "equipment-6",
+      "cell": 2,
+      "master": {
+        "path": "src/assets/economy/master/gear_necklace_6.png",
+        "sha256": "1d66e9794611b4e0efc95ac0e9427f956015b14ecc9546aea4f22d0ded532e15",
+        "bytes": 27915,
+        "size": [
+          256,
+          256
+        ],
+        "mode": "RGBA"
+      },
+      "runtime": {
+        "path": "src/assets/economy/runtime/gear_necklace_6.png",
+        "sha256": "5990598c22c0f81f17fcebfb5020f9cd1f09b69d182acae88f7c420e4d5b28e4",
+        "bytes": 3552,
+        "size": [
+          64,
+          64
+        ],
+        "mode": "RGBA"
+      }
+    },
+    {
+      "asset_id": "gear_bracelet_6",
+      "version": "economy-v2.0",
+      "workflow": "art/workflows/economy-equipment-6-api.json",
+      "atlas": "equipment-6",
+      "cell": 3,
+      "master": {
+        "path": "src/assets/economy/master/gear_bracelet_6.png",
+        "sha256": "df482c5bc88cad47b8bc0fd7a4266c6839bbe1749d2ffe9f3045aab1f1e77814",
+        "bytes": 34813,
+        "size": [
+          256,
+          256
+        ],
+        "mode": "RGBA"
+      },
+      "runtime": {
+        "path": "src/assets/economy/runtime/gear_bracelet_6.png",
+        "sha256": "fb2dad16c962e3a0c650d701e33d43faa4c6c62d5d72cb67df7203d09e9ea54a",
+        "bytes": 4399,
+        "size": [
+          64,
+          64
+        ],
+        "mode": "RGBA"
+      }
+    },
+    {
+      "asset_id": "gear_ring_6",
+      "version": "economy-v2.0",
+      "workflow": "art/workflows/economy-equipment-6-api.json",
+      "atlas": "equipment-6",
+      "cell": 8,
+      "master": {
+        "path": "src/assets/economy/master/gear_ring_6.png",
+        "sha256": "4b4427753c06705e2532d33dede7e2b4b8348428090b31fef445dd6e52673b7d",
+        "bytes": 34564,
+        "size": [
+          256,
+          256
+        ],
+        "mode": "RGBA"
+      },
+      "runtime": {
+        "path": "src/assets/economy/runtime/gear_ring_6.png",
+        "sha256": "6515a733bcd12a698870fe8178a4ea202e75da50ba67967ddd0e612f2a065c40",
+        "bytes": 4002,
+        "size": [
+          64,
+          64
+        ],
+        "mode": "RGBA"
+      }
+    },
+    {
+      "asset_id": "gear_necklace_7",
+      "version": "economy-v2.0",
+      "workflow": "art/workflows/economy-equipment-7-api.json",
+      "atlas": "equipment-7",
+      "cell": 2,
+      "master": {
+        "path": "src/assets/economy/master/gear_necklace_7.png",
+        "sha256": "817f8136b3cadbc9c88c6a80bdeb91608b3e66b0ae43ea81d37139656c7d5ad0",
+        "bytes": 29509,
+        "size": [
+          256,
+          256
+        ],
+        "mode": "RGBA"
+      },
+      "runtime": {
+        "path": "src/assets/economy/runtime/gear_necklace_7.png",
+        "sha256": "e41180a365e98e0795ca96ca57acdf2e52ae94f57aee2420073088c0a1d689cd",
+        "bytes": 3476,
+        "size": [
+          64,
+          64
+        ],
+        "mode": "RGBA"
+      }
+    },
+    {
+      "asset_id": "gear_bracelet_7",
+      "version": "economy-v2.0",
+      "workflow": "art/workflows/economy-equipment-7-api.json",
+      "atlas": "equipment-7",
+      "cell": 3,
+      "master": {
+        "path": "src/assets/economy/master/gear_bracelet_7.png",
+        "sha256": "4b58f35bb5de9ad2d0f2397dfb264b4a9288c507e6a2ea98c56909d5042a5d95",
+        "bytes": 38666,
+        "size": [
+          256,
+          256
+        ],
+        "mode": "RGBA"
+      },
+      "runtime": {
+        "path": "src/assets/economy/runtime/gear_bracelet_7.png",
+        "sha256": "009392c4e97d70b97a49fb81e7bc3a6181c197b724370167ddbe9b03b4a779af",
+        "bytes": 4858,
+        "size": [
+          64,
+          64
+        ],
+        "mode": "RGBA"
+      }
+    },
+    {
+      "asset_id": "gear_ring_7",
+      "version": "economy-v2.0",
+      "workflow": "art/workflows/economy-equipment-7-api.json",
+      "atlas": "equipment-7",
+      "cell": 8,
+      "master": {
+        "path": "src/assets/economy/master/gear_ring_7.png",
+        "sha256": "c1e4941b4274fa9e1155fd922401bcf48f91f5e55c705f260cdd56dc069f0d05",
+        "bytes": 40137,
+        "size": [
+          256,
+          256
+        ],
+        "mode": "RGBA"
+      },
+      "runtime": {
+        "path": "src/assets/economy/runtime/gear_ring_7.png",
+        "sha256": "4a0eef92a32df4ffc65a42080798df9c4a437635310345d514a8a1a8abca3291",
+        "bytes": 4741,
+        "size": [
+          64,
+          64
+        ],
+        "mode": "RGBA"
+      }
+    },
+    {
+      "asset_id": "gear_necklace_8",
+      "version": "economy-v2.0",
+      "workflow": "art/workflows/economy-equipment-8-api.json",
+      "atlas": "equipment-8",
+      "cell": 2,
+      "master": {
+        "path": "src/assets/economy/master/gear_necklace_8.png",
+        "sha256": "2a895b632d408bf78a3f2d912d5a7168cfff2cd3985bd2595b46549d82d6aef2",
+        "bytes": 28719,
+        "size": [
+          256,
+          256
+        ],
+        "mode": "RGBA"
+      },
+      "runtime": {
+        "path": "src/assets/economy/runtime/gear_necklace_8.png",
+        "sha256": "5b87f4baa9eba4c459b12a9db71bbb554113f04020dea63e6847da5879215475",
+        "bytes": 3464,
+        "size": [
+          64,
+          64
+        ],
+        "mode": "RGBA"
+      }
+    },
+    {
+      "asset_id": "gear_bracelet_8",
+      "version": "economy-v2.0",
+      "workflow": "art/workflows/economy-equipment-8-api.json",
+      "atlas": "equipment-8",
+      "cell": 3,
+      "master": {
+        "path": "src/assets/economy/master/gear_bracelet_8.png",
+        "sha256": "2cd0fdd8a05078fbd6d9b97917926b0b1c271e783afd34217f1d25cd705ead3a",
+        "bytes": 34647,
+        "size": [
+          256,
+          256
+        ],
+        "mode": "RGBA"
+      },
+      "runtime": {
+        "path": "src/assets/economy/runtime/gear_bracelet_8.png",
+        "sha256": "3cf1e0c668f46a2cac5ce073b9741834aa0da217eaddbaa21f8dfab345d87acf",
+        "bytes": 4544,
+        "size": [
+          64,
+          64
+        ],
+        "mode": "RGBA"
+      }
+    },
+    {
+      "asset_id": "gear_ring_8",
+      "version": "economy-v2.0",
+      "workflow": "art/workflows/economy-equipment-8-api.json",
+      "atlas": "equipment-8",
+      "cell": 8,
+      "master": {
+        "path": "src/assets/economy/master/gear_ring_8.png",
+        "sha256": "bc3d26f0fbc4ada0ffb1ad242ea45e2694a1d7b84a742ddcff2755f121f61da1",
+        "bytes": 33503,
+        "size": [
+          256,
+          256
+        ],
+        "mode": "RGBA"
+      },
+      "runtime": {
+        "path": "src/assets/economy/runtime/gear_ring_8.png",
+        "sha256": "27bafaf2ba9cdfa47145145928bb3aee19206d6a97032680aa6bb86b17c1490f",
+        "bytes": 4154,
+        "size": [
+          64,
+          64
+        ],
+        "mode": "RGBA"
+      }
+    },
+    {
+      "asset_id": "gear_necklace_9",
+      "version": "economy-v2.0",
+      "workflow": "art/workflows/economy-equipment-9-api.json",
+      "atlas": "equipment-9",
+      "cell": 2,
+      "master": {
+        "path": "src/assets/economy/master/gear_necklace_9.png",
+        "sha256": "fce49ce04e77cc307a16e4093c2dc2905cd7a8e2f34c2433e714119cf1a0ad60",
+        "bytes": 29055,
+        "size": [
+          256,
+          256
+        ],
+        "mode": "RGBA"
+      },
+      "runtime": {
+        "path": "src/assets/economy/runtime/gear_necklace_9.png",
+        "sha256": "94199fcfd9ff93eb3bfc36cc70adb5766bec0063df7a3f646b0b4b8abfe3730d",
+        "bytes": 3526,
+        "size": [
+          64,
+          64
+        ],
+        "mode": "RGBA"
+      }
+    },
+    {
+      "asset_id": "gear_bracelet_9",
+      "version": "economy-v2.0",
+      "workflow": "art/workflows/economy-equipment-9-api.json",
+      "atlas": "equipment-9",
+      "cell": 3,
+      "master": {
+        "path": "src/assets/economy/master/gear_bracelet_9.png",
+        "sha256": "e640792bf89309f32eda5080c915a73806047a70848690b64d753cf7e340c434",
+        "bytes": 36976,
+        "size": [
+          256,
+          256
+        ],
+        "mode": "RGBA"
+      },
+      "runtime": {
+        "path": "src/assets/economy/runtime/gear_bracelet_9.png",
+        "sha256": "b842dd16f53be8f145c7d056b226d0a20e349907a67fc1c09fb100a9cc91bd3f",
+        "bytes": 4855,
+        "size": [
+          64,
+          64
+        ],
+        "mode": "RGBA"
+      }
+    },
+    {
+      "asset_id": "gear_ring_9",
+      "version": "economy-v2.0",
+      "workflow": "art/workflows/economy-equipment-9-api.json",
+      "atlas": "equipment-9",
+      "cell": 8,
+      "master": {
+        "path": "src/assets/economy/master/gear_ring_9.png",
+        "sha256": "d49dd45241208687dcd8d2d15e7c08ed8c601baf5562c5acbf704f5f217dcd22",
+        "bytes": 37368,
+        "size": [
+          256,
+          256
+        ],
+        "mode": "RGBA"
+      },
+      "runtime": {
+        "path": "src/assets/economy/runtime/gear_ring_9.png",
+        "sha256": "84006740e670ec3b6fd8f02f185bb421839610141ec87452c14b3092e8b20e2c",
+        "bytes": 4348,
+        "size": [
+          64,
+          64
+        ],
+        "mode": "RGBA"
+      }
+    }
+  ]
+}

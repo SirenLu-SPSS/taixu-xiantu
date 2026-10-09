@@ -1,0 +1,84 @@
+{
+  "1": {
+    "class_type": "UNETLoader",
+    "inputs": {
+      "unet_name": "qwen_image_2.1_int8_convrot.safetensors",
+      "weight_dtype": "default"
+    }
+  },
+  "2": {
+    "class_type": "CLIPLoader",
+    "inputs": {
+      "clip_name": "qwen3vl_8b_int8_convrot.safetensors",
+      "type": "qwen_image"
+    }
+  },
+  "3": {
+    "class_type": "VAELoader",
+    "inputs": {
+      "vae_name": "qwen_image_2.1_vae_bf16.safetensors"
+    }
+  },
+  "4": {
+    "class_type": "TextEncodeQwenImage21",
+    "inputs": {
+      "clip": [
+        "2",
+        0
+      ],
+      "prompt": "An EXACT 4 column by 3 row grid of twelve separate Chinese xianxia mobile RPG inventory icons, equal cells. Plain pure white backgrounds, objects centered fully inside their own cells, generous margins, no shadows outside the object, no grid lines, no frames, no letters. Read left to right top to bottom: 1. ivory gold primordial ornate jade gold crown; 2. ivory gold primordial jade dangling earrings; 3. ivory gold primordial jade gold necklace; 4. ivory gold primordial jade bracelet; 5. ivory gold primordial ivory silk inner garment; 6. ivory gold primordial embroidered teal outer robe; 7. ivory gold primordial silk leg armor trousers; 8. ivory gold primordial ornate boots; 9. ivory gold primordial jade gemstone ring; 10. ivory gold primordial longsword; 11. ivory gold primordial gold jade waist belt; 12. ivory gold primordial mystic talisman. Elegant hand painted Chinese ink watercolor fantasy game illustration, detailed gold accents, clean distinct silhouettes, unified style, high contrast suitable for dark UI, no text or watermark. ",
+      "negative_prompt": "blurry, low quality, watermark, text, deformed, extra limbs",
+      "resolution": 1024
+    }
+  },
+  "5": {
+    "class_type": "KSampler",
+    "inputs": {
+      "model": [
+        "1",
+        0
+      ],
+      "seed": 20261009009,
+      "steps": 24,
+      "cfg": 4,
+      "sampler_name": "euler",
+      "scheduler": "simple",
+      "positive": [
+        "4",
+        0
+      ],
+      "negative": [
+        "4",
+        1
+      ],
+      "latent_image": [
+        "4",
+        2
+      ],
+      "denoise": 1
+    }
+  },
+  "6": {
+    "class_type": "VAEDecode",
+    "inputs": {
+      "samples": [
+        "5",
+        0
+      ],
+      "vae": [
+        "3",
+        0
+      ]
+    }
+  },
+  "7": {
+    "class_type": "SaveImage",
+    "inputs": {
+      "images": [
+        "6",
+        0
+      ],
+      "filename_prefix": "Taixu_economy_v2/equipment-9"
+    }
+  }
+}

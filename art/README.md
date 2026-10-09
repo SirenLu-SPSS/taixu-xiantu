@@ -1,5 +1,11 @@
 # 美術素材 · ComfyUI
 
+## 仙寶經濟 V2.0
+
+`economy-assets.csv` 列出 222 個唯一資產（120 裝備、12 法寶、12 靈寵、72 寶石、6 功能 ICON）。十九張 ComfyUI Qwen Image 2.1 圖集分別保存 API 工作流。`generate-economy-art.cjs` 以既有 LAN ComfyUI 生成；`process-economy-art.py` 裁切、去除連通白底及縮圖；`verify-economy-art.py` 核對 444 個 PNG 的 RGBA、透明像素及尺寸。
+
+新資產位於 `src/assets/economy/master`（256px）及 `runtime`（64px），不覆蓋已核准的 WebP。`economy-art-manifest.json` 記錄來源圖集、格位、版本與 SHA-256。寶石功能色保持固定，階級由圖形光效及 1–6 枚金色標記區分；物品品階框由 UI 呈現。
+
 所有插畫以使用者指定的本機 ComfyUI 生成，採青玉、墨綠、古金色調。工作流程與固定 seed 保存於 `art/workflows/`，遊戲使用 `src/assets/art/` 的 WebP 素材。
 
 ## 生成設定

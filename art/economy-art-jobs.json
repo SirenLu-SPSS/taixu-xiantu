@@ -1,0 +1,583 @@
+{
+  "version": "economy-v2.0",
+  "generator": "ComfyUI Qwen Image 2.1",
+  "jobs": [
+    {
+      "name": "equipment-0",
+      "ids": [
+        "gear_head_0",
+        "gear_earrings_0",
+        "gear_necklace_0",
+        "gear_bracelet_0",
+        "gear_inner_0",
+        "gear_robe_0",
+        "gear_legs_0",
+        "gear_boots_0",
+        "gear_ring_0",
+        "gear_weapon_0",
+        "gear_belt_0",
+        "gear_charm_0"
+      ],
+      "objects": [
+        "jade green cloud ornate jade gold crown",
+        "jade green cloud jade dangling earrings",
+        "jade green cloud jade gold necklace",
+        "jade green cloud jade bracelet",
+        "jade green cloud ivory silk inner garment",
+        "jade green cloud embroidered teal outer robe",
+        "jade green cloud silk leg armor trousers",
+        "jade green cloud ornate boots",
+        "jade green cloud jade gemstone ring",
+        "jade green cloud longsword",
+        "jade green cloud gold jade waist belt",
+        "jade green cloud mystic talisman"
+      ]
+    },
+    {
+      "name": "equipment-1",
+      "ids": [
+        "gear_head_1",
+        "gear_earrings_1",
+        "gear_necklace_1",
+        "gear_bracelet_1",
+        "gear_inner_1",
+        "gear_robe_1",
+        "gear_legs_1",
+        "gear_boots_1",
+        "gear_ring_1",
+        "gear_weapon_1",
+        "gear_belt_1",
+        "gear_charm_1"
+      ],
+      "objects": [
+        "pale aqua dew ornate jade gold crown",
+        "pale aqua dew jade dangling earrings",
+        "pale aqua dew jade gold necklace",
+        "pale aqua dew jade bracelet",
+        "pale aqua dew ivory silk inner garment",
+        "pale aqua dew embroidered teal outer robe",
+        "pale aqua dew silk leg armor trousers",
+        "pale aqua dew ornate boots",
+        "pale aqua dew jade gemstone ring",
+        "pale aqua dew longsword",
+        "pale aqua dew gold jade waist belt",
+        "pale aqua dew mystic talisman"
+      ]
+    },
+    {
+      "name": "equipment-2",
+      "ids": [
+        "gear_head_2",
+        "gear_earrings_2",
+        "gear_necklace_2",
+        "gear_bracelet_2",
+        "gear_inner_2",
+        "gear_robe_2",
+        "gear_legs_2",
+        "gear_boots_2",
+        "gear_ring_2",
+        "gear_weapon_2",
+        "gear_belt_2",
+        "gear_charm_2"
+      ],
+      "objects": [
+        "bright cyan sky ornate jade gold crown",
+        "bright cyan sky jade dangling earrings",
+        "bright cyan sky jade gold necklace",
+        "bright cyan sky jade bracelet",
+        "bright cyan sky ivory silk inner garment",
+        "bright cyan sky embroidered teal outer robe",
+        "bright cyan sky silk leg armor trousers",
+        "bright cyan sky ornate boots",
+        "bright cyan sky jade gemstone ring",
+        "bright cyan sky longsword",
+        "bright cyan sky gold jade waist belt",
+        "bright cyan sky mystic talisman"
+      ]
+    },
+    {
+      "name": "equipment-3",
+      "ids": [
+        "gear_head_3",
+        "gear_earrings_3",
+        "gear_necklace_3",
+        "gear_bracelet_3",
+        "gear_inner_3",
+        "gear_robe_3",
+        "gear_legs_3",
+        "gear_boots_3",
+        "gear_ring_3",
+        "gear_weapon_3",
+        "gear_belt_3",
+        "gear_charm_3"
+      ],
+      "objects": [
+        "violet starlight ornate jade gold crown",
+        "violet starlight jade dangling earrings",
+        "violet starlight jade gold necklace",
+        "violet starlight jade bracelet",
+        "violet starlight ivory silk inner garment",
+        "violet starlight embroidered teal outer robe",
+        "violet starlight silk leg armor trousers",
+        "violet starlight ornate boots",
+        "violet starlight jade gemstone ring",
+        "violet starlight longsword",
+        "violet starlight gold jade waist belt",
+        "violet starlight mystic talisman"
+      ]
+    },
+    {
+      "name": "equipment-4",
+      "ids": [
+        "gear_head_4",
+        "gear_earrings_4",
+        "gear_necklace_4",
+        "gear_bracelet_4",
+        "gear_inner_4",
+        "gear_robe_4",
+        "gear_legs_4",
+        "gear_boots_4",
+        "gear_ring_4",
+        "gear_weapon_4",
+        "gear_belt_4",
+        "gear_charm_4"
+      ],
+      "objects": [
+        "ice blue crystal ornate jade gold crown",
+        "ice blue crystal jade dangling earrings",
+        "ice blue crystal jade gold necklace",
+        "ice blue crystal jade bracelet",
+        "ice blue crystal ivory silk inner garment",
+        "ice blue crystal embroidered teal outer robe",
+        "ice blue crystal silk leg armor trousers",
+        "ice blue crystal ornate boots",
+        "ice blue crystal jade gemstone ring",
+        "ice blue crystal longsword",
+        "ice blue crystal gold jade waist belt",
+        "ice blue crystal mystic talisman"
+      ]
+    },
+    {
+      "name": "equipment-5",
+      "ids": [
+        "gear_head_5",
+        "gear_earrings_5",
+        "gear_necklace_5",
+        "gear_bracelet_5",
+        "gear_inner_5",
+        "gear_robe_5",
+        "gear_legs_5",
+        "gear_boots_5",
+        "gear_ring_5",
+        "gear_weapon_5",
+        "gear_belt_5",
+        "gear_charm_5"
+      ],
+      "objects": [
+        "purple lightning ornate jade gold crown",
+        "purple lightning jade dangling earrings",
+        "purple lightning jade gold necklace",
+        "purple lightning jade bracelet",
+        "purple lightning ivory silk inner garment",
+        "purple lightning embroidered teal outer robe",
+        "purple lightning silk leg armor trousers",
+        "purple lightning ornate boots",
+        "purple lightning jade gemstone ring",
+        "purple lightning longsword",
+        "purple lightning gold jade waist belt",
+        "purple lightning mystic talisman"
+      ]
+    },
+    {
+      "name": "equipment-6",
+      "ids": [
+        "gear_head_6",
+        "gear_earrings_6",
+        "gear_necklace_6",
+        "gear_bracelet_6",
+        "gear_inner_6",
+        "gear_robe_6",
+        "gear_legs_6",
+        "gear_boots_6",
+        "gear_ring_6",
+        "gear_weapon_6",
+        "gear_belt_6",
+        "gear_charm_6"
+      ],
+      "objects": [
+        "dark indigo spirit ornate jade gold crown",
+        "dark indigo spirit jade dangling earrings",
+        "dark indigo spirit jade gold necklace",
+        "dark indigo spirit jade bracelet",
+        "dark indigo spirit ivory silk inner garment",
+        "dark indigo spirit embroidered teal outer robe",
+        "dark indigo spirit silk leg armor trousers",
+        "dark indigo spirit ornate boots",
+        "dark indigo spirit jade gemstone ring",
+        "dark indigo spirit longsword",
+        "dark indigo spirit gold jade waist belt",
+        "dark indigo spirit mystic talisman"
+      ]
+    },
+    {
+      "name": "equipment-7",
+      "ids": [
+        "gear_head_7",
+        "gear_earrings_7",
+        "gear_necklace_7",
+        "gear_bracelet_7",
+        "gear_inner_7",
+        "gear_robe_7",
+        "gear_legs_7",
+        "gear_boots_7",
+        "gear_ring_7",
+        "gear_weapon_7",
+        "gear_belt_7",
+        "gear_charm_7"
+      ],
+      "objects": [
+        "crimson fire ornate jade gold crown",
+        "crimson fire jade dangling earrings",
+        "crimson fire jade gold necklace",
+        "crimson fire jade bracelet",
+        "crimson fire ivory silk inner garment",
+        "crimson fire embroidered teal outer robe",
+        "crimson fire silk leg armor trousers",
+        "crimson fire ornate boots",
+        "crimson fire jade gemstone ring",
+        "crimson fire longsword",
+        "crimson fire gold jade waist belt",
+        "crimson fire mystic talisman"
+      ]
+    },
+    {
+      "name": "equipment-8",
+      "ids": [
+        "gear_head_8",
+        "gear_earrings_8",
+        "gear_necklace_8",
+        "gear_bracelet_8",
+        "gear_inner_8",
+        "gear_robe_8",
+        "gear_legs_8",
+        "gear_boots_8",
+        "gear_ring_8",
+        "gear_weapon_8",
+        "gear_belt_8",
+        "gear_charm_8"
+      ],
+      "objects": [
+        "turquoise celestial ornate jade gold crown",
+        "turquoise celestial jade dangling earrings",
+        "turquoise celestial jade gold necklace",
+        "turquoise celestial jade bracelet",
+        "turquoise celestial ivory silk inner garment",
+        "turquoise celestial embroidered teal outer robe",
+        "turquoise celestial silk leg armor trousers",
+        "turquoise celestial ornate boots",
+        "turquoise celestial jade gemstone ring",
+        "turquoise celestial longsword",
+        "turquoise celestial gold jade waist belt",
+        "turquoise celestial mystic talisman"
+      ]
+    },
+    {
+      "name": "equipment-9",
+      "ids": [
+        "gear_head_9",
+        "gear_earrings_9",
+        "gear_necklace_9",
+        "gear_bracelet_9",
+        "gear_inner_9",
+        "gear_robe_9",
+        "gear_legs_9",
+        "gear_boots_9",
+        "gear_ring_9",
+        "gear_weapon_9",
+        "gear_belt_9",
+        "gear_charm_9"
+      ],
+      "objects": [
+        "ivory gold primordial ornate jade gold crown",
+        "ivory gold primordial jade dangling earrings",
+        "ivory gold primordial jade gold necklace",
+        "ivory gold primordial jade bracelet",
+        "ivory gold primordial ivory silk inner garment",
+        "ivory gold primordial embroidered teal outer robe",
+        "ivory gold primordial silk leg armor trousers",
+        "ivory gold primordial ornate boots",
+        "ivory gold primordial jade gemstone ring",
+        "ivory gold primordial longsword",
+        "ivory gold primordial gold jade waist belt",
+        "ivory gold primordial mystic talisman"
+      ]
+    },
+    {
+      "name": "pet",
+      "ids": [
+        "pet_0",
+        "pet_1",
+        "pet_2",
+        "pet_3",
+        "pet_4",
+        "pet_5",
+        "pet_6",
+        "pet_7",
+        "pet_8",
+        "pet_9",
+        "pet_10",
+        "pet_11"
+      ],
+      "objects": [
+        "small green spirit fox",
+        "red flaming wolf",
+        "ice blue serpent",
+        "lightning feather eagle",
+        "emerald deer",
+        "white nine tailed fox",
+        "jade armored turtle",
+        "purple fire sparrow",
+        "dark spectral tiger",
+        "golden winged roc",
+        "small cyan Chinese dragon",
+        "small fiery phoenix"
+      ]
+    },
+    {
+      "name": "treasure",
+      "ids": [
+        "treasure_0",
+        "treasure_1",
+        "treasure_2",
+        "treasure_3",
+        "treasure_4",
+        "treasure_5",
+        "treasure_6",
+        "treasure_7",
+        "treasure_8",
+        "treasure_9",
+        "treasure_10",
+        "treasure_11"
+      ],
+      "objects": [
+        "cyan flying sword",
+        "jade square seal",
+        "antique spirit bell",
+        "nine dragon fire shield dome",
+        "white horsehair fly whisk",
+        "antique circular mirror",
+        "glowing spirit pearl",
+        "ice blue double gourd",
+        "dark spirit banner",
+        "purple thunder orb",
+        "mountain river scroll",
+        "bronze golden bell"
+      ]
+    },
+    {
+      "name": "gems-1",
+      "ids": [
+        "gem_fire_1",
+        "gem_blast_1",
+        "gem_life_1",
+        "gem_mana_1",
+        "gem_wisdom_1",
+        "gem_thunder_1",
+        "gem_wind_1",
+        "gem_armor_1",
+        "gem_blood_1",
+        "gem_frost_1",
+        "gem_pierce_1",
+        "gem_vital_1"
+      ],
+      "objects": [
+        "red pointed flame teardrop crystal, simple small",
+        "orange spherical explosive fiery crystal, simple small",
+        "green elongated oval healing crystal, simple small",
+        "blue faceted diamond mana crystal, simple small",
+        "purple tall hexagonal wisdom crystal, simple small",
+        "gold yellow jagged lightning crystal, simple small",
+        "cyan wing shaped crystal, simple small",
+        "white shield shaped crystal, simple small",
+        "pink heart shaped crystal, simple small",
+        "deep blue snowflake crystal, simple small",
+        "yellow spearhead crystal, simple small",
+        "emerald green leaf shaped crystal, simple small"
+      ]
+    },
+    {
+      "name": "gems-2",
+      "ids": [
+        "gem_fire_2",
+        "gem_blast_2",
+        "gem_life_2",
+        "gem_mana_2",
+        "gem_wisdom_2",
+        "gem_thunder_2",
+        "gem_wind_2",
+        "gem_armor_2",
+        "gem_blood_2",
+        "gem_frost_2",
+        "gem_pierce_2",
+        "gem_vital_2"
+      ],
+      "objects": [
+        "red pointed flame teardrop crystal, two facets",
+        "orange spherical explosive fiery crystal, two facets",
+        "green elongated oval healing crystal, two facets",
+        "blue faceted diamond mana crystal, two facets",
+        "purple tall hexagonal wisdom crystal, two facets",
+        "gold yellow jagged lightning crystal, two facets",
+        "cyan wing shaped crystal, two facets",
+        "white shield shaped crystal, two facets",
+        "pink heart shaped crystal, two facets",
+        "deep blue snowflake crystal, two facets",
+        "yellow spearhead crystal, two facets",
+        "emerald green leaf shaped crystal, two facets"
+      ]
+    },
+    {
+      "name": "gems-3",
+      "ids": [
+        "gem_fire_3",
+        "gem_blast_3",
+        "gem_life_3",
+        "gem_mana_3",
+        "gem_wisdom_3",
+        "gem_thunder_3",
+        "gem_wind_3",
+        "gem_armor_3",
+        "gem_blood_3",
+        "gem_frost_3",
+        "gem_pierce_3",
+        "gem_vital_3"
+      ],
+      "objects": [
+        "red pointed flame teardrop crystal, three luminous facets",
+        "orange spherical explosive fiery crystal, three luminous facets",
+        "green elongated oval healing crystal, three luminous facets",
+        "blue faceted diamond mana crystal, three luminous facets",
+        "purple tall hexagonal wisdom crystal, three luminous facets",
+        "gold yellow jagged lightning crystal, three luminous facets",
+        "cyan wing shaped crystal, three luminous facets",
+        "white shield shaped crystal, three luminous facets",
+        "pink heart shaped crystal, three luminous facets",
+        "deep blue snowflake crystal, three luminous facets",
+        "yellow spearhead crystal, three luminous facets",
+        "emerald green leaf shaped crystal, three luminous facets"
+      ]
+    },
+    {
+      "name": "gems-4",
+      "ids": [
+        "gem_fire_4",
+        "gem_blast_4",
+        "gem_life_4",
+        "gem_mana_4",
+        "gem_wisdom_4",
+        "gem_thunder_4",
+        "gem_wind_4",
+        "gem_armor_4",
+        "gem_blood_4",
+        "gem_frost_4",
+        "gem_pierce_4",
+        "gem_vital_4"
+      ],
+      "objects": [
+        "red pointed flame teardrop crystal, four luminous facets",
+        "orange spherical explosive fiery crystal, four luminous facets",
+        "green elongated oval healing crystal, four luminous facets",
+        "blue faceted diamond mana crystal, four luminous facets",
+        "purple tall hexagonal wisdom crystal, four luminous facets",
+        "gold yellow jagged lightning crystal, four luminous facets",
+        "cyan wing shaped crystal, four luminous facets",
+        "white shield shaped crystal, four luminous facets",
+        "pink heart shaped crystal, four luminous facets",
+        "deep blue snowflake crystal, four luminous facets",
+        "yellow spearhead crystal, four luminous facets",
+        "emerald green leaf shaped crystal, four luminous facets"
+      ]
+    },
+    {
+      "name": "gems-5",
+      "ids": [
+        "gem_fire_5",
+        "gem_blast_5",
+        "gem_life_5",
+        "gem_mana_5",
+        "gem_wisdom_5",
+        "gem_thunder_5",
+        "gem_wind_5",
+        "gem_armor_5",
+        "gem_blood_5",
+        "gem_frost_5",
+        "gem_pierce_5",
+        "gem_vital_5"
+      ],
+      "objects": [
+        "red pointed flame teardrop crystal, five celestial sparkles",
+        "orange spherical explosive fiery crystal, five celestial sparkles",
+        "green elongated oval healing crystal, five celestial sparkles",
+        "blue faceted diamond mana crystal, five celestial sparkles",
+        "purple tall hexagonal wisdom crystal, five celestial sparkles",
+        "gold yellow jagged lightning crystal, five celestial sparkles",
+        "cyan wing shaped crystal, five celestial sparkles",
+        "white shield shaped crystal, five celestial sparkles",
+        "pink heart shaped crystal, five celestial sparkles",
+        "deep blue snowflake crystal, five celestial sparkles",
+        "yellow spearhead crystal, five celestial sparkles",
+        "emerald green leaf shaped crystal, five celestial sparkles"
+      ]
+    },
+    {
+      "name": "gems-6",
+      "ids": [
+        "gem_fire_6",
+        "gem_blast_6",
+        "gem_life_6",
+        "gem_mana_6",
+        "gem_wisdom_6",
+        "gem_thunder_6",
+        "gem_wind_6",
+        "gem_armor_6",
+        "gem_blood_6",
+        "gem_frost_6",
+        "gem_pierce_6",
+        "gem_vital_6"
+      ],
+      "objects": [
+        "red pointed flame teardrop crystal, six radiant celestial sparkles",
+        "orange spherical explosive fiery crystal, six radiant celestial sparkles",
+        "green elongated oval healing crystal, six radiant celestial sparkles",
+        "blue faceted diamond mana crystal, six radiant celestial sparkles",
+        "purple tall hexagonal wisdom crystal, six radiant celestial sparkles",
+        "gold yellow jagged lightning crystal, six radiant celestial sparkles",
+        "cyan wing shaped crystal, six radiant celestial sparkles",
+        "white shield shaped crystal, six radiant celestial sparkles",
+        "pink heart shaped crystal, six radiant celestial sparkles",
+        "deep blue snowflake crystal, six radiant celestial sparkles",
+        "yellow spearhead crystal, six radiant celestial sparkles",
+        "emerald green leaf shaped crystal, six radiant celestial sparkles"
+      ]
+    },
+    {
+      "name": "features",
+      "ids": [
+        "feature_shop",
+        "feature_forge",
+        "feature_encounter",
+        "feature_world",
+        "feature_pet",
+        "feature_treasure"
+      ],
+      "objects": [
+        "jade gold treasure shop pavilion",
+        "golden hammer and jade anvil",
+        "glowing golden fate scroll",
+        "purple circular otherworld portal",
+        "green paw print jade amulet",
+        "golden magic treasure pearl"
+      ]
+    }
+  ]
+}
