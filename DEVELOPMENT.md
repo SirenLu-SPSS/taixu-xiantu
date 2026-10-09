@@ -4,6 +4,11 @@
 
 ## 程式分工
 
+- src/data/economy.js：仙寶模板、品階、詞條、掉落及能力上限。
+- src/systems/economy.js：可注入亂數的交易、強化、鑲嵌、領獎與相容遷移。
+- src/systems/economy-combat.js：幀率無關的回復、範圍目標與承傷規則。
+- src/ui/economy*.js：既有角色／背包／機緣／戰鬥系統的整合層。詳見 ECONOMY.md。
+
 - index.html：頁面結構與無障礙名稱。
 - src/data/catalog.js：既有境界、技能、裝備、靈寵與五張地圖。
 - src/systems/progression.js：可在 Node 測試的存檔擴充、地點狀態、靈田、山門收益及自動施法規則。
