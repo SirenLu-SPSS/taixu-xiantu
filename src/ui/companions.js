@@ -1,7 +1,7 @@
 'use strict';
 let companionVolleyAt=0;
 const companionMeta=key=>{const [type,id]=key.split(':');return (type==='pet'?PETS:TREASURES).find(u=>u.id===id)};
-const companionArt=key=>{const id=key.split(':')[1];return './src/assets/art/'+(id==='fox'?'icon-fox.webp':id==='dagger'?'icon-sword.webp':'companion-'+id+'.svg')};
+const companionArt=key=>{const id=key.split(':')[1],ids=['fox','turtle','falcon','dragon','mirror','dagger','bell','gourd'];return './src/assets/art/character-companion-'+ids.indexOf(id)+'.webp'};
 const companionImages=new Map();for(const u of Companions.units){const img=new Image();img.src=companionArt(u.key);companionImages.set(u.key,img)};
 function companionPosition(key){const i=p.companions.deployed.indexOf(key),angle=-Math.PI+(i%8)*Math.PI/4;return {x:p.position.x+Math.cos(angle)*47,y:p.position.y-18+Math.sin(angle)*35}}
 function fireCompanion(key,automatic=false){if(!p||!$('modal').classList.contains('hidden'))return false;const now=Date.now();if(!Companions.ready(p,key,now))return false;const enemy=targetNear(330);if(!enemy){if(!automatic)note('妖獸不在御靈攻擊範圍');return false}if(!Companions.launch(p,key,now))return false;const u=Companions.unit(key),meta=companionMeta(key),pos=companionPosition(key),level=key.startsWith('pet:')?p.levelPet[meta.id]:1;const execution=key==='treasure:dagger'&&enemy.hp/enemy.maxHp<.2?1.8:1;projectiles.push({...pos,target:enemy,damage:(stats().atk*u.scale+(meta.atk||8)*level)*execution,speed:410,kind:u.kind,companion:key});effects.push({...pos,t:.4,kind:'cast'});companionVolleyAt=now+350;save(true);return true}

@@ -1,0 +1,84 @@
+{
+  "1": {
+    "class_type": "UNETLoader",
+    "inputs": {
+      "unet_name": "qwen_image_2.1_int8_convrot.safetensors",
+      "weight_dtype": "default"
+    }
+  },
+  "2": {
+    "class_type": "CLIPLoader",
+    "inputs": {
+      "clip_name": "qwen3vl_8b_int8_convrot.safetensors",
+      "type": "qwen_image"
+    }
+  },
+  "3": {
+    "class_type": "VAELoader",
+    "inputs": {
+      "vae_name": "qwen_image_2.1_vae_bf16.safetensors"
+    }
+  },
+  "4": {
+    "class_type": "TextEncodeQwenImage21",
+    "inputs": {
+      "clip": [
+        "2",
+        0
+      ],
+      "prompt": "An EXACT 2 by 2 grid of four separate fully dressed adult Chinese xianxia game character illustrations on perfectly pure white backgrounds. Each centered full body entirely inside its own square cell, all hands shoes hair visible with white margins, no shadows, no scenery. All four wear exquisite deep jade teal outer robes with antique gold embroidery over ivory inner garments, gold waist belts, elegant long sleeves and dark boots. Top left: handsome young adult Chinese male immortal with long black hair, jade teal and gold robes, a small gold crown, cyan sword held naturally in the left hand. Top right: beautiful adult Chinese female cultivator with long black hair and a gold jade hairpin, jade teal gold embroidered gown. Bottom left: silver haired mature male sage with long beard, elaborate jade teal and gold robes. Bottom right: serene adult female immortal with long white hair, wearing deep jade teal and gold robes. Upright front view, graceful natural adult proportions, detailed refined hand painted Chinese ink watercolor game art. Identical character size and full body framing. No chibi, no text, no frames, no grid lines.",
+      "negative_prompt": "blurry, low quality, watermark, text, deformed, extra limbs",
+      "resolution": 1024
+    }
+  },
+  "5": {
+    "class_type": "KSampler",
+    "inputs": {
+      "model": [
+        "1",
+        0
+      ],
+      "seed": 2026100901,
+      "steps": 24,
+      "cfg": 4,
+      "sampler_name": "euler",
+      "scheduler": "simple",
+      "positive": [
+        "4",
+        0
+      ],
+      "negative": [
+        "4",
+        1
+      ],
+      "latent_image": [
+        "4",
+        2
+      ],
+      "denoise": 1
+    }
+  },
+  "6": {
+    "class_type": "VAEDecode",
+    "inputs": {
+      "samples": [
+        "5",
+        0
+      ],
+      "vae": [
+        "3",
+        0
+      ]
+    }
+  },
+  "7": {
+    "class_type": "SaveImage",
+    "inputs": {
+      "images": [
+        "6",
+        0
+      ],
+      "filename_prefix": "Taixu_character/outfits"
+    }
+  }
+}

@@ -1,6 +1,7 @@
 'use strict';
 // Pure progression rules shared by the browser and Node's regression tests.
 const Progression = (() => {
+  const bags=typeof CharacterSystem!=='undefined'?CharacterSystem:typeof require!=='undefined'?require('./character.js'):null;
   const worldWidth = 1500, worldHeight = 900;
   const landmarks = [
     {id:'spring',name:'靈泉',kind:'spring',x:460,y:260,mark:'泉',desc:'泉水洗塵，恢復氣血與真元。',cooldown:60000},
@@ -18,7 +19,7 @@ const Progression = (() => {
     result.estate = {plots:[null,null,null],sect:0,incomeAt:Date.now(),...(player.estate || {})};
     result.estate.plots = Array.from({length:3},(_,i)=>result.estate.plots?.[i] || null);
     result.breakthroughs = player.breakthroughs || 0;
-    return result;
+    if(bags)bags.normalize(result);return result;
   }
   function key(map,id) { return `${map}:${id}`; }
   function landmarkState(player,map,point,now=Date.now()) {
@@ -50,7 +51,7 @@ const Progression = (() => {
     income(player,now); player.stones-=cost; player.estate.sect++;player.estate.incomeAt=now;return true;
   }
 
-  function canStore(player,id){return player.inventory.some(entry=>entry.id===id)||player.inventory.length<40;}
+  function canStore(player,id){return bags?bags.canStore(player,id,typeof ITEMS!=='undefined'?ITEMS:{}):player.inventory.some(entry=>entry.id===id)||player.inventory.length<40;}
   function addItem(player,id,amount=1){
     if(!Number.isSafeInteger(amount)||amount<1||!canStore(player,id))return false;
     const entry=player.inventory.find(item=>item.id===id);

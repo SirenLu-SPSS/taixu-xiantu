@@ -1,0 +1,84 @@
+{
+  "1": {
+    "class_type": "UNETLoader",
+    "inputs": {
+      "unet_name": "qwen_image_2.1_int8_convrot.safetensors",
+      "weight_dtype": "default"
+    }
+  },
+  "2": {
+    "class_type": "CLIPLoader",
+    "inputs": {
+      "clip_name": "qwen3vl_8b_int8_convrot.safetensors",
+      "type": "qwen_image"
+    }
+  },
+  "3": {
+    "class_type": "VAELoader",
+    "inputs": {
+      "vae_name": "qwen_image_2.1_vae_bf16.safetensors"
+    }
+  },
+  "4": {
+    "class_type": "TextEncodeQwenImage21",
+    "inputs": {
+      "clip": [
+        "2",
+        0
+      ],
+      "prompt": "An exact 4 by 4 grid of sixteen Chinese xianxia mobile RPG item icons. One centered isolated object per cell, equal cells, plain dark teal backgrounds, no text, no frames. Read order left to right top to bottom: 1 ornate gold jade crown; 2 turquoise dangling earrings; 3 ivory silk underrobe; 4 glowing cyan longsword; 5 ivory silk trousers; 6 jade necklace; 7 jade gold bracelet; 8 ornate teal outer robe; 9 turquoise jade ring; 10 ivory gold boots; 11 red elixir in jade bottle; 12 emerald healing potion; 13 purple protective potion; 14 enchanted wood logs; 15 green medicinal herb; 16 ivory beast fang. Highly detailed hand painted watercolor Chinese fantasy game icons, gold highlights, distinct silhouettes, consistent scale, each fully contained within its cell.",
+      "negative_prompt": "blurry, low quality, watermark, text, deformed, extra limbs",
+      "resolution": 1024
+    }
+  },
+  "5": {
+    "class_type": "KSampler",
+    "inputs": {
+      "model": [
+        "1",
+        0
+      ],
+      "seed": 2026100901,
+      "steps": 24,
+      "cfg": 4,
+      "sampler_name": "euler",
+      "scheduler": "simple",
+      "positive": [
+        "4",
+        0
+      ],
+      "negative": [
+        "4",
+        1
+      ],
+      "latent_image": [
+        "4",
+        2
+      ],
+      "denoise": 1
+    }
+  },
+  "6": {
+    "class_type": "VAEDecode",
+    "inputs": {
+      "samples": [
+        "5",
+        0
+      ],
+      "vae": [
+        "3",
+        0
+      ]
+    }
+  },
+  "7": {
+    "class_type": "SaveImage",
+    "inputs": {
+      "images": [
+        "6",
+        0
+      ],
+      "filename_prefix": "Taixu_character/icons"
+    }
+  }
+}

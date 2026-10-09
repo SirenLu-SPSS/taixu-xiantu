@@ -44,3 +44,11 @@
 原始圖集為白底、左上普通敵人、右上精英、左下 Boss、右下變身。`art/process-rift-art.py` 去除連接外邊緣的白底、處理抗鋸齒邊緣，並清除跨格的小碎片；保留角色白袍、冰晶與主要武器。將下載的原圖命名為 `{theme}-floor.png` / `{theme}-actors.png` 放在來源資料夾，執行 `python art/process-rift-art.py <來源資料夾>` 可重建 WebP（需 Pillow、NumPy、SciPy）。
 
 `src/ui/rift-art.js` 只接管背景、敵人、圖鑑與血條位置；十波數值、技能碰撞、獎勵及存檔仍由原本機緣系統負責。圖片未載入時暫用程序圖形，背景就緒後建立一次快取並釋放替代背景。角色精靈採尺寸包含式縮放，保持比例；Boss 變身時切换独立 rage 素材，保留擴大體型與預警。
+
+## 角色管理頁 ComfyUI 美術
+
+Qwen Image 2.1 經區域網路 ComfyUI 製作 5 組圖集：16 款裝備／消耗品／材料 ICON，8 款靈寵與法寶 ICON，水墨背景，4 款基礎全身立繪及 4 款深青外衣立繪，共 33 個 WebP、約 0.6MB。所有工作流在 `art/workflows/character-*-api.json`，來源及 SHA-256 在 `art/character-art-manifest.json`。
+
+原圖命名 icons.png、companions.png、backdrop.png、bodies.png、outfits.png。`python art/process-character-art.py <來源目錄>` 可重建素材，僅需 Pillow、NumPy。ICON 只去除連接邊緣的深色背景；人物只去除連接邊緣的白底，保留白袍。實際伙伴圖集出現 4×3 排列，擷取第一列靈寵及第三列法寶，避免重複或截斷。人物圖集為 2×2，順序劍修、玉修、仙翁、月仙。
+
+外衣穿戴切換至專用 outfit 全身素材；卸下回到 body 素材。配件圖層獨立存在，精確服裝裁片／骨骼動畫留待後续製作。圖片與數值分開，換圖不改变攻擊、CD、傷害或存檔。

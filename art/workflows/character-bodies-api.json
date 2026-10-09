@@ -1,0 +1,84 @@
+{
+  "1": {
+    "class_type": "UNETLoader",
+    "inputs": {
+      "unet_name": "qwen_image_2.1_int8_convrot.safetensors",
+      "weight_dtype": "default"
+    }
+  },
+  "2": {
+    "class_type": "CLIPLoader",
+    "inputs": {
+      "clip_name": "qwen3vl_8b_int8_convrot.safetensors",
+      "type": "qwen_image"
+    }
+  },
+  "3": {
+    "class_type": "VAELoader",
+    "inputs": {
+      "vae_name": "qwen_image_2.1_vae_bf16.safetensors"
+    }
+  },
+  "4": {
+    "class_type": "TextEncodeQwenImage21",
+    "inputs": {
+      "clip": [
+        "2",
+        0
+      ],
+      "prompt": "An EXACT 2 by 2 grid of four full body adult Chinese xianxia RPG character illustrations on perfectly plain pure white backgrounds, each wholly contained inside its own square cell. Each character is centered with plenty of white margin, all feet shoes hands hair inside each cell. Top left: handsome young adult male immortal swordsman with long black hair, ivory and jade green layered robes, gold hair ornament, ornate waist belt, holding cyan sword, realistic elegant adult proportions. Top right: beautiful adult female jade cultivator, long black hair, jade green silk gown and gold hairpin. Bottom left: mature silver haired male immortal sage with long beard and deep teal robes. Bottom right: serene adult female immortal with long white hair and ivory gold robes. Detailed elegant hand painted Chinese ink watercolor fantasy game illustration, refined jade teal and antique gold palette, upright full body front three quarter poses. No chibi, no captions, no shadows, no ground, no scenery, no frames, no grid lines.",
+      "negative_prompt": "blurry, low quality, watermark, text, deformed, extra limbs",
+      "resolution": 1024
+    }
+  },
+  "5": {
+    "class_type": "KSampler",
+    "inputs": {
+      "model": [
+        "1",
+        0
+      ],
+      "seed": 2026100901,
+      "steps": 24,
+      "cfg": 4,
+      "sampler_name": "euler",
+      "scheduler": "simple",
+      "positive": [
+        "4",
+        0
+      ],
+      "negative": [
+        "4",
+        1
+      ],
+      "latent_image": [
+        "4",
+        2
+      ],
+      "denoise": 1
+    }
+  },
+  "6": {
+    "class_type": "VAEDecode",
+    "inputs": {
+      "samples": [
+        "5",
+        0
+      ],
+      "vae": [
+        "3",
+        0
+      ]
+    }
+  },
+  "7": {
+    "class_type": "SaveImage",
+    "inputs": {
+      "images": [
+        "6",
+        0
+      ],
+      "filename_prefix": "Taixu_character/bodies"
+    }
+  }
+}

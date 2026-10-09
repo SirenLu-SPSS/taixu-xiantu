@@ -1,0 +1,201 @@
+{
+  "generator": "ComfyUI Qwen Image 2.1",
+  "assets": [
+    {
+      "asset": "character-item-0.webp",
+      "atlas": "icons",
+      "cell": 0,
+      "sha256": "59791ef0794fddfb5be85e5c9bd9123a5214a75aed05b4a5899dd8773d7b00a5"
+    },
+    {
+      "asset": "character-item-1.webp",
+      "atlas": "icons",
+      "cell": 1,
+      "sha256": "b39b5cb23aaf8a1e16ea5c96e0a76bd464936a5c465bc53c36507ae4a42081f5"
+    },
+    {
+      "asset": "character-item-2.webp",
+      "atlas": "icons",
+      "cell": 2,
+      "sha256": "24624a2aa8a445dc3df0a8e1e5327e146fd777d722cb9d5509697ce1881fae20"
+    },
+    {
+      "asset": "character-item-3.webp",
+      "atlas": "icons",
+      "cell": 3,
+      "sha256": "b1858738e47e8cd7b3576ed5500c17b6567e7b619ed6e58555db7b5d19b43dcd"
+    },
+    {
+      "asset": "character-item-4.webp",
+      "atlas": "icons",
+      "cell": 4,
+      "sha256": "5198769810cf65e727e72eb646cca825141807adaafbde6eef9a40fba578e820"
+    },
+    {
+      "asset": "character-item-5.webp",
+      "atlas": "icons",
+      "cell": 5,
+      "sha256": "97ab70f5c33bb9a70495b57952b1293d08b1d67466b1d058f33da5074640abe8"
+    },
+    {
+      "asset": "character-item-6.webp",
+      "atlas": "icons",
+      "cell": 6,
+      "sha256": "b9c4dd12e3c8c65851a8eb9cea64c9ba9df6ef1f8bf13f6d1de185a73898ba3d"
+    },
+    {
+      "asset": "character-item-7.webp",
+      "atlas": "icons",
+      "cell": 7,
+      "sha256": "fb4cfc2ce132b99e031a3bb92103396da459a876e1fa4dfc066b759874783597"
+    },
+    {
+      "asset": "character-item-8.webp",
+      "atlas": "icons",
+      "cell": 8,
+      "sha256": "4bf64275b69c73af1c1efc4838994025915bec884c7c7464120fcaf4f9ac416f"
+    },
+    {
+      "asset": "character-item-9.webp",
+      "atlas": "icons",
+      "cell": 9,
+      "sha256": "92ba5381ea967526ebfaf12420849573e0a67db3697d009cf3331d81b12dc32a"
+    },
+    {
+      "asset": "character-item-10.webp",
+      "atlas": "icons",
+      "cell": 10,
+      "sha256": "6ec07bd94f64300ccb2ab170c0a00c11b21b4375ec2edee67d787dc187c0de93"
+    },
+    {
+      "asset": "character-item-11.webp",
+      "atlas": "icons",
+      "cell": 11,
+      "sha256": "41fde70918400537a1fc9ad149ef9c5d63d72fa71c9e88944a9965de31da6e8a"
+    },
+    {
+      "asset": "character-item-12.webp",
+      "atlas": "icons",
+      "cell": 12,
+      "sha256": "6e2b8b7f4e9215d5baf629f7d1252465a859b8b0eda4b5718c884b84b2621203"
+    },
+    {
+      "asset": "character-item-13.webp",
+      "atlas": "icons",
+      "cell": 13,
+      "sha256": "7c455d72e69947e996ff6ef21c034f7619fde253b096ff635a8b70145aeba8dc"
+    },
+    {
+      "asset": "character-item-14.webp",
+      "atlas": "icons",
+      "cell": 14,
+      "sha256": "ee39c7d81c9a87447a5b35cc7899fd4d31b8bb0ad62e6aa2c3e5967db11fb238"
+    },
+    {
+      "asset": "character-item-15.webp",
+      "atlas": "icons",
+      "cell": 15,
+      "sha256": "de764da2cf99d19b55f576cfcb5b9ebc049ab4181d0da66f0f3efb6e8bdbf031"
+    },
+    {
+      "asset": "character-companion-0.webp",
+      "atlas": "companions",
+      "cell": 0,
+      "sha256": "01849133d1141a996e93ba02a4eab696a18b5a1885f081d6e85ba3d13871acd5"
+    },
+    {
+      "asset": "character-companion-1.webp",
+      "atlas": "companions",
+      "cell": 1,
+      "sha256": "32032c1774d014e2ad923da4aa16d77200139a68c2fa0e2b1267095b67f83272"
+    },
+    {
+      "asset": "character-companion-2.webp",
+      "atlas": "companions",
+      "cell": 2,
+      "sha256": "22ce802de2162b5c0cf41ce8102b7ddfe02c288d1fffc050f0e66c21db38843e"
+    },
+    {
+      "asset": "character-companion-3.webp",
+      "atlas": "companions",
+      "cell": 3,
+      "sha256": "4e5727ef0a5ae6783441a64ac1585cf39ac689c053a7e9a5b504f5f5a1c87347"
+    },
+    {
+      "asset": "character-companion-4.webp",
+      "atlas": "companions",
+      "cell": 4,
+      "sha256": "49e2114b86ba96369a369522a380bfb925d15784cb9f38925bcf438dda090326"
+    },
+    {
+      "asset": "character-companion-5.webp",
+      "atlas": "companions",
+      "cell": 5,
+      "sha256": "a7b63ab884aa6d61ded7e06463191421096ce8f930f964d23da33ce08bb8472c"
+    },
+    {
+      "asset": "character-companion-6.webp",
+      "atlas": "companions",
+      "cell": 6,
+      "sha256": "8b2cc9762c02cd472401f722805282cd6e85bf087ea66b0f607efeccfb946a0c"
+    },
+    {
+      "asset": "character-companion-7.webp",
+      "atlas": "companions",
+      "cell": 7,
+      "sha256": "3f34196c9d349f318c8e70bddd420a83ee16f37bb7bcc42c61b5b13a1a86f6bc"
+    },
+    {
+      "asset": "character-backdrop.webp",
+      "sha256": "1cad7fbd215f42588a7c3227c141ad052fcd2afeaf3c3b66a9fd7412daa66895"
+    },
+    {
+      "asset": "character-body-sword.webp",
+      "atlas": "bodies",
+      "cell": 0,
+      "sha256": "204ab349a08f9503c9c305cd94ee552badf348c447806dbb64f1433d2e94b26b"
+    },
+    {
+      "asset": "character-body-jade.webp",
+      "atlas": "bodies",
+      "cell": 1,
+      "sha256": "685309ccadbc62745c291f6f7dce2a4bf73b704ed89d222b0e578ba2b82a362b"
+    },
+    {
+      "asset": "character-body-sage.webp",
+      "atlas": "bodies",
+      "cell": 2,
+      "sha256": "0983ee82c03f5b4ef04eb64e4968efedd87657bd31499eb57b04a9187ed3a27f"
+    },
+    {
+      "asset": "character-body-moon.webp",
+      "atlas": "bodies",
+      "cell": 3,
+      "sha256": "2280a4e9936343a3dce56afd656af978cf90548b8b489b6f833c48282629ada0"
+    },
+    {
+      "asset": "character-outfit-sword.webp",
+      "atlas": "outfits",
+      "cell": 0,
+      "sha256": "e8440ae71755427d38e9567f80d09de1c4aa044a24232c3f8bff7201ac784afb"
+    },
+    {
+      "asset": "character-outfit-jade.webp",
+      "atlas": "outfits",
+      "cell": 1,
+      "sha256": "c579c7d3429b11c9ca5d7b65b36bbd881b21e9885efd2b1f820fe8209e151632"
+    },
+    {
+      "asset": "character-outfit-sage.webp",
+      "atlas": "outfits",
+      "cell": 2,
+      "sha256": "5ac40675125dc60ddb1e8db69adece882c3f2553df5b6ac117ca54032b9bd38c"
+    },
+    {
+      "asset": "character-outfit-moon.webp",
+      "atlas": "outfits",
+      "cell": 3,
+      "sha256": "51bea263049b3f6fe0630b409228707088784a3310089c4c5fdd13a8436d5301"
+    }
+  ]
+}
