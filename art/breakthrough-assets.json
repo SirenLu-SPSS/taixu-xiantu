@@ -1,0 +1,170 @@
+[
+  {
+    "asset_id": "breakthrough_success-0",
+    "path": "src/assets/breakthrough/success-0.png",
+    "generator": "ComfyUI Qwen Image 2.1",
+    "workflow": "art/workflows/breakthrough-success.json",
+    "cell": 0,
+    "sha256": "a10be8f347d5d80070df45e8e3e35821c80a1f2237fc231a84b7894794dc0ef5"
+  },
+  {
+    "asset_id": "breakthrough_success-1",
+    "path": "src/assets/breakthrough/success-1.png",
+    "generator": "ComfyUI Qwen Image 2.1",
+    "workflow": "art/workflows/breakthrough-success.json",
+    "cell": 1,
+    "sha256": "715d2cdd35dd4cd1d818ac82f7b473dd45f38db7ea388ceed89d05b89c8eed71"
+  },
+  {
+    "asset_id": "breakthrough_success-2",
+    "path": "src/assets/breakthrough/success-2.png",
+    "generator": "ComfyUI Qwen Image 2.1",
+    "workflow": "art/workflows/breakthrough-success.json",
+    "cell": 2,
+    "sha256": "4a24e6b830217bf729486b2b1a4177b149535d8b890bd68151ba253ba111a1a8"
+  },
+  {
+    "asset_id": "breakthrough_success-3",
+    "path": "src/assets/breakthrough/success-3.png",
+    "generator": "ComfyUI Qwen Image 2.1",
+    "workflow": "art/workflows/breakthrough-success.json",
+    "cell": 3,
+    "sha256": "7904c3f22ad3764d6d0d1f6173f0300b262ce2ee2c9fd918ad94eafaba43a41e"
+  },
+  {
+    "asset_id": "breakthrough_success-4",
+    "path": "src/assets/breakthrough/success-4.png",
+    "generator": "ComfyUI Qwen Image 2.1",
+    "workflow": "art/workflows/breakthrough-success.json",
+    "cell": 4,
+    "sha256": "72b5691b2e7694910db4366a7894c39113292897ba624ba79577b173304a64d9"
+  },
+  {
+    "asset_id": "breakthrough_success-5",
+    "path": "src/assets/breakthrough/success-5.png",
+    "generator": "ComfyUI Qwen Image 2.1",
+    "workflow": "art/workflows/breakthrough-success.json",
+    "cell": 5,
+    "sha256": "01addb64101c73d97cbe138cdf626ef4ca11ef18021be6ad3c13e0cf5ec6d5a3"
+  },
+  {
+    "asset_id": "breakthrough_success-6",
+    "path": "src/assets/breakthrough/success-6.png",
+    "generator": "ComfyUI Qwen Image 2.1",
+    "workflow": "art/workflows/breakthrough-success.json",
+    "cell": 6,
+    "sha256": "a38ac1ce695484c65de881c3eb4fd448f5defeb306c94a2adfaedaabd31f064c"
+  },
+  {
+    "asset_id": "breakthrough_success-7",
+    "path": "src/assets/breakthrough/success-7.png",
+    "generator": "ComfyUI Qwen Image 2.1",
+    "workflow": "art/workflows/breakthrough-success.json",
+    "cell": 7,
+    "sha256": "fe5f019e2071b12b41577a0082022042a1197b9ca6596f04730927d817ee34c9"
+  },
+  {
+    "asset_id": "breakthrough_success-8",
+    "path": "src/assets/breakthrough/success-8.png",
+    "generator": "ComfyUI Qwen Image 2.1",
+    "workflow": "art/workflows/breakthrough-success.json",
+    "cell": 8,
+    "sha256": "fff13cd9051100fb50416f1750c036aa4b2fd8fbd8e73c7bd34e3f9861c95953"
+  },
+  {
+    "asset_id": "breakthrough_celestial-pill",
+    "path": "src/assets/breakthrough/celestial-pill.png",
+    "generator": "ComfyUI Qwen Image 2.1",
+    "workflow": "art/workflows/breakthrough-success.json",
+    "cell": 9,
+    "sha256": "0185dfe19492d9b4bd57a18e85103d52d9d8c13ee465108575d885a2aa319cac"
+  },
+  {
+    "asset_id": "breakthrough_thunder",
+    "path": "src/assets/breakthrough/thunder.png",
+    "generator": "ComfyUI Qwen Image 2.1",
+    "workflow": "art/workflows/breakthrough-success.json",
+    "cell": 10,
+    "sha256": "fe42d2559d13458957b4c8acf2b5268d3982c9e6cc773963d7bb1be0b07dec71"
+  },
+  {
+    "asset_id": "breakthrough_shield",
+    "path": "src/assets/breakthrough/shield.png",
+    "generator": "ComfyUI Qwen Image 2.1",
+    "workflow": "art/workflows/breakthrough-success.json",
+    "cell": 11,
+    "sha256": "0c6ddc1ea704e92e48a94960439e36a089c54b309bd8384105fea753896977b3"
+  },
+  {
+    "asset_id": "breakthrough_failure-0",
+    "path": "src/assets/breakthrough/failure-0.png",
+    "generator": "ComfyUI Qwen Image 2.1",
+    "workflow": "art/workflows/breakthrough-failure.json",
+    "cell": 0,
+    "sha256": "2d9cafc5a9e4373c417d6f06eef6c303a66dc940795fb5a1a572271dd91479d2"
+  },
+  {
+    "asset_id": "breakthrough_failure-1",
+    "path": "src/assets/breakthrough/failure-1.png",
+    "generator": "ComfyUI Qwen Image 2.1",
+    "workflow": "art/workflows/breakthrough-failure.json",
+    "cell": 1,
+    "sha256": "70c85106301eb0cfcdfd2cb41fc86553b00f9debe15bbb30d918b86a59058287"
+  },
+  {
+    "asset_id": "breakthrough_failure-2",
+    "path": "src/assets/breakthrough/failure-2.png",
+    "generator": "ComfyUI Qwen Image 2.1",
+    "workflow": "art/workflows/breakthrough-failure.json",
+    "cell": 2,
+    "sha256": "819147d7d4f993491e5706afee29b3cfb309197f1b071bc7542bf13b16f9c0bf"
+  },
+  {
+    "asset_id": "breakthrough_failure-3",
+    "path": "src/assets/breakthrough/failure-3.png",
+    "generator": "ComfyUI Qwen Image 2.1",
+    "workflow": "art/workflows/breakthrough-failure.json",
+    "cell": 3,
+    "sha256": "c56ef3ea842cca31201ff0a655e9f82a3f066f7cdfa7fdbbd8640f088249f0e8"
+  },
+  {
+    "asset_id": "breakthrough_failure-4",
+    "path": "src/assets/breakthrough/failure-4.png",
+    "generator": "ComfyUI Qwen Image 2.1",
+    "workflow": "art/workflows/breakthrough-failure.json",
+    "cell": 4,
+    "sha256": "eb30384d535e17f08a04b6010e1832795936606b3da30ae8ce9a62abdf4b777c"
+  },
+  {
+    "asset_id": "breakthrough_failure-5",
+    "path": "src/assets/breakthrough/failure-5.png",
+    "generator": "ComfyUI Qwen Image 2.1",
+    "workflow": "art/workflows/breakthrough-failure.json",
+    "cell": 5,
+    "sha256": "e3adf04f24aa71fb5ee91001c4e78ea56df4f3149de7bee18807b5abf852942f"
+  },
+  {
+    "asset_id": "breakthrough_failure-6",
+    "path": "src/assets/breakthrough/failure-6.png",
+    "generator": "ComfyUI Qwen Image 2.1",
+    "workflow": "art/workflows/breakthrough-failure.json",
+    "cell": 6,
+    "sha256": "55f3ac80b2934e9caf611fdd619661a481547d13f2f72fdd100d922ef026e8c4"
+  },
+  {
+    "asset_id": "breakthrough_failure-7",
+    "path": "src/assets/breakthrough/failure-7.png",
+    "generator": "ComfyUI Qwen Image 2.1",
+    "workflow": "art/workflows/breakthrough-failure.json",
+    "cell": 7,
+    "sha256": "d55f4fbdb3ee0ba843c5d76efe075eba4798f2b1889b1f4885e5617cbde2c420"
+  },
+  {
+    "asset_id": "breakthrough_failure-8",
+    "path": "src/assets/breakthrough/failure-8.png",
+    "generator": "ComfyUI Qwen Image 2.1",
+    "workflow": "art/workflows/breakthrough-failure.json",
+    "cell": 8,
+    "sha256": "ffa8ac31b60c81f13d484a0dbeb946faa17a8a14634d01c839edd827ea8f1a3f"
+  }
+]
