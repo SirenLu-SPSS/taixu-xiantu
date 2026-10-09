@@ -1,0 +1,84 @@
+{
+  "1": {
+    "class_type": "UNETLoader",
+    "inputs": {
+      "unet_name": "qwen_image_2.1_int8_convrot.safetensors",
+      "weight_dtype": "default"
+    }
+  },
+  "2": {
+    "class_type": "CLIPLoader",
+    "inputs": {
+      "clip_name": "qwen3vl_8b_int8_convrot.safetensors",
+      "type": "qwen_image"
+    }
+  },
+  "3": {
+    "class_type": "VAELoader",
+    "inputs": {
+      "vae_name": "qwen_image_2.1_vae_bf16.safetensors"
+    }
+  },
+  "4": {
+    "class_type": "TextEncodeQwenImage21",
+    "inputs": {
+      "clip": [
+        "2",
+        0
+      ],
+      "prompt": "Single inventory item icon of a forging stone for a Chinese xianxia fantasy RPG. Three chunky angular dark iron meteorite rocks with hammered metallic facets, glowing molten orange cracks and tiny gold sparks, heavy solid mineral silhouette. Refined hand-painted ink watercolor game item art, crisp readable at 64 pixels, centered with generous margins, fully contained, pure white background, no plants, no leaves, no grass, no furnace, no text, no lettering, no border, no shadow.",
+      "negative_prompt": "blurry, low quality, watermark, text, deformed, extra limbs",
+      "resolution": 768
+    }
+  },
+  "5": {
+    "class_type": "KSampler",
+    "inputs": {
+      "model": [
+        "1",
+        0
+      ],
+      "seed": 202610091301,
+      "steps": 24,
+      "cfg": 4,
+      "sampler_name": "euler",
+      "scheduler": "simple",
+      "positive": [
+        "4",
+        0
+      ],
+      "negative": [
+        "4",
+        1
+      ],
+      "latent_image": [
+        "4",
+        2
+      ],
+      "denoise": 1
+    }
+  },
+  "6": {
+    "class_type": "VAEDecode",
+    "inputs": {
+      "samples": [
+        "5",
+        0
+      ],
+      "vae": [
+        "3",
+        0
+      ]
+    }
+  },
+  "7": {
+    "class_type": "SaveImage",
+    "inputs": {
+      "images": [
+        "6",
+        0
+      ],
+      "filename_prefix": "Taixu_forge_stone/v1"
+    }
+  }
+}

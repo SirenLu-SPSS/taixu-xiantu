@@ -9,6 +9,7 @@ for(const name of ['character-backdrop',...['sword','jade','sage','moon'].flatMa
 for(const asset of ['map-scorpion','map-python','map-sword-spirit',...Array.from({length:5},(_,i)=>'cultivator-'+i),...Array.from({length:5},(_,i)=>'dark-pet-'+i)])if(!fs.existsSync(path.join(root,'src/assets/art',asset+'.webp')))throw Error('Missing ComfyUI dark art '+asset);
 for(const name of ['white','blue','purple','gold','legend','gold-still','legend-still'])if(!fs.existsSync(path.join(root,'src/assets/quality-frames',name+'.webp')))throw Error('Missing ComfyUI quality frame '+name);
 for(const name of ['success','failure','ore','furnace'])if(!fs.existsSync(path.join(root,'src/assets/legend-forge',name+'.webp')))throw Error('Missing ComfyUI forge asset '+name);
+if(!fs.existsSync(path.join(root,'src/assets/materials/forge-stone.webp')))throw Error('Missing ComfyUI forge stone icon');
 fs.mkdirSync(path.join(root,'dist'),{recursive:true});
 fs.copyFileSync(path.join(root,'index.html'),path.join(root,'dist/index.html'));
 fs.cpSync(path.join(root,'src'),path.join(root,'dist/src'),{recursive:true});
