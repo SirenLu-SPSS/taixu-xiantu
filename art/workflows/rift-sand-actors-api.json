@@ -1,0 +1,84 @@
+{
+  "1": {
+    "class_type": "UNETLoader",
+    "inputs": {
+      "unet_name": "qwen_image_2.1_int8_convrot.safetensors",
+      "weight_dtype": "default"
+    }
+  },
+  "2": {
+    "class_type": "CLIPLoader",
+    "inputs": {
+      "clip_name": "qwen3vl_8b_int8_convrot.safetensors",
+      "type": "qwen_image"
+    }
+  },
+  "3": {
+    "class_type": "VAELoader",
+    "inputs": {
+      "vae_name": "qwen_image_2.1_vae_bf16.safetensors"
+    }
+  },
+  "4": {
+    "class_type": "TextEncodeQwenImage21",
+    "inputs": {
+      "clip": [
+        "2",
+        0
+      ],
+      "prompt": "Professional hand-painted 2D Chinese xianxia RPG enemy sprite atlas, EXACT 2 by 2 grid of four equal square cells. Each creature is full body entirely contained inside its own cell with large pure white margins. Top left: a squat mummy soldier with weathered linen wrappings and a small bronze saber. Top right: a towering desert royal guard in bronze lamellar armor with a long crescent halberd. Bottom left: a majestic ancient desert king in weathered antique gold armor and crimson cloth, an elaborate ancient Chinese imperial crown, heavy stone staff, full body, regal intimidating posture. Bottom right: a transformed giant sand titan king in fractured sandstone and molten antique gold armor, huge angular crown, glowing turquoise core and whirling golden sand ribbons. All four isolated on perfectly pure white #ffffff backgrounds, no scenery, no floor, no ground shadows, no frame, no grid lines. Clearly separated silhouettes, elaborate high quality fantasy illustration, stylized mobile RPG proportions, three quarter front view, feet and all wings inside the cell, consistent soft painterly shading, crisp detailed outlines, muted jade and antique gold accents, cohesive art direction. No words, no captions, no text, no watermark.",
+      "negative_prompt": "text, letters, watermark, interface, blurry, cropped feet, cropped wings, overlapping grid cells, photographic, perspective horizon",
+      "resolution": 768
+    }
+  },
+  "5": {
+    "class_type": "KSampler",
+    "inputs": {
+      "model": [
+        "1",
+        0
+      ],
+      "seed": 910202902,
+      "steps": 24,
+      "cfg": 4,
+      "sampler_name": "euler",
+      "scheduler": "simple",
+      "positive": [
+        "4",
+        0
+      ],
+      "negative": [
+        "4",
+        1
+      ],
+      "latent_image": [
+        "4",
+        2
+      ],
+      "denoise": 1
+    }
+  },
+  "6": {
+    "class_type": "VAEDecode",
+    "inputs": {
+      "samples": [
+        "5",
+        0
+      ],
+      "vae": [
+        "3",
+        0
+      ]
+    }
+  },
+  "7": {
+    "class_type": "SaveImage",
+    "inputs": {
+      "images": [
+        "6",
+        0
+      ],
+      "filename_prefix": "Taixu_otherworld/sand-actors"
+    }
+  }
+}

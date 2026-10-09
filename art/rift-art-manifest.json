@@ -1,0 +1,296 @@
+{
+  "generator": "ComfyUI",
+  "model": "qwen_image_2.1_int8_convrot.safetensors",
+  "steps": 24,
+  "resolution": 768,
+  "workflows": "art/workflows/rift-*-api.json",
+  "jobs": [
+    {
+      "id": "ember",
+      "kind": "floor",
+      "prompt_id": "4e8d7dca-c4a5-4800-a5bc-4de759a6639c",
+      "output": {
+        "filename": "ember-floor_00001_.png",
+        "subfolder": "Taixu_otherworld",
+        "type": "output"
+      },
+      "complete": true
+    },
+    {
+      "id": "ember",
+      "kind": "actors",
+      "prompt_id": "f27c85f4-5972-4906-8c11-52e025e06ce1",
+      "output": {
+        "filename": "ember-actors_00001_.png",
+        "subfolder": "Taixu_otherworld",
+        "type": "output"
+      },
+      "complete": true
+    },
+    {
+      "id": "frost",
+      "kind": "floor",
+      "prompt_id": "6a844c82-4098-4f4f-bc35-a8d664afda05",
+      "output": {
+        "filename": "frost-floor_00001_.png",
+        "subfolder": "Taixu_otherworld",
+        "type": "output"
+      },
+      "complete": true
+    },
+    {
+      "id": "frost",
+      "kind": "actors",
+      "prompt_id": "1bfe3058-e2a8-44e1-8a1d-48c483401b0b",
+      "output": {
+        "filename": "frost-actors_00001_.png",
+        "subfolder": "Taixu_otherworld",
+        "type": "output"
+      },
+      "complete": true
+    },
+    {
+      "id": "grove",
+      "kind": "floor",
+      "prompt_id": "745522d8-a0fb-4e14-b148-9cc284d63ae4",
+      "output": {
+        "filename": "grove-floor_00001_.png",
+        "subfolder": "Taixu_otherworld",
+        "type": "output"
+      },
+      "complete": true
+    },
+    {
+      "id": "grove",
+      "kind": "actors",
+      "prompt_id": "90a1b5bd-316d-4e51-8d1f-31897ffb6bc6",
+      "output": {
+        "filename": "grove-actors_00001_.png",
+        "subfolder": "Taixu_otherworld",
+        "type": "output"
+      },
+      "complete": true
+    },
+    {
+      "id": "sand",
+      "kind": "floor",
+      "prompt_id": "94075f4f-a476-413b-8199-bcd0358b5461",
+      "output": {
+        "filename": "sand-floor_00001_.png",
+        "subfolder": "Taixu_otherworld",
+        "type": "output"
+      },
+      "complete": true
+    },
+    {
+      "id": "sand",
+      "kind": "actors",
+      "prompt_id": "6e7155e1-fa48-4172-9aea-f7d987b6a49f",
+      "output": {
+        "filename": "sand-actors_00001_.png",
+        "subfolder": "Taixu_otherworld",
+        "type": "output"
+      },
+      "complete": true
+    },
+    {
+      "id": "void",
+      "kind": "floor",
+      "prompt_id": "d9779e70-629d-4df8-86b3-75b3fccaf882",
+      "output": {
+        "filename": "void-floor_00001_.png",
+        "subfolder": "Taixu_otherworld",
+        "type": "output"
+      },
+      "complete": true
+    },
+    {
+      "id": "void",
+      "kind": "actors",
+      "prompt_id": "bf5e914f-dc53-4e3a-8333-e3b82b5f422a",
+      "output": {
+        "filename": "void-actors_00001_.png",
+        "subfolder": "Taixu_otherworld",
+        "type": "output"
+      },
+      "complete": true
+    }
+  ],
+  "assets": [
+    {
+      "theme": "ember",
+      "role": "floor",
+      "file": "src/assets/art/rift-ember-floor.webp",
+      "bytes": 70880,
+      "sha256": "996e64b57e165e1bc2b8853b5b20ae3200776559eeac1f7a4a7fd5c52b013f42"
+    },
+    {
+      "theme": "ember",
+      "role": "mob",
+      "file": "src/assets/art/rift-ember-mob.webp",
+      "bytes": 12528,
+      "sha256": "b408378fbaec46e0d4b15763cf0a64459394d7e68470b842a30e73a8484eb302"
+    },
+    {
+      "theme": "ember",
+      "role": "elite",
+      "file": "src/assets/art/rift-ember-elite.webp",
+      "bytes": 21664,
+      "sha256": "b138506a331cff8986b37337b9007675c8668a1a14c5e216728dd90542e77067"
+    },
+    {
+      "theme": "ember",
+      "role": "boss",
+      "file": "src/assets/art/rift-ember-boss.webp",
+      "bytes": 37318,
+      "sha256": "80afc02bd05aa1a6d03f7047ae684cfacfa82cc11a09aa3790bde591195a1150"
+    },
+    {
+      "theme": "ember",
+      "role": "rage",
+      "file": "src/assets/art/rift-ember-rage.webp",
+      "bytes": 58478,
+      "sha256": "56a0ec1afb43b0ce0f357d158dd5033d195cac70cb1ae50740c9c7c9c4246c03"
+    },
+    {
+      "theme": "frost",
+      "role": "floor",
+      "file": "src/assets/art/rift-frost-floor.webp",
+      "bytes": 104174,
+      "sha256": "1ba36ec1fa5920ef1c3c4f8b5ace402ed913cddcfeb430123004486dc8367994"
+    },
+    {
+      "theme": "frost",
+      "role": "mob",
+      "file": "src/assets/art/rift-frost-mob.webp",
+      "bytes": 15292,
+      "sha256": "e4c8fa03136bc1e341f333509b69b696b54e7548c7ac9998f43ec289313870d3"
+    },
+    {
+      "theme": "frost",
+      "role": "elite",
+      "file": "src/assets/art/rift-frost-elite.webp",
+      "bytes": 21094,
+      "sha256": "74297730101198b1b74b6aab550d86d4022515eeb56b9f3b8250a9b8150ab4a0"
+    },
+    {
+      "theme": "frost",
+      "role": "boss",
+      "file": "src/assets/art/rift-frost-boss.webp",
+      "bytes": 23122,
+      "sha256": "39e850eaf04d770612bef84e673abf60621cbc375d17e179607918df0177727c"
+    },
+    {
+      "theme": "frost",
+      "role": "rage",
+      "file": "src/assets/art/rift-frost-rage.webp",
+      "bytes": 37112,
+      "sha256": "8bde961c39e32e7cfbcaab8365ed81b5ba849f490954d2a46afeba36c3edfeff"
+    },
+    {
+      "theme": "grove",
+      "role": "floor",
+      "file": "src/assets/art/rift-grove-floor.webp",
+      "bytes": 83380,
+      "sha256": "da064cb35d8423a93be77f60747d174602e6febe6fe91a59530768b388a1b4d7"
+    },
+    {
+      "theme": "grove",
+      "role": "mob",
+      "file": "src/assets/art/rift-grove-mob.webp",
+      "bytes": 8910,
+      "sha256": "fbc1971cb1dc797698a4db4ff03c98408552d267f6715e082130d749cb670fdd"
+    },
+    {
+      "theme": "grove",
+      "role": "elite",
+      "file": "src/assets/art/rift-grove-elite.webp",
+      "bytes": 21828,
+      "sha256": "4ff046c1de850aa802199f8171c9a874719896aab980789c7eca11d5bb79ac87"
+    },
+    {
+      "theme": "grove",
+      "role": "boss",
+      "file": "src/assets/art/rift-grove-boss.webp",
+      "bytes": 38236,
+      "sha256": "8f8c77fa959e115b3229044d2f2bc3ad930f8e2e6b15805811540933a295cffc"
+    },
+    {
+      "theme": "grove",
+      "role": "rage",
+      "file": "src/assets/art/rift-grove-rage.webp",
+      "bytes": 60204,
+      "sha256": "d947d51ea620426f44141e21960d99c0b76ed4814e30f4eec62bb87d06838dfe"
+    },
+    {
+      "theme": "sand",
+      "role": "floor",
+      "file": "src/assets/art/rift-sand-floor.webp",
+      "bytes": 92402,
+      "sha256": "a6990372ab8244c07ce6157285df28e356842187b0a754d989aa9ffbb645743a"
+    },
+    {
+      "theme": "sand",
+      "role": "mob",
+      "file": "src/assets/art/rift-sand-mob.webp",
+      "bytes": 10778,
+      "sha256": "9cae8872137fd62df673c1ec94270b0ec72490fb57cc26617658383bc565d03a"
+    },
+    {
+      "theme": "sand",
+      "role": "elite",
+      "file": "src/assets/art/rift-sand-elite.webp",
+      "bytes": 22492,
+      "sha256": "9943ada8daf95f8752783319f56ff50d507b0382edec5ac30b72f8cdb69617ad"
+    },
+    {
+      "theme": "sand",
+      "role": "boss",
+      "file": "src/assets/art/rift-sand-boss.webp",
+      "bytes": 28600,
+      "sha256": "a1b94ac50810ed97d064df9e215e44b47d832039cd8b3c1f0d1e104af9f6e314"
+    },
+    {
+      "theme": "sand",
+      "role": "rage",
+      "file": "src/assets/art/rift-sand-rage.webp",
+      "bytes": 51470,
+      "sha256": "d3920705ae10bbf329f6218d8395f8b28d91a04938fe0d27b6ebefc43bcc7d33"
+    },
+    {
+      "theme": "void",
+      "role": "floor",
+      "file": "src/assets/art/rift-void-floor.webp",
+      "bytes": 51756,
+      "sha256": "8e07fc05e5535d4178baa68a605553eec3063f1f84dbda43072bbf87bb8a7634"
+    },
+    {
+      "theme": "void",
+      "role": "mob",
+      "file": "src/assets/art/rift-void-mob.webp",
+      "bytes": 5790,
+      "sha256": "0836dd7ef86e93f5458c820a01f17d350d1eb78bb160a6501628b9506ff1ba11"
+    },
+    {
+      "theme": "void",
+      "role": "elite",
+      "file": "src/assets/art/rift-void-elite.webp",
+      "bytes": 19124,
+      "sha256": "73bb7caf429f490c851885488c9211b2921977584af62df6bed675a368e2d93d"
+    },
+    {
+      "theme": "void",
+      "role": "boss",
+      "file": "src/assets/art/rift-void-boss.webp",
+      "bytes": 26772,
+      "sha256": "8620b10541279df27fc0c3617960ef409b75ab1409824173e49c6a1189861d91"
+    },
+    {
+      "theme": "void",
+      "role": "rage",
+      "file": "src/assets/art/rift-void-rage.webp",
+      "bytes": 43102,
+      "sha256": "f532f7fed48c67d661afbfcfd70b261c203710f8caf0e5c2980460a5ef8b05dd"
+    }
+  ]
+}

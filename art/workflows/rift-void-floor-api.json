@@ -1,0 +1,84 @@
+{
+  "1": {
+    "class_type": "UNETLoader",
+    "inputs": {
+      "unet_name": "qwen_image_2.1_int8_convrot.safetensors",
+      "weight_dtype": "default"
+    }
+  },
+  "2": {
+    "class_type": "CLIPLoader",
+    "inputs": {
+      "clip_name": "qwen3vl_8b_int8_convrot.safetensors",
+      "type": "qwen_image"
+    }
+  },
+  "3": {
+    "class_type": "VAELoader",
+    "inputs": {
+      "vae_name": "qwen_image_2.1_vae_bf16.safetensors"
+    }
+  },
+  "4": {
+    "class_type": "TextEncodeQwenImage21",
+    "inputs": {
+      "clip": [
+        "2",
+        0
+      ],
+      "prompt": "Professional hand-painted 2D Chinese xianxia RPG battle map floor texture, an otherworldly starfall void arena, dark indigo floating stone platform, subtle violet star runes and fine silver inlays, disconnected rocky fragments along the edges, deep cosmic midnight purple atmosphere. Perfectly top-down orthographic overhead viewpoint, flat navigable ground surface, no horizon, no buildings in the center, absolutely no characters, no enemies. The central 75 percent is spacious calm clear walkable terrain, visual detail concentrated near the margins. Sophisticated painterly mobile game art, subtle ink watercolor texture, coherent lighting, crisp readable ground, atmospheric restrained colors, no interface, no text, no letters, no watermark, square composition.",
+      "negative_prompt": "text, letters, watermark, interface, blurry, cropped feet, cropped wings, overlapping grid cells, photographic, perspective horizon",
+      "resolution": 768
+    }
+  },
+  "5": {
+    "class_type": "KSampler",
+    "inputs": {
+      "model": [
+        "1",
+        0
+      ],
+      "seed": 910203001,
+      "steps": 24,
+      "cfg": 4,
+      "sampler_name": "euler",
+      "scheduler": "simple",
+      "positive": [
+        "4",
+        0
+      ],
+      "negative": [
+        "4",
+        1
+      ],
+      "latent_image": [
+        "4",
+        2
+      ],
+      "denoise": 1
+    }
+  },
+  "6": {
+    "class_type": "VAEDecode",
+    "inputs": {
+      "samples": [
+        "5",
+        0
+      ],
+      "vae": [
+        "3",
+        0
+      ]
+    }
+  },
+  "7": {
+    "class_type": "SaveImage",
+    "inputs": {
+      "images": [
+        "6",
+        0
+      ],
+      "filename_prefix": "Taixu_otherworld/void-floor"
+    }
+  }
+}
