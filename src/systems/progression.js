@@ -72,6 +72,14 @@ const Progression = (() => {
     if(!takeItem(player,id,amount))return {ok:false};
     player.stones+=gain;return {ok:true,amount,gain};
   }
+  function buySupply(player,id,amount){
+    const price={forgeDust:30,pill:24,heal:32,trib:180}[id];
+    if(!price||!Number.isSafeInteger(amount)||amount<1||amount>100)return {ok:false,reason:'quantity'};
+    const cost=price*amount;
+    if(player.stones<cost)return {ok:false,reason:'funds'};
+    if(!addItem(player,id,amount))return {ok:false,reason:'full'};
+    player.stones-=cost;return {ok:true,cost,amount};
+  }
   function collectLandmark(player,map,point,maxVitals,now=Date.now()){
     if(!landmarkState(player,map,point,now).ready)return {ok:false,reason:'cooldown'};
     const result={ok:true,kind:point.kind,stones:0};
@@ -88,6 +96,6 @@ const Progression = (() => {
     return mp>=[0,14,25,20][which] && (which!==3 || hp<maxHp*.55);
   }
   function effectRadius(time) {return (1-Math.max(0,Math.min(1,time)))*65+20;}
-  return {worldWidth,worldHeight,landmarks,normalize,key,landmarkState,plant,harvest,income,establish,canAutoCast,effectRadius,canStore,addItem,takeItem,sellItem,collectLandmark};
+  return {worldWidth,worldHeight,landmarks,normalize,key,landmarkState,plant,harvest,income,establish,canAutoCast,effectRadius,canStore,addItem,takeItem,sellItem,buySupply,collectLandmark};
 })();
 if(typeof module !== 'undefined') module.exports=Progression;
