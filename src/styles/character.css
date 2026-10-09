@@ -8,6 +8,15 @@
 
 body.character-open{overflow:hidden}
 
+/* Portrait decoration must never cover the bag's interactive controls. */
+.character-stage{isolation:isolate;overflow:hidden}
+.doll-halo,#characterBody{pointer-events:none}
+.character-bag{position:relative;z-index:1}
+#characterScreen button{touch-action:manipulation}
+#characterScreen button img,#characterScreen button span,#characterScreen button small{pointer-events:none}
+.character-bag-heading>.btn{min-height:48px;min-width:88px;padding:12px 16px;display:inline-flex;align-items:center;justify-content:center;gap:6px}
+.character-categories button{min-height:56px;touch-action:manipulation}
+
 #characterAppearance[data-outer="robe"] .appearance-inner,#characterAppearance[data-outer="robe"] .appearance-legs{display:none}.appearance-robe{left:24%;top:29%;width:54%!important;height:58%!important;object-fit:fill!important}.appearance-inner{object-fit:fill!important}.appearance-bracelet{width:9px!important;height:9px!important}.appearance-ring{width:7px!important;height:7px!important}.appearance-necklace{width:12px!important;height:15px!important}.appearance-earrings{width:9px!important;height:14px!important}.appearance-head{width:22px!important;height:22px!important;top:3%}.appearance-boots{width:24px!important;height:24px!important;bottom:3%}
 @media(max-width:700px){.appearance-head{top:6%;left:46%;width:18px!important;height:18px!important}.appearance-earrings{top:19%;left:55%;width:6px!important;height:9px!important}.appearance-necklace{top:29%;left:48%;width:9px!important;height:12px!important}.appearance-robe{left:21%;top:25%;width:58%!important;height:56%!important}.appearance-boots{bottom:7%;left:45%;width:20px!important;height:20px!important}.appearance-bracelet{left:69%;top:51%}.appearance-ring{left:69%;top:53%}.appearance-weapon{left:12%;top:48%;height:65px!important;width:22px!important;transform:rotate(-18deg)}}
 
