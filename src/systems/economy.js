@@ -25,6 +25,19 @@ const Economy=(()=>{
  function forgeCap(it){return D.config.enhance.caps[Math.max(0,Math.min(4,it.quality||0))];}
  function forgeCost(it,gem=null){const level=it.enhancement,quality=it.quality,ore=quality<2?0:quality===2?1+Math.floor(level/10):quality===3?2*Math.ceil((level+1)/10)**2:3*Math.ceil((level+1)/20)**2;return {cap:forgeCap(it),ore,stones:Math.round(35*(it.enhancement+1)*(it.quality+1)),material:1+Math.floor(it.enhancement/3),baseChance:F.chance(quality,level),boost:F.gemBoost(D.templates[gem]),gem,chance:Math.min(1,F.chance(quality,level)+F.gemBoost(D.templates[gem]))};}
  function enhance(p,id,r=Math.random,gem=null){const it=p.economy?.instances[id];if(!it||!held(p,id)||it.enhancement>=forgeCap(it))return {ok:false,reason:'item'};if(gem&&(D.templates[gem]?.type!=='gem'||!(p.inventory.find(e=>e.id===gem)?.count>0)))return {ok:false,reason:'gem'};const cost=forgeCost(it,gem);if(p.stones<cost.stones||(p.inventory.find(e=>e.id==='forgeDust')?.count||0)<cost.material||(p.inventory.find(e=>e.id==='celestialOre')?.count||0)<cost.ore)return {ok:false,reason:'funds'};const draw=r();if(!Number.isFinite(draw)||draw<0||draw>=1)return {ok:false,reason:'random'};if(gem)take(p,gem,1);take(p,'forgeDust',cost.material);if(cost.ore)take(p,'celestialOre',cost.ore);p.stones-=cost.stones;const success=draw<cost.chance;if(success)it.enhancement++;const unlocked=success?F.unlock(it):[];p.economy.forgeLog.push({id,level:it.enhancement,success,cost,at:Date.now()});return {ok:true,success,unlocked};}
+
+ // Every attempt uses the same validated transaction as a single forge.
+ function enhanceMax(p,id,r=Math.random,gem=null){
+  const item=p.economy?.instances[id],out={ok:false,attempts:0,successes:0,failures:0,spent:{stones:0,material:0,ore:0,gems:0},unlocked:[],before:item?.enhancement,after:item?.enhancement,reason:'item'};
+  if(!item||!held(p,id))return out;
+  while(out.attempts<10000){
+   const cost=forgeCost(item,gem),result=enhance(p,id,r,gem);
+   if(!result.ok){out.reason=item.enhancement>=forgeCap(item)?'cap':result.reason;break;}
+   out.ok=true;out.attempts++;out.successes+=Number(result.success);out.failures+=Number(!result.success);
+   for(const key of ['stones','material','ore'])out.spent[key]+=cost[key];out.spent.gems+=Number(!!gem);out.unlocked.push(...result.unlocked);
+  }
+  if(out.attempts===10000)out.reason='limit';out.after=item.enhancement;return out;
+ }
  function socket(p,id,index,gem){const it=p.economy?.instances[id];if(!it||!held(p,id)||!Number.isInteger(index)||index<0||index>=it.sockets.length||(gem!==null&&D.templates[gem]?.type!=='gem'))return false;const old=it.sockets[index];if(old===gem)return false;const snapshot=p.inventory.map(x=>({...x}));if(gem!==null&&!take(p,gem,1))return false;if(old&&!addStack(p,old,1)){p.inventory=snapshot;return false;}it.sockets[index]=gem;return true;}
  function fuse(p,id,r=Math.random){const t=D.templates[id];if(t?.type==='gem'&&t.tier<6){const n=D.config.fusion.gemCopies,next='gem_'+t.kind+'_'+(t.tier+1),snapshot=p.inventory.map(x=>({...x}));if(p.stones<50*t.tier||!take(p,id,n))return false;if(!addStack(p,next,1)){p.inventory=snapshot;return false;}p.stones-=50*t.tier;return true;}return false;}
  function synthesize(p,ids,r=Math.random){const forge=typeof LegendForge!=='undefined'?LegendForge:require('./legend-forge.js'),result=forge.attempt(p,ids,0,r);return result.ok&&result.success?result.item:false;}
@@ -35,6 +48,6 @@ const Economy=(()=>{
  function convertLegacy(p,id,catalog){const t=catalog[id];if(!t||!['equip','treasure'].includes(t.type))return null;normalize(p);const slot=Object.keys(p.equipment).find(k=>p.equipment[k]===id),index=p.ownedTreasures.indexOf(id);if(!slot&&index<0&&!p.inventory.some(x=>x.id===id&&x.count>0))return null;let uid;do{uid='xi_'+(++p.economy.sequence);}while(p.economy.instances[uid]);const it={id:uid,baseId:id,template:{...t,icon:undefined},locked:!!p.bag?.locked?.[id],quality:t.rarity||0,level:1,base:{atk:t.atk||0,def:t.def||0,hp:t.hp||0},affixes:[],enhancement:0,sockets:[],source:'舊物單件實例化，原屬性保留',realm:t.realm||0,growth:1,cultivation:0,evolution:0};
  if(slot)p.equipment[slot]=uid;else if(index>=0){p.ownedTreasures[index]=uid;if(p.activeTreasure===id)p.activeTreasure=uid;const load=p.economy.loadout.treasures;p.economy.loadout.treasures=load.map(k=>k===id?uid:k);if(p.companions){for(const field of ['order','deployed'])p.companions[field]=p.companions[field].map(k=>k==='treasure:'+id?'treasure:'+uid:k);const old=p.companions.cooldowns['treasure:'+id];if(old)p.companions.cooldowns['treasure:'+uid]=old;}}else{take(p,id,1);p.inventory.push({id:uid,count:1});}p.economy.instances[uid]=it;return it;
  }
- return {normalize,create,legacy,convertLegacy,effects,bonuses,grant,held,stored,buy,buyMany,currency,quote,exchange,canBuy,price,addStack,take,forgeCap,forgeCost,enhance,socket,fuse,synthesize,encounterQuality,bossQualities,reward,recover};
+ return {normalize,create,legacy,convertLegacy,effects,bonuses,grant,held,stored,buy,buyMany,currency,quote,exchange,canBuy,price,addStack,take,forgeCap,forgeCost,enhance,enhanceMax,socket,fuse,synthesize,encounterQuality,bossQualities,reward,recover};
 })();
 if(typeof module!=='undefined')module.exports=Economy;
