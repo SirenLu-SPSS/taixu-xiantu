@@ -66,3 +66,11 @@ Qwen Image 2.1 經區域網路 ComfyUI 製作 5 組圖集：16 款裝備／消�
 重建：`python art/process-quality-frames.py art/quality-sources`。驗證：`python art/verify-quality-frames.py`（Pillow、NumPy）。256px RGBA master 幀及 128px animated WebP 位於 `src/assets/quality-frames/`；CSV／JSON 提供 asset_id、幀數及 SHA-256。白／藍／紫各 8 幀，金／傳說各 16 幀，150ms／幀。所有品階均有靜態備用圖，遵循減少動態設定。
 
 角色裝備、兩側夥伴配置與背包共用品階樣式；3px 實色粗框確保素材載入前仍可識別，裝飾限於邊緣且 pointer-events:none，不遮擋名稱或點擊。空欄不顯示品階框。本次沒有改動存檔與戰鬥數值。
+
+## 獨立傳說合成（2026-10-09）
+
+入口：天工鍛造 → 傳說合成。`LegendForge` 集中處理材料、機率、礦石掉落、合成紀錄，舊 `Economy.synthesize` 委派到同一規則。
+初始 45%，每顆天鑄玄晶 +10%，最多 5 顆，上限 95%；每次 3,000 靈石。成功消耗三件金品，成品模板沿用第一件；失敗保留三件裝備，消耗靈石與選用礦石。鎖定、穿戴、強化與鑲嵌物品不可作材料。
+礦石掉落配置：早期 1%、元嬰地圖 6%、其後每境 +3% 上限 24%；異世界 15%、異界 BOSS 55% 掉落 2 顆。礦石不可購買；滿材料包轉未領取匣。
+ComfyUI 工作流 `workflows/legend-forge-synthesis.json` 與原圖 `legend-forge-source.png`；`process-legend-forge.py` 生成四種透明素材，配合 CSS 約 3 秒鑄造／失敗動畫，遵循減少動態設定。採圖片合成動畫，未使用影片模型。
+新資料僅新增於既有存檔：`economy.synthesisLog`、`synthesisSequence`、`oreDropSequence`、既有 `claims` 礦石收據；材料使用既有 inventory 的 celestialOre 堆疊。

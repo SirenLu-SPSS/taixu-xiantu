@@ -1,0 +1,22 @@
+[
+  {
+    "asset_id": "legend_forge_success",
+    "file": "src/assets/legend-forge/success.webp",
+    "sha256": "5b2bba724a063dc721fa214e406acc19105508aebb4d5da91c56b8d077a8b620"
+  },
+  {
+    "asset_id": "legend_forge_failure",
+    "file": "src/assets/legend-forge/failure.webp",
+    "sha256": "00761dd40d0076f3cd3df0b803fbcfbcfd4390b3cd6e1de31938f7955b7a6ab4"
+  },
+  {
+    "asset_id": "legend_forge_ore",
+    "file": "src/assets/legend-forge/ore.webp",
+    "sha256": "56e0554e2eaed523b97d8ec3374d62813392632510934cdacbd03ae5271a9124"
+  },
+  {
+    "asset_id": "legend_forge_furnace",
+    "file": "src/assets/legend-forge/furnace.webp",
+    "sha256": "1b6569ad14a9b7e573d3aae239e15d864361695c55de38b326495d320dc055f8"
+  }
+]
