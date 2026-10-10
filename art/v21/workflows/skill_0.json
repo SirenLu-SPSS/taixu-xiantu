@@ -1,0 +1,84 @@
+{
+  "1": {
+    "class_type": "UNETLoader",
+    "inputs": {
+      "unet_name": "qwen_image_2.1_int8_convrot.safetensors",
+      "weight_dtype": "default"
+    }
+  },
+  "2": {
+    "class_type": "CLIPLoader",
+    "inputs": {
+      "clip_name": "qwen3vl_8b_int8_convrot.safetensors",
+      "type": "qwen_image"
+    }
+  },
+  "3": {
+    "class_type": "VAELoader",
+    "inputs": {
+      "vae_name": "qwen_image_2.1_vae_bf16.safetensors"
+    }
+  },
+  "4": {
+    "class_type": "TextEncodeQwenImage21",
+    "inputs": {
+      "clip": [
+        "2",
+        0
+      ],
+      "prompt": "A precise 4 by 4 sprite atlas, 16 isolated square cells, pure white background and clear white gutters. Each object centered fully within its cell, no object crosses cell edges. Chinese xianxia ink watercolor game assets, crisp readable silhouette, no lettering, no numbers, no labels, no frame, no shadow. In reading order left to right top to bottom: 九霄神雷訣 雷電連鎖多目標傷害 magical spell emblem, no text; 焚天烈陽術 範圍傷害並持續燃燒 magical spell emblem, no text; 萬劍歸宗 劍陣多目標攻擊 magical spell emblem, no text; 虛空裂天斬 位移斬擊 magical spell emblem, no text; 太陰玄冰訣 範圍傷害並減速 magical spell emblem, no text; 五行滅神印 圓形範圍攻擊 magical spell emblem, no text; 紫霄天雷引 雷電連鎖多目標傷害 magical spell emblem, no text; 混沌破界指 穿透防禦的單體傷害 magical spell emblem, no text; 星辰隕落術 延遲範圍隕落 magical spell emblem, no text; 玄門誅魔劍 單體高倍率攻擊 magical spell emblem, no text; 玄武不滅體 獲得可吸收傷害的護盾 magical spell emblem, no text; 九轉金身訣 短時間提高防禦 magical spell emblem, no text; 太虛護靈罩 獲得可吸收傷害的護盾 magical spell emblem, no text; 萬法歸元術 解除控制與持續傷害 magical spell emblem, no text; 青木回春訣 恢復氣血 magical spell emblem, no text; 仙靈續命術 恢復氣血 magical spell emblem, no text",
+      "negative_prompt": "blurry, low quality, watermark, text, deformed, extra limbs",
+      "resolution": 1024
+    }
+  },
+  "5": {
+    "class_type": "KSampler",
+    "inputs": {
+      "model": [
+        "1",
+        0
+      ],
+      "seed": 2026101004,
+      "steps": 18,
+      "cfg": 4,
+      "sampler_name": "euler",
+      "scheduler": "simple",
+      "positive": [
+        "4",
+        0
+      ],
+      "negative": [
+        "4",
+        1
+      ],
+      "latent_image": [
+        "4",
+        2
+      ],
+      "denoise": 1
+    }
+  },
+  "6": {
+    "class_type": "VAEDecode",
+    "inputs": {
+      "samples": [
+        "5",
+        0
+      ],
+      "vae": [
+        "3",
+        0
+      ]
+    }
+  },
+  "7": {
+    "class_type": "SaveImage",
+    "inputs": {
+      "images": [
+        "6",
+        0
+      ],
+      "filename_prefix": "Taixu_V21/skill_0"
+    }
+  }
+}

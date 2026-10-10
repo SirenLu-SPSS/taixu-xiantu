@@ -1,0 +1,84 @@
+{
+  "1": {
+    "class_type": "UNETLoader",
+    "inputs": {
+      "unet_name": "qwen_image_2.1_int8_convrot.safetensors",
+      "weight_dtype": "default"
+    }
+  },
+  "2": {
+    "class_type": "CLIPLoader",
+    "inputs": {
+      "clip_name": "qwen3vl_8b_int8_convrot.safetensors",
+      "type": "qwen_image"
+    }
+  },
+  "3": {
+    "class_type": "VAELoader",
+    "inputs": {
+      "vae_name": "qwen_image_2.1_vae_bf16.safetensors"
+    }
+  },
+  "4": {
+    "class_type": "TextEncodeQwenImage21",
+    "inputs": {
+      "clip": [
+        "2",
+        0
+      ],
+      "prompt": "A precise 4 by 4 sprite atlas, 16 isolated square cells, pure white background and clear white gutters. Each object centered fully within its cell, no object crosses cell edges. Chinese xianxia ink watercolor game assets, crisp readable silhouette, no lettering, no numbers, no labels, no frame, no shadow. In reading order left to right top to bottom: 五行護體陣 短時間提高防禦 magical spell emblem, no text; 混元聚靈訣 恢復真元 magical spell emblem, no text; 天罡御雷盾 獲得可吸收傷害的護盾 magical spell emblem, no text; 不滅仙魂訣 短時間保命護盾與恢復 magical spell emblem, no text; 縮地成寸 向移動方向突進 magical spell emblem, no text; 虛空挪移術 瞬移至安全位置 magical spell emblem, no text; 天眼通 揭示妖獸並提高會心 magical spell emblem, no text; 玄門御獸訣 短時間增幅御靈攻擊 magical spell emblem, no text; 萬象悟道訣 短時間提高靈氣吸收 magical spell emblem, no text; 九轉聚靈術 恢復真元 magical spell emblem, no text; 仙靈分身術 召喚短時間作戰分身 magical spell emblem, no text; 時光遲滯術 範圍傷害並減速 magical spell emblem, no text; 天地封靈陣 封禁範圍內敵人技能 magical spell emblem, no text; 太初造化訣 氣血真元同時恢復 magical spell emblem, no text; 太初造化訣 氣血真元同時恢復 magical spell emblem, no text; 太初造化訣 氣血真元同時恢復 magical spell emblem, no text",
+      "negative_prompt": "blurry, low quality, watermark, text, deformed, extra limbs",
+      "resolution": 1024
+    }
+  },
+  "5": {
+    "class_type": "KSampler",
+    "inputs": {
+      "model": [
+        "1",
+        0
+      ],
+      "seed": 2026101005,
+      "steps": 18,
+      "cfg": 4,
+      "sampler_name": "euler",
+      "scheduler": "simple",
+      "positive": [
+        "4",
+        0
+      ],
+      "negative": [
+        "4",
+        1
+      ],
+      "latent_image": [
+        "4",
+        2
+      ],
+      "denoise": 1
+    }
+  },
+  "6": {
+    "class_type": "VAEDecode",
+    "inputs": {
+      "samples": [
+        "5",
+        0
+      ],
+      "vae": [
+        "3",
+        0
+      ]
+    }
+  },
+  "7": {
+    "class_type": "SaveImage",
+    "inputs": {
+      "images": [
+        "6",
+        0
+      ],
+      "filename_prefix": "Taixu_V21/skill_16"
+    }
+  }
+}

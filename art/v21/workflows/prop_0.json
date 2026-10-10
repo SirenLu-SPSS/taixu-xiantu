@@ -1,0 +1,84 @@
+{
+  "1": {
+    "class_type": "UNETLoader",
+    "inputs": {
+      "unet_name": "qwen_image_2.1_int8_convrot.safetensors",
+      "weight_dtype": "default"
+    }
+  },
+  "2": {
+    "class_type": "CLIPLoader",
+    "inputs": {
+      "clip_name": "qwen3vl_8b_int8_convrot.safetensors",
+      "type": "qwen_image"
+    }
+  },
+  "3": {
+    "class_type": "VAELoader",
+    "inputs": {
+      "vae_name": "qwen_image_2.1_vae_bf16.safetensors"
+    }
+  },
+  "4": {
+    "class_type": "TextEncodeQwenImage21",
+    "inputs": {
+      "clip": [
+        "2",
+        0
+      ],
+      "prompt": "A precise 4 by 4 sprite atlas, 16 isolated square cells, pure white background and clear white gutters. Each object centered fully within its cell, no object crosses cell edges. Chinese xianxia ink watercolor game assets, crisp readable silhouette, no lettering, no numbers, no labels, no frame, no shadow. In reading order left to right top to bottom: 雲石橋 isometric Chinese fantasy terrain object; 浮空松 isometric Chinese fantasy terrain object; 懸空道觀 isometric Chinese fantasy terrain object; 星門 isometric Chinese fantasy terrain object; 裂隙晶柱 isometric Chinese fantasy terrain object; 浮島殘垣 isometric Chinese fantasy terrain object; 神木 isometric Chinese fantasy terrain object; 靈脈泉 isometric Chinese fantasy terrain object; 古獸石碑 isometric Chinese fantasy terrain object; 仙宮 isometric Chinese fantasy terrain object; 金橋 isometric Chinese fantasy terrain object; 玉階 isometric Chinese fantasy terrain object; 雷柱 isometric Chinese fantasy terrain object; 焦岩 isometric Chinese fantasy terrain object; 渡劫壇 isometric Chinese fantasy terrain object; 仙門 isometric Chinese fantasy terrain object",
+      "negative_prompt": "blurry, low quality, watermark, text, deformed, extra limbs",
+      "resolution": 1024
+    }
+  },
+  "5": {
+    "class_type": "KSampler",
+    "inputs": {
+      "model": [
+        "1",
+        0
+      ],
+      "seed": 2026101012,
+      "steps": 18,
+      "cfg": 4,
+      "sampler_name": "euler",
+      "scheduler": "simple",
+      "positive": [
+        "4",
+        0
+      ],
+      "negative": [
+        "4",
+        1
+      ],
+      "latent_image": [
+        "4",
+        2
+      ],
+      "denoise": 1
+    }
+  },
+  "6": {
+    "class_type": "VAEDecode",
+    "inputs": {
+      "samples": [
+        "5",
+        0
+      ],
+      "vae": [
+        "3",
+        0
+      ]
+    }
+  },
+  "7": {
+    "class_type": "SaveImage",
+    "inputs": {
+      "images": [
+        "6",
+        0
+      ],
+      "filename_prefix": "Taixu_V21/prop_0"
+    }
+  }
+}

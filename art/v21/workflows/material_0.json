@@ -1,0 +1,84 @@
+{
+  "1": {
+    "class_type": "UNETLoader",
+    "inputs": {
+      "unet_name": "qwen_image_2.1_int8_convrot.safetensors",
+      "weight_dtype": "default"
+    }
+  },
+  "2": {
+    "class_type": "CLIPLoader",
+    "inputs": {
+      "clip_name": "qwen3vl_8b_int8_convrot.safetensors",
+      "type": "qwen_image"
+    }
+  },
+  "3": {
+    "class_type": "VAELoader",
+    "inputs": {
+      "vae_name": "qwen_image_2.1_vae_bf16.safetensors"
+    }
+  },
+  "4": {
+    "class_type": "TextEncodeQwenImage21",
+    "inputs": {
+      "clip": [
+        "2",
+        0
+      ],
+      "prompt": "A precise 4 by 4 sprite atlas, 16 isolated square cells, pure white background and clear white gutters. Each object centered fully within its cell, no object crosses cell edges. Chinese xianxia ink watercolor game assets, crisp readable silhouette, no lettering, no numbers, no labels, no frame, no shadow. In reading order left to right top to bottom: 太虛靈鐵 magical mineral material icon; 虛空神砂 magical mineral material icon; 九天雷髓 magical mineral material icon; 萬年玄玉 magical mineral material icon; 仙靈精魄 magical mineral material icon; 混沌靈液 magical mineral material icon; 上古獸魂 magical mineral material icon; 神通殘卷 magical mineral material icon; 仙器碎片 magical mineral material icon; 仙器碎片 magical mineral material icon; 仙器碎片 magical mineral material icon; 仙器碎片 magical mineral material icon; 仙器碎片 magical mineral material icon; 仙器碎片 magical mineral material icon; 仙器碎片 magical mineral material icon; 仙器碎片 magical mineral material icon",
+      "negative_prompt": "blurry, low quality, watermark, text, deformed, extra limbs",
+      "resolution": 1024
+    }
+  },
+  "5": {
+    "class_type": "KSampler",
+    "inputs": {
+      "model": [
+        "1",
+        0
+      ],
+      "seed": 2026101006,
+      "steps": 18,
+      "cfg": 4,
+      "sampler_name": "euler",
+      "scheduler": "simple",
+      "positive": [
+        "4",
+        0
+      ],
+      "negative": [
+        "4",
+        1
+      ],
+      "latent_image": [
+        "4",
+        2
+      ],
+      "denoise": 1
+    }
+  },
+  "6": {
+    "class_type": "VAEDecode",
+    "inputs": {
+      "samples": [
+        "5",
+        0
+      ],
+      "vae": [
+        "3",
+        0
+      ]
+    }
+  },
+  "7": {
+    "class_type": "SaveImage",
+    "inputs": {
+      "images": [
+        "6",
+        0
+      ],
+      "filename_prefix": "Taixu_V21/material_0"
+    }
+  }
+}

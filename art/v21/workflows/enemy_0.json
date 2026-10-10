@@ -1,0 +1,84 @@
+{
+  "1": {
+    "class_type": "UNETLoader",
+    "inputs": {
+      "unet_name": "qwen_image_2.1_int8_convrot.safetensors",
+      "weight_dtype": "default"
+    }
+  },
+  "2": {
+    "class_type": "CLIPLoader",
+    "inputs": {
+      "clip_name": "qwen3vl_8b_int8_convrot.safetensors",
+      "type": "qwen_image"
+    }
+  },
+  "3": {
+    "class_type": "VAELoader",
+    "inputs": {
+      "vae_name": "qwen_image_2.1_vae_bf16.safetensors"
+    }
+  },
+  "4": {
+    "class_type": "TextEncodeQwenImage21",
+    "inputs": {
+      "clip": [
+        "2",
+        0
+      ],
+      "prompt": "A precise 4 by 4 sprite atlas, 16 isolated square cells, pure white background and clear white gutters. Each object centered fully within its cell, no object crosses cell edges. Chinese xianxia ink watercolor game assets, crisp readable silhouette, no lettering, no numbers, no labels, no frame, no shadow. In reading order left to right top to bottom: 太虛雲鷹 majestic eagle bird, avian body and talons, no human cloud elemental aura, detailed Chinese xianxia ink watercolor; 太虛晶蛟 Chinese serpentine dragon, scaled animal body, no human cloud elemental aura, detailed Chinese xianxia ink watercolor; 太虛靈猿 giant ancient ape, animal body, no human cloud elemental aura, detailed Chinese xianxia ink watercolor; 太虛玄龜 mythical giant tortoise, shell and four legs, no human cloud elemental aura, detailed Chinese xianxia ink watercolor; 太虛妖虎 ferocious tiger beast, feline four-legged body, no human cloud elemental aura, detailed Chinese xianxia ink watercolor; 太虛噬魂魔修 dark immortal cultivator, full body humanoid warrior cloud elemental aura, detailed Chinese xianxia ink watercolor; 太虛血煞魔修 dark immortal cultivator, full body humanoid warrior cloud elemental aura, detailed Chinese xianxia ink watercolor; 太虛界主 dark immortal cultivator, full body humanoid warrior cloud elemental aura, detailed Chinese xianxia ink watercolor; 虛空雲鷹 majestic eagle bird, avian body and talons, no human void elemental aura, detailed Chinese xianxia ink watercolor; 虛空晶蛟 Chinese serpentine dragon, scaled animal body, no human void elemental aura, detailed Chinese xianxia ink watercolor; 虛空靈猿 giant ancient ape, animal body, no human void elemental aura, detailed Chinese xianxia ink watercolor; 虛空玄龜 mythical giant tortoise, shell and four legs, no human void elemental aura, detailed Chinese xianxia ink watercolor; 虛空妖虎 ferocious tiger beast, feline four-legged body, no human void elemental aura, detailed Chinese xianxia ink watercolor; 虛空噬魂魔修 dark immortal cultivator, full body humanoid warrior void elemental aura, detailed Chinese xianxia ink watercolor; 虛空血煞魔修 dark immortal cultivator, full body humanoid warrior void elemental aura, detailed Chinese xianxia ink watercolor; 虛空界主 dark immortal cultivator, full body humanoid warrior void elemental aura, detailed Chinese xianxia ink watercolor",
+      "negative_prompt": "blurry, low quality, watermark, text, deformed, extra limbs",
+      "resolution": 1024
+    }
+  },
+  "5": {
+    "class_type": "KSampler",
+    "inputs": {
+      "model": [
+        "1",
+        0
+      ],
+      "seed": 2026101007,
+      "steps": 18,
+      "cfg": 4,
+      "sampler_name": "euler",
+      "scheduler": "simple",
+      "positive": [
+        "4",
+        0
+      ],
+      "negative": [
+        "4",
+        1
+      ],
+      "latent_image": [
+        "4",
+        2
+      ],
+      "denoise": 1
+    }
+  },
+  "6": {
+    "class_type": "VAEDecode",
+    "inputs": {
+      "samples": [
+        "5",
+        0
+      ],
+      "vae": [
+        "3",
+        0
+      ]
+    }
+  },
+  "7": {
+    "class_type": "SaveImage",
+    "inputs": {
+      "images": [
+        "6",
+        0
+      ],
+      "filename_prefix": "Taixu_V21/enemy_0"
+    }
+  }
+}

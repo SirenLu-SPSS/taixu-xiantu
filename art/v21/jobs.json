@@ -1,0 +1,1620 @@
+[
+  {
+    "name": "treasure_0",
+    "assets": [
+      {
+        "asset_id": "v21_treasure_0",
+        "name": "九霄雷劍",
+        "category": "treasure",
+        "prompt": "九霄雷劍 攻擊 xianxia item icon",
+        "master": 256,
+        "runtime": 64
+      },
+      {
+        "asset_id": "v21_treasure_1",
+        "name": "赤陽焚天印",
+        "category": "treasure",
+        "prompt": "赤陽焚天印 攻擊 xianxia item icon",
+        "master": 256,
+        "runtime": 64
+      },
+      {
+        "asset_id": "v21_treasure_2",
+        "name": "虛空斬仙刃",
+        "category": "treasure",
+        "prompt": "虛空斬仙刃 攻擊 xianxia item icon",
+        "master": 256,
+        "runtime": 64
+      },
+      {
+        "asset_id": "v21_treasure_3",
+        "name": "玄冰鎮魂珠",
+        "category": "treasure",
+        "prompt": "玄冰鎮魂珠 攻擊 xianxia item icon",
+        "master": 256,
+        "runtime": 64
+      },
+      {
+        "asset_id": "v21_treasure_4",
+        "name": "混元破界槍",
+        "category": "treasure",
+        "prompt": "混元破界槍 攻擊 xianxia item icon",
+        "master": 256,
+        "runtime": 64
+      },
+      {
+        "asset_id": "v21_treasure_5",
+        "name": "紫電天羅網",
+        "category": "treasure",
+        "prompt": "紫電天羅網 攻擊 xianxia item icon",
+        "master": 256,
+        "runtime": 64
+      },
+      {
+        "asset_id": "v21_treasure_6",
+        "name": "太陰噬魂幡",
+        "category": "treasure",
+        "prompt": "太陰噬魂幡 攻擊 xianxia item icon",
+        "master": 256,
+        "runtime": 64
+      },
+      {
+        "asset_id": "v21_treasure_7",
+        "name": "萬劍歸宗匣",
+        "category": "treasure",
+        "prompt": "萬劍歸宗匣 攻擊 xianxia item icon",
+        "master": 256,
+        "runtime": 64
+      },
+      {
+        "asset_id": "v21_treasure_8",
+        "name": "焚天九龍鼎",
+        "category": "treasure",
+        "prompt": "焚天九龍鼎 攻擊 xianxia item icon",
+        "master": 256,
+        "runtime": 64
+      },
+      {
+        "asset_id": "v21_treasure_9",
+        "name": "星辰滅神輪",
+        "category": "treasure",
+        "prompt": "星辰滅神輪 攻擊 xianxia item icon",
+        "master": 256,
+        "runtime": 64
+      },
+      {
+        "asset_id": "v21_treasure_10",
+        "name": "玄武鎮天盾",
+        "category": "treasure",
+        "prompt": "玄武鎮天盾 防禦 xianxia item icon",
+        "master": 256,
+        "runtime": 64
+      },
+      {
+        "asset_id": "v21_treasure_11",
+        "name": "九轉金蓮臺",
+        "category": "treasure",
+        "prompt": "九轉金蓮臺 防禦 xianxia item icon",
+        "master": 256,
+        "runtime": 64
+      },
+      {
+        "asset_id": "v21_treasure_12",
+        "name": "太虛護心鏡",
+        "category": "treasure",
+        "prompt": "太虛護心鏡 防禦 xianxia item icon",
+        "master": 256,
+        "runtime": 64
+      },
+      {
+        "asset_id": "v21_treasure_13",
+        "name": "混元乾坤罩",
+        "category": "treasure",
+        "prompt": "混元乾坤罩 防禦 xianxia item icon",
+        "master": 256,
+        "runtime": 64
+      },
+      {
+        "asset_id": "v21_treasure_14",
+        "name": "萬法不侵鐘",
+        "category": "treasure",
+        "prompt": "萬法不侵鐘 防禦 xianxia item icon",
+        "master": 256,
+        "runtime": 64
+      },
+      {
+        "asset_id": "v21_treasure_15",
+        "name": "天罡玄甲印",
+        "category": "treasure",
+        "prompt": "天罡玄甲印 防禦 xianxia item icon",
+        "master": 256,
+        "runtime": 64
+      }
+    ]
+  },
+  {
+    "name": "treasure_16",
+    "assets": [
+      {
+        "asset_id": "v21_treasure_16",
+        "name": "五行鎮界盤",
+        "category": "treasure",
+        "prompt": "五行鎮界盤 防禦 xianxia item icon",
+        "master": 256,
+        "runtime": 64
+      },
+      {
+        "asset_id": "v21_treasure_17",
+        "name": "仙靈護命珠",
+        "category": "treasure",
+        "prompt": "仙靈護命珠 防禦 xianxia item icon",
+        "master": 256,
+        "runtime": 64
+      },
+      {
+        "asset_id": "v21_treasure_18",
+        "name": "玄黃不滅塔",
+        "category": "treasure",
+        "prompt": "玄黃不滅塔 防禦 xianxia item icon",
+        "master": 256,
+        "runtime": 64
+      },
+      {
+        "asset_id": "v21_treasure_19",
+        "name": "紫霄御雷幡",
+        "category": "treasure",
+        "prompt": "紫霄御雷幡 防禦 xianxia item icon",
+        "master": 256,
+        "runtime": 64
+      },
+      {
+        "asset_id": "v21_treasure_20",
+        "name": "聚靈乾坤瓶",
+        "category": "treasure",
+        "prompt": "聚靈乾坤瓶 恢復 xianxia item icon",
+        "master": 256,
+        "runtime": 64
+      },
+      {
+        "asset_id": "v21_treasure_21",
+        "name": "萬象悟道圖",
+        "category": "treasure",
+        "prompt": "萬象悟道圖 輔助 xianxia item icon",
+        "master": 256,
+        "runtime": 64
+      },
+      {
+        "asset_id": "v21_treasure_22",
+        "name": "逆天續命燈",
+        "category": "treasure",
+        "prompt": "逆天續命燈 恢復 xianxia item icon",
+        "master": 256,
+        "runtime": 64
+      },
+      {
+        "asset_id": "v21_treasure_23",
+        "name": "虛空遁界梭",
+        "category": "treasure",
+        "prompt": "虛空遁界梭 輔助 xianxia item icon",
+        "master": 256,
+        "runtime": 64
+      },
+      {
+        "asset_id": "v21_treasure_24",
+        "name": "九天引雷旗",
+        "category": "treasure",
+        "prompt": "九天引雷旗 恢復 xianxia item icon",
+        "master": 256,
+        "runtime": 64
+      },
+      {
+        "asset_id": "v21_treasure_25",
+        "name": "玄門通靈鏡",
+        "category": "treasure",
+        "prompt": "玄門通靈鏡 輔助 xianxia item icon",
+        "master": 256,
+        "runtime": 64
+      },
+      {
+        "asset_id": "v21_treasure_26",
+        "name": "時光凝滯輪",
+        "category": "treasure",
+        "prompt": "時光凝滯輪 恢復 xianxia item icon",
+        "master": 256,
+        "runtime": 64
+      },
+      {
+        "asset_id": "v21_treasure_27",
+        "name": "萬獸御靈環",
+        "category": "treasure",
+        "prompt": "萬獸御靈環 輔助 xianxia item icon",
+        "master": 256,
+        "runtime": 64
+      },
+      {
+        "asset_id": "v21_treasure_28",
+        "name": "混沌聚元鼎",
+        "category": "treasure",
+        "prompt": "混沌聚元鼎 恢復 xianxia item icon",
+        "master": 256,
+        "runtime": 64
+      },
+      {
+        "asset_id": "v21_treasure_29",
+        "name": "太初造化珠",
+        "category": "treasure",
+        "prompt": "太初造化珠 輔助 xianxia item icon",
+        "master": 256,
+        "runtime": 64
+      }
+    ]
+  },
+  {
+    "name": "pet_0",
+    "assets": [
+      {
+        "asset_id": "v21_pet_0",
+        "name": "九尾玄狐",
+        "category": "pet",
+        "prompt": "九尾玄狐 攻擊 xianxia item icon",
+        "master": 256,
+        "runtime": 64
+      },
+      {
+        "asset_id": "v21_pet_1",
+        "name": "紫雷靈豹",
+        "category": "pet",
+        "prompt": "紫雷靈豹 防禦 xianxia item icon",
+        "master": 256,
+        "runtime": 64
+      },
+      {
+        "asset_id": "v21_pet_2",
+        "name": "玄冰蛟龍",
+        "category": "pet",
+        "prompt": "玄冰蛟龍 恢復 xianxia item icon",
+        "master": 256,
+        "runtime": 64
+      },
+      {
+        "asset_id": "v21_pet_3",
+        "name": "赤焰朱雀",
+        "category": "pet",
+        "prompt": "赤焰朱雀 攻擊 xianxia item icon",
+        "master": 256,
+        "runtime": 64
+      },
+      {
+        "asset_id": "v21_pet_4",
+        "name": "幽冥魔狼",
+        "category": "pet",
+        "prompt": "幽冥魔狼 防禦 xianxia item icon",
+        "master": 256,
+        "runtime": 64
+      },
+      {
+        "asset_id": "v21_pet_5",
+        "name": "碧海靈鯨",
+        "category": "pet",
+        "prompt": "碧海靈鯨 恢復 xianxia item icon",
+        "master": 256,
+        "runtime": 64
+      },
+      {
+        "asset_id": "v21_pet_6",
+        "name": "虛空靈貓",
+        "category": "pet",
+        "prompt": "虛空靈貓 攻擊 xianxia item icon",
+        "master": 256,
+        "runtime": 64
+      },
+      {
+        "asset_id": "v21_pet_7",
+        "name": "金甲玄龜",
+        "category": "pet",
+        "prompt": "金甲玄龜 防禦 xianxia item icon",
+        "master": 256,
+        "runtime": 64
+      },
+      {
+        "asset_id": "v21_pet_8",
+        "name": "青木靈鹿",
+        "category": "pet",
+        "prompt": "青木靈鹿 恢復 xianxia item icon",
+        "master": 256,
+        "runtime": 64
+      },
+      {
+        "asset_id": "v21_pet_9",
+        "name": "太陰月兔",
+        "category": "pet",
+        "prompt": "太陰月兔 攻擊 xianxia item icon",
+        "master": 256,
+        "runtime": 64
+      },
+      {
+        "asset_id": "v21_pet_10",
+        "name": "九霄雷鵬",
+        "category": "pet",
+        "prompt": "九霄雷鵬 防禦 xianxia item icon",
+        "master": 256,
+        "runtime": 64
+      },
+      {
+        "asset_id": "v21_pet_11",
+        "name": "焚天火麒麟",
+        "category": "pet",
+        "prompt": "焚天火麒麟 恢復 xianxia item icon",
+        "master": 256,
+        "runtime": 64
+      },
+      {
+        "asset_id": "v21_pet_12",
+        "name": "玄冥冰鳳",
+        "category": "pet",
+        "prompt": "玄冥冰鳳 攻擊 xianxia item icon",
+        "master": 256,
+        "runtime": 64
+      },
+      {
+        "asset_id": "v21_pet_13",
+        "name": "萬毒天蠍",
+        "category": "pet",
+        "prompt": "萬毒天蠍 防禦 xianxia item icon",
+        "master": 256,
+        "runtime": 64
+      },
+      {
+        "asset_id": "v21_pet_14",
+        "name": "五彩神鹿",
+        "category": "pet",
+        "prompt": "五彩神鹿 恢復 xianxia item icon",
+        "master": 256,
+        "runtime": 64
+      },
+      {
+        "asset_id": "v21_pet_15",
+        "name": "星辰靈龍",
+        "category": "pet",
+        "prompt": "星辰靈龍 攻擊 xianxia item icon",
+        "master": 256,
+        "runtime": 64
+      }
+    ]
+  },
+  {
+    "name": "pet_16",
+    "assets": [
+      {
+        "asset_id": "v21_pet_16",
+        "name": "太古戰猿",
+        "category": "pet",
+        "prompt": "太古戰猿 防禦 xianxia item icon",
+        "master": 256,
+        "runtime": 64
+      },
+      {
+        "asset_id": "v21_pet_17",
+        "name": "金翅神鷹",
+        "category": "pet",
+        "prompt": "金翅神鷹 恢復 xianxia item icon",
+        "master": 256,
+        "runtime": 64
+      },
+      {
+        "asset_id": "v21_pet_18",
+        "name": "混元靈蝶",
+        "category": "pet",
+        "prompt": "混元靈蝶 攻擊 xianxia item icon",
+        "master": 256,
+        "runtime": 64
+      },
+      {
+        "asset_id": "v21_pet_19",
+        "name": "幽影魔虎",
+        "category": "pet",
+        "prompt": "幽影魔虎 防禦 xianxia item icon",
+        "master": 256,
+        "runtime": 64
+      },
+      {
+        "asset_id": "v21_pet_20",
+        "name": "九天應龍",
+        "category": "pet",
+        "prompt": "九天應龍 恢復 xianxia item icon",
+        "master": 256,
+        "runtime": 64
+      },
+      {
+        "asset_id": "v21_pet_21",
+        "name": "太初鳳凰",
+        "category": "pet",
+        "prompt": "太初鳳凰 攻擊 xianxia item icon",
+        "master": 256,
+        "runtime": 64
+      },
+      {
+        "asset_id": "v21_pet_22",
+        "name": "混沌麒麟",
+        "category": "pet",
+        "prompt": "混沌麒麟 防禦 xianxia item icon",
+        "master": 256,
+        "runtime": 64
+      },
+      {
+        "asset_id": "v21_pet_23",
+        "name": "玄天神龜",
+        "category": "pet",
+        "prompt": "玄天神龜 恢復 xianxia item icon",
+        "master": 256,
+        "runtime": 64
+      },
+      {
+        "asset_id": "v21_pet_24",
+        "name": "紫霄雷龍",
+        "category": "pet",
+        "prompt": "紫霄雷龍 攻擊 xianxia item icon",
+        "master": 256,
+        "runtime": 64
+      },
+      {
+        "asset_id": "v21_pet_25",
+        "name": "太陰神狐",
+        "category": "pet",
+        "prompt": "太陰神狐 防禦 xianxia item icon",
+        "master": 256,
+        "runtime": 64
+      },
+      {
+        "asset_id": "v21_pet_26",
+        "name": "乾坤鯤鵬",
+        "category": "pet",
+        "prompt": "乾坤鯤鵬 恢復 xianxia item icon",
+        "master": 256,
+        "runtime": 64
+      },
+      {
+        "asset_id": "v21_pet_27",
+        "name": "萬古燭龍",
+        "category": "pet",
+        "prompt": "萬古燭龍 攻擊 xianxia item icon",
+        "master": 256,
+        "runtime": 64
+      },
+      {
+        "asset_id": "v21_pet_28",
+        "name": "仙域白澤",
+        "category": "pet",
+        "prompt": "仙域白澤 防禦 xianxia item icon",
+        "master": 256,
+        "runtime": 64
+      },
+      {
+        "asset_id": "v21_pet_29",
+        "name": "混沌吞天獸",
+        "category": "pet",
+        "prompt": "混沌吞天獸 恢復 xianxia item icon",
+        "master": 256,
+        "runtime": 64
+      }
+    ]
+  },
+  {
+    "name": "skill_0",
+    "assets": [
+      {
+        "asset_id": "v21_skill_0",
+        "name": "九霄神雷訣",
+        "category": "skill",
+        "prompt": "九霄神雷訣 雷電連鎖多目標傷害 magical spell emblem, no text",
+        "master": 256,
+        "runtime": 64
+      },
+      {
+        "asset_id": "v21_skill_1",
+        "name": "焚天烈陽術",
+        "category": "skill",
+        "prompt": "焚天烈陽術 範圍傷害並持續燃燒 magical spell emblem, no text",
+        "master": 256,
+        "runtime": 64
+      },
+      {
+        "asset_id": "v21_skill_2",
+        "name": "萬劍歸宗",
+        "category": "skill",
+        "prompt": "萬劍歸宗 劍陣多目標攻擊 magical spell emblem, no text",
+        "master": 256,
+        "runtime": 64
+      },
+      {
+        "asset_id": "v21_skill_3",
+        "name": "虛空裂天斬",
+        "category": "skill",
+        "prompt": "虛空裂天斬 位移斬擊 magical spell emblem, no text",
+        "master": 256,
+        "runtime": 64
+      },
+      {
+        "asset_id": "v21_skill_4",
+        "name": "太陰玄冰訣",
+        "category": "skill",
+        "prompt": "太陰玄冰訣 範圍傷害並減速 magical spell emblem, no text",
+        "master": 256,
+        "runtime": 64
+      },
+      {
+        "asset_id": "v21_skill_5",
+        "name": "五行滅神印",
+        "category": "skill",
+        "prompt": "五行滅神印 圓形範圍攻擊 magical spell emblem, no text",
+        "master": 256,
+        "runtime": 64
+      },
+      {
+        "asset_id": "v21_skill_6",
+        "name": "紫霄天雷引",
+        "category": "skill",
+        "prompt": "紫霄天雷引 雷電連鎖多目標傷害 magical spell emblem, no text",
+        "master": 256,
+        "runtime": 64
+      },
+      {
+        "asset_id": "v21_skill_7",
+        "name": "混沌破界指",
+        "category": "skill",
+        "prompt": "混沌破界指 穿透防禦的單體傷害 magical spell emblem, no text",
+        "master": 256,
+        "runtime": 64
+      },
+      {
+        "asset_id": "v21_skill_8",
+        "name": "星辰隕落術",
+        "category": "skill",
+        "prompt": "星辰隕落術 延遲範圍隕落 magical spell emblem, no text",
+        "master": 256,
+        "runtime": 64
+      },
+      {
+        "asset_id": "v21_skill_9",
+        "name": "玄門誅魔劍",
+        "category": "skill",
+        "prompt": "玄門誅魔劍 單體高倍率攻擊 magical spell emblem, no text",
+        "master": 256,
+        "runtime": 64
+      },
+      {
+        "asset_id": "v21_skill_10",
+        "name": "玄武不滅體",
+        "category": "skill",
+        "prompt": "玄武不滅體 獲得可吸收傷害的護盾 magical spell emblem, no text",
+        "master": 256,
+        "runtime": 64
+      },
+      {
+        "asset_id": "v21_skill_11",
+        "name": "九轉金身訣",
+        "category": "skill",
+        "prompt": "九轉金身訣 短時間提高防禦 magical spell emblem, no text",
+        "master": 256,
+        "runtime": 64
+      },
+      {
+        "asset_id": "v21_skill_12",
+        "name": "太虛護靈罩",
+        "category": "skill",
+        "prompt": "太虛護靈罩 獲得可吸收傷害的護盾 magical spell emblem, no text",
+        "master": 256,
+        "runtime": 64
+      },
+      {
+        "asset_id": "v21_skill_13",
+        "name": "萬法歸元術",
+        "category": "skill",
+        "prompt": "萬法歸元術 解除控制與持續傷害 magical spell emblem, no text",
+        "master": 256,
+        "runtime": 64
+      },
+      {
+        "asset_id": "v21_skill_14",
+        "name": "青木回春訣",
+        "category": "skill",
+        "prompt": "青木回春訣 恢復氣血 magical spell emblem, no text",
+        "master": 256,
+        "runtime": 64
+      },
+      {
+        "asset_id": "v21_skill_15",
+        "name": "仙靈續命術",
+        "category": "skill",
+        "prompt": "仙靈續命術 恢復氣血 magical spell emblem, no text",
+        "master": 256,
+        "runtime": 64
+      }
+    ]
+  },
+  {
+    "name": "skill_16",
+    "assets": [
+      {
+        "asset_id": "v21_skill_16",
+        "name": "五行護體陣",
+        "category": "skill",
+        "prompt": "五行護體陣 短時間提高防禦 magical spell emblem, no text",
+        "master": 256,
+        "runtime": 64
+      },
+      {
+        "asset_id": "v21_skill_17",
+        "name": "混元聚靈訣",
+        "category": "skill",
+        "prompt": "混元聚靈訣 恢復真元 magical spell emblem, no text",
+        "master": 256,
+        "runtime": 64
+      },
+      {
+        "asset_id": "v21_skill_18",
+        "name": "天罡御雷盾",
+        "category": "skill",
+        "prompt": "天罡御雷盾 獲得可吸收傷害的護盾 magical spell emblem, no text",
+        "master": 256,
+        "runtime": 64
+      },
+      {
+        "asset_id": "v21_skill_19",
+        "name": "不滅仙魂訣",
+        "category": "skill",
+        "prompt": "不滅仙魂訣 短時間保命護盾與恢復 magical spell emblem, no text",
+        "master": 256,
+        "runtime": 64
+      },
+      {
+        "asset_id": "v21_skill_20",
+        "name": "縮地成寸",
+        "category": "skill",
+        "prompt": "縮地成寸 向移動方向突進 magical spell emblem, no text",
+        "master": 256,
+        "runtime": 64
+      },
+      {
+        "asset_id": "v21_skill_21",
+        "name": "虛空挪移術",
+        "category": "skill",
+        "prompt": "虛空挪移術 瞬移至安全位置 magical spell emblem, no text",
+        "master": 256,
+        "runtime": 64
+      },
+      {
+        "asset_id": "v21_skill_22",
+        "name": "天眼通",
+        "category": "skill",
+        "prompt": "天眼通 揭示妖獸並提高會心 magical spell emblem, no text",
+        "master": 256,
+        "runtime": 64
+      },
+      {
+        "asset_id": "v21_skill_23",
+        "name": "玄門御獸訣",
+        "category": "skill",
+        "prompt": "玄門御獸訣 短時間增幅御靈攻擊 magical spell emblem, no text",
+        "master": 256,
+        "runtime": 64
+      },
+      {
+        "asset_id": "v21_skill_24",
+        "name": "萬象悟道訣",
+        "category": "skill",
+        "prompt": "萬象悟道訣 短時間提高靈氣吸收 magical spell emblem, no text",
+        "master": 256,
+        "runtime": 64
+      },
+      {
+        "asset_id": "v21_skill_25",
+        "name": "九轉聚靈術",
+        "category": "skill",
+        "prompt": "九轉聚靈術 恢復真元 magical spell emblem, no text",
+        "master": 256,
+        "runtime": 64
+      },
+      {
+        "asset_id": "v21_skill_26",
+        "name": "仙靈分身術",
+        "category": "skill",
+        "prompt": "仙靈分身術 召喚短時間作戰分身 magical spell emblem, no text",
+        "master": 256,
+        "runtime": 64
+      },
+      {
+        "asset_id": "v21_skill_27",
+        "name": "時光遲滯術",
+        "category": "skill",
+        "prompt": "時光遲滯術 範圍傷害並減速 magical spell emblem, no text",
+        "master": 256,
+        "runtime": 64
+      },
+      {
+        "asset_id": "v21_skill_28",
+        "name": "天地封靈陣",
+        "category": "skill",
+        "prompt": "天地封靈陣 封禁範圍內敵人技能 magical spell emblem, no text",
+        "master": 256,
+        "runtime": 64
+      },
+      {
+        "asset_id": "v21_skill_29",
+        "name": "太初造化訣",
+        "category": "skill",
+        "prompt": "太初造化訣 氣血真元同時恢復 magical spell emblem, no text",
+        "master": 256,
+        "runtime": 64
+      }
+    ]
+  },
+  {
+    "name": "material_0",
+    "assets": [
+      {
+        "asset_id": "v21_mat_0",
+        "name": "太虛靈鐵",
+        "category": "material",
+        "prompt": "太虛靈鐵 magical mineral material icon",
+        "master": 256,
+        "runtime": 64
+      },
+      {
+        "asset_id": "v21_mat_1",
+        "name": "虛空神砂",
+        "category": "material",
+        "prompt": "虛空神砂 magical mineral material icon",
+        "master": 256,
+        "runtime": 64
+      },
+      {
+        "asset_id": "v21_mat_2",
+        "name": "九天雷髓",
+        "category": "material",
+        "prompt": "九天雷髓 magical mineral material icon",
+        "master": 256,
+        "runtime": 64
+      },
+      {
+        "asset_id": "v21_mat_3",
+        "name": "萬年玄玉",
+        "category": "material",
+        "prompt": "萬年玄玉 magical mineral material icon",
+        "master": 256,
+        "runtime": 64
+      },
+      {
+        "asset_id": "v21_mat_4",
+        "name": "仙靈精魄",
+        "category": "material",
+        "prompt": "仙靈精魄 magical mineral material icon",
+        "master": 256,
+        "runtime": 64
+      },
+      {
+        "asset_id": "v21_mat_5",
+        "name": "混沌靈液",
+        "category": "material",
+        "prompt": "混沌靈液 magical mineral material icon",
+        "master": 256,
+        "runtime": 64
+      },
+      {
+        "asset_id": "v21_mat_6",
+        "name": "上古獸魂",
+        "category": "material",
+        "prompt": "上古獸魂 magical mineral material icon",
+        "master": 256,
+        "runtime": 64
+      },
+      {
+        "asset_id": "v21_mat_7",
+        "name": "神通殘卷",
+        "category": "material",
+        "prompt": "神通殘卷 magical mineral material icon",
+        "master": 256,
+        "runtime": 64
+      },
+      {
+        "asset_id": "v21_mat_8",
+        "name": "仙器碎片",
+        "category": "material",
+        "prompt": "仙器碎片 magical mineral material icon",
+        "master": 256,
+        "runtime": 64
+      }
+    ]
+  },
+  {
+    "name": "enemy_0",
+    "assets": [
+      {
+        "asset_id": "v21_enemy_cloud_0",
+        "name": "太虛雲鷹",
+        "category": "enemy",
+        "prompt": "太虛雲鷹 majestic eagle bird, avian body and talons, no human cloud elemental aura, detailed Chinese xianxia ink watercolor",
+        "master": 256,
+        "runtime": 128
+      },
+      {
+        "asset_id": "v21_enemy_cloud_1",
+        "name": "太虛晶蛟",
+        "category": "enemy",
+        "prompt": "太虛晶蛟 Chinese serpentine dragon, scaled animal body, no human cloud elemental aura, detailed Chinese xianxia ink watercolor",
+        "master": 256,
+        "runtime": 128
+      },
+      {
+        "asset_id": "v21_enemy_cloud_2",
+        "name": "太虛靈猿",
+        "category": "enemy",
+        "prompt": "太虛靈猿 giant ancient ape, animal body, no human cloud elemental aura, detailed Chinese xianxia ink watercolor",
+        "master": 256,
+        "runtime": 128
+      },
+      {
+        "asset_id": "v21_enemy_cloud_3",
+        "name": "太虛玄龜",
+        "category": "enemy",
+        "prompt": "太虛玄龜 mythical giant tortoise, shell and four legs, no human cloud elemental aura, detailed Chinese xianxia ink watercolor",
+        "master": 256,
+        "runtime": 128
+      },
+      {
+        "asset_id": "v21_enemy_cloud_4",
+        "name": "太虛妖虎",
+        "category": "enemy",
+        "prompt": "太虛妖虎 ferocious tiger beast, feline four-legged body, no human cloud elemental aura, detailed Chinese xianxia ink watercolor",
+        "master": 256,
+        "runtime": 128
+      },
+      {
+        "asset_id": "v21_enemy_cloud_5",
+        "name": "太虛噬魂魔修",
+        "category": "enemy",
+        "prompt": "太虛噬魂魔修 dark immortal cultivator, full body humanoid warrior cloud elemental aura, detailed Chinese xianxia ink watercolor",
+        "master": 256,
+        "runtime": 128
+      },
+      {
+        "asset_id": "v21_enemy_cloud_6",
+        "name": "太虛血煞魔修",
+        "category": "enemy",
+        "prompt": "太虛血煞魔修 dark immortal cultivator, full body humanoid warrior cloud elemental aura, detailed Chinese xianxia ink watercolor",
+        "master": 256,
+        "runtime": 128
+      },
+      {
+        "asset_id": "v21_enemy_cloud_7",
+        "name": "太虛界主",
+        "category": "enemy",
+        "prompt": "太虛界主 dark immortal cultivator, full body humanoid warrior cloud elemental aura, detailed Chinese xianxia ink watercolor",
+        "master": 256,
+        "runtime": 128
+      },
+      {
+        "asset_id": "v21_enemy_void_0",
+        "name": "虛空雲鷹",
+        "category": "enemy",
+        "prompt": "虛空雲鷹 majestic eagle bird, avian body and talons, no human void elemental aura, detailed Chinese xianxia ink watercolor",
+        "master": 256,
+        "runtime": 128
+      },
+      {
+        "asset_id": "v21_enemy_void_1",
+        "name": "虛空晶蛟",
+        "category": "enemy",
+        "prompt": "虛空晶蛟 Chinese serpentine dragon, scaled animal body, no human void elemental aura, detailed Chinese xianxia ink watercolor",
+        "master": 256,
+        "runtime": 128
+      },
+      {
+        "asset_id": "v21_enemy_void_2",
+        "name": "虛空靈猿",
+        "category": "enemy",
+        "prompt": "虛空靈猿 giant ancient ape, animal body, no human void elemental aura, detailed Chinese xianxia ink watercolor",
+        "master": 256,
+        "runtime": 128
+      },
+      {
+        "asset_id": "v21_enemy_void_3",
+        "name": "虛空玄龜",
+        "category": "enemy",
+        "prompt": "虛空玄龜 mythical giant tortoise, shell and four legs, no human void elemental aura, detailed Chinese xianxia ink watercolor",
+        "master": 256,
+        "runtime": 128
+      },
+      {
+        "asset_id": "v21_enemy_void_4",
+        "name": "虛空妖虎",
+        "category": "enemy",
+        "prompt": "虛空妖虎 ferocious tiger beast, feline four-legged body, no human void elemental aura, detailed Chinese xianxia ink watercolor",
+        "master": 256,
+        "runtime": 128
+      },
+      {
+        "asset_id": "v21_enemy_void_5",
+        "name": "虛空噬魂魔修",
+        "category": "enemy",
+        "prompt": "虛空噬魂魔修 dark immortal cultivator, full body humanoid warrior void elemental aura, detailed Chinese xianxia ink watercolor",
+        "master": 256,
+        "runtime": 128
+      },
+      {
+        "asset_id": "v21_enemy_void_6",
+        "name": "虛空血煞魔修",
+        "category": "enemy",
+        "prompt": "虛空血煞魔修 dark immortal cultivator, full body humanoid warrior void elemental aura, detailed Chinese xianxia ink watercolor",
+        "master": 256,
+        "runtime": 128
+      },
+      {
+        "asset_id": "v21_enemy_void_7",
+        "name": "虛空界主",
+        "category": "enemy",
+        "prompt": "虛空界主 dark immortal cultivator, full body humanoid warrior void elemental aura, detailed Chinese xianxia ink watercolor",
+        "master": 256,
+        "runtime": 128
+      }
+    ]
+  },
+  {
+    "name": "enemy_16",
+    "assets": [
+      {
+        "asset_id": "v21_enemy_wild_0",
+        "name": "萬靈雲鷹",
+        "category": "enemy",
+        "prompt": "萬靈雲鷹 majestic eagle bird, avian body and talons, no human wild elemental aura, detailed Chinese xianxia ink watercolor",
+        "master": 256,
+        "runtime": 128
+      },
+      {
+        "asset_id": "v21_enemy_wild_1",
+        "name": "萬靈晶蛟",
+        "category": "enemy",
+        "prompt": "萬靈晶蛟 Chinese serpentine dragon, scaled animal body, no human wild elemental aura, detailed Chinese xianxia ink watercolor",
+        "master": 256,
+        "runtime": 128
+      },
+      {
+        "asset_id": "v21_enemy_wild_2",
+        "name": "萬靈靈猿",
+        "category": "enemy",
+        "prompt": "萬靈靈猿 giant ancient ape, animal body, no human wild elemental aura, detailed Chinese xianxia ink watercolor",
+        "master": 256,
+        "runtime": 128
+      },
+      {
+        "asset_id": "v21_enemy_wild_3",
+        "name": "萬靈玄龜",
+        "category": "enemy",
+        "prompt": "萬靈玄龜 mythical giant tortoise, shell and four legs, no human wild elemental aura, detailed Chinese xianxia ink watercolor",
+        "master": 256,
+        "runtime": 128
+      },
+      {
+        "asset_id": "v21_enemy_wild_4",
+        "name": "萬靈妖虎",
+        "category": "enemy",
+        "prompt": "萬靈妖虎 ferocious tiger beast, feline four-legged body, no human wild elemental aura, detailed Chinese xianxia ink watercolor",
+        "master": 256,
+        "runtime": 128
+      },
+      {
+        "asset_id": "v21_enemy_wild_5",
+        "name": "萬靈噬魂魔修",
+        "category": "enemy",
+        "prompt": "萬靈噬魂魔修 dark immortal cultivator, full body humanoid warrior wild elemental aura, detailed Chinese xianxia ink watercolor",
+        "master": 256,
+        "runtime": 128
+      },
+      {
+        "asset_id": "v21_enemy_wild_6",
+        "name": "萬靈血煞魔修",
+        "category": "enemy",
+        "prompt": "萬靈血煞魔修 dark immortal cultivator, full body humanoid warrior wild elemental aura, detailed Chinese xianxia ink watercolor",
+        "master": 256,
+        "runtime": 128
+      },
+      {
+        "asset_id": "v21_enemy_wild_7",
+        "name": "萬靈界主",
+        "category": "enemy",
+        "prompt": "萬靈界主 dark immortal cultivator, full body humanoid warrior wild elemental aura, detailed Chinese xianxia ink watercolor",
+        "master": 256,
+        "runtime": 128
+      },
+      {
+        "asset_id": "v21_enemy_palace_0",
+        "name": "九天雲鷹",
+        "category": "enemy",
+        "prompt": "九天雲鷹 majestic eagle bird, avian body and talons, no human palace elemental aura, detailed Chinese xianxia ink watercolor",
+        "master": 256,
+        "runtime": 128
+      },
+      {
+        "asset_id": "v21_enemy_palace_1",
+        "name": "九天晶蛟",
+        "category": "enemy",
+        "prompt": "九天晶蛟 Chinese serpentine dragon, scaled animal body, no human palace elemental aura, detailed Chinese xianxia ink watercolor",
+        "master": 256,
+        "runtime": 128
+      },
+      {
+        "asset_id": "v21_enemy_palace_2",
+        "name": "九天靈猿",
+        "category": "enemy",
+        "prompt": "九天靈猿 giant ancient ape, animal body, no human palace elemental aura, detailed Chinese xianxia ink watercolor",
+        "master": 256,
+        "runtime": 128
+      },
+      {
+        "asset_id": "v21_enemy_palace_3",
+        "name": "九天玄龜",
+        "category": "enemy",
+        "prompt": "九天玄龜 mythical giant tortoise, shell and four legs, no human palace elemental aura, detailed Chinese xianxia ink watercolor",
+        "master": 256,
+        "runtime": 128
+      },
+      {
+        "asset_id": "v21_enemy_palace_4",
+        "name": "九天妖虎",
+        "category": "enemy",
+        "prompt": "九天妖虎 ferocious tiger beast, feline four-legged body, no human palace elemental aura, detailed Chinese xianxia ink watercolor",
+        "master": 256,
+        "runtime": 128
+      },
+      {
+        "asset_id": "v21_enemy_palace_5",
+        "name": "九天噬魂魔修",
+        "category": "enemy",
+        "prompt": "九天噬魂魔修 dark immortal cultivator, full body humanoid warrior palace elemental aura, detailed Chinese xianxia ink watercolor",
+        "master": 256,
+        "runtime": 128
+      },
+      {
+        "asset_id": "v21_enemy_palace_6",
+        "name": "九天血煞魔修",
+        "category": "enemy",
+        "prompt": "九天血煞魔修 dark immortal cultivator, full body humanoid warrior palace elemental aura, detailed Chinese xianxia ink watercolor",
+        "master": 256,
+        "runtime": 128
+      },
+      {
+        "asset_id": "v21_enemy_palace_7",
+        "name": "九天界主",
+        "category": "enemy",
+        "prompt": "九天界主 dark immortal cultivator, full body humanoid warrior palace elemental aura, detailed Chinese xianxia ink watercolor",
+        "master": 256,
+        "runtime": 128
+      }
+    ]
+  },
+  {
+    "name": "enemy_32",
+    "assets": [
+      {
+        "asset_id": "v21_enemy_thunder_0",
+        "name": "萬雷雲鷹",
+        "category": "enemy",
+        "prompt": "萬雷雲鷹 majestic eagle bird, avian body and talons, no human thunder elemental aura, detailed Chinese xianxia ink watercolor",
+        "master": 256,
+        "runtime": 128
+      },
+      {
+        "asset_id": "v21_enemy_thunder_1",
+        "name": "萬雷晶蛟",
+        "category": "enemy",
+        "prompt": "萬雷晶蛟 Chinese serpentine dragon, scaled animal body, no human thunder elemental aura, detailed Chinese xianxia ink watercolor",
+        "master": 256,
+        "runtime": 128
+      },
+      {
+        "asset_id": "v21_enemy_thunder_2",
+        "name": "萬雷靈猿",
+        "category": "enemy",
+        "prompt": "萬雷靈猿 giant ancient ape, animal body, no human thunder elemental aura, detailed Chinese xianxia ink watercolor",
+        "master": 256,
+        "runtime": 128
+      },
+      {
+        "asset_id": "v21_enemy_thunder_3",
+        "name": "萬雷玄龜",
+        "category": "enemy",
+        "prompt": "萬雷玄龜 mythical giant tortoise, shell and four legs, no human thunder elemental aura, detailed Chinese xianxia ink watercolor",
+        "master": 256,
+        "runtime": 128
+      },
+      {
+        "asset_id": "v21_enemy_thunder_4",
+        "name": "萬雷妖虎",
+        "category": "enemy",
+        "prompt": "萬雷妖虎 ferocious tiger beast, feline four-legged body, no human thunder elemental aura, detailed Chinese xianxia ink watercolor",
+        "master": 256,
+        "runtime": 128
+      },
+      {
+        "asset_id": "v21_enemy_thunder_5",
+        "name": "萬雷噬魂魔修",
+        "category": "enemy",
+        "prompt": "萬雷噬魂魔修 dark immortal cultivator, full body humanoid warrior thunder elemental aura, detailed Chinese xianxia ink watercolor",
+        "master": 256,
+        "runtime": 128
+      },
+      {
+        "asset_id": "v21_enemy_thunder_6",
+        "name": "萬雷血煞魔修",
+        "category": "enemy",
+        "prompt": "萬雷血煞魔修 dark immortal cultivator, full body humanoid warrior thunder elemental aura, detailed Chinese xianxia ink watercolor",
+        "master": 256,
+        "runtime": 128
+      },
+      {
+        "asset_id": "v21_enemy_thunder_7",
+        "name": "萬雷界主",
+        "category": "enemy",
+        "prompt": "萬雷界主 dark immortal cultivator, full body humanoid warrior thunder elemental aura, detailed Chinese xianxia ink watercolor",
+        "master": 256,
+        "runtime": 128
+      },
+      {
+        "asset_id": "v21_enemy_ascend_0",
+        "name": "飛昇雲鷹",
+        "category": "enemy",
+        "prompt": "飛昇雲鷹 majestic eagle bird, avian body and talons, no human ascend elemental aura, detailed Chinese xianxia ink watercolor",
+        "master": 256,
+        "runtime": 128
+      },
+      {
+        "asset_id": "v21_enemy_ascend_1",
+        "name": "飛昇晶蛟",
+        "category": "enemy",
+        "prompt": "飛昇晶蛟 Chinese serpentine dragon, scaled animal body, no human ascend elemental aura, detailed Chinese xianxia ink watercolor",
+        "master": 256,
+        "runtime": 128
+      },
+      {
+        "asset_id": "v21_enemy_ascend_2",
+        "name": "飛昇靈猿",
+        "category": "enemy",
+        "prompt": "飛昇靈猿 giant ancient ape, animal body, no human ascend elemental aura, detailed Chinese xianxia ink watercolor",
+        "master": 256,
+        "runtime": 128
+      },
+      {
+        "asset_id": "v21_enemy_ascend_3",
+        "name": "飛昇玄龜",
+        "category": "enemy",
+        "prompt": "飛昇玄龜 mythical giant tortoise, shell and four legs, no human ascend elemental aura, detailed Chinese xianxia ink watercolor",
+        "master": 256,
+        "runtime": 128
+      },
+      {
+        "asset_id": "v21_enemy_ascend_4",
+        "name": "飛昇妖虎",
+        "category": "enemy",
+        "prompt": "飛昇妖虎 ferocious tiger beast, feline four-legged body, no human ascend elemental aura, detailed Chinese xianxia ink watercolor",
+        "master": 256,
+        "runtime": 128
+      },
+      {
+        "asset_id": "v21_enemy_ascend_5",
+        "name": "飛昇噬魂魔修",
+        "category": "enemy",
+        "prompt": "飛昇噬魂魔修 dark immortal cultivator, full body humanoid warrior ascend elemental aura, detailed Chinese xianxia ink watercolor",
+        "master": 256,
+        "runtime": 128
+      },
+      {
+        "asset_id": "v21_enemy_ascend_6",
+        "name": "飛昇血煞魔修",
+        "category": "enemy",
+        "prompt": "飛昇血煞魔修 dark immortal cultivator, full body humanoid warrior ascend elemental aura, detailed Chinese xianxia ink watercolor",
+        "master": 256,
+        "runtime": 128
+      },
+      {
+        "asset_id": "v21_enemy_ascend_7",
+        "name": "飛昇界主",
+        "category": "enemy",
+        "prompt": "飛昇界主 dark immortal cultivator, full body humanoid warrior ascend elemental aura, detailed Chinese xianxia ink watercolor",
+        "master": 256,
+        "runtime": 128
+      }
+    ]
+  },
+  {
+    "name": "npc_0",
+    "assets": [
+      {
+        "asset_id": "v21_npc_cloud_0",
+        "name": "太虛宗門長老",
+        "category": "npc",
+        "prompt": "太虛宗門長老 full body standing Chinese immortal",
+        "master": 256,
+        "runtime": 128
+      },
+      {
+        "asset_id": "v21_npc_cloud_1",
+        "name": "太虛神兵鍛造師",
+        "category": "npc",
+        "prompt": "太虛神兵鍛造師 full body standing Chinese immortal",
+        "master": 256,
+        "runtime": 128
+      },
+      {
+        "asset_id": "v21_npc_cloud_2",
+        "name": "太虛機緣引路人",
+        "category": "npc",
+        "prompt": "太虛機緣引路人 full body standing Chinese immortal",
+        "master": 256,
+        "runtime": 128
+      },
+      {
+        "asset_id": "v21_npc_void_0",
+        "name": "虛空隱世散仙",
+        "category": "npc",
+        "prompt": "虛空隱世散仙 full body standing Chinese immortal",
+        "master": 256,
+        "runtime": 128
+      },
+      {
+        "asset_id": "v21_npc_void_1",
+        "name": "虛空仙域商人",
+        "category": "npc",
+        "prompt": "虛空仙域商人 full body standing Chinese immortal",
+        "master": 256,
+        "runtime": 128
+      },
+      {
+        "asset_id": "v21_npc_void_2",
+        "name": "虛空秘境守衛",
+        "category": "npc",
+        "prompt": "虛空秘境守衛 full body standing Chinese immortal",
+        "master": 256,
+        "runtime": 128
+      },
+      {
+        "asset_id": "v21_npc_wild_0",
+        "name": "萬靈靈寵御獸師",
+        "category": "npc",
+        "prompt": "萬靈靈寵御獸師 full body standing Chinese immortal",
+        "master": 256,
+        "runtime": 128
+      },
+      {
+        "asset_id": "v21_npc_wild_1",
+        "name": "萬靈高階煉丹師",
+        "category": "npc",
+        "prompt": "萬靈高階煉丹師 full body standing Chinese immortal",
+        "master": 256,
+        "runtime": 128
+      },
+      {
+        "asset_id": "v21_npc_wild_2",
+        "name": "萬靈魔修叛徒",
+        "category": "npc",
+        "prompt": "萬靈魔修叛徒 full body standing Chinese immortal",
+        "master": 256,
+        "runtime": 128
+      },
+      {
+        "asset_id": "v21_npc_palace_0",
+        "name": "九天宗門長老",
+        "category": "npc",
+        "prompt": "九天宗門長老 full body standing Chinese immortal",
+        "master": 256,
+        "runtime": 128
+      },
+      {
+        "asset_id": "v21_npc_palace_1",
+        "name": "九天神兵鍛造師",
+        "category": "npc",
+        "prompt": "九天神兵鍛造師 full body standing Chinese immortal",
+        "master": 256,
+        "runtime": 128
+      },
+      {
+        "asset_id": "v21_npc_palace_2",
+        "name": "九天隱世散仙",
+        "category": "npc",
+        "prompt": "九天隱世散仙 full body standing Chinese immortal",
+        "master": 256,
+        "runtime": 128
+      },
+      {
+        "asset_id": "v21_npc_thunder_0",
+        "name": "萬雷渡劫護法",
+        "category": "npc",
+        "prompt": "萬雷渡劫護法 full body standing Chinese immortal",
+        "master": 256,
+        "runtime": 128
+      },
+      {
+        "asset_id": "v21_npc_thunder_1",
+        "name": "萬雷高階煉丹師",
+        "category": "npc",
+        "prompt": "萬雷高階煉丹師 full body standing Chinese immortal",
+        "master": 256,
+        "runtime": 128
+      },
+      {
+        "asset_id": "v21_npc_thunder_2",
+        "name": "萬雷機緣引路人",
+        "category": "npc",
+        "prompt": "萬雷機緣引路人 full body standing Chinese immortal",
+        "master": 256,
+        "runtime": 128
+      },
+      {
+        "asset_id": "v21_npc_ascend_0",
+        "name": "飛昇仙域商人",
+        "category": "npc",
+        "prompt": "飛昇仙域商人 full body standing Chinese immortal",
+        "master": 256,
+        "runtime": 128
+      }
+    ]
+  },
+  {
+    "name": "npc_16",
+    "assets": [
+      {
+        "asset_id": "v21_npc_ascend_1",
+        "name": "飛昇神兵鍛造師",
+        "category": "npc",
+        "prompt": "飛昇神兵鍛造師 full body standing Chinese immortal",
+        "master": 256,
+        "runtime": 128
+      },
+      {
+        "asset_id": "v21_npc_ascend_2",
+        "name": "飛昇秘境守衛",
+        "category": "npc",
+        "prompt": "飛昇秘境守衛 full body standing Chinese immortal",
+        "master": 256,
+        "runtime": 128
+      }
+    ]
+  },
+  {
+    "name": "prop_0",
+    "assets": [
+      {
+        "asset_id": "v21_prop_cloud_0",
+        "name": "雲石橋",
+        "category": "prop",
+        "prompt": "雲石橋 isometric Chinese fantasy terrain object",
+        "master": 256,
+        "runtime": 128
+      },
+      {
+        "asset_id": "v21_prop_cloud_1",
+        "name": "浮空松",
+        "category": "prop",
+        "prompt": "浮空松 isometric Chinese fantasy terrain object",
+        "master": 256,
+        "runtime": 128
+      },
+      {
+        "asset_id": "v21_prop_cloud_2",
+        "name": "懸空道觀",
+        "category": "prop",
+        "prompt": "懸空道觀 isometric Chinese fantasy terrain object",
+        "master": 256,
+        "runtime": 128
+      },
+      {
+        "asset_id": "v21_prop_void_0",
+        "name": "星門",
+        "category": "prop",
+        "prompt": "星門 isometric Chinese fantasy terrain object",
+        "master": 256,
+        "runtime": 128
+      },
+      {
+        "asset_id": "v21_prop_void_1",
+        "name": "裂隙晶柱",
+        "category": "prop",
+        "prompt": "裂隙晶柱 isometric Chinese fantasy terrain object",
+        "master": 256,
+        "runtime": 128
+      },
+      {
+        "asset_id": "v21_prop_void_2",
+        "name": "浮島殘垣",
+        "category": "prop",
+        "prompt": "浮島殘垣 isometric Chinese fantasy terrain object",
+        "master": 256,
+        "runtime": 128
+      },
+      {
+        "asset_id": "v21_prop_wild_0",
+        "name": "神木",
+        "category": "prop",
+        "prompt": "神木 isometric Chinese fantasy terrain object",
+        "master": 256,
+        "runtime": 128
+      },
+      {
+        "asset_id": "v21_prop_wild_1",
+        "name": "靈脈泉",
+        "category": "prop",
+        "prompt": "靈脈泉 isometric Chinese fantasy terrain object",
+        "master": 256,
+        "runtime": 128
+      },
+      {
+        "asset_id": "v21_prop_wild_2",
+        "name": "古獸石碑",
+        "category": "prop",
+        "prompt": "古獸石碑 isometric Chinese fantasy terrain object",
+        "master": 256,
+        "runtime": 128
+      },
+      {
+        "asset_id": "v21_prop_palace_0",
+        "name": "仙宮",
+        "category": "prop",
+        "prompt": "仙宮 isometric Chinese fantasy terrain object",
+        "master": 256,
+        "runtime": 128
+      },
+      {
+        "asset_id": "v21_prop_palace_1",
+        "name": "金橋",
+        "category": "prop",
+        "prompt": "金橋 isometric Chinese fantasy terrain object",
+        "master": 256,
+        "runtime": 128
+      },
+      {
+        "asset_id": "v21_prop_palace_2",
+        "name": "玉階",
+        "category": "prop",
+        "prompt": "玉階 isometric Chinese fantasy terrain object",
+        "master": 256,
+        "runtime": 128
+      },
+      {
+        "asset_id": "v21_prop_thunder_0",
+        "name": "雷柱",
+        "category": "prop",
+        "prompt": "雷柱 isometric Chinese fantasy terrain object",
+        "master": 256,
+        "runtime": 128
+      },
+      {
+        "asset_id": "v21_prop_thunder_1",
+        "name": "焦岩",
+        "category": "prop",
+        "prompt": "焦岩 isometric Chinese fantasy terrain object",
+        "master": 256,
+        "runtime": 128
+      },
+      {
+        "asset_id": "v21_prop_thunder_2",
+        "name": "渡劫壇",
+        "category": "prop",
+        "prompt": "渡劫壇 isometric Chinese fantasy terrain object",
+        "master": 256,
+        "runtime": 128
+      },
+      {
+        "asset_id": "v21_prop_ascend_0",
+        "name": "仙門",
+        "category": "prop",
+        "prompt": "仙門 isometric Chinese fantasy terrain object",
+        "master": 256,
+        "runtime": 128
+      }
+    ]
+  },
+  {
+    "name": "prop_16",
+    "assets": [
+      {
+        "asset_id": "v21_prop_ascend_1",
+        "name": "仙蓮",
+        "category": "prop",
+        "prompt": "仙蓮 isometric Chinese fantasy terrain object",
+        "master": 256,
+        "runtime": 128
+      },
+      {
+        "asset_id": "v21_prop_ascend_2",
+        "name": "上古神殿",
+        "category": "prop",
+        "prompt": "上古神殿 isometric Chinese fantasy terrain object",
+        "master": 256,
+        "runtime": 128
+      }
+    ]
+  },
+  {
+    "name": "v21_floor_cloud",
+    "assets": [
+      {
+        "asset_id": "v21_floor_cloud",
+        "name": "太虛雲海",
+        "category": "floor",
+        "prompt": "Top down traversable RPG landscape, 浮空仙山、雲海、懸空古道, broad empty playable center, ink watercolor Chinese xianxia environment, no characters, no text",
+        "master": 1024,
+        "runtime": 1024
+      }
+    ],
+    "floor": true
+  },
+  {
+    "name": "v21_floor_void",
+    "assets": [
+      {
+        "asset_id": "v21_floor_void",
+        "name": "虛空裂域",
+        "category": "floor",
+        "prompt": "Top down traversable RPG landscape, 空間裂縫、破碎浮島、星空深淵, broad empty playable center, ink watercolor Chinese xianxia environment, no characters, no text",
+        "master": 1024,
+        "runtime": 1024
+      }
+    ],
+    "floor": true
+  },
+  {
+    "name": "v21_floor_wild",
+    "assets": [
+      {
+        "asset_id": "v21_floor_wild",
+        "name": "萬靈古域",
+        "category": "floor",
+        "prompt": "Top down traversable RPG landscape, 巨型古木、靈脈、遠古遺跡, broad empty playable center, ink watercolor Chinese xianxia environment, no characters, no text",
+        "master": 1024,
+        "runtime": 1024
+      }
+    ],
+    "floor": true
+  },
+  {
+    "name": "v21_floor_palace",
+    "assets": [
+      {
+        "asset_id": "v21_floor_palace",
+        "name": "九天仙闕",
+        "category": "floor",
+        "prompt": "Top down traversable RPG landscape, 天宮、金色仙橋、九重雲霄, broad empty playable center, ink watercolor Chinese xianxia environment, no characters, no text",
+        "master": 1024,
+        "runtime": 1024
+      }
+    ],
+    "floor": true
+  },
+  {
+    "name": "v21_floor_thunder",
+    "assets": [
+      {
+        "asset_id": "v21_floor_thunder",
+        "name": "萬雷劫域",
+        "category": "floor",
+        "prompt": "Top down traversable RPG landscape, 雷海、劫雲、焦黑山脈、天劫祭壇, broad empty playable center, ink watercolor Chinese xianxia environment, no characters, no text",
+        "master": 1024,
+        "runtime": 1024
+      }
+    ],
+    "floor": true
+  },
+  {
+    "name": "v21_floor_ascend",
+    "assets": [
+      {
+        "asset_id": "v21_floor_ascend",
+        "name": "飛昇仙域",
+        "category": "floor",
+        "prompt": "Top down traversable RPG landscape, 仙界入口、仙城、上古神殿, broad empty playable center, ink watercolor Chinese xianxia environment, no characters, no text",
+        "master": 1024,
+        "runtime": 1024
+      }
+    ],
+    "floor": true
+  }
+]
