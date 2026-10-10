@@ -1,0 +1,3 @@
+const {test}=require('node:test'),assert=require('node:assert/strict'),P=require('../src/systems/progression.js');
+test('mana grows with each realm and stage without dropping at breakthrough',()=>{let previous=0;for(let realm=0;realm<9;realm++){for(let stage=0;stage<(realm===0?9:realm===8?1:4);stage++){const max=P.manaMax(realm,stage);assert.ok(max>previous);previous=max;}}assert.equal(P.manaMax(0,0),75);assert.equal(P.manaMax(5,0),2800);assert.equal(P.manaMax(5,3),3472);assert.equal(P.manaMax(8,0),18000);});
+test('recovery preserves early game rates and scales for late realms',()=>{assert.equal(P.manaRecovery(75),3.5);assert.equal(P.manaRecovery(75,true),12);assert.equal(P.manaRecovery(2800),8.4);assert.equal(P.manaRecovery(2800,true),112);});

@@ -97,6 +97,8 @@ const Progression = (() => {
     return mp>=[0,14,25,20][which] && (which!==3 || hp<maxHp*.55);
   }
   function effectRadius(time) {return (1-Math.max(0,Math.min(1,time)))*65+20;}
-  return {worldWidth,worldHeight,landmarks,normalize,key,landmarkState,plant,harvest,income,establish,canAutoCast,effectRadius,canStore,addItem,takeItem,sellItem,buySupply,collectLandmark};
+  function manaMax(realm,stage=0){const bases=[75,180,360,720,1400,2800,5600,10000,18000];const r=Math.max(0,Math.min(8,Math.floor(Number(realm)||0))),s=Math.max(0,Math.min(r===0?8:r===8?0:3,Math.floor(Number(stage)||0)));return Math.round(bases[r]*(1+s*.08));}
+  function manaRecovery(max,meditating=false){return meditating?Math.max(12,max*.04):Math.max(3.5,max*.003);}
+  return {worldWidth,worldHeight,landmarks,normalize,key,landmarkState,plant,harvest,income,establish,canAutoCast,effectRadius,canStore,addItem,takeItem,sellItem,buySupply,collectLandmark,manaMax,manaRecovery};
 })();
 if(typeof module !== 'undefined') module.exports=Progression;
