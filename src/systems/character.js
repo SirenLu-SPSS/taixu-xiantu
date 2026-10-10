@@ -21,9 +21,11 @@ const CharacterSystem=(()=>{
  function sorted(p,cat,sort,catalog={}){return entries(p,cat,catalog).slice().sort((a,b)=>{const x=catalog[a.id]||{},y=catalog[b.id]||{};return (sort==='quality'?(y.rarity||0)-(x.rarity||0):sort==='type'?String(x.slot||x.type||'').localeCompare(String(y.slot||y.type||'')):0)||String(x.name||a.id).localeCompare(String(y.name||b.id),'zh-Hant')})}
  function owned(p,type,id){return type==='pet'?!!p.levelPet?.[id]:type==='treasure'&&p.ownedTreasures?.includes(id)}
  function acquire(p,type,meta){if(!meta||!['pet','treasure'].includes(type)||owned(p,type,meta.id))return false;const cat=type==='pet'?'pets':'treasures',currency=type==='pet'?'stones':'jade';if(entries(p,cat).length>=capacity(p,cat)||p[currency]<meta.cost||!Number.isSafeInteger(meta.cost)||meta.cost<0)return false;p[currency]-=meta.cost;if(type==='pet')p.levelPet[meta.id]=1;else p.ownedTreasures.push(meta.id);const key=type+':'+meta.id;if(!p.companions.order.includes(key))p.companions.order.push(key);return true}
- function primary(p,type,id){if(!['pet','treasure'].includes(type)||(id!==null&&!owned(p,type,id)))return false;p[type==='pet'?'activePet':'activeTreasure']=id;return true}
- function deployment(p,key){const [type,id]=key.split(':');if(!owned(p,type,id))return false;const s=p.companions;s.deployed=s.deployed.includes(key)?s.deployed.filter(k=>k!==key):[...s.deployed,key];return true}
- function upgrade(p,id){const level=p.levelPet?.[id];if(!Number.isInteger(level)||level<1||level>=20||p.stones<level*70)return false;p.stones-=level*70;p.levelPet[id]++;return true}
+ function companionTemplate(p,id){const item=p.economy?.instances?.[id];if(!item)return null;const data=typeof EconomyData!=='undefined'?EconomyData:require('../data/economy.js');return data.templates[item.baseId]||item.template;}
+ function canDeploy(p,id){const t=companionTemplate(p,id);return !t?.highRealm||p.realm>=t.realm;}
+ function primary(p,type,id){if(!['pet','treasure'].includes(type)||(id!==null&&(!owned(p,type,id)||!canDeploy(p,id))))return false;p[type==='pet'?'activePet':'activeTreasure']=id;return true}
+ function deployment(p,key){const [type,id]=key.split(':');if(!owned(p,type,id)||!canDeploy(p,id))return false;const s=p.companions;s.deployed=s.deployed.includes(key)?s.deployed.filter(k=>k!==key):[...s.deployed,key];return true}
+ function upgrade(p,id){const level=p.levelPet?.[id];if(!Number.isInteger(level)||level<1||level>=20||p.stones<level*70)return false;const req=companionTemplate(p,id)?.cultivationRequirement;if(req){const econ=typeof Economy!=='undefined'?Economy:require('./economy.js');if(!econ.take(p,req.material,req.count))return false;}p.stones-=level*70;p.levelPet[id]++;return true}
  return {slots,categories,category,normalize,entries,capacity,canStore,equip,unequip,sorted,acquire,primary,deployment,upgrade};
 })();
 if(typeof module!=='undefined')module.exports=CharacterSystem;
