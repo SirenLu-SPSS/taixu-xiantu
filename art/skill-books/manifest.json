@@ -1,0 +1,82 @@
+[
+  {
+    "kind": "book",
+    "category": "attack",
+    "generator": "ComfyUI",
+    "workflow": "art/skill-books/book-workflow.json",
+    "source": "art/skill-books/book-source.png",
+    "runtime": "src/assets/skill-books/book-attack.webp"
+  },
+  {
+    "kind": "book",
+    "category": "defense",
+    "generator": "ComfyUI",
+    "workflow": "art/skill-books/book-workflow.json",
+    "source": "art/skill-books/book-source.png",
+    "runtime": "src/assets/skill-books/book-defense.webp"
+  },
+  {
+    "kind": "book",
+    "category": "cultivation",
+    "generator": "ComfyUI",
+    "workflow": "art/skill-books/book-workflow.json",
+    "source": "art/skill-books/book-source.png",
+    "runtime": "src/assets/skill-books/book-cultivation.webp"
+  },
+  {
+    "kind": "book",
+    "category": "area",
+    "generator": "ComfyUI",
+    "workflow": "art/skill-books/book-workflow.json",
+    "source": "art/skill-books/book-source.png",
+    "runtime": "src/assets/skill-books/book-area.webp"
+  },
+  {
+    "kind": "book",
+    "category": "general",
+    "generator": "ComfyUI",
+    "workflow": "art/skill-books/book-workflow.json",
+    "source": "art/skill-books/book-source.png",
+    "runtime": "src/assets/skill-books/book-general.webp"
+  },
+  {
+    "kind": "fragment",
+    "category": "attack",
+    "generator": "ComfyUI",
+    "workflow": "art/skill-books/fragment-workflow.json",
+    "source": "art/skill-books/fragment-source.png",
+    "runtime": "src/assets/skill-books/fragment-attack.webp"
+  },
+  {
+    "kind": "fragment",
+    "category": "defense",
+    "generator": "ComfyUI",
+    "workflow": "art/skill-books/fragment-workflow.json",
+    "source": "art/skill-books/fragment-source.png",
+    "runtime": "src/assets/skill-books/fragment-defense.webp"
+  },
+  {
+    "kind": "fragment",
+    "category": "cultivation",
+    "generator": "ComfyUI",
+    "workflow": "art/skill-books/fragment-workflow.json",
+    "source": "art/skill-books/fragment-source.png",
+    "runtime": "src/assets/skill-books/fragment-cultivation.webp"
+  },
+  {
+    "kind": "fragment",
+    "category": "area",
+    "generator": "ComfyUI",
+    "workflow": "art/skill-books/fragment-workflow.json",
+    "source": "art/skill-books/fragment-source.png",
+    "runtime": "src/assets/skill-books/fragment-area.webp"
+  },
+  {
+    "kind": "fragment",
+    "category": "general",
+    "generator": "ComfyUI",
+    "workflow": "art/skill-books/fragment-workflow.json",
+    "source": "art/skill-books/fragment-source.png",
+    "runtime": "src/assets/skill-books/fragment-general.webp"
+  }
+]
