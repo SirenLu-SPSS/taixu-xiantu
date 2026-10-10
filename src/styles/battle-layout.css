@@ -19,3 +19,7 @@
 @media(max-width:600px){#game .world.compact-battle .battle-controls>.battle-hud{gap:6px}#game .world.compact-battle .battle-controls>.battle-hud .vital-label,#game .world.compact-battle .battle-controls>.battle-hud .vital-label b{font-size:8px}.world.compact-battle .battle-controls{width:calc(100% - 48px);left:6px;transform:none}.battle-message-button{right:5px;bottom:8px;width:32px;height:32px}.battle-message-panel{bottom:48px;max-height:52%}.world.compact-battle .v21-hotbar img{max-width:100%;object-fit:contain}}
 
 .battle-message-button.manage-messages{position:fixed;right:12px;bottom:max(12px,env(safe-area-inset-bottom));z-index:40}.battle-message-panel.manage-messages{position:fixed;right:12px;bottom:58px;width:min(300px,calc(100vw - 24px));max-height:min(55vh,420px);z-index:41}
+
+.trib-craft{margin-top:12px;border-top:1px solid #b69b6655;padding-top:10px}.trib-craft label{display:block}.trib-craft input{display:block;width:100%;box-sizing:border-box;margin-top:6px;padding:9px;background:#102c32;color:#f2deb2;border:1px solid #a88e60;border-radius:6px}.trib-craft p{font-size:12px;line-height:1.6;overflow-wrap:anywhere}.trib-craft .btn{width:100%}
+
+.trib-slots>.trib-slot{min-width:0;padding:12px;border:1px solid #9c9065;border-radius:12px;background:#0d2528}.trib-craft label{padding:0;border:0;border-radius:0;background:none}@media(max-width:420px){.trib-slots>.trib-slot{padding:8px;font-size:13px}}

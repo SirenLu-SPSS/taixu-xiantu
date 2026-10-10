@@ -20,6 +20,8 @@ const BreakthroughSystem=(()=>{
   p.breakthroughHistory=[...(p.breakthroughHistory||[]),result].slice(-30);return result;
  }
  function craft(p,canStore){const c=config.recipe;if(count(p,'celestialPill')>=Number.MAX_SAFE_INTEGER)return {ok:false,reason:'full'};if(p.stones<c.stones||count(p,'herb')<c.herb||count(p,'trib')<c.trib)return {ok:false,reason:'materials'};if(!canStore(p,'celestialPill'))return {ok:false,reason:'full'};take(p,'herb',c.herb);take(p,'trib',c.trib);p.herbs=count(p,'herb');p.stones-=c.stones;const e=p.inventory.find(x=>x.id==='celestialPill');if(e)e.count++;else p.inventory.push({id:'celestialPill',count:1});return {ok:true};}
- return {config,quote,attempt,craft};
+ function craftQuote(id,n=1){const recipe=id==='trib'?{herb:5,stones:80}:id==='celestialPill'?config.recipe:null;if(!recipe||!Number.isSafeInteger(n)||n<1||n>9999)return null;return Object.fromEntries(Object.entries(recipe).map(([key,value])=>[key,value*n]));}
+ function craftBatch(p,id,n,canStore){const cost=craftQuote(id,n);if(!cost)return {ok:false,reason:'quantity'};if(p.stones<cost.stones||Object.entries(cost).some(([key,value])=>key!=='stones'&&count(p,key)<value))return {ok:false,reason:'materials'};if(count(p,id)>Number.MAX_SAFE_INTEGER-n||!canStore(p,id))return {ok:false,reason:'full'};for(const [key,value] of Object.entries(cost))if(key!=='stones')take(p,key,value);p.stones-=cost.stones;p.herbs=count(p,'herb');const item=p.inventory.find(x=>x.id===id);if(item)item.count+=n;else p.inventory.push({id,count:n});return {ok:true,cost,quantity:n};}
+ return {config,quote,attempt,craft,craftQuote,craftBatch};
 })();
 if(typeof module!=='undefined')module.exports=BreakthroughSystem;
