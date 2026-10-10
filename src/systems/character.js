@@ -2,9 +2,9 @@
 // Authoritative inventory remains inventory / ownedTreasures / levelPet.
 const CharacterSystem=(()=>{
  const slots={head:'頭冠',earrings:'耳環',inner:'內衣',weapon:'武器',legs:'護腿',necklace:'項鍊',bracelet:'手環',robe:'外衣',ring:'戒指',boots:'鞋靴',belt:'腰帶',charm:'護符'};
- const categories={equipment:'裝備',treasures:'法寶',pets:'靈寵',consumables:'丹藥',materials:'材料'};
+ const categories={equipment:'裝備',treasures:'法寶',pets:'靈寵',consumables:'丹藥',materials:'材料',books:'技能書'};
  const gear=['jadeSword','starRobe','sword','robe','crown','boots','ring','earrings','inner','legs','necklace','bracelet'];
- function category(id,catalog={}){const type=catalog[id]?.type;return type==='equip'||gear.includes(id)?'equipment':type==='pill'||['pill','heal','trib'].includes(id)?'consumables':'materials'}
+ function category(id,catalog={}){const type=catalog[id]?.type;return /^v21_(book|fragment)_\d+$/.test(id)||['book','fragment'].includes(type)?'books':type==='equip'||gear.includes(id)?'equipment':type==='pill'||['pill','heal','trib'].includes(id)?'consumables':'materials'}
  function normalize(p){p.equipment={...Object.fromEntries(Object.keys(slots).map(k=>[k,null])),...p.equipment};p.bag={...p.bag,version:1,capacities:{...p.bag?.capacities,...Object.fromEntries(Object.keys(categories).map(k=>[k,Math.max(100,Number(p.bag?.capacities?.[k])||100)]))}};return p}
  function entries(p,cat,catalog={}){if(cat==='treasures')return (p.ownedTreasures||[]).map(id=>({id,count:1}));if(cat==='pets')return Object.entries(p.levelPet||{}).filter(([,lv])=>lv>0).map(([id])=>({id,count:1}));return p.inventory.filter(i=>category(i.id,catalog)===cat)}
  function capacity(p,cat){return Math.max(100,p.bag?.capacities?.[cat]||100)}

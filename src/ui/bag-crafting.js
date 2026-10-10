@@ -1,0 +1,27 @@
+'use strict';
+for(const [label,kind] of [['殘卷一鍵合成','books'],['寶石一鍵合成','gems']]){const b=document.createElement('button');b.className='btn line';b.textContent=label;b.onclick=()=>showBagCrafting(kind);document.querySelector('.character-bag-heading').append(b);}
+function showBagCrafting(kind,target=4){
+ const book=kind==='books',plan=BagCrafting.plan(p,kind,target),name=id=>escapeHTML(ITEMS[id]?.name||EconomyData.templates[id]?.name||id);
+ modal(book?'技能殘卷 · 一鍵合成':'寶石 · 一鍵合成',(book?'<p>同種殘卷 10 份 → 對應完整技能書 1 本，不混合不同種類。技能書與殘卷共用獨立 100 格；鎖定物品保留。</p>':'<label>合成目標階級<select id="bagGemTarget" aria-label="寶石合成目標階級">'+[4,5,6].map(n=>'<option value="'+n+'" '+(target===n?'selected':'')+'>'+n+' 階</option>').join('')+'</select></label><p>使用未鎖定的低階寶石，合成所選階級。同類同階 3 合 1，每次消耗 50 × 原階級靈石；高於目標階級不變。依現有靈石計算可完成的數量，不足以完成目標階級的低階寶石保留。</p>')+'<div class="bag-crafting-preview">'+(plan.ok?'<h3>預計獲得</h3>'+plan.made.map(e=>'<p>'+name(e.id)+' ×'+e.count+'</p>').join('')+'<p>消耗靈石 '+fmt(plan.cost)+' ／ 持有 '+fmt(p.stones)+'</p><details><summary>各階合成明細（含中間材料）</summary>'+plan.steps.map(e=>'<p>'+name(e.id)+' ×'+e.count+'</p>').join('')+'</details>':'<p role="status">'+(plan.reason==='full'?'合成後欄位不足，請整理對應欄位再試。':'目前沒有足夠的未鎖定材料或靈石可合成。')+'</p>')+'</div>',[{text:'取消'},{text:'確認一鍵合成',style:'gold',fn:()=>{
+  const fresh=BagCrafting.plan(p,kind,target);if(JSON.stringify(fresh)!==JSON.stringify(plan))return showBagCrafting(kind,target);
+  const result=BagCrafting.craft(p,kind,target);if(!result.ok)return showBagCrafting(kind,target);economyHydrate();save(true);renderAll();modal('合成完成','<p>消耗 '+fmt(result.cost)+' 靈石，獲得：</p>'+result.made.map(e=>'<p>'+name(e.id)+' ×'+e.count+'</p>').join(''),[{text:'繼續合成',fn:()=>showBagCrafting(kind,target)},{text:'完成'}]);
+ }}]);$('modalActions').lastElementChild.disabled=!plan.ok;if(!book)$('bagGemTarget').onchange=()=>showBagCrafting(kind,Number($('bagGemTarget').value));
+}
+const bagCraftingShowItem=showItem;showItem=function(id){if(ITEMS[id]?.type!=='fragment')return bagCraftingShowItem(id);modal(ITEMS[id].name,'<img class="character-detail-icon" src="'+characterIcon(id)+'" alt=""><p>'+escapeHTML(ITEMS[id].desc)+'</p><p>持有 '+count(id)+' 份 · 每 10 份合成 1 本。</p>',[{text:'關閉'},{text:'殘卷一鍵合成',style:'gold',fn:()=>showBagCrafting('books')}]);};
+const craftingGemItem=economyItem;economyItem=function(id){craftingGemItem(id);if(EconomyData.templates[id]?.type==='gem'){const b=document.createElement('button');b.className='btn gold';b.textContent='寶石一鍵合成';b.onclick=()=>showBagCrafting('gems');$('modalActions').append(b);}};
+const fragmentLootBase=gainLoot;gainLoot=function(enemy){fragmentLootBase(enemy);const reward=BagCrafting.reward(p,enemy);if(reward.ok&&reward.count){save(true);renderAll();note('獲得 '+ITEMS[reward.id].name+' ×'+reward.count+' · 已保存於技能書欄／未領取匣');}};
+economyMailbox=function(){
+ const n=Economy.recover(p);economyHydrate();save(true);renderAll();
+ const capacity=['equip','treasure','pet'].map(type=>{const cat=type==='equip'?'equipment':type==='pet'?'pets':'treasures';return CharacterSystem.categories[cat]+' '+Economy.stored(p,type)+' / '+CharacterSystem.capacity(p,cat)+' 格';}).join(' · ');
+ modal('未領取匣','<p role="status">本次取回 '+n+' 份；尚有 '+p.economy.mail.length+' 份。</p><p>'+capacity+'</p><p>欄位滿格時可直接裝備或設為主選，換下的物品會保留。境界不足的物品也會完整保留。</p><div class="bag-mail-list">'+p.economy.mail.map(entry=>{
+  const id=typeof entry==='string'?entry:entry.id,it=p.economy.instances[id],t=EconomyData.templates[it?.baseId||id]||it?.template||ITEMS[id]||PETS.find(t=>t.id===id)||TREASURES.find(t=>t.id===id),cat=entry?.companion==='pet'?'pets':entry?.companion==='treasure'?'treasures':t?.type==='pet'?'pets':t?.type==='treasure'?'treasures':t?.type==='equip'?'equipment':CharacterSystem.category(id,ITEMS),direct=it&&['equip','treasure','pet'].includes(t?.type)||!!entry?.companion;
+  return '<div class="bag-mail-entry"><p>'+escapeHTML(t?.name||id)+' ×'+(typeof entry==='string'?1:entry.count||1)+(it?' · '+characterQuality(it.quality):'')+'</p><small>'+CharacterSystem.categories[cat]+'欄空間不足'+(direct?' · 需求 '+REALMS[it?.realm||t?.realm||0].name:'')+'</small>'+(direct?'<button class="btn line" data-mail-equip="'+id+'" '+(p.realm<(it?.realm||t?.realm||0)?'disabled':'')+'>'+(t.type==='equip'?'直接裝備':t.type==='pet'||entry?.companion==='pet'?'設為主靈寵':'設為本命法寶')+'</button>':'')+'</div>';
+ }).join('')+'</div>',[{text:'關閉'},{text:'整理背包',fn:()=>{closeModal();openCharacter('inventory')}},{text:'再次領取',fn:()=>economyMailbox()}]);
+ document.querySelectorAll('[data-mail-equip]').forEach(b=>b.onclick=()=>{
+  const id=b.dataset.mailEquip,receipt=p.economy.mail.find(e=>e?.id===id),it=p.economy.instances[id],catalog={...ITEMS,...Object.fromEntries([...PETS,...TREASURES].map(m=>[m.id,m]))},t=it?(EconomyData.templates[it.baseId]||it.template):catalog[id];
+  modal('確認配置 · '+t.name,(it?economyDescription(it):'<p>原持有伙伴 · 等級 '+(receipt?.level||1)+'</p>')+'<p>將直接替換目前裝備／主選；換下物品若無空間，會保留於未領取匣。</p><p id="mailEquipStatus" role="status"></p>',[{text:'取消',fn:()=>economyMailbox()},{text:'確認配置',style:'gold',fn:()=>{
+   const result=LegendAlerts.equip(p,id,catalog);if(!result.ok){$('mailEquipStatus').textContent=result.reason==='realm'?'境界不足，物品已保留。':'物品狀態已更新，請重新開啟未領取匣。';return;}
+   economyHydrate();p.hp=Math.min(p.hp,stats().hp);p.mp=Math.min(p.mp,stats().mp);save(true);renderAll();modal('配置成功','<p>'+escapeHTML(t.name)+' 已配置，換下物品已保留。</p>',[{text:'返回未領取匣',fn:()=>economyMailbox()},{text:'完成'}]);
+  }}]);
+ });
+};
