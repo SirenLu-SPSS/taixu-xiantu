@@ -29,3 +29,5 @@ html.character-open{overflow:hidden}.character-header{position:sticky;top:0;z-in
 
 .bag-mail-entry{border-bottom:1px solid #bd9c5955;padding:12px 0;display:flex;flex-wrap:wrap;align-items:center;gap:10px}.bag-mail-entry p{flex:1 1 100%;margin:0}.bag-mail-entry small{flex:1 1 180px;color:#a3bdb5}.bag-mail-entry button,#bagGemTarget{min-height:44px}#bagGemTarget{display:block;margin:10px 0;background:#0e2e32;color:#dcebe2;padding:10px;border:1px solid #8e9d8c;border-radius:8px}.bag-crafting-preview{padding:12px;border:1px solid #bd9c5955;border-radius:10px}
 @media(max-width:650px){.character-categories{grid-template-columns:repeat(3,minmax(0,1fr))}}
+
+.character-bag-heading>[hidden]{display:none!important}
