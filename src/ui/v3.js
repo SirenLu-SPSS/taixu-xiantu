@@ -36,7 +36,7 @@ renderAbode=function(){const now=Date.now(),estate=p.estate;const pending=estate
 function finishEstate(message){note(message);renderAll();save(true)}
 setInterval(()=>{if(!p||$('game').classList.contains('hidden')||tab!=='abode'||activeView!=='manage')return;const now=Date.now();document.querySelectorAll('[data-plot-clock]').forEach(el=>{const i=Number(el.dataset.plotClock),plot=p.estate.plots[i];if(!plot)return;const ready=plot.readyAt<=now;el.textContent=ready?'靈草已成熟':Math.ceil((plot.readyAt-now)/1000)+' 秒後成熟';if(ready){const button=document.querySelector(`[data-plot="${i}"]`);button.disabled=false;button.textContent='收穫 · '+(4+p.estate.sect)+' 株';button.classList.add('gold');el.parentElement.classList.add('ripe')}});const amount=p.estate.sect*Math.floor(Math.min(14400000,Math.max(0,now-p.estate.incomeAt))/60000)*3;$('sectIncome').textContent='領取收益 · '+amount+' 靈石';$('sectIncome').disabled=!amount;},1000);
 $('journeyBack').onclick=()=>setView('explore');
-window.addEventListener('keydown',event=>{if(event.key.toLowerCase()==='e' && p && event.target.tagName!=='INPUT' && $('modal').classList.contains('hidden'))interactPoint()});
+window.addEventListener('keydown',event=>{if(event.key.toLowerCase()==='e' && !event.repeat && p && !['INPUT','SELECT','TEXTAREA'].includes(event.target.tagName) && !event.target.isContentEditable && $('modal').classList.contains('hidden'))interactPoint()});
 document.querySelectorAll('#nav .ni').forEach((icon,i)=>icon.textContent=['☯','匣','劍','訣','靈','寶','山','府'][i]);
 $('instructions').onclick=()=>modal('山海行旅 · 修真指引','<p>在「山海探索」點擊地圖即可行走，桌面也可使用方向鍵，打開山海圖卷可前往靈泉、靈草坡、礦脈與古修遺跡。靠近地點後按互動，桌面也可按 E。</p><p>可開啟自動戰鬥與自動打坐；真元不足時不會反覆嘗試施法，修為滿值後仍會恢復真元。滿修為時可衝擊境界。</p><p>在「洞天養成」管理裝備、技能、靈寵與洞府。靈田需播種、等待成熟再收穫；山門可以產出靈石，請手動領取收益。</p><p>角色進度每 15 秒存於本機瀏覽器。換裝置前，請在設定匯出 JSON 存檔。</p>',[{text:'踏上仙途',style:'gold'}]);
 const originalSettings=$('settings').onclick;
@@ -63,7 +63,24 @@ const gatherJourney=updateJourney;
 updateJourney=function(){gatherJourney();if(!p)return;const button=$('autoGather');button.textContent='自動採集：'+(p.autoGather?'開':'關');button.classList.toggle('enabled',p.autoGather);button.setAttribute('aria-pressed',String(p.autoGather));if(destination?.automatic)$('journeyHint').textContent='自動採集 · 前往 '+destination.name;else if(p.autoGather&&!destination&&!Progression.canStore(p,'herb')&&!Progression.canStore(p,'wood'))$('journeyHint').textContent='背包已滿 · 出售或使用物品後繼續採集';};
 $('autoGather').onclick=()=>{p.autoGather=!p.autoGather;if(!p.autoGather&&destination?.automatic)destination=null;gatherCheckAt=0;note('自動採集已'+(p.autoGather?'開啟 · 材料放入背包':'關閉'));updateJourney();save(true)};
 const gatherStep=stepExploration;
-stepExploration=function(dt){if(activeView!=='explore'&&destination?.automatic)destination=null;gatherStep(dt);if(!p?.autoGather||activeView!=='explore')return;const now=performance.now(),moving=moveTouch||['w','a','s','d','arrowup','arrowdown','arrowleft','arrowright'].some(key=>keys.has(key));if(moving){explorationGraceUntil=now+8000;return;}if(now<gatherCheckAt)return;gatherCheckAt=now+700;const point=nearestPoint();if(point&&Progression.landmarkState(p,mapIndex,point).ready){const material=point.kind==='herbs'?'herb':point.kind==='ore'?'wood':null;if(!material||Progression.canStore(p,material)){interactPoint();if(destination?.automatic&&destination.id===point.id)destination=null;return;}}if(destination||now<explorationGraceUntil)return;const available=currentPoints().filter(point=>Progression.landmarkState(p,mapIndex,point).ready&&(point.kind!=='herbs'||Progression.canStore(p,'herb'))&&(point.kind!=='ore'||Progression.canStore(p,'wood')));available.sort((a,b)=>Math.hypot(a.x-p.position.x,a.y-p.position.y)-Math.hypot(b.x-p.position.x,b.y-p.position.y));const spring=available.find(point=>point.kind==='spring'),vitals=stats(),next=spring&&(p.hp<vitals.hp*.6||p.mp<vitals.mp*.25)?spring:available[0];if(next){destination={...next,automatic:true};updateJourney();}};
+function automaticGatherPoint(point){return !!point&&['spring','herbs','ore','ruins'].includes(point.kind)}
+stepExploration=function(dt){
+ if(!$('modal').classList.contains('hidden'))return;
+ if(activeView!=='explore'&&destination?.automatic)destination=null;
+ if(destination?.automatic&&!automaticGatherPoint(destination))destination=null;
+ gatherStep(dt);
+ if(!p?.autoGather||activeView!=='explore')return;
+ const now=performance.now(),moving=moveTouch||['w','a','s','d','arrowup','arrowdown','arrowleft','arrowright'].some(key=>keys.has(key));
+ if(moving){explorationGraceUntil=now+8000;return;}
+ if(now<gatherCheckAt)return;gatherCheckAt=now+700;
+ const point=nearestPoint();
+ if(automaticGatherPoint(point)&&Progression.landmarkState(p,mapIndex,point).ready){const material=point.kind==='herbs'?'herb':point.kind==='ore'?'wood':null;if(!material||Progression.canStore(p,material)){interactPoint();if(destination?.automatic&&destination.id===point.id)destination=null;return;}}
+ if(destination||now<explorationGraceUntil)return;
+ const available=currentPoints().filter(point=>automaticGatherPoint(point)&&Progression.landmarkState(p,mapIndex,point).ready&&(point.kind!=='herbs'||Progression.canStore(p,'herb'))&&(point.kind!=='ore'||Progression.canStore(p,'wood')));
+ available.sort((a,b)=>Math.hypot(a.x-p.position.x,a.y-p.position.y)-Math.hypot(b.x-p.position.x,b.y-p.position.y));
+ const spring=available.find(point=>point.kind==='spring'),vitals=stats(),next=spring&&(p.hp<vitals.hp*.6||p.mp<vitals.mp*.25)?spring:available[0];
+ if(next){destination={...next,automatic:true};updateJourney();}
+};
 
 // Selling uses one quantity shared by keyboard entry, touch slider and max button.
 const quantityShowItem=showItem;
