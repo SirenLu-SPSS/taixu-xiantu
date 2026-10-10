@@ -48,3 +48,8 @@ h1,h2,h3,.brand,.panel-title{font-family:'Noto Serif TC','Microsoft JhengHei',se
 .world .companion-dock{bottom:70px;display:flex;flex-direction:column;width:93px}
 .companion-dock .companion-buttons{grid-template-columns:repeat(2,44px);max-height:none;min-height:0;overflow-y:auto;overscroll-behavior:contain;touch-action:pan-y;align-content:start}
 .world .companion-buttons button{width:44px;min-height:44px;touch-action:manipulation}
+/* Keep every navigation icon in its own column, including economy feature artwork. */
+#nav button{display:grid;grid-template-columns:52px minmax(0,1fr);align-items:center;column-gap:12px;min-height:76px;padding:10px;text-align:left;font-size:14px;line-height:1.4;white-space:normal}
+#nav button .ni{display:grid;place-items:center;width:52px;height:52px;min-width:52px;margin:0;overflow:hidden;font-size:30px}
+#nav button .ni img{display:block;width:52px;height:52px;max-width:100%;max-height:100%;object-fit:contain;box-sizing:border-box;pointer-events:none}
+@media(max-width:760px){#nav button{grid-template-columns:44px minmax(0,1fr);min-height:64px;font-size:13px;column-gap:10px}#nav button .ni,#nav button .ni img{width:44px;height:44px;min-width:44px}}
