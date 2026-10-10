@@ -1,0 +1,3 @@
+const {test}=require('node:test'),a=require('node:assert/strict'),B=require('../src/systems/battle-notices.js');
+test('repeated combat notices coalesce and retain the newest timestamp',()=>{B.read();B.add('妖獸不在施法範圍',1);B.add('妖獸不在施法範圍',2);const item=B.list()[0];a.equal(item.count,2);a.equal(item.at,2);a.equal(B.unread(),2);a.equal(B.read()[0].text,'妖獸不在施法範圍');a.equal(B.unread(),0);a.equal(B.list()[0].count,2)});
+test('message history is bounded and returned snapshots cannot mutate it',()=>{for(let i=0;i<100;i++)B.add('訊息 '+i,i);a.equal(B.list().length,30);a.equal(B.unread(),99);const copy=B.read();copy[0].text='changed';a.equal(B.list()[0].text,'訊息 99');a.equal(B.unread(),0)});
