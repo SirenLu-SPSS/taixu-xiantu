@@ -5,6 +5,6 @@
 
  function close(){panel.classList.add('hidden');button.setAttribute('aria-expanded','false');}
  button.onclick=()=>{if(!panel.classList.contains('hidden'))return close();BattleNotices.read();panel.classList.remove('hidden');button.setAttribute('aria-expanded','true');refresh();};document.addEventListener('pointerdown',e=>{if(!panel.classList.contains('hidden')&&!panel.contains(e.target)&&!button.contains(e.target))close();},true);document.addEventListener('keydown',e=>{if(e.key==='Escape'&&!panel.classList.contains('hidden')){close();button.focus();}});
- const oldNote=note;note=function(text){BattleNotices.add(text);if(activeView==='manage')oldNote(text);else{clearTimeout(toastTimer);$('toast').classList.add('hidden');}if(!panel.classList.contains('hidden'))BattleNotices.read();refresh();};
- const oldView=setView;setView=function(view){oldView(view);if(view==='explore')$('toast').classList.add('hidden');};
+ note=function(text){BattleNotices.add(text);clearTimeout(toastTimer);$('toast').classList.add('hidden');if(!panel.classList.contains('hidden'))BattleNotices.read();refresh();};
+ const oldView=setView;setView=function(view){oldView(view);const manage=view==='manage';document.querySelector(manage?'.main':'.world').append(button,panel);for(const el of [button,panel]){if(manage)el.classList.add('manage-messages');else el.classList.remove('manage-messages');}clearTimeout(toastTimer);$('toast').classList.add('hidden');close();};
 })();
