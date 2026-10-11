@@ -1,0 +1,554 @@
+{
+  "version": "2.2.0",
+  "generator": "ComfyUI Qwen Image 2.1",
+  "icons": [
+    {
+      "asset_id": "treasure_art_1",
+      "version": 1,
+      "master": "treasure_art_1-256.png",
+      "runtime": "treasure_art_1-64.png",
+      "sha256": "a88bd3c6a8f9b3a2e4a2cdeb6439aa4f593a334ada5166f557bb8ab9e22cf5cf"
+    },
+    {
+      "asset_id": "treasure_art_2",
+      "version": 1,
+      "master": "treasure_art_2-256.png",
+      "runtime": "treasure_art_2-64.png",
+      "sha256": "47fa3b653df8f6581e67de019565ad3021ba919e6388b3abbb66e746bf020ff1"
+    },
+    {
+      "asset_id": "treasure_art_3",
+      "version": 1,
+      "master": "treasure_art_3-256.png",
+      "runtime": "treasure_art_3-64.png",
+      "sha256": "bd5825c61b7ebbb7ffa62de34763c423e4f87b4449ed98223be63edf10464084"
+    },
+    {
+      "asset_id": "treasure_art_4",
+      "version": 1,
+      "master": "treasure_art_4-256.png",
+      "runtime": "treasure_art_4-64.png",
+      "sha256": "bc4f2b23edb04fd4358bf8a41aeaa85ce522cc9e3c3a0347974c388d5f275dba"
+    },
+    {
+      "asset_id": "treasure_art_5",
+      "version": 1,
+      "master": "treasure_art_5-256.png",
+      "runtime": "treasure_art_5-64.png",
+      "sha256": "6aaceeae4f5c5cea7a845ec3a2eb0abe7ed781b4347366c736c6e6d3b2739a35"
+    },
+    {
+      "asset_id": "treasure_art_6",
+      "version": 1,
+      "master": "treasure_art_6-256.png",
+      "runtime": "treasure_art_6-64.png",
+      "sha256": "4d9e4a54f76a3e3ddcc7d8debc362dd41aaa3df6b080f8678824a3475836fb9d"
+    },
+    {
+      "asset_id": "treasure_art_7",
+      "version": 1,
+      "master": "treasure_art_7-256.png",
+      "runtime": "treasure_art_7-64.png",
+      "sha256": "65ed5beb9ad5500f50e0ccf9ae580d41d323f8ba1c9bc39a86057b3597fe892f"
+    },
+    {
+      "asset_id": "treasure_art_8",
+      "version": 1,
+      "master": "treasure_art_8-256.png",
+      "runtime": "treasure_art_8-64.png",
+      "sha256": "e1ed8aa2bb7e83a9f3e763841fcd044edf1e29a1b5774b0c233aeaffa7bb497c"
+    },
+    {
+      "asset_id": "treasure_art_9",
+      "version": 1,
+      "master": "treasure_art_9-256.png",
+      "runtime": "treasure_art_9-64.png",
+      "sha256": "d7cb0a6b1b157a605d74f4478892cd1a07008515541392192c29f833438ef83d"
+    },
+    {
+      "asset_id": "treasure_art_10",
+      "version": 1,
+      "master": "treasure_art_10-256.png",
+      "runtime": "treasure_art_10-64.png",
+      "sha256": "06f55e2dec17d96bca03a06e2d5b94b327b44f9188db3133b37e82b790ae87a2"
+    },
+    {
+      "asset_id": "treasure_art_11",
+      "version": 1,
+      "master": "treasure_art_11-256.png",
+      "runtime": "treasure_art_11-64.png",
+      "sha256": "712101910129a296cf5f2e0bdad0a17250fe1a34303832a63a2992eb89ce691e"
+    },
+    {
+      "asset_id": "treasure_art_12",
+      "version": 1,
+      "master": "treasure_art_12-256.png",
+      "runtime": "treasure_art_12-64.png",
+      "sha256": "7b560c9d00cb19ee1594dbcc5644b8082f4603310b88b51e5cd2e792a8ba4088"
+    },
+    {
+      "asset_id": "treasure_art_13",
+      "version": 1,
+      "master": "treasure_art_13-256.png",
+      "runtime": "treasure_art_13-64.png",
+      "sha256": "d1a02058a4aafda2c1ed9a9f9e27e949fbbb1dd1a39078288f9689caedb6d200"
+    },
+    {
+      "asset_id": "treasure_art_14",
+      "version": 1,
+      "master": "treasure_art_14-256.png",
+      "runtime": "treasure_art_14-64.png",
+      "sha256": "ee9421bf56a2c8a6742d5c77409fe8069d76c529a9663a12692ee5cc451144f0"
+    },
+    {
+      "asset_id": "treasure_art_15",
+      "version": 1,
+      "master": "treasure_art_15-256.png",
+      "runtime": "treasure_art_15-64.png",
+      "sha256": "3f713d3dcf0793be714a882f4cf2b5b214fce609d1560339790aa5687debabe9"
+    },
+    {
+      "asset_id": "treasure_art_16",
+      "version": 1,
+      "master": "treasure_art_16-256.png",
+      "runtime": "treasure_art_16-64.png",
+      "sha256": "05f70ca7d80203ebf3ef8de46159823830b5298810448fe448628f562f476f4f"
+    },
+    {
+      "asset_id": "treasure_art_17",
+      "version": 1,
+      "master": "treasure_art_17-256.png",
+      "runtime": "treasure_art_17-64.png",
+      "sha256": "5a5ef588d99c26c70c30d095ca8e3fd6f91c31b710ce8f9a9adbff47f7cd4ff8"
+    },
+    {
+      "asset_id": "treasure_art_18",
+      "version": 1,
+      "master": "treasure_art_18-256.png",
+      "runtime": "treasure_art_18-64.png",
+      "sha256": "083ab6583f8f8d2914cbe048862d9151cf76a2d107f0412bf9faebb660f5f62c"
+    },
+    {
+      "asset_id": "treasure_art_19",
+      "version": 1,
+      "master": "treasure_art_19-256.png",
+      "runtime": "treasure_art_19-64.png",
+      "sha256": "4f8622829d543559b375f13f0667988ed8630b2bd7859b8c5d0794ae0290f377"
+    },
+    {
+      "asset_id": "treasure_art_20",
+      "version": 1,
+      "master": "treasure_art_20-256.png",
+      "runtime": "treasure_art_20-64.png",
+      "sha256": "488c45f4618545f741c02d0a4f51e7fef7d3e86bc83c0d57e597376067ccb321"
+    },
+    {
+      "asset_id": "treasure_art_21",
+      "version": 1,
+      "master": "treasure_art_21-256.png",
+      "runtime": "treasure_art_21-64.png",
+      "sha256": "a804150dd02c22da329b287214cdb0c0aed2200171dc7bf70f60ab1207e7830c"
+    },
+    {
+      "asset_id": "treasure_art_22",
+      "version": 1,
+      "master": "treasure_art_22-256.png",
+      "runtime": "treasure_art_22-64.png",
+      "sha256": "c8c06cae32c1e3c390ce8f42395383b750abc8ecda8e9c1068f70770a8210d68"
+    },
+    {
+      "asset_id": "treasure_art_23",
+      "version": 1,
+      "master": "treasure_art_23-256.png",
+      "runtime": "treasure_art_23-64.png",
+      "sha256": "40e79f0ac95e9e473bd9bf60f3c6641fd6677b357227baa0d3ff1f9b813a7895"
+    },
+    {
+      "asset_id": "treasure_art_24",
+      "version": 1,
+      "master": "treasure_art_24-256.png",
+      "runtime": "treasure_art_24-64.png",
+      "sha256": "472d4f99f2879def487150eb6267fd6309d33ee76a9e433c00403c8edb9d26c2"
+    },
+    {
+      "asset_id": "treasure_art_25",
+      "version": 1,
+      "master": "treasure_art_25-256.png",
+      "runtime": "treasure_art_25-64.png",
+      "sha256": "ce30731623d7b83ce5cf1bb7471f5ac25729268b508a60806986d26740a84410"
+    },
+    {
+      "asset_id": "treasure_art_26",
+      "version": 1,
+      "master": "treasure_art_26-256.png",
+      "runtime": "treasure_art_26-64.png",
+      "sha256": "a2afa63c30a3806219b3b80b5270eca2a0192d8fa7aa05e46651c5cbe5548d9e"
+    },
+    {
+      "asset_id": "treasure_art_27",
+      "version": 1,
+      "master": "treasure_art_27-256.png",
+      "runtime": "treasure_art_27-64.png",
+      "sha256": "7309bc74dc8a03476d10bb50d616daa0806770c041954392357d24d9f840e4ea"
+    },
+    {
+      "asset_id": "treasure_art_28",
+      "version": 1,
+      "master": "treasure_art_28-256.png",
+      "runtime": "treasure_art_28-64.png",
+      "sha256": "c8afd81e02ca583c888be97889514878aafc964cdba89cec2c8f100b363de2fe"
+    },
+    {
+      "asset_id": "treasure_art_29",
+      "version": 1,
+      "master": "treasure_art_29-256.png",
+      "runtime": "treasure_art_29-64.png",
+      "sha256": "e6bd225109db0f7649e888ccf7ebe4cb8638749b3a80dcfde442eefc50398e2a"
+    },
+    {
+      "asset_id": "treasure_art_30",
+      "version": 1,
+      "master": "treasure_art_30-256.png",
+      "runtime": "treasure_art_30-64.png",
+      "sha256": "5e1fa4e0a66baff710d7c50a4ce0604b76dc828ff8da4b4dd81578eb2b8b9974"
+    },
+    {
+      "asset_id": "treasure_art_31",
+      "version": 1,
+      "master": "treasure_art_31-256.png",
+      "runtime": "treasure_art_31-64.png",
+      "sha256": "efafe733047d566f6b3b23b56477a3507b0aa049ef670a2cd85da20c24fe2420"
+    },
+    {
+      "asset_id": "treasure_art_32",
+      "version": 1,
+      "master": "treasure_art_32-256.png",
+      "runtime": "treasure_art_32-64.png",
+      "sha256": "e13f80475c879593eedfd905f02f31b3013f221d31188e91ec80a2a95679e115"
+    },
+    {
+      "asset_id": "treasure_art_33",
+      "version": 1,
+      "master": "treasure_art_33-256.png",
+      "runtime": "treasure_art_33-64.png",
+      "sha256": "c7048751c95141909aa075647c17c4bfa6c1f57a852db470bbd91b56f03dfc34"
+    },
+    {
+      "asset_id": "treasure_art_34",
+      "version": 1,
+      "master": "treasure_art_34-256.png",
+      "runtime": "treasure_art_34-64.png",
+      "sha256": "08b0705026d6607bb07d4d9592e9b5ace330b5151080ba6e4fe96b837d6b01ec"
+    },
+    {
+      "asset_id": "treasure_art_35",
+      "version": 1,
+      "master": "treasure_art_35-256.png",
+      "runtime": "treasure_art_35-64.png",
+      "sha256": "03a6319e840b1732f287ab26a52b1a0318741f2961b86f42f2fe4df4e69bf0fc"
+    },
+    {
+      "asset_id": "treasure_art_36",
+      "version": 1,
+      "master": "treasure_art_36-256.png",
+      "runtime": "treasure_art_36-64.png",
+      "sha256": "74bed3027f0390dc7a9b656da7c9f64c846dc4af165a9b47534626bedfdb9fc9"
+    },
+    {
+      "asset_id": "treasure_art_37",
+      "version": 1,
+      "master": "treasure_art_37-256.png",
+      "runtime": "treasure_art_37-64.png",
+      "sha256": "7de5f8ef0895aea0aff2f70b7dad009c0487dd6b4780b1ccb86a63ecd7813c4b"
+    },
+    {
+      "asset_id": "treasure_art_38",
+      "version": 1,
+      "master": "treasure_art_38-256.png",
+      "runtime": "treasure_art_38-64.png",
+      "sha256": "2129c83e6ed54311fb43a9886672e923fd84ef0dd2524fabe0470bdfbc5e513b"
+    },
+    {
+      "asset_id": "treasure_art_39",
+      "version": 1,
+      "master": "treasure_art_39-256.png",
+      "runtime": "treasure_art_39-64.png",
+      "sha256": "ac0feb76be284a9cebc4358e9e611af2d9a8ea98ce774572933afce180a3280f"
+    },
+    {
+      "asset_id": "treasure_art_40",
+      "version": 1,
+      "master": "treasure_art_40-256.png",
+      "runtime": "treasure_art_40-64.png",
+      "sha256": "d966cce65ee4fc464cd5a19d1ffdcfdae5c32fe7ae0d0b6a344c63f1682a5c75"
+    },
+    {
+      "asset_id": "treasure_art_41",
+      "version": 1,
+      "master": "treasure_art_41-256.png",
+      "runtime": "treasure_art_41-64.png",
+      "sha256": "c1dcccc36b3b1a5b0c006f057689c041cd9ea9f18ec4b54ac6b9716e0f813b06"
+    },
+    {
+      "asset_id": "treasure_art_42",
+      "version": 1,
+      "master": "treasure_art_42-256.png",
+      "runtime": "treasure_art_42-64.png",
+      "sha256": "3277be6930ef4380767f549b548974c8b2f62e14b01acd42aef178ee2b9217b3"
+    },
+    {
+      "asset_id": "treasure_art_43",
+      "version": 1,
+      "master": "treasure_art_43-256.png",
+      "runtime": "treasure_art_43-64.png",
+      "sha256": "cee402a95dfecac19a20f64c052d3645f11153d2cd6906960098652c270ee75c"
+    },
+    {
+      "asset_id": "treasure_art_44",
+      "version": 1,
+      "master": "treasure_art_44-256.png",
+      "runtime": "treasure_art_44-64.png",
+      "sha256": "9484ebf154fd18ba13c18cc548e4b099ab744c608e2320577eaaf41494f89b0c"
+    },
+    {
+      "asset_id": "treasure_art_45",
+      "version": 1,
+      "master": "treasure_art_45-256.png",
+      "runtime": "treasure_art_45-64.png",
+      "sha256": "d22ee829345cd095f64a4b3f60cb209d1127604924a0b2b2a0cff69bf8a106c4"
+    },
+    {
+      "asset_id": "treasure_art_46",
+      "version": 1,
+      "master": "treasure_art_46-256.png",
+      "runtime": "treasure_art_46-64.png",
+      "sha256": "6b8c351460103f66ab40bca80d3200bb228d11a9099f760805df518d69d375d9"
+    },
+    {
+      "asset_id": "treasure_art_47",
+      "version": 1,
+      "master": "treasure_art_47-256.png",
+      "runtime": "treasure_art_47-64.png",
+      "sha256": "30246d9dd50a0310db7803419fb4fb67739cbf55624a9d1ad043904be3594ca1"
+    },
+    {
+      "asset_id": "treasure_art_48",
+      "version": 1,
+      "master": "treasure_art_48-256.png",
+      "runtime": "treasure_art_48-64.png",
+      "sha256": "c90abc7dbc8e64e41338c4db46350b84b77f31b765cbdd1d77e6be9da90b8ac1"
+    },
+    {
+      "asset_id": "treasure_art_49",
+      "version": 1,
+      "master": "treasure_art_49-256.png",
+      "runtime": "treasure_art_49-64.png",
+      "sha256": "99a3ba9120cb5ce41c97ce80bee7831cf93da350a67dc4ff650ef3dda7dff206"
+    },
+    {
+      "asset_id": "treasure_art_50",
+      "version": 1,
+      "master": "treasure_art_50-256.png",
+      "runtime": "treasure_art_50-64.png",
+      "sha256": "81cc4e9ddad368c6ea2c233d538029f2d5379fad041a063d775168f0badde85d"
+    },
+    {
+      "asset_id": "treasure_art_51",
+      "version": 1,
+      "master": "treasure_art_51-256.png",
+      "runtime": "treasure_art_51-64.png",
+      "sha256": "ba5f801acda8113a4f71b331862b04cb06aff4a47b341687285618e960e58cf7"
+    },
+    {
+      "asset_id": "treasure_art_52",
+      "version": 1,
+      "master": "treasure_art_52-256.png",
+      "runtime": "treasure_art_52-64.png",
+      "sha256": "147a18df31aa43d54a2e4e91959130ac19648fda920a67c2709b7e4c81a9e43d"
+    },
+    {
+      "asset_id": "treasure_art_53",
+      "version": 1,
+      "master": "treasure_art_53-256.png",
+      "runtime": "treasure_art_53-64.png",
+      "sha256": "7203c6a3f545905064c239abcf55f28414367d6bdfb84f4061dae411b7ab985e"
+    },
+    {
+      "asset_id": "treasure_art_54",
+      "version": 1,
+      "master": "treasure_art_54-256.png",
+      "runtime": "treasure_art_54-64.png",
+      "sha256": "441cf8f21965d25346a05e002414c25868aacd6ec1609833fc836b38fa34714d"
+    },
+    {
+      "asset_id": "treasure_art_55",
+      "version": 1,
+      "master": "treasure_art_55-256.png",
+      "runtime": "treasure_art_55-64.png",
+      "sha256": "92571dd4f4911362532cc2eb76cd6e225193dffabd67a995d6f15bd3cbadb11c"
+    },
+    {
+      "asset_id": "treasure_art_56",
+      "version": 1,
+      "master": "treasure_art_56-256.png",
+      "runtime": "treasure_art_56-64.png",
+      "sha256": "cfef187c046ef9be636575d07019d5122145595d3faaab8c4ad8212ad78cfcba"
+    },
+    {
+      "asset_id": "treasure_art_57",
+      "version": 1,
+      "master": "treasure_art_57-256.png",
+      "runtime": "treasure_art_57-64.png",
+      "sha256": "ec8d5f9a168dec741fbe13d1195274cc1f77841a3e9b83ee64715781d55521b5"
+    },
+    {
+      "asset_id": "treasure_art_58",
+      "version": 1,
+      "master": "treasure_art_58-256.png",
+      "runtime": "treasure_art_58-64.png",
+      "sha256": "ffd8f8de0792566024dc12fed515f42a61dbe44bacd443de4b591e74cf167ae0"
+    },
+    {
+      "asset_id": "treasure_art_59",
+      "version": 1,
+      "master": "treasure_art_59-256.png",
+      "runtime": "treasure_art_59-64.png",
+      "sha256": "d991d067c507d1c978208b2eb044094938fa6b6e25490f7f2c9ea45f26cba429"
+    },
+    {
+      "asset_id": "treasure_art_60",
+      "version": 1,
+      "master": "treasure_art_60-256.png",
+      "runtime": "treasure_art_60-64.png",
+      "sha256": "59d4026494a4682d0e66ccaa2dde8b4458f4c2ef53419fe36291852d15c19fba"
+    }
+  ],
+  "effects": [
+    {
+      "asset_id": "fx_sword",
+      "version": 1,
+      "sheet": "fx-sword-sheet.png",
+      "frames": 16,
+      "columns": 4,
+      "frame_width": 128,
+      "frame_height": 128,
+      "fps": 20,
+      "loop": false,
+      "anchor": "center",
+      "coordinates": "world",
+      "blend": "source-over"
+    },
+    {
+      "asset_id": "fx_tracking",
+      "version": 1,
+      "sheet": "fx-tracking-sheet.png",
+      "frames": 16,
+      "columns": 4,
+      "frame_width": 128,
+      "frame_height": 128,
+      "fps": 20,
+      "loop": true,
+      "anchor": "center",
+      "coordinates": "world",
+      "blend": "source-over"
+    },
+    {
+      "asset_id": "fx_frost",
+      "version": 1,
+      "sheet": "fx-frost-sheet.png",
+      "frames": 16,
+      "columns": 4,
+      "frame_width": 128,
+      "frame_height": 128,
+      "fps": 20,
+      "loop": false,
+      "anchor": "center",
+      "coordinates": "world",
+      "blend": "source-over"
+    },
+    {
+      "asset_id": "fx_thunder",
+      "version": 1,
+      "sheet": "fx-thunder-sheet.png",
+      "frames": 16,
+      "columns": 4,
+      "frame_width": 128,
+      "frame_height": 128,
+      "fps": 20,
+      "loop": false,
+      "anchor": "center",
+      "coordinates": "world",
+      "blend": "source-over"
+    },
+    {
+      "asset_id": "fx_burn",
+      "version": 1,
+      "sheet": "fx-burn-sheet.png",
+      "frames": 16,
+      "columns": 4,
+      "frame_width": 128,
+      "frame_height": 128,
+      "fps": 20,
+      "loop": true,
+      "anchor": "center",
+      "coordinates": "world",
+      "blend": "source-over"
+    },
+    {
+      "asset_id": "fx_shield",
+      "version": 1,
+      "sheet": "fx-shield-sheet.png",
+      "frames": 16,
+      "columns": 4,
+      "frame_width": 128,
+      "frame_height": 128,
+      "fps": 20,
+      "loop": true,
+      "anchor": "center",
+      "coordinates": "world",
+      "blend": "source-over"
+    },
+    {
+      "asset_id": "fx_heal",
+      "version": 1,
+      "sheet": "fx-heal-sheet.png",
+      "frames": 16,
+      "columns": 4,
+      "frame_width": 128,
+      "frame_height": 128,
+      "fps": 20,
+      "loop": false,
+      "anchor": "center",
+      "coordinates": "world",
+      "blend": "source-over"
+    },
+    {
+      "asset_id": "fx_mana",
+      "version": 1,
+      "sheet": "fx-mana-sheet.png",
+      "frames": 16,
+      "columns": 4,
+      "frame_width": 128,
+      "frame_height": 128,
+      "fps": 20,
+      "loop": false,
+      "anchor": "center",
+      "coordinates": "world",
+      "blend": "source-over"
+    },
+    {
+      "asset_id": "fx_domain",
+      "version": 1,
+      "sheet": "fx-domain-sheet.png",
+      "frames": 16,
+      "columns": 4,
+      "frame_width": 128,
+      "frame_height": 128,
+      "fps": 20,
+      "loop": true,
+      "anchor": "center",
+      "coordinates": "world",
+      "blend": "source-over"
+    }
+  ]
+}
