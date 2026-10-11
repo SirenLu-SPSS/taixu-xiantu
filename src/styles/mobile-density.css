@@ -1,0 +1,70 @@
+/* Compact touch layouts. Desktop styles remain outside these media queries. */
+@media (max-width:760px), (min-width:761px) and (max-width:1366px) and (pointer:coarse) {
+ .scene-top{padding:10px 12px;margin-bottom:8px;gap:0}
+ .scene-top h2{font-size:21px;margin:4px 0;line-height:1.3}
+ .scene-top p{font-size:11px;line-height:1.5}
+ .scene-top .mini-label{font-size:8px;letter-spacing:3px}
+ .scene-tools{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:5px;margin-top:6px;width:100%}
+ .scene-tools button{min-height:44px;padding:5px 2px;font-size:10px;letter-spacing:0;line-height:1.3;height:44px}
+ .journey-bar{display:grid;grid-template-columns:minmax(0,1fr);gap:7px;padding:8px 10px;margin-bottom:8px;max-width:none}
+ .journey-bar p{max-width:none;font-size:10px;line-height:1.4}
+ .journey-actions{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:5px}
+ .journey-actions button{min-width:0;min-height:44px;padding:5px 2px;font-size:10px;white-space:normal;line-height:1.3}
+ .encounter-strip{padding:5px 9px;margin-bottom:8px;min-height:46px}
+ .encounter-strip .btn{min-height:36px;padding:5px 8px}
+ .character-shell{padding:8px 8px calc(16px + env(safe-area-inset-bottom))}
+ .character-header h1{font-size:24px}
+ #characterSummary{margin:8px 2px;gap:5px}
+ #characterSummary h2{font-size:18px}
+ #characterSummary strong{font-size:16px}
+ .character-vitals{gap:4px 10px;font-size:10px}
+ .character-qi{font-size:10px;gap:7px}
+ .character-stage{grid-template-columns:60px minmax(0,1fr) 60px;gap:4px;padding:8px 4px;min-height:0;border-radius:12px}
+ .character-companions{gap:4px;min-width:0}
+ .character-companions h3{font-size:14px}
+ .character-companions>small{font-size:8px;line-height:1.2;text-align:center}
+ .character-companions .character-companion{height:46px;min-height:46px;padding:2px;border-radius:7px;overflow:hidden}
+ .character-companions .character-companion img{height:21px;width:21px}
+ .character-companion span,.character-companion small{font-size:8px;line-height:10px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+ .character-doll{grid-template-columns:48px minmax(0,1fr) 48px;gap:3px;min-height:350px}
+ .doll-slots{gap:4px}
+ .character-slot{height:55px;min-height:55px;padding:2px 1px;border-radius:7px}
+ .character-slot img{height:25px;width:25px}
+ .character-slot span{font-size:9px;line-height:12px}
+ .character-slot small{font-size:7px;line-height:10px}
+ #characterBody{height:310px;max-height:340px;width:190%;max-width:none}
+ .character-slot .equipped-gems{top:6px;left:4px;gap:3px}
+ .character-stage .equipped-gem{width:4px;height:4px}
+ .character-companion .equipped-gems.split-gems{top:7px;left:4px;right:4px;grid-template-rows:repeat(3,4px);row-gap:4px}
+ .character-bag{margin-top:8px;padding:10px 7px}
+ .character-bag-heading{gap:5px}
+ .character-bag-heading h2{font-size:18px}
+ .character-bag-heading>.btn,.character-bag-heading select,.bag-sale-dropdown summary{min-height:44px;min-width:0;padding:7px 9px;font-size:11px}
+ .character-categories{gap:4px;margin-top:8px}
+ .character-categories button{min-height:44px;flex-direction:row;padding:4px;gap:3px;font-size:10px}
+ .character-categories img{height:18px;width:18px}
+ .character-items{gap:4px;max-height:290px}
+ .character-item{min-height:60px}
+ .character-pagination{margin-top:8px;gap:14px}
+ .character-footnote{margin-top:8px}
+}
+@media (max-width:760px) {
+ .main{padding:8px 8px calc(68px + env(safe-area-inset-bottom))}
+ .view-dock{left:8px;right:8px;bottom:calc(6px + env(safe-area-inset-bottom));padding:3px;gap:4px;border-radius:12px}
+ .view-dock button{min-height:44px;padding:5px 7px;font-size:12px;border-radius:9px}
+ .view-dock small{font-size:8px;margin-top:1px}
+ .view-dock img{width:26px!important;height:26px!important}
+ .character-items{grid-template-columns:repeat(5,minmax(0,1fr))}
+ .character-categories{grid-template-columns:repeat(3,minmax(0,1fr))}
+}
+@media (min-width:761px) and (max-width:1366px) and (pointer:coarse) {
+ .main{padding:14px}
+ .journey-bar{grid-template-columns:minmax(0,1fr) minmax(330px,1fr);align-items:center}
+ .character-stage{grid-template-columns:90px minmax(0,1fr) 90px;gap:10px}
+ .character-doll{grid-template-columns:64px minmax(0,1fr) 64px}
+ .character-companions .character-companion{height:52px;min-height:52px}
+ .character-companions .character-companion img{height:26px;width:26px}
+ .character-slot{height:60px;min-height:60px}
+ #characterBody{width:100%;height:370px;max-height:370px}
+ .character-items{grid-template-columns:repeat(8,minmax(0,1fr))}
+}
