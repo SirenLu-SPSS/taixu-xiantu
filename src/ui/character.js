@@ -14,10 +14,10 @@ $('characterBack').onclick=closeCharacter;
 const oldPortraitPicker=$('portraitPicker').onclick;
 $('characterPortrait').onclick=oldPortraitPicker;
 $('portraitPicker').onclick=()=>openCharacter();
-const characterSyncPortrait=syncPortrait;syncPortrait=function(){characterSyncPortrait();$('portraitPicker').title='開啟角色管理';$('portraitPicker').setAttribute('aria-label','開啟角色管理')};
+const characterSyncPortrait=syncPortrait;syncPortrait=function(){characterSyncPortrait();const navPortrait=document.querySelector('#nav [data-tab=character] img');if(navPortrait){navPortrait.src=$('playerPortrait').getAttribute('src');navPortrait.alt=selectedPortrait().name;}$('portraitPicker').title='開啟角色管理';$('portraitPicker').setAttribute('aria-label','開啟角色管理')};
 NAV.unshift(['character','', '角色']);
 const characterChooseTab=chooseTab;chooseTab=function(id){if(['character','inventory','equipment','pets','treasures'].includes(id)){openCharacter(id);return}return characterChooseTab(id)};
-const characterNav=document.createElement('button');characterNav.dataset.tab='character';characterNav.innerHTML='<span class="ni"><img src="'+characterAssets+'portrait-sword.webp" alt=""></span>角色';characterNav.onclick=()=>chooseTab('character');$('nav').prepend(characterNav);
+const characterNav=document.createElement('button');characterNav.dataset.tab='character';characterNav.innerHTML='<span class="ni"><img src="./src/assets/art/portrait-'+selectedPortrait().id+'.webp" alt=""></span>角色';characterNav.onclick=()=>chooseTab('character');$('nav').prepend(characterNav);
 function renderCharacterSummary(){if(!characterIsOpen()||!p)return;const s=stats();$('characterSummary').innerHTML='<div><h2>'+escapeHTML(p.name)+'</h2><span>'+realmLabel()+' · '+root().name+'</span></div><strong>戰力 '+fmt(s.combat)+'</strong><div class="character-vitals"><span>氣血 '+fmt(p.hp)+' / '+fmt(s.hp)+'</span><span>真元 '+fmt(p.mp)+' / '+fmt(s.mp)+'</span><span>攻擊 '+fmt(s.atk)+'</span><span>防禦 '+fmt(s.def)+'</span></div><div class="character-qi"><span>修為 '+fmt(p.qi)+' / '+fmt(qiMax())+'</span><progress max="'+qiMax()+'" value="'+p.qi+'"></progress></div>'}
 function characterQuality(rarity=0){return ['凡品','靈品','珍品','仙品'][Math.min(3,rarity)]}
 function renderCharacter(){if(!characterIsOpen()||!p)return;renderCharacterSummary();$('characterBody').src=characterAssets+'character-'+(p.equipment.robe?'outfit-':'body-')+selectedPortrait().id+'.webp';
