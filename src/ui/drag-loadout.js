@@ -42,5 +42,6 @@
  for(const event of ['pointercancel','lostpointercapture'])characterScreen.addEventListener(event,e=>{if(event==='lostpointercapture'&&e.target!==characterScreen)return;if(gesture){suppressUntil=performance.now()+650;cleanup();}});
  characterScreen.addEventListener('click',event=>{if(performance.now()<suppressUntil){event.preventDefault();event.stopImmediatePropagation();}},true);
  characterScreen.addEventListener('contextmenu',event=>{if(event.target.closest('[data-drag-id]'))event.preventDefault();});
+ characterScreen.addEventListener('character-bag-swipe-start',cleanup);
  document.addEventListener('keydown',event=>{if(event.key==='Escape')cleanup();});window.addEventListener('blur',cleanup);document.addEventListener('visibilitychange',()=>{if(document.hidden)cleanup();});
 })();
