@@ -12,7 +12,7 @@ const treasureArtsMove=economyMoveRate;economyMoveRate=function(){return treasur
 const treasureArtsEnemySpeed=economyEnemySpeed;economyEnemySpeed=function(e){return treasureArtsEnemySpeed(e)*TreasureArtsCombat.speed(treasureArtsState,e)*((e.artsWeakenUntil||0)>treasureArtsState.time?.8:1);};
 const treasureArtsImages=new Map();for(const key of ['sword','tracking','frost','thunder','burn','shield','heal','mana','domain']){const im=new Image();im.src='./src/assets/treasure-arts/fx-'+key+'-sheet.png';treasureArtsImages.set(key,im);}
 // World-space effects use hollow peripheral rings; never paint over the player's silhouette.
-const peripheralReduced=matchMedia(' (prefers-reduced-motion: reduce)'.trim());
+const peripheralReduced=typeof matchMedia==='function'?matchMedia('(prefers-reduced-motion: reduce)'):{matches:false};
 const peripheralImages=new Map();for(const key of ['sword','tracking','frost','thunder','burn','shield','heal','mana','domain']){const im=new Image();im.src='./src/assets/peripheral-fx/'+key+'.webp';peripheralImages.set(key,im);}
 const treasureArtsDraw=drawScene;drawScene=function(g,W,H,time){
  treasureArtsDraw(g,W,H,time);if(!p)return;
