@@ -1,0 +1,31 @@
+/* Phone only: keep the desktop and tablet bag controls in their original layout. */
+@media (max-width:760px) {
+ #characterScreen .character-shell{padding-bottom:calc(86px + env(safe-area-inset-bottom))}
+ #characterScreen .character-bag-heading{position:fixed;left:0;right:0;bottom:0;z-index:15;display:flex;flex-wrap:nowrap;align-items:center;gap:3px;padding:6px 8px calc(6px + env(safe-area-inset-bottom));margin:0;overflow-x:auto;overflow-y:hidden;overscroll-behavior-x:contain;background:#0b252bf5;border-top:1px solid #ac945e99;box-shadow:0 -5px 18px #0005;scrollbar-width:thin;touch-action:pan-x}
+ #characterScreen .character-bag-heading h2{display:none}
+ #characterScreen .character-bag-heading>button,#characterScreen .character-bag-heading>details,#characterScreen .character-bag-heading>select{flex:0 0 48px;width:48px;min-width:48px;margin:0}
+ #characterScreen .character-bag-heading>button,#characterScreen .character-bag-heading summary{display:flex;flex-direction:column;justify-content:center;align-items:center;gap:2px;min-height:48px;height:48px;padding:3px 1px;font-size:0;line-height:1;border-radius:8px;position:relative}
+ #characterScreen .character-bag-heading [data-mobile-icon]::before{content:attr(data-mobile-icon);font-size:21px;line-height:23px;color:#edcf8d}
+ #characterScreen .character-bag-heading [data-mobile-label]::after{content:attr(data-mobile-label);font-size:9px;line-height:12px;color:#d6e8df}
+ #characterScreen .character-bag-heading>button img{display:none}
+ #characterScreen .character-bag-heading>select{height:48px;padding:3px 1px;font-size:10px;border-radius:8px;text-align:center}
+ #characterScreen .character-bag-heading>details>summary{border:1px solid #ab935f;border-radius:8px;list-style:none}
+ #characterScreen .character-bag-heading .bag-sale-options{position:fixed;top:auto;bottom:calc(76px + env(safe-area-inset-bottom));left:12px;right:auto;max-height:55dvh;overflow:auto;font-size:12px}
+ #characterScreen .character-bag-heading .bag-sale-options button{font-size:12px}
+ #characterScreen .character-bag-heading>button[data-mobile-count]:not([data-mobile-count=""]){border-color:#edd085}
+ #characterScreen .character-bag-heading>button[data-mobile-count]:not([data-mobile-count=""])::after{content:attr(data-mobile-label) " " attr(data-mobile-count)}
+ #characterScreen .character-categories{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:2px;margin:0 0 6px;border-bottom:1px solid #9a865477;padding-bottom:4px}
+ #characterScreen .character-categories button{min-height:44px;padding:3px 1px;display:flex;flex-direction:column;gap:2px;border-radius:7px 7px 0 0;font-size:10px;border:0;background:transparent;box-shadow:none}
+ #characterScreen .character-categories button[aria-pressed="true"]{color:#f3d48d;background:#45644c88;box-shadow:inset 0 -2px #e9c77f}
+ #characterScreen .character-categories img{width:18px;height:18px}
+ #characterScreen .character-bag{padding:7px 5px}
+ #characterScreen .character-items{grid-template-columns:repeat(6,minmax(0,1fr));gap:3px;max-height:260px}
+ #characterScreen .character-item{min-height:52px;padding:2px;aspect-ratio:.85}
+ #characterScreen .character-item span{font-size:7px;line-height:10px}
+ #characterScreen .character-item em{font-size:9px;right:3px}
+ #characterScreen .character-item .equipped-gems{left:4px;top:5px;gap:3px}
+ #characterScreen .character-item .equipped-gem{width:4px;height:4px}
+ #characterScreen .character-item .split-gems{right:4px;grid-template-rows:repeat(3,4px);row-gap:3px}
+ #characterCapacity{font-size:10px;margin:2px 0 5px}
+ .loadout-drag-live{bottom:calc(80px + env(safe-area-inset-bottom))}
+}
