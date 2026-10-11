@@ -25,3 +25,7 @@
 .trib-slots>.trib-slot{min-width:0;padding:12px;border:1px solid #9c9065;border-radius:12px;background:#0d2528}.trib-craft label{padding:0;border:0;border-radius:0;background:none}@media(max-width:420px){.trib-slots>.trib-slot{padding:8px;font-size:13px}}
 
 .trib-pill-heading{display:flex;align-items:center;gap:6px;min-height:40px}.trib-pill-heading img{width:32px;height:32px;flex:0 0 32px;object-fit:contain}.trib-pill-heading span{min-width:0}.trib-slots .trib-craft{display:flex;flex-direction:column;flex:1}.trib-slots .trib-slot{display:flex;flex-direction:column}.trib-slots .trib-craft p{flex:1}.trib-slots .trib-craft button{margin-top:auto}@media(max-width:420px){.trib-pill-heading{min-height:56px;gap:4px}.trib-pill-heading img{width:26px;height:26px;flex-basis:26px}}
+
+.character-effects-setting{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:14px;border:1px solid #b49b68;border-radius:10px;margin-bottom:16px;cursor:pointer}.character-effects-setting small{display:block;color:#a4c8bd;margin-top:6px;font-size:12px}.character-effects-setting input{width:22px;height:22px;flex:0 0 22px;accent-color:#d9b675}
+
+#modal .character-effects-setting{display:flex;flex-direction:row;align-items:center;justify-content:space-between}#modal .character-effects-setting input{margin:0}
