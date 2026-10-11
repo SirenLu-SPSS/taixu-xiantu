@@ -1,0 +1,27 @@
+# Separate account infrastructure. Apply only after approving the recurring cost.
+# The existing static site and its URL remain unchanged.
+databases:
+  - name: taixu-player-records
+    region: singapore
+    plan: basic-256mb
+    diskSizeGB: 1
+    ipAllowList: []
+services:
+  - type: web
+    name: taixu-player-accounts
+    runtime: node
+    region: singapore
+    plan: starter
+    repo: https://github.com/SirenLu-SPSS/taixu-xiantu
+    branch: main
+    buildCommand: npm ci --include=dev && npm test
+    startCommand: node server/start.cjs
+    healthCheckPath: /health
+    autoDeployTrigger: commit
+    envVars:
+      - key: DATABASE_URL
+        fromDatabase:
+          name: taixu-player-records
+          property: connectionString
+      - key: ALLOWED_ORIGINS
+        value: https://taixu-xiantu.onrender.com
