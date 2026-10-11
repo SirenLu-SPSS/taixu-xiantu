@@ -1,0 +1,84 @@
+{
+  "1": {
+    "class_type": "UNETLoader",
+    "inputs": {
+      "unet_name": "qwen_image_2.1_int8_convrot.safetensors",
+      "weight_dtype": "default"
+    }
+  },
+  "2": {
+    "class_type": "CLIPLoader",
+    "inputs": {
+      "clip_name": "qwen3vl_8b_int8_convrot.safetensors",
+      "type": "qwen_image"
+    }
+  },
+  "3": {
+    "class_type": "VAELoader",
+    "inputs": {
+      "vae_name": "qwen_image_2.1_vae_bf16.safetensors"
+    }
+  },
+  "4": {
+    "class_type": "TextEncodeQwenImage21",
+    "inputs": {
+      "clip": [
+        "2",
+        0
+      ],
+      "prompt": "Exact 3 columns by 3 rows atlas of nine minimalist Chinese fantasy combat VFX sprites, pure solid BLACK background. Every sprite is a thin open hollow circular ring with at least 70 percent of its diameter completely empty black at the center. NO orb, NO sphere, NO filled disk, NO character, NO text, NO frame. Sparse delicate luminous energy arcs and a few tiny sparks only around outer circumference, restrained gentle glow. Each ring fully isolated inside its own square cell, equal margins. Row1 gold sword energy ring, violet tracking energy ring, cyan ice crystal ring. Row2 pale blue lightning ring, orange ember ring, blue gold protective shield ring. Row3 green healing leaf ring, turquoise mana energy ring, violet gold magic domain ring. Clean simple elegant lightweight game effects with completely empty center, readable fine silhouettes.",
+      "negative_prompt": "blurry, low quality, watermark, text, deformed, extra limbs",
+      "resolution": 1024
+    }
+  },
+  "5": {
+    "class_type": "KSampler",
+    "inputs": {
+      "model": [
+        "1",
+        0
+      ],
+      "seed": 202610112205,
+      "steps": 20,
+      "cfg": 4,
+      "sampler_name": "euler",
+      "scheduler": "simple",
+      "positive": [
+        "4",
+        0
+      ],
+      "negative": [
+        "4",
+        1
+      ],
+      "latent_image": [
+        "4",
+        2
+      ],
+      "denoise": 1
+    }
+  },
+  "6": {
+    "class_type": "VAEDecode",
+    "inputs": {
+      "samples": [
+        "5",
+        0
+      ],
+      "vae": [
+        "3",
+        0
+      ]
+    }
+  },
+  "7": {
+    "class_type": "SaveImage",
+    "inputs": {
+      "images": [
+        "6",
+        0
+      ],
+      "filename_prefix": "Taixu_peripheral_fx/v1"
+    }
+  }
+}

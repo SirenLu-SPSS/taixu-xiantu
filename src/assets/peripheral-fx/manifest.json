@@ -1,0 +1,60 @@
+{
+  "version": 1,
+  "generator": "ComfyUI Qwen Image 2.1",
+  "workflow": "art/peripheral-fx/workflow.json",
+  "animation": {
+    "duration": 0.45,
+    "start_scale": 0.72,
+    "end_scale": 1.27,
+    "opacity": 0.5,
+    "center_clear_radius": 74,
+    "world_space": true
+  },
+  "effects": [
+    {
+      "asset_id": "peripheral_fx_sword",
+      "file": "sword.webp",
+      "sha256": "4ab81aa99371993688687ada739c16dbb07a0de560f7ec9177c384863bbe49eb"
+    },
+    {
+      "asset_id": "peripheral_fx_tracking",
+      "file": "tracking.webp",
+      "sha256": "56b7433f7d28a52f57190a4303a95db1452c010b33b369abf9781234034b2bb7"
+    },
+    {
+      "asset_id": "peripheral_fx_frost",
+      "file": "frost.webp",
+      "sha256": "2c28a63211e2d10e7bd87a6434190d16490cfab53ee7c278f34ecce897797209"
+    },
+    {
+      "asset_id": "peripheral_fx_thunder",
+      "file": "thunder.webp",
+      "sha256": "1b8f9f6e34bb31dcb95ccb53d7061fca66a402b237a66cb7e718ace2c87f4c41"
+    },
+    {
+      "asset_id": "peripheral_fx_burn",
+      "file": "burn.webp",
+      "sha256": "4d1d5ebb3835ed2b57b4b5e5360c5070a1091c33fadf0c0095d00544272c8b53"
+    },
+    {
+      "asset_id": "peripheral_fx_shield",
+      "file": "shield.webp",
+      "sha256": "3cc4c9821dfc910cc94b440caba011bcedea1465e157d2ceb9722d94e05bd32b"
+    },
+    {
+      "asset_id": "peripheral_fx_heal",
+      "file": "heal.webp",
+      "sha256": "39fcf75676165695fee7ddeaaf2d76cac3db9464754ab85f8856a3161926cfbf"
+    },
+    {
+      "asset_id": "peripheral_fx_mana",
+      "file": "mana.webp",
+      "sha256": "2b2e6c7f764358dd0b3b992e4385655c4e2e70900125b9b35b56ff051f9853f6"
+    },
+    {
+      "asset_id": "peripheral_fx_domain",
+      "file": "domain.webp",
+      "sha256": "14d5979a8f74933e42e4e3933dfc05b778b2edb986852ef76109ec53146f02dc"
+    }
+  ]
+}

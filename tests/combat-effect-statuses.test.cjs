@@ -1,0 +1,6 @@
+const test=require('node:test'),assert=require('node:assert/strict');const C=require('../src/systems/treasure-arts-combat.js');
+const entry=(id,effect={})=>({it:{id:'pet-test'},a:{id,name:'護主神通',assetId:'treasure_art_41',effect}});
+test('status countdown uses combat time and expires without changing cooldowns',()=>{const s=C.create();s.time=10;C.track(s,entry('heal'),3);s.time=11;assert.equal(C.statuses(s)[0].remaining,2);assert.deepEqual(s.cooldowns,{});s.time=13;assert.equal(C.statuses(s).length,0);});
+test('refreshing same art replaces its timer without duplicate icons',()=>{const s=C.create();C.track(s,entry('heal'),2);s.time=1;C.track(s,entry('heal'),3);assert.equal(C.statuses(s).length,1);assert.equal(C.statuses(s)[0].until,4);});
+test('depleted shield disappears immediately even when duration remains',()=>{const s=C.create();s.shield=100;C.track(s,entry('shield',{shield:.1}),5);assert.equal(C.statuses(s).length,1);s.shield=0;assert.equal(C.statuses(s).length,0);});
+test('scene change clears transient icons and shield',()=>{const s=C.create();s.shield=100;C.track(s,entry('shield',{shield:.1}),5);C.sync(s,{p:{},enemies:[]});assert.equal(C.statuses(s).length,0);assert.equal(s.shield,0);});
