@@ -1,0 +1,84 @@
+{
+  "1": {
+    "class_type": "UNETLoader",
+    "inputs": {
+      "unet_name": "qwen_image_2.1_int8_convrot.safetensors",
+      "weight_dtype": "default"
+    }
+  },
+  "2": {
+    "class_type": "CLIPLoader",
+    "inputs": {
+      "clip_name": "qwen3vl_8b_int8_convrot.safetensors",
+      "type": "qwen_image"
+    }
+  },
+  "3": {
+    "class_type": "VAELoader",
+    "inputs": {
+      "vae_name": "qwen_image_2.1_vae_bf16.safetensors"
+    }
+  },
+  "4": {
+    "class_type": "TextEncodeQwenImage21",
+    "inputs": {
+      "clip": [
+        "2",
+        0
+      ],
+      "prompt": "A precise 3 by 3 sprite atlas, nine separate equal square cells, pure BLACK background and wide black gutters. Nine isolated magical CIRCULAR cultivation aura sigils, top down view perfect circles centered in each cell, luminous thin energy rings with empty transparent-looking dark center. Chinese xianxia game visual effects, delicate runic geometry, glowing particles along edges, no text, no characters, no objects, no solid discs. Left to right top to bottom: 1 simple faint white cyan qi ring; 2 jade green double ring; 3 amber golden core ring; 4 blue cyan nascent soul lotus ring; 5 violet divine spirit intricate ring; 6 indigo silver void ring; 7 BRILLIANT GOLD integration realm triple concentric rings with golden lotus rays; 8 radiant orange gold grand ascension ornate star ring; 9 white gold and violet lightning tribulation divine ring. Increasing complexity, strongest golden light in seventh cell. All rings fully contained with generous padding. High contrast clean black background.",
+      "negative_prompt": "blurry, low quality, watermark, text, deformed, extra limbs",
+      "resolution": 1024
+    }
+  },
+  "5": {
+    "class_type": "KSampler",
+    "inputs": {
+      "model": [
+        "1",
+        0
+      ],
+      "seed": 202610110001,
+      "steps": 20,
+      "cfg": 4,
+      "sampler_name": "euler",
+      "scheduler": "simple",
+      "positive": [
+        "4",
+        0
+      ],
+      "negative": [
+        "4",
+        1
+      ],
+      "latent_image": [
+        "4",
+        2
+      ],
+      "denoise": 1
+    }
+  },
+  "6": {
+    "class_type": "VAEDecode",
+    "inputs": {
+      "samples": [
+        "5",
+        0
+      ],
+      "vae": [
+        "3",
+        0
+      ]
+    }
+  },
+  "7": {
+    "class_type": "SaveImage",
+    "inputs": {
+      "images": [
+        "6",
+        0
+      ],
+      "filename_prefix": "Taixu_realm_auras/atlas"
+    }
+  }
+}

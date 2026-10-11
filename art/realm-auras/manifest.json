@@ -1,0 +1,47 @@
+[
+  {
+    "realm": 0,
+    "path": "src/assets/realm-auras/realm-0.webp",
+    "sha256": "0d0b91b1a2538d2733e25470c399aa1d41d939c6eb278998cfe555a86abc0cc1"
+  },
+  {
+    "realm": 1,
+    "path": "src/assets/realm-auras/realm-1.webp",
+    "sha256": "3464a7a60963cc740ccb4678306b70c99ccb35eb48070cbfa6c51d7a7e44827a"
+  },
+  {
+    "realm": 2,
+    "path": "src/assets/realm-auras/realm-2.webp",
+    "sha256": "47ea12580d46c4f1cd5d68633add8f45052edb50e15060a3351bab8f6381343c"
+  },
+  {
+    "realm": 3,
+    "path": "src/assets/realm-auras/realm-3.webp",
+    "sha256": "d1cf62de07e640269a351decb9b1f46e7fb7f6552c83a44bbdaad0853de7bfa1"
+  },
+  {
+    "realm": 4,
+    "path": "src/assets/realm-auras/realm-4.webp",
+    "sha256": "90d8e503e209707298265aae111eff775db87deac113b534fdd00676685b9bb6"
+  },
+  {
+    "realm": 5,
+    "path": "src/assets/realm-auras/realm-5.webp",
+    "sha256": "ab5799c1c22c23a6290bede873583053a8ea53c6facfcf509eb69379a0525484"
+  },
+  {
+    "realm": 6,
+    "path": "src/assets/realm-auras/realm-6.webp",
+    "sha256": "dd6c7821f4302ed6819b9664771e9c70eaa644f46f6797452844c0fd5f30a4ff"
+  },
+  {
+    "realm": 7,
+    "path": "src/assets/realm-auras/realm-7.webp",
+    "sha256": "9307edd08aead4050b0fa8ff1fcf3a8fe39c2bcfd9628ae17bd1f8ddd0fd54b0"
+  },
+  {
+    "realm": 8,
+    "path": "src/assets/realm-auras/realm-8.webp",
+    "sha256": "c8e9f94cc7b6bb2f2c078ec4a5a18fc66d3cd291d2b4f4aed295bbb55dda129b"
+  }
+]
