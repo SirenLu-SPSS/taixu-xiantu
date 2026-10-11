@@ -53,3 +53,6 @@
  #characterScreen .character-items{touch-action:pan-y pinch-zoom}
 }
 .phone-page-filler{pointer-events:none}
+@media (max-width:380px) {
+ #characterScreen .character-items{grid-template-columns:repeat(6,minmax(0,1fr));grid-auto-rows:clamp(50px,15vw,58px)}
+}

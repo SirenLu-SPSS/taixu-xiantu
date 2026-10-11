@@ -1,15 +1,7 @@
 'use strict';
 (()=>{
  const phone=matchMedia('(max-width:760px)'),bag=$('characterItems');
- function fill(){
-  bag.querySelectorAll('.phone-page-filler').forEach(e=>e.remove());
-  if(!phone.matches)return;
-  const cols=getComputedStyle(bag).gridTemplateColumns.split(' ').length;
-  const count=bag.children.length,missing=(cols-count%cols)%cols;
-  for(let i=0;i<missing;i++){const cell=document.createElement('div');cell.className='character-item empty phone-page-filler';cell.setAttribute('aria-hidden','true');bag.append(cell);}
- }
- const render=renderCharacterBag;renderCharacterBag=function(){render();fill();};
- window.addEventListener('resize',fill);fill();
+ phone.addEventListener("change",()=>{if(characterIsOpen())renderCharacterBag();});
  let gesture=null,suppressUntil=0;
  characterScreen.addEventListener('pointerdown',e=>{
   if(!phone.matches||e.pointerType==='mouse'||!bag.contains(e.target)||!$('modal').classList.contains('hidden'))return;
