@@ -1,0 +1,76 @@
+{
+  "version": 1,
+  "generator": "ComfyUI Qwen Image 2.1",
+  "prompt_id": "67e683c1-4093-4b35-a42f-9eb29acfb243",
+  "portal_animation": {
+    "frames": [
+      "portal0",
+      "portal1",
+      "portal2",
+      "portal3"
+    ],
+    "fps": 4
+  },
+  "assets": [
+    {
+      "asset_id": "hard_invasion_portal0",
+      "file": "portal0.webp",
+      "sha256": "4434d47b307836c6d42bc015679cb7953473c15271d2c6935008b0f8e93a91ce"
+    },
+    {
+      "asset_id": "hard_invasion_portal1",
+      "file": "portal1.webp",
+      "sha256": "93cc88d19ab60cdde87d4ac095e0069ae9105da4cc544e77e2093f206baa0b59"
+    },
+    {
+      "asset_id": "hard_invasion_portal2",
+      "file": "portal2.webp",
+      "sha256": "c4d53331cfdbec58f66538fe43d759b8e074414045ed88d3629379c97c49e2c9"
+    },
+    {
+      "asset_id": "hard_invasion_portal3",
+      "file": "portal3.webp",
+      "sha256": "82314dee886471c470d1b244ca6531f7e0631c40d3048149c9909bb0722f2d20"
+    },
+    {
+      "asset_id": "hard_invasion_cultivator",
+      "file": "cultivator.webp",
+      "sha256": "5f8c81dca8737985f9166def7a13454f4fd66eb0dfd80e796fa83acf005cf78a"
+    },
+    {
+      "asset_id": "hard_invasion_beast",
+      "file": "beast.webp",
+      "sha256": "4d6ad6382181fcf389a8e6f4e1d610a849cc898e5b734f554e563d826d0bfa71"
+    },
+    {
+      "asset_id": "hard_invasion_elite",
+      "file": "elite.webp",
+      "sha256": "949228a52f0776e25c290df6b23b20cbf9820c55538c9d9f503ce2b9c7926bbc"
+    },
+    {
+      "asset_id": "hard_invasion_boss",
+      "file": "boss.webp",
+      "sha256": "8b2ab6b953a6b1807e01ab722a6c566ba851ab6002e1a6ab484e0d5e2e10f381"
+    },
+    {
+      "asset_id": "hard_invasion_minion",
+      "file": "minion.webp",
+      "sha256": "6b1000f1cbadc625136b14bdf2d5e5b606659de0014565c2f1189f6793f3b631"
+    },
+    {
+      "asset_id": "hard_invasion_chest",
+      "file": "chest.webp",
+      "sha256": "5fe82dc088bf5acf33c46d591873fea0c7c455895e494f25082b56c39f7bfe55"
+    },
+    {
+      "asset_id": "hard_invasion_spell",
+      "file": "spell.webp",
+      "sha256": "1c972af8039353c8d21f4c7cc600a1bf345b9c623bc0cf554c7ac48e912c92c7"
+    },
+    {
+      "asset_id": "hard_invasion_panel",
+      "file": "panel.webp",
+      "sha256": "e0de73aadbd48345d442e355626032c272e1362cb2e9dd2b5ba4569bdb680cab"
+    }
+  ]
+}
