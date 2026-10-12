@@ -74,23 +74,34 @@ economyItem=function(id){
  }
  const add=(label,fn,disabled=false)=>{if([...$('modalActions').children].some(b=>b.title===label||b.textContent===label))return;const b=document.createElement('button');b.className='btn line';b.textContent=label;b.onclick=fn;b.disabled=disabled;$('modalActions').append(b);};
  add(template.type==='pet'?'靈寵傳承':'法寶傳承',()=>template.type==='pet'?showTypedInheritance('pet',id):showTreasureInheritance(id),BagTools.locked(p,id));
- if(template.type==='pet')add('強化',()=>economyForge(id));else add('一鍵配寶石',()=>showCompanionAutoGems(id),BagTools.locked(p,id)||!item.sockets.some(g=>!g));
+ if(template.type==='pet')add('強化',()=>economyForge(id));else add('一鍵配寶石',()=>showCompanionAutoGems(id),BagTools.locked(p,id)||!item.sockets.length);
  const order=['close','primary','unprimary','deploy','rest','train','evolve','forge','gems','dismantle','merge','inherit','legend','lock','unlock'];
  for(const b of [...$('modalActions').children].sort((a,b)=>order.indexOf(a.dataset.equipmentAction||equipmentActionIcon(a.textContent))-order.indexOf(b.dataset.equipmentAction||equipmentActionIcon(b.textContent))))$('modalActions').append(b);
  decorateEquipmentActions();
 };
 const companionUnifiedUnit=showCharacterUnit;
 showCharacterUnit=function(key){companionUnifiedUnit(key);decorateEquipmentActions();};
-function companionAutoGemPlan(item,inventory,templates,arts){
+function companionAutoGemPlan(item,inventory,templates,arts,mode='synergy',replace=false){
  const text=(item.specialArts||[]).map(id=>JSON.stringify(arts.get(id)||{})).join(''),priority={fire:2,pierce:2,blast:1,thunder:1,frost:1,mana:1,life:1,vital:1,armor:1};
  for(const [pattern,kind]of [[/雷|thunder|chain/,'thunder'],[/冰|freeze|frost/,'frost'],[/燃|火|burn/,'fire'],[/回靈|真元|mana|restoreMp/,'mana'],[/回血|氣血|heal|restoreHp/,'vital'],[/盾|減傷|shield|reduction/,'armor']])if(pattern.test(text))priority[kind]=6;
- const pool=inventory.filter(e=>templates[e.id]?.type==='gem'&&e.count>0).map(e=>({...e}));pool.sort((a,b)=>(priority[templates[b.id].kind]||0)-(priority[templates[a.id].kind]||0)||templates[b.id].tier-templates[a.id].tier||a.id.localeCompare(b.id));
- const plan=[];item.sockets.forEach((gem,index)=>{if(gem)return;const e=pool.find(e=>e.count>0);if(e){plan.push({index,gem:e.id});e.count--;}});return plan;
+ const preferences={balanced:['fire','armor','vital','mana','thunder','frost','pierce','life','blast','wind','blood','wisdom'],attack:['fire','pierce','thunder','blast','blood'],control:['frost','thunder','wind'],recovery:['mana','life','vital'],defense:['armor','vital','wind']};if(mode!=='synergy')for(const kind of Object.keys(priority))priority[kind]=(preferences[mode]||preferences.balanced).includes(kind)?6:0;
+ const combined=inventory.map(e=>({...e}));if(replace)for(const id of item.sockets.filter(Boolean)){const entry=combined.find(e=>e.id===id);if(entry)entry.count++;else combined.push({id,count:1});}
+ const pool=combined.filter(e=>templates[e.id]?.type==='gem'&&e.count>0).map(e=>({...e}));pool.sort((a,b)=>(priority[templates[b.id].kind]||0)-(priority[templates[a.id].kind]||0)||templates[b.id].tier-templates[a.id].tier||a.id.localeCompare(b.id));
+ const plan=[],used={};if(!replace)for(const id of item.sockets.filter(Boolean)){const kind=templates[id]?.kind;used[kind]=(used[kind]||0)+1;}item.sockets.forEach((gem,index)=>{if(gem&&!replace)return;const choices=pool.filter(e=>e.count>0);if(mode==='balanced')choices.sort((a,b)=>(used[templates[a.id].kind]||0)-(used[templates[b.id].kind]||0)||(priority[templates[b.id].kind]||0)-(priority[templates[a.id].kind]||0)||templates[b.id].tier-templates[a.id].tier);if(mode!=='balanced')choices.sort((a,b)=>(priority[templates[b.id].kind]||0)/(1+(used[templates[b.id].kind]||0))-(priority[templates[a.id].kind]||0)/(1+(used[templates[a.id].kind]||0))||templates[b.id].tier-templates[a.id].tier||a.id.localeCompare(b.id));const e=choices[0];if(e){plan.push({index,gem:e.id});e.count--;const kind=templates[e.id].kind;used[kind]=(used[kind]||0)+1;}});return plan;
 }
-function showCompanionAutoGems(id){
- const item=p.economy.instances[id],plan=companionAutoGemPlan(item,p.inventory,EconomyData.templates,TreasureArts.byId);equipmentReturnId=id;
- modal('一鍵配石 · 法寶聯動','<p>依目前神通優先搭配聯動寶石，同類優先高階；只填空孔，保留已鑲嵌寶石。</p>'+plan.map(e=>'<p>孔 '+(e.index+1)+'：'+escapeHTML(EconomyData.templates[e.gem].name)+'</p>').join('')+(!plan.length?'<p>沒有可使用的寶石或空孔。</p>':''),[{text:'取消',fn:()=>showCharacterUnit('treasure:'+id)},{text:'確認配石',fn:()=>{
-  if(BagTools.locked(p,id))return note('請先解鎖法寶');const fresh=companionAutoGemPlan(item,p.inventory,EconomyData.templates,TreasureArts.byId);if(JSON.stringify(fresh)!==JSON.stringify(plan))return showCompanionAutoGems(id);
-  const sim=JSON.parse(JSON.stringify(p));for(const e of plan)if(!Economy.socket(sim,id,e.index,e.gem))return note('寶石或物品狀態已變動');p.inventory=sim.inventory;item.sockets=sim.economy.instances[id].sockets;economyHydrate();save(true);renderAll();showCharacterUnit('treasure:'+id);note('配石成功：已鑲嵌 '+plan.length+' 顆寶石');
- }}]);$('modalActions').lastElementChild.disabled=!plan.length;
+
+function applyCompanionGemPlan(player,id,plan,replace){
+ const sim=JSON.parse(JSON.stringify(player)),item=sim.economy.instances[id],next=replace?item.sockets.map(()=>null):[...item.sockets];for(const e of plan)next[e.index]=e.gem;
+ const delta={};for(const gem of item.sockets.filter(Boolean))delta[gem]=(delta[gem]||0)+1;for(const gem of next.filter(Boolean))delta[gem]=(delta[gem]||0)-1;
+ for(const [gem,n]of Object.entries(delta))if(n<0&&!Economy.take(sim,gem,-n))return null;
+ for(const [gem,n]of Object.entries(delta))if(n>0&&!Economy.addStack(sim,gem,n))return null;
+ item.sockets=next;return sim;
+}
+function showCompanionAutoGems(id,mode='balanced',replace=true){
+ const item=p.economy.instances[id],plan=companionAutoGemPlan(item,p.inventory,EconomyData.templates,TreasureArts.byId,mode,replace),preview={...item,sockets:replace?item.sockets.map(()=>null):[...item.sockets]};for(const e of plan)preview.sockets[e.index]=e.gem;equipmentReturnId=id;
+ const modes={balanced:'均衡搭配',synergy:'神通聯動',attack:'攻擊爆發',control:'冰凍控制',recovery:'回血回靈',defense:'防禦護盾'};
+ modal('法寶配石 · 搭配與重配','<label>搭配效果<select id="companionGemMode">'+Object.entries(modes).map(([key,label])=>'<option value="'+key+'" '+(key===mode?'selected':'')+'>'+label+'</option>').join('')+'</select></label><label>配置方式<select id="companionGemReplace"><option value="replace" '+(replace?'selected':'')+'>重配全部孔位（回收原寶石）</option><option value="fill" '+(!replace?'selected':'')+'>只補空孔（保留原配置）</option></select></label><p>先預覽再確認。重配可使用背包及本法寶已鑲嵌的寶石；原寶石會回收，材料不足時留下空孔。</p><h3>配置預覽</h3>'+preview.sockets.map((gem,index)=>'<p>孔 '+(index+1)+'：'+escapeHTML(EconomyData.templates[gem]?.name||'空孔')+'</p>').join('')+companionGemSynergy(preview),[{text:'取消',fn:()=>showCharacterUnit('treasure:'+id)},{text:'確認配石',fn:()=>{
+  if(BagTools.locked(p,id))return note('請先解鎖法寶');const fresh=companionAutoGemPlan(item,p.inventory,EconomyData.templates,TreasureArts.byId,mode,replace);if(JSON.stringify(fresh)!==JSON.stringify(plan))return showCompanionAutoGems(id,mode,replace);
+  const sim=applyCompanionGemPlan(p,id,plan,replace);if(!sim)return note('背包空間不足或寶石已變動，未更動配置');p.inventory=sim.inventory;item.sockets=sim.economy.instances[id].sockets;economyHydrate();save(true);renderAll();showCharacterUnit('treasure:'+id);note('配石成功：'+modes[mode]);
+ }}]);$('modalActions').lastElementChild.disabled=!plan.length;$('companionGemMode').onchange=e=>showCompanionAutoGems(id,e.target.value,replace);$('companionGemReplace').onchange=e=>showCompanionAutoGems(id,mode,e.target.value==='replace');
 }

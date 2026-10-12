@@ -14,3 +14,4 @@
 /* Keep the quality frame clear of the scroll gutter and text line margins. */
 .equipment-detail header{padding-top:8px;padding-right:112px}.equipment-detail-portrait{top:8px;right:10px}.equipment-detail-modal #modalContent{scrollbar-gutter:stable;padding-right:6px}.equipment-sale-warning{color:#f4c778;line-height:1.8}@media(max-width:480px){.equipment-detail header{padding-right:92px}}
 .companion-detail-modal #modalActions{justify-content:flex-start;scrollbar-width:thin}.companion-gem-synergy{font-size:12px;color:#b8d5cc;line-height:1.8}
+#companionGemMode,#companionGemReplace{display:block;width:100%;min-height:44px;margin:8px 0 16px;background:#102e34;color:#ead5a5;border:1px solid #aa9463;border-radius:7px;padding:8px}
