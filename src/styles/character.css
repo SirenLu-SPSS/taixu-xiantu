@@ -47,3 +47,4 @@ html.character-open{overflow:hidden}.character-header{position:sticky;top:0;z-in
 #inheritTarget,#inheritSource{display:block;width:100%;min-height:44px;margin:8px 0 16px;padding:10px;border:1px solid #bda16b;border-radius:8px;background:#102c32;color:#f2dfb6}
 
 #typedTarget,#typedSource{display:block;width:100%;min-height:44px;margin:8px 0 16px;padding:10px;background:#102c32;color:#f2dfb6;border:1px solid #bda16b;border-radius:8px}
+#typedTargetRealm,#typedSourceRealm,#inheritTargetRealm,#inheritSourceRealm{display:block;width:100%;min-height:44px;margin:8px 0 16px;padding:10px;background:#102c32;color:#f2dfb6;border:1px solid #bda16b;border-radius:8px}
