@@ -46,7 +46,7 @@ $('settings').onclick=()=>{originalSettings();if(storage.getItem(SAVE+'_PRE_V3')
 worldCanvas.addEventListener('pointerdown',event=>{if(!p||event.button!==0||!$('modal').classList.contains('hidden'))return;const rect=worldCanvas.getBoundingClientRect(),zoom=Math.max(rect.width/850,rect.height/490);if(!rect.width||!rect.height)return;destination={x:clamp(cam.x+(event.clientX-rect.left)/zoom,40,1460),y:clamp(cam.y+(event.clientY-rect.top)/zoom,55,845),name:'指定位置'};explorationGraceUntil=performance.now()+8000;updateJourney();});
 
 // ComfyUI artwork: cosmetic preferences are additive to legacy saves.
-const PORTRAITS=[{id:'sword',name:'青雲劍修'},{id:'jade',name:'碧落仙姝'},{id:'sage',name:'白髮道君'},{id:'moon',name:'月華仙子'}];
+const PORTRAITS=[{id:'sword',gender:'male',name:'青雲劍修'},{id:'jade',gender:'female',name:'碧落仙姝'},{id:'sage',gender:'male',name:'白髮道君'},{id:'moon',gender:'female',name:'月華仙子'}];
 function selectedPortrait(){return PORTRAITS.find(item=>item.id===p?.portrait)||PORTRAITS[0]}
 function syncPortrait(){if(!p)return;const portrait=selectedPortrait(),image=$('playerPortrait');const source='./src/assets/art/portrait-'+portrait.id+'.webp';if(image.getAttribute('src')!==source)image.src=source;image.alt=portrait.name;$('portraitPicker').title='更換人物頭像 · '+portrait.name;}
 const artStart=startGame;startGame=function(){artStart();syncPortrait()};
