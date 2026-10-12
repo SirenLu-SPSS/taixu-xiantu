@@ -4,3 +4,5 @@ for(const [object,key]of [[Economy,'bonuses'],[Economy,'effects'],[TreasureArts,
 const performanceHydrate=economyHydrate;economyHydrate=function(...args){CombatFrameCache.clear();try{return performanceHydrate(...args);}finally{CombatFrameCache.clear();}};
 // Floating numbers are cosmetic. Combat damage, healing and control continue unthrottled.
 const performanceRise=rise;let performanceFloatStart=0,performanceFloatCount=0;rise=function(...args){const now=performance.now();if(now-performanceFloatStart>=1000){performanceFloatStart=now;performanceFloatCount=0;}if(performanceFloatCount>=24||$('damageLayer').childElementCount>=32)return;performanceFloatCount++;return performanceRise(...args);};
+
+const capacityHydrate=economyHydrate;economyHydrate=function(...args){const result=capacityHydrate(...args);if(p?.companions){p.companions.deployed=Companions.deployedKeys(p);for(const type of ['pet','treasure'])DragLoadout.sync(p,type);}return result;};

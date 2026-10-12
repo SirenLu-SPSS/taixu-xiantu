@@ -20,6 +20,7 @@ const DragLoadout=(()=>{
    if(p.realm<(catalog[source.id].realm||0))return {ok:false,reason:'境界不足，無法裝備'};
   }else{
    if(target.type!==type||!Number.isInteger(target.index)||target.index<0||target.index>7)return {ok:false,reason:'靈寵與法寶只能放入各自欄位'};
+   if(target.index>=B.capacity(p))return {ok:false,reason:'境界未達，此欄位尚未解鎖'};
    const item=p.economy?.instances?.[source.id],template=item?.template||(typeof EconomyData!=='undefined'?EconomyData.templates[item?.baseId]:null);
    if(template?.highRealm&&p.realm<template.realm)return {ok:false,reason:'境界不足，無法出戰'};
    if(group(p,type)[target.index]===type+':'+source.id)return {ok:false,reason:'已在此欄位'};
