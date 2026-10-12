@@ -1,0 +1,32 @@
+'use strict';
+function equipmentSocketSummary(item){
+ const effects={};for(const id of item.sockets||[])for(const [key,value]of Object.entries(EconomyData.templates[id]?.effects||{}))effects[key]=(effects[key]||0)+value;
+ return Object.entries(effects).map(([key,value])=>economyEffectName(key)+' +'+Number(value.toFixed(4))).join(' · ')||'尚未鑲嵌寶石';
+}
+const equipmentDetailDescription=economyDescription;
+economyDescription=function(item){
+ const template=EconomyData.templates[item.baseId]||item.template;if(template?.type!=='equip')return equipmentDetailDescription(item);
+ TreasureArts.ensure(item);const fx=Economy.effects(item),quality=['white','blue','purple','gold','legend'][item.quality]||'white';
+ return '<section class="equipment-detail"><header><div class="equipment-detail-portrait" data-quality="'+quality+'"><img src="'+characterIcon(item.id)+'" alt="'+escapeHTML(template.name)+'"></div><p>'+characterQuality(item.quality)+' · 等級 '+item.level+' · 強化 +'+item.enhancement+' · 需求 '+REALMS[item.realm].name+'</p><p>攻擊 '+Math.round(fx.atk||0)+' · 防禦 '+Math.round(fx.def||0)+' · 氣血 '+Math.round(fx.hp||0)+'</p><p>'+item.affixes.map(a=>escapeHTML(a.name)+' +'+Number(a.value.toFixed(3))).join(' · ')+'</p></header><div class="equipment-socket-row" aria-label="寶石孔位">'+item.sockets.map((id,i)=>'<span class="equipment-socket" title="孔 '+(i+1)+'：'+escapeHTML(EconomyData.templates[id]?.name||'空孔')+'">'+(id?'<img src="'+economyAsset(id)+'" alt="'+escapeHTML(EconomyData.templates[id]?.name||id)+'">':'<span aria-label="空孔">◇</span>')+'</span>').join('')+'</div><p class="equipment-gem-bonuses">'+escapeHTML(equipmentSocketSummary(item))+'</p><section class="treasure-art-detail"><h3>裝備部位神通 · '+item.specialArts.length+' 條</h3>'+item.specialArts.map(id=>TreasureArts.byId.get(id)).filter(Boolean).map(treasureArtRow).join('')+'</section></section>';
+};
+const equipmentDetailModal=modal;
+modal=function(...args){$('modal').classList.remove('equipment-detail-modal');delete $('modal').dataset.equipmentId;return equipmentDetailModal(...args);};
+const equipmentDetailItem=economyItem;
+economyItem=function(id){
+ equipmentDetailItem(id);const item=p.economy?.instances[id],template=EconomyData.templates[item?.baseId]||item?.template;if(template?.type!=='equip')return;
+ $('modal').classList.add('equipment-detail-modal');$('modal').dataset.equipmentId=id;
+ const equipped=p.equipment[template.slot]===id;
+ for(const button of $('modalActions').querySelectorAll('button'))if(['已穿戴','穿戴'].includes(button.textContent)){
+  button.textContent=equipped?'已裝備／卸下':'裝備';if(equipped)button.onclick=()=>{if(!CharacterSystem.unequip(p,template.slot,ITEMS))return note('裝備背包已滿，無法卸下');finishCharacterMutation('已卸下 '+template.name);};
+ }
+ const button=document.createElement('button');button.className='btn line';button.textContent='裝備傳承';button.disabled=BagTools.locked(p,id);button.onclick=()=>showTypedInheritance('equip',id);$('modalActions').append(button);
+ decorateEquipmentActions();
+};
+const equipmentDetailSlot=showCharacterSlot;
+showCharacterSlot=function(slot){const id=p.equipment[slot];if(p.economy?.instances[id])return showItem(id);return equipmentDetailSlot(slot);};
+function equipmentActionIcon(label){if(label==='解鎖物品')return 'unlock';if(label==='鎖定物品')return 'lock';if(label.startsWith('出售'))return 'sell';if(label==='拆解')return 'dismantle';if(label==='已裝備／卸下')return 'equipped';if(label==='裝備')return 'equip';if(label==='關閉')return 'close';if(label==='裝備傳承')return 'inherit';if(label.includes('鍛造'))return 'forge';return null;}
+function decorateEquipmentActions(){
+ if(!$('modal').classList.contains('equipment-detail-modal'))return;
+ const seen=new Set();for(const button of $('modalActions').querySelectorAll('button')){const existing=button.dataset.equipmentAction||equipmentActionIcon(button.textContent);if(existing&&seen.has(existing)){button.remove();continue;}if(existing)seen.add(existing);if(['sell','dismantle','inherit'].includes(existing)&&BagTools.locked(p,$('modal').dataset.equipmentId))button.disabled=true;if(button.dataset.equipmentAction)continue;const label=button.textContent,icon=equipmentActionIcon(label);if(!icon)continue;button.dataset.equipmentAction=icon;if(['sell','dismantle'].includes(icon)&&document.querySelector('#modalContent [role=status]')?.textContent.includes('已鎖定'))button.disabled=true;button.title=label;button.setAttribute('aria-label',label);button.textContent='';const img=document.createElement('img');img.src='./src/assets/equipment-actions/'+icon+'.webp';img.alt='';button.append(img);}
+}
+new MutationObserver(decorateEquipmentActions).observe($('modalActions'),{childList:true,subtree:true});

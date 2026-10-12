@@ -1,0 +1,62 @@
+{
+  "version": 1,
+  "generator": "ComfyUI Qwen Image 2.1",
+  "prompt_id": "908dd4b0-86db-4157-9b94-f05231a8f6fe",
+  "workflow": "art/equipment-actions/workflow.json",
+  "icons": [
+    {
+      "asset_id": "equipment_action_lock",
+      "master": "lock-master.png",
+      "runtime": "lock.webp",
+      "sha256": "e8c5c46ae7d3a442119770b810be1e9984b45fc7b2bec0a62dfb88f64e7dbee9"
+    },
+    {
+      "asset_id": "equipment_action_unlock",
+      "master": "unlock-master.png",
+      "runtime": "unlock.webp",
+      "sha256": "d95bf36f9e269f433795b1aeb8b64af7a52bd8d70919dc0a13410561e7a20f95"
+    },
+    {
+      "asset_id": "equipment_action_sell",
+      "master": "sell-master.png",
+      "runtime": "sell.webp",
+      "sha256": "47317e4710ad51562f6ba7c663781bd507782ae7b85b0b9b92dc03a5aab6a63e"
+    },
+    {
+      "asset_id": "equipment_action_dismantle",
+      "master": "dismantle-master.png",
+      "runtime": "dismantle.webp",
+      "sha256": "facb984f6ff7fb512a817c02d3f153dc58bd4a9abcd129a7e60afc664255eb31"
+    },
+    {
+      "asset_id": "equipment_action_equipped",
+      "master": "equipped-master.png",
+      "runtime": "equipped.webp",
+      "sha256": "b78d72e91fc7ed812e3d6f0280735472468abff2463e5fdcf54f846e8d3a652a"
+    },
+    {
+      "asset_id": "equipment_action_equip",
+      "master": "equip-master.png",
+      "runtime": "equip.webp",
+      "sha256": "646828696eeb96322e8a13df862f0801969adbf188cbe0c89eeb8710c95033b8"
+    },
+    {
+      "asset_id": "equipment_action_close",
+      "master": "close-master.png",
+      "runtime": "close.webp",
+      "sha256": "094fcce306d16a7df1f8cd3e37b3a12d4d7d43518461d1efde59ac92c71258e1"
+    },
+    {
+      "asset_id": "equipment_action_inherit",
+      "master": "inherit-master.png",
+      "runtime": "inherit.webp",
+      "sha256": "836be351670c107ae5413d442c7e0752180295acd415604a68eb70b4db437e27"
+    },
+    {
+      "asset_id": "equipment_action_forge",
+      "master": "forge-master.png",
+      "runtime": "forge.webp",
+      "sha256": "a66698d7f6c40c8d63c05822fdd48428076aef2a645a7e8477a63323269bc83a"
+    }
+  ]
+}
