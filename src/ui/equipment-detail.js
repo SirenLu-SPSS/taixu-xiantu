@@ -35,7 +35,7 @@ function equipmentActionGlyph(icon){
 }
 function decorateEquipmentActions(){
  if(!$('modal').classList.contains('equipment-detail-modal'))return;
- const seen=new Set();for(const button of $('modalActions').querySelectorAll('button')){const existing=button.dataset.equipmentAction||equipmentActionIcon(button.textContent);if(existing&&seen.has(existing)){button.remove();continue;}if(existing)seen.add(existing);if(['sell','dismantle','inherit'].includes(existing)&&BagTools.locked(p,$('modal').dataset.equipmentId))button.disabled=true;if(button.dataset.equipmentAction)continue;const label=button.textContent,icon=equipmentActionIcon(label);if(!icon)continue;button.dataset.equipmentAction=icon;const original=button.onclick;if(['forge','dismantle','inherit'].includes(icon))button.onclick=()=>{equipmentReturnId=$('modal').dataset.equipmentId;original?.();};if(['sell','dismantle'].includes(icon)&&document.querySelector('#modalContent [role=status]')?.textContent.includes('已鎖定'))button.disabled=true;button.title=label;button.setAttribute('aria-label',label);button.textContent='';button.innerHTML=equipmentActionGlyph(icon)+'<span class="equipment-action-label">'+equipmentActionLabel(icon)+'</span>';}
+ const seen=new Set();for(const button of $('modalActions').querySelectorAll('button')){const existing=button.dataset.equipmentAction||equipmentActionIcon(button.textContent);if(existing&&seen.has(existing)){button.remove();continue;}if(existing)seen.add(existing);if(['sell','dismantle','inherit'].includes(existing)&&BagTools.locked(p,$('modal').dataset.equipmentId))button.disabled=true;if(button.dataset.equipmentAction)continue;const label=button.textContent,icon=equipmentActionIcon(label);if(!icon)continue;button.dataset.equipmentAction=icon;const original=button.onclick;if(icon==='sell'){const id=$('modal').dataset.equipmentId;button.onclick=()=>showEquipmentSaleConfirm(id,original);}if(['forge','dismantle','inherit'].includes(icon))button.onclick=()=>{equipmentReturnId=$('modal').dataset.equipmentId;original?.();};if(['sell','dismantle'].includes(icon)&&document.querySelector('#modalContent [role=status]')?.textContent.includes('已鎖定'))button.disabled=true;button.title=label;button.setAttribute('aria-label',label);button.textContent='';button.innerHTML=equipmentActionGlyph(icon)+'<span class="equipment-action-label">'+equipmentActionLabel(icon)+'</span>';}
 }
 new MutationObserver(decorateEquipmentActions).observe($('modalActions'),{childList:true,subtree:true});
 
@@ -47,3 +47,18 @@ let modalBackdropDown=false;
 $('modal').addEventListener('pointerdown',event=>{modalBackdropDown=event.target===$('modal');});
 $('modal').addEventListener('click',event=>{if(event.target===$('modal')&&modalBackdropDown){closeModal();equipmentReturnId=null;}modalBackdropDown=false;});
 $('modal').addEventListener('pointercancel',()=>{modalBackdropDown=false;});
+
+function equipmentSaleReady(item,started,now=Date.now()){return item.quality!==4||now-started>=3000;}
+function showEquipmentSaleConfirm(id,sell){
+ const item=p.economy?.instances[id],template=EconomyData.templates[item?.baseId]||item?.template;
+ if(!item||!p.inventory.some(entry=>entry.id===id&&entry.count>0)||BagTools.locked(p,id))return note('物品已變動或已鎖定，無法出售');
+ const started=Date.now(),legend=item.quality===4,price=ITEMS[id]?.price||0;
+ equipmentReturnId=id;
+ modal(legend?'傳說裝備出售提醒':'確認出售裝備','<p>'+escapeHTML(template.name)+' · '+characterQuality(item.quality)+' · 強化 +'+item.enhancement+'</p><p>出售 1 件可獲得 '+price+' 靈石。出售後無法取回。</p>'+(legend?'<p class="equipment-sale-warning">這是傳說裝備，請確認不是要保留的物品。等待 3 秒後才能出售。</p>':''),[{text:'取消',fn:()=>{equipmentReturnId=null;showItem(id);}},{text:'確認出售',fn:()=>{
+  if(!equipmentSaleReady(item,started))return;
+  if(!p.inventory.some(entry=>entry.id===id&&entry.count>0)||BagTools.locked(p,id))return note('物品已變動或已鎖定，無法出售');
+  equipmentReturnId=null;sell?.();
+ }}]);
+ const confirm=$('modalActions').lastElementChild;
+ if(legend){confirm.disabled=true;const update=()=>{if(!confirm.isConnected)return;const remaining=Math.max(0,Math.ceil((3000-(Date.now()-started))/1000));confirm.textContent=remaining?'確認出售（'+remaining+' 秒）':'確認出售';confirm.disabled=remaining>0;if(remaining)setTimeout(update,100);};update();}
+}

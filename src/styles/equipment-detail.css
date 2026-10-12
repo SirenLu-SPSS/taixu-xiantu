@@ -10,3 +10,6 @@
 
 .equipment-detail-modal #modalActions.dialog-actions button.btn[data-equipment-action]{height:54px;padding:5px 3px;gap:3px;grid-template-rows:22px 14px;color:#d9dfd9;background:#122e33;border:1px solid #728a83;box-shadow:none}
 .equipment-detail-modal #modalActions button svg{width:22px;height:22px}.equipment-action-label{font-size:11px;line-height:14px;white-space:nowrap;font-weight:400}.equipment-detail-modal #modalActions button.btn[data-equipment-action]:hover{background:#244047}.equipment-detail-modal #modalActions button.btn[data-equipment-action]:disabled{opacity:.38}
+
+/* Keep the quality frame clear of the scroll gutter and text line margins. */
+.equipment-detail header{padding-top:8px;padding-right:112px}.equipment-detail-portrait{top:8px;right:10px}.equipment-detail-modal #modalContent{scrollbar-gutter:stable;padding-right:6px}.equipment-sale-warning{color:#f4c778;line-height:1.8}@media(max-width:480px){.equipment-detail header{padding-right:92px}}
