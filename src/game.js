@@ -7,10 +7,10 @@ function initialPlayer(name,root){return {version:2,name,root,realm:0,stage:0,qi
 function activeTreasureId(){return p?.economy?.instances[p.activeTreasure]?.baseId||p?.activeTreasure}
 function root(){return ROOTS.find(x=>x.id===p.root)||ROOTS[0]}
 function realm(){return REALMS[p.realm]}
-function realmLabel(){let r=realm();return r.name+(r.stages===9?['一','二','三','四','五','六','七','八','九'][p.stage]+'層':r.stages===1?'圓滿':['初期','中期','後期','圓滿'][p.stage]);}
-function qiMax(){return Math.round(realm().base*Math.pow(p.realm===0?1.48:1.8,p.stage));}
+function realmLabel(){let r=realm();return r.name+(p.realm>=4?Progression.layerLabel(p.realm,p.stage):r.stages===9?['一','二','三','四','五','六','七','八','九'][p.stage]+'層':r.stages===1?'圓滿':['初期','中期','後期','圓滿'][p.stage]);}
+function qiMax(){return Math.round(realm().base*Math.pow(p.realm===0?1.48:1.8,Progression.effectiveStage(p.realm,p.stage)));}
 function qps(){return (4+(p.array-1)*2+p.skills.heart*1.5)*(root().q||1)*(p.activePet==='fox'?1.12:1);}
-function stats(){const r=realm(),mult=1+p.stage*.19;let hp=r.hp*mult,atk=r.atk*mult,def=r.def*mult,crit=.06;for(const id of Object.values(p.equipment)){if(id){const it=ITEMS[id];if(!it)continue;hp+=it.hp||0;atk+=it.atk||0;def+=it.def||0;}}const pet=PETS.find(x=>x.id===p.activePet);if(pet){const lv=p.levelPet[pet.id]||1;atk+=pet.atk*lv;def+=(pet.def||0)*lv;}const tr=TREASURES.find(x=>x.id===p.activeTreasure);if(tr){atk+=tr.atk||0;def+=tr.def||0;}atk+=(p.forge||0)*2;atk*=root().atk||1;hp*=root().hp||1;crit+=root().crit||0;return {hp:Math.round(hp),mp:Progression.manaMax(p.realm,p.stage),atk:Math.round(atk),def:Math.round(def),crit,combat:Math.round(atk*3+def*2+hp*.4+crit*100)}}
+function stats(){const r=realm(),mult=1+Progression.effectiveStage(p.realm,p.stage)*.19;let hp=r.hp*mult,atk=r.atk*mult,def=r.def*mult,crit=.06;for(const id of Object.values(p.equipment)){if(id){const it=ITEMS[id];if(!it)continue;hp+=it.hp||0;atk+=it.atk||0;def+=it.def||0;}}const pet=PETS.find(x=>x.id===p.activePet);if(pet){const lv=p.levelPet[pet.id]||1;atk+=pet.atk*lv;def+=(pet.def||0)*lv;}const tr=TREASURES.find(x=>x.id===p.activeTreasure);if(tr){atk+=tr.atk||0;def+=tr.def||0;}atk+=(p.forge||0)*2;atk*=root().atk||1;hp*=root().hp||1;crit+=root().crit||0;return {hp:Math.round(hp),mp:Progression.manaMax(p.realm,p.stage),atk:Math.round(atk),def:Math.round(def),crit,combat:Math.round(atk*3+def*2+hp*.4+crit*100)}}
 function add(id,n=1){if(!ITEMS[id])return false;if(!Progression.addItem(p,id,n)){note('背包已滿，無法取得物品');return false;}return true;}
 function count(id){return p.inventory.find(x=>x.id===id)?.count||0}
 function consume(id,n=1){return Progression.takeItem(p,id,n)}

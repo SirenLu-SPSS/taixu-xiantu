@@ -19,6 +19,7 @@ const Progression = (() => {
     result.estate = {plots:[null,null,null],sect:0,incomeAt:Date.now(),...(player.estate || {})};
     result.estate.plots = Array.from({length:3},(_,i)=>result.estate.plots?.[i] || null);
     result.breakthroughs = player.breakthroughs || 0;
+    migrateLayers(result);
     if(bags)bags.normalize(result);return result;
   }
   function key(map,id) { return `${map}:${id}`; }
@@ -97,8 +98,12 @@ const Progression = (() => {
     return mp>=[0,14,25,20][which] && (which!==3 || hp<maxHp*.55);
   }
   function effectRadius(time) {return (1-Math.max(0,Math.min(1,time)))*65+20;}
-  function manaMax(realm,stage=0){const bases=[75,180,360,720,1400,2800,5600,10000,18000];const r=Math.max(0,Math.min(8,Math.floor(Number(realm)||0))),s=Math.max(0,Math.min(r===0?8:r===8?0:3,Math.floor(Number(stage)||0)));return Math.round(bases[r]*(1+s*.08));}
+  function layerCount(realm){return realm>=8?60:realm>=6?45:realm>=4?30:realm===0?9:4;}
+  function effectiveStage(realm,stage){return realm>=4?Math.max(0,Math.min(layerCount(realm)-1,stage))*3/(layerCount(realm)-1):stage;}
+  function layerLabel(realm,stage){const size=layerCount(realm)/3,phase=['初期','中期','後期'][Math.min(2,Math.floor(stage/size))];return phase+' · '+(stage+1)+'層 / '+layerCount(realm)+'層';}
+  function migrateLayers(player){if(player.realmLayersVersion===1)return player;const old=Number(player.stage)||0;if(player.realm>=4){player.realmLayersBackup={realm:player.realm,stage:old,qi:player.qi,finished:!!player.finished};player.stage=player.realm===8?0:[0,layerCount(player.realm)/3,layerCount(player.realm)*2/3,layerCount(player.realm)-1][Math.min(3,Math.max(0,old))];const oldNeed=Math.pow(1.8,old),newNeed=Math.pow(1.8,effectiveStage(player.realm,player.stage));if(Number.isFinite(player.qi))player.qi*=newNeed/oldNeed;}player.realmLayersVersion=1;return player;}
+  function manaMax(realm,stage=0){const bases=[75,180,360,720,1400,2800,5600,10000,18000];const r=Math.max(0,Math.min(8,Math.floor(Number(realm)||0))),s=Math.max(0,Math.min(r===0?8:3,effectiveStage(r,Number(stage)||0)));return Math.round(bases[r]*(1+s*.08));}
   function manaRecovery(max,meditating=false){return meditating?Math.max(12,max*.04):Math.max(3.5,max*.003);}
-  return {worldWidth,worldHeight,landmarks,normalize,key,landmarkState,plant,harvest,income,establish,canAutoCast,effectRadius,canStore,addItem,takeItem,sellItem,buySupply,collectLandmark,manaMax,manaRecovery};
+  return {layerCount,effectiveStage,layerLabel,migrateLayers,worldWidth,worldHeight,landmarks,normalize,key,landmarkState,plant,harvest,income,establish,canAutoCast,effectRadius,canStore,addItem,takeItem,sellItem,buySupply,collectLandmark,manaMax,manaRecovery};
 })();
 if(typeof module !== 'undefined') module.exports=Progression;
