@@ -7,3 +7,6 @@
 
 .equipment-gem-bonuses{display:block;font-size:11px}.equipment-gem-bonuses>span{display:block;white-space:normal}@media(max-width:480px){.equipment-gem-bonuses{font-size:10px}}
 .equipment-item-power{left:0;right:0}.equipment-detail-modal #modalContent{overflow-x:hidden}
+
+.equipment-detail-modal #modalActions.dialog-actions button.btn[data-equipment-action]{height:54px;padding:5px 3px;gap:3px;grid-template-rows:22px 14px;color:#d9dfd9;background:#122e33;border:1px solid #728a83;box-shadow:none}
+.equipment-detail-modal #modalActions button svg{width:22px;height:22px}.equipment-action-label{font-size:11px;line-height:14px;white-space:nowrap;font-weight:400}.equipment-detail-modal #modalActions button.btn[data-equipment-action]:hover{background:#244047}.equipment-detail-modal #modalActions button.btn[data-equipment-action]:disabled{opacity:.38}

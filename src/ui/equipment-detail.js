@@ -28,11 +28,22 @@ economyItem=function(id){
 const equipmentDetailSlot=showCharacterSlot;
 showCharacterSlot=function(slot){const id=p.equipment[slot];if(p.economy?.instances[id])return showItem(id);return equipmentDetailSlot(slot);};
 function equipmentActionIcon(label){if(label==='解鎖物品')return 'unlock';if(label==='鎖定物品')return 'lock';if(label.startsWith('出售'))return 'sell';if(label==='拆解')return 'dismantle';if(label==='已裝備／卸下')return 'equipped';if(label==='裝備')return 'equip';if(label==='關閉')return 'close';if(label==='裝備傳承')return 'inherit';if(label.includes('鍛造'))return 'forge';return null;}
+function equipmentActionLabel(icon){return {lock:'鎖定',unlock:'解鎖',sell:'出售',dismantle:'拆解',equipped:'卸下',equip:'裝備',close:'關閉',inherit:'傳承',forge:'鍛造'}[icon];}
+function equipmentActionGlyph(icon){
+ const paths={lock:'<rect x="5" y="10" width="14" height="11" rx="2"/><path d="M8 10V7a4 4 0 018 0v3M12 14v3"/>',unlock:'<rect x="5" y="10" width="14" height="11" rx="2"/><path d="M8 10V7a4 4 0 017-2M12 14v3"/>',sell:'<circle cx="12" cy="12" r="9"/><path d="M12 6v12M16 8h-6a2 2 0 000 4h4a2 2 0 010 4H8"/>',dismantle:'<path d="M5 3l4 4-2 2-4-4v5l4 3 3-1 9 9 2-2-9-9 1-3-3-4zM4 20l5-5M15 8l5-5"/>',equipped:'<path d="M8 3l4 3 4-3 5 5-4 3v10H7V11L3 8zM9 15l2 2 4-4"/>',equip:'<path d="M8 3l4 3 4-3 5 5-4 3v10H7V11L3 8zM12 18v-7M9 14l3-3 3 3"/>',close:'<path d="M5 5l14 14M19 5L5 19"/>',inherit:'<path d="M4 8h15M15 4l4 4-4 4M20 16H5M9 12l-4 4 4 4"/>',forge:'<path d="M4 3h10v5H4zM9 8v13M16 13l4-3 3 4-3 5-4-3z"/>'};
+ return '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">'+(paths[icon]||'')+'</svg>';
+}
 function decorateEquipmentActions(){
  if(!$('modal').classList.contains('equipment-detail-modal'))return;
- const seen=new Set();for(const button of $('modalActions').querySelectorAll('button')){const existing=button.dataset.equipmentAction||equipmentActionIcon(button.textContent);if(existing&&seen.has(existing)){button.remove();continue;}if(existing)seen.add(existing);if(['sell','dismantle','inherit'].includes(existing)&&BagTools.locked(p,$('modal').dataset.equipmentId))button.disabled=true;if(button.dataset.equipmentAction)continue;const label=button.textContent,icon=equipmentActionIcon(label);if(!icon)continue;button.dataset.equipmentAction=icon;const original=button.onclick;if(['forge','dismantle','inherit'].includes(icon))button.onclick=()=>{equipmentReturnId=$('modal').dataset.equipmentId;original?.();};if(['sell','dismantle'].includes(icon)&&document.querySelector('#modalContent [role=status]')?.textContent.includes('已鎖定'))button.disabled=true;button.title=label;button.setAttribute('aria-label',label);button.textContent='';const img=document.createElement('img');img.src='./src/assets/equipment-actions/'+icon+'.webp';img.alt='';button.append(img);}
+ const seen=new Set();for(const button of $('modalActions').querySelectorAll('button')){const existing=button.dataset.equipmentAction||equipmentActionIcon(button.textContent);if(existing&&seen.has(existing)){button.remove();continue;}if(existing)seen.add(existing);if(['sell','dismantle','inherit'].includes(existing)&&BagTools.locked(p,$('modal').dataset.equipmentId))button.disabled=true;if(button.dataset.equipmentAction)continue;const label=button.textContent,icon=equipmentActionIcon(label);if(!icon)continue;button.dataset.equipmentAction=icon;const original=button.onclick;if(['forge','dismantle','inherit'].includes(icon))button.onclick=()=>{equipmentReturnId=$('modal').dataset.equipmentId;original?.();};if(['sell','dismantle'].includes(icon)&&document.querySelector('#modalContent [role=status]')?.textContent.includes('已鎖定'))button.disabled=true;button.title=label;button.setAttribute('aria-label',label);button.textContent='';button.innerHTML=equipmentActionGlyph(icon)+'<span class="equipment-action-label">'+equipmentActionLabel(icon)+'</span>';}
 }
 new MutationObserver(decorateEquipmentActions).observe($('modalActions'),{childList:true,subtree:true});
 
 // Closing an operation ends its detail navigation context.
 document.addEventListener('click',()=>{if($('modal').classList.contains('hidden'))equipmentReturnId=null;});
+
+// A deliberate tap on the backdrop closes the dialog; dragging out of it does not.
+let modalBackdropDown=false;
+$('modal').addEventListener('pointerdown',event=>{modalBackdropDown=event.target===$('modal');});
+$('modal').addEventListener('click',event=>{if(event.target===$('modal')&&modalBackdropDown){closeModal();equipmentReturnId=null;}modalBackdropDown=false;});
+$('modal').addEventListener('pointercancel',()=>{modalBackdropDown=false;});
