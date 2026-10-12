@@ -25,7 +25,7 @@ const CharacterSystem=(()=>{
  function canDeploy(p,id){const t=companionTemplate(p,id);return !t?.highRealm||p.realm>=t.realm;}
  function primary(p,type,id){if(!['pet','treasure'].includes(type)||(id!==null&&(!owned(p,type,id)||!canDeploy(p,id))))return false;p[type==='pet'?'activePet':'activeTreasure']=id;return true}
  function deployment(p,key){const [type,id]=key.split(':');if(!owned(p,type,id)||!canDeploy(p,id))return false;const c=typeof Companions!=='undefined'?Companions:require('./companions.js');return c.setDeployment(p,key,!p.companions.deployed.includes(key))}
- function upgrade(p,id){const level=p.levelPet?.[id];if(!Number.isInteger(level)||level<1||level>=20||p.stones<level*70)return false;const req=companionTemplate(p,id)?.cultivationRequirement;if(req){const econ=typeof Economy!=='undefined'?Economy:require('./economy.js');if(!econ.take(p,req.material,req.count))return false;}p.stones-=level*70;p.levelPet[id]++;return true}
+ function upgrade(p,id){if(p.economy?.instances[id]){const growth=typeof PetGrowth!=='undefined'?PetGrowth:require('./pet-growth.js');return growth.advance(p,id,'train').ok;}const level=p.levelPet?.[id];if(!Number.isInteger(level)||level<1||level>=20||p.stones<level*70)return false;const req=companionTemplate(p,id)?.cultivationRequirement;if(req){const econ=typeof Economy!=='undefined'?Economy:require('./economy.js');if(!econ.take(p,req.material,req.count))return false;}p.stones-=level*70;p.levelPet[id]++;return true}
  return {slots,categories,category,normalize,entries,capacity,canStore,equip,unequip,sorted,acquire,primary,deployment,upgrade};
 })();
 if(typeof module!=='undefined')module.exports=CharacterSystem;

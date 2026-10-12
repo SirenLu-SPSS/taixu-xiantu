@@ -1,0 +1,11 @@
+'use strict';
+const PetGrowth=(()=>{
+ const D=typeof EconomyData!=='undefined'?EconomyData:require('../data/economy.js'),E=()=>typeof Economy!=='undefined'?Economy:require('./economy.js');
+ const caps=q=>({level:[20,50,100,200,300][q]||20,arts:[10,20,30,40,50][q]||10});
+ function item(p,id){const it=p.economy?.instances[id];return (D.templates[it?.baseId]||it?.template)?.type==='pet'&&p.levelPet?.[id]>0?it:null;}
+ function quote(p,id,kind){const it=item(p,id);if(!it)return {ok:false,reason:'請選擇持有的靈寵'};const level=kind==='train'?p.levelPet[id]:(it.petArtLevel||Math.max(1,(it.evolution||0)+1)),cap=kind==='train'?caps(it.quality).level:caps(it.quality).arts,band=1+Math.floor(level/10),cost={stones:(kind==='train'?70:200)*band,herb:(kind==='train'?5:10)*band,[kind==='train'?'pill':'heal']:band};const req=kind==='train'?(D.templates[it.baseId]||it.template)?.cultivationRequirement:null;if(req)cost[req.material]=(cost[req.material]||0)+req.count*band;if(level>=cap)return {ok:false,reason:'已達品階上限 '+cap,level,cap,cost};if((p.stones||0)<cost.stones||Object.entries(cost).some(([key,n])=>key!=='stones'&&(p.inventory||[]).filter(e=>e.id===key).reduce((s,e)=>s+e.count,0)<n))return {ok:false,reason:'靈石、靈幽草或丹藥不足',level,cap,cost};return {ok:true,level,cap,cost};}
+ function advance(p,id,kind){const q=quote(p,id,kind);if(!q.ok)return q;const it=item(p,id);for(const [key,n]of Object.entries(q.cost))if(key!=='stones')E().take(p,key,n);p.stones-=q.cost.stones;if(kind==='train'){p.levelPet[id]=q.level+1;it.level=q.level+1;it.cultivation=(it.cultivation||0)+1;it.base.atk=(it.base.atk||0)+1;it.base.def=(it.base.def||0)+1;it.base.hp=(it.base.hp||0)+5;}else{it.petArtLevel=q.level+1;it.evolution=q.level;}return {...q,after:q.level+1};}
+ function migrate(p){let changed=false;for(const it of [...Object.values(p.economy?.instances||{}),...Object.values(p.economy?.legacy||{})]){if((D.templates[it.baseId]||it.template)?.type!=='pet')continue;if(it.sockets?.length){for(const gem of it.sockets.filter(Boolean))if(!E().addStack(p,gem,1))p.economy.mail.push({id:gem,count:1});it.sockets=[];changed=true;}if(!it.petArtLevel){it.petArtLevel=Math.max(1,(it.evolution||0)+1);changed=true;}}return changed;}
+ return {caps,quote,advance,migrate};
+})();
+if(typeof module!=='undefined')module.exports=PetGrowth;

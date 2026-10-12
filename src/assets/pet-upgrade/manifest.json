@@ -1,0 +1,1 @@
+{"asset_id": "pet_upgrade_v1", "version": 1, "generator": "ComfyUI Qwen Image 2.1", "prompt_id": "06c434ce-e8d8-4b3c-9057-076598d37698", "sheet": "upgrade-sheet.webp", "columns": 4, "rows": 2, "cell": 256, "train": {"row": 0, "frames": 4}, "evolve": {"row": 1, "frames": 4}, "duration_ms": 1600}
