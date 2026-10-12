@@ -1,0 +1,60 @@
+{
+  "version": 1,
+  "generator": "ComfyUI Qwen Image 2.1",
+  "assets": [
+    {
+      "asset_id": "breakthrough_meditation_0",
+      "realm": "煉氣",
+      "runtime": "src/assets/breakthrough/meditation-0.webp",
+      "glow": false
+    },
+    {
+      "asset_id": "breakthrough_meditation_1",
+      "realm": "築基",
+      "runtime": "src/assets/breakthrough/meditation-1.webp",
+      "glow": false
+    },
+    {
+      "asset_id": "breakthrough_meditation_2",
+      "realm": "金丹",
+      "runtime": "src/assets/breakthrough/meditation-2.webp",
+      "glow": false
+    },
+    {
+      "asset_id": "breakthrough_meditation_3",
+      "realm": "元嬰",
+      "runtime": "src/assets/breakthrough/meditation-3.webp",
+      "glow": true
+    },
+    {
+      "asset_id": "breakthrough_meditation_4",
+      "realm": "化神",
+      "runtime": "src/assets/breakthrough/meditation-4.webp",
+      "glow": true
+    },
+    {
+      "asset_id": "breakthrough_meditation_5",
+      "realm": "煉虛",
+      "runtime": "src/assets/breakthrough/meditation-5.webp",
+      "glow": true
+    },
+    {
+      "asset_id": "breakthrough_meditation_6",
+      "realm": "合體",
+      "runtime": "src/assets/breakthrough/meditation-6.webp",
+      "glow": true
+    },
+    {
+      "asset_id": "breakthrough_meditation_7",
+      "realm": "大乘",
+      "runtime": "src/assets/breakthrough/meditation-7.webp",
+      "glow": true
+    },
+    {
+      "asset_id": "breakthrough_meditation_8",
+      "realm": "渡劫",
+      "runtime": "src/assets/breakthrough/meditation-8.webp",
+      "glow": true
+    }
+  ]
+}

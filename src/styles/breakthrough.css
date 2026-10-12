@@ -4,3 +4,15 @@
 @keyframes trib-hero-breathe{0%{transform:scale(.82);opacity:.3}28%{transform:scale(1.14);opacity:1}55%{transform:scale(1.14);filter:drop-shadow(0 0 30px #cdf8da)}85%,100%{transform:scale(1);opacity:1}}
 @keyframes trib-spirit-return{0%{transform:scale(.18) rotate(0);opacity:0}22%{opacity:.9}55%{transform:scale(1.7) rotate(110deg);opacity:.7}90%,100%{transform:scale(.12) rotate(220deg);opacity:0}}
 @media(prefers-reduced-motion:reduce){.trib-hero,.trib-spirit-ring{animation:none}.trib-spirit-ring{opacity:.3}}
+
+/* Nine ComfyUI meditation portraits; luminous qi begins at Nascent Soul. */
+.trib-hero{width:100%;height:100%;object-fit:contain;border-radius:22px;transform-origin:center;filter:none;animation:trib-meditation 3s both;mask-image:radial-gradient(ellipse at center,#000 52%,transparent 74%)}
+.trib-spirit-stage{width:min(82vw,520px);height:min(65vh,520px);aspect-ratio:1}
+.trib-calm .trib-aura,.trib-calm .trib-spirit-ring{display:none}
+.trib-calm .trib-art{opacity:.08;animation:none}
+.trib-luminous .trib-hero{animation:trib-meditation 3s both,trib-meditation-light 3s both}
+.trib-spirit-ring{z-index:3;pointer-events:none;border-color:#f2dfa1;box-shadow:0 0 26px #f1d272,inset 0 0 20px #81edda}
+.trib-luminous .trib-aura{border-color:#f5dfa0}
+@keyframes trib-meditation{0%{opacity:0;transform:scale(.86)}28%{opacity:1;transform:scale(1.06)}65%{opacity:1;transform:scale(1.06)}100%{opacity:1;transform:scale(1)}}
+@keyframes trib-meditation-light{0%,100%{filter:brightness(1)}45%,60%{filter:brightness(1.25) drop-shadow(0 0 28px #ecd781)}}
+@media(prefers-reduced-motion:reduce){.trib-hero,.trib-luminous .trib-hero{animation:none;opacity:1;filter:none}.trib-spirit-ring{display:none}}
