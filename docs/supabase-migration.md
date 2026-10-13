@@ -6,11 +6,11 @@
 ## 執行步驟
 
 1. 保持 Supabase Data API 關閉，取得 Connect → Session pooler 連線字串（含資料庫密碼）。密碼只放帳號服務的秘密環境變數，不放前端、Git 或日誌。
-2. 原 Render 帳號服務的 `DATABASE_URL` 維持原來源；新增 `ACCOUNT_DATABASE_MIGRATION_TARGET`，值為 Supabase Session pooler URL。
+2. 原 Render 帳號服務的 `DATABASE_URL` 維持原來源；新增 `ACCOUNT_DATABASE_MIGRATION_TARGET`，值為 Supabase Session pooler URL。也可把原始密碼獨立放在 `ACCOUNT_DATABASE_MIGRATION_PASSWORD`，程式會自動做 URL 編碼，使用者不用手動編碼特殊符號。
 3. 新服務啟動時建立來源寫入保護，等待舊交易結束後凍結來源寫入，逐批複製 accounts、sessions、characters、save_history 到空白目標。
 4. 比較每表的記錄數與完整記錄 SHA-256，包含密碼雜湊、救援雜湊、session、人物與歷史 JSON。全部一致才提交目標並讓新 API 使用目標資料庫。
 5. 複製失敗則回滾目標並解除來源凍結；既有資料絕不以 ON CONFLICT 覆蓋。非空目標直接拒絕複製。
-6. 確認健康檢查、既有帳號讀取、人物版本保護及新人物操作後，將 Render `DATABASE_URL` 改為 Supabase URL，再將 `ACCOUNT_DATABASE_MIGRATION_TARGET` 清空。避免日後啟動仍依賴 30 天會到期的 Render 原資料庫。
+6. 確認健康檢查、既有帳號讀取、人物版本保護及新人物操作後，將 Render `DATABASE_URL` 改為 Supabase URL，再將 `ACCOUNT_DATABASE_MIGRATION_TARGET` 與 `ACCOUNT_DATABASE_MIGRATION_PASSWORD` 清空。避免日後啟動仍依賴 30 天會到期的 Render 原資料庫。
 7. 原資料庫保持唯讀備份，不刪除。切換後不得直接解除來源凍結並回退，否則會漏掉 Supabase 新進度；回退前須先逆向同步。
 
 ## 資料與安全

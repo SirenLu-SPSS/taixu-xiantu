@@ -6,6 +6,7 @@ let pool=new Pool({connectionString:process.env.DATABASE_URL,...options});
 (async()=>{
  if(process.env.ACCOUNT_DATABASE_MIGRATION_TARGET){
   const targetUrl=new URL(process.env.ACCOUNT_DATABASE_MIGRATION_TARGET),sourceUrl=new URL(process.env.DATABASE_URL);
+  if(process.env.ACCOUNT_DATABASE_MIGRATION_PASSWORD)targetUrl.password=encodeURIComponent(process.env.ACCOUNT_DATABASE_MIGRATION_PASSWORD);
   if(!/\.supabase\.(com|co)$/.test(targetUrl.hostname)||targetUrl.hostname===sourceUrl.hostname)throw Error('Invalid migration target');
   targetUrl.searchParams.set('sslmode','verify-full');
   const target=new Pool({connectionString:targetUrl.toString(),...options});
