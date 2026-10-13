@@ -1,12 +1,12 @@
-#desktopTreasure[hidden]{display:none!important}
-#desktopTreasure{display:none}
+:is(#desktopTreasure,#desktopPets)[hidden]{display:none!important}
+:is(#desktopTreasure,#desktopPets){display:none}
 @media(min-width:1024px){
- #desktopTreasure{display:flex;flex-direction:column;position:fixed;inset:0;z-index:45;padding:12px 18px;background:linear-gradient(#031d24eb,#06282aef),url('../assets/art/mountains.webp') center/cover;color:#d9e8df;overflow:auto;font-size:14px}
- #desktopTreasure *{box-sizing:border-box;min-width:0}
- #desktopTreasure button{cursor:pointer;font:inherit;color:inherit}
- #desktopTreasure button:focus-visible{outline:2px solid #f1d28e;outline-offset:2px}
- #desktopTreasure button:disabled{cursor:default;opacity:.45}
- #desktopTreasure h2,#desktopTreasure h3{color:#edcf8a;margin:8px 0;font-family:serif}
+ :is(#desktopTreasure,#desktopPets){display:flex;flex-direction:column;position:fixed;inset:0;z-index:45;padding:12px 18px;background:linear-gradient(#031d24eb,#06282aef),url('../assets/art/mountains.webp') center/cover;color:#d9e8df;overflow:auto;font-size:14px}
+ :is(#desktopTreasure,#desktopPets) *{box-sizing:border-box;min-width:0}
+ :is(#desktopTreasure,#desktopPets) button{cursor:pointer;font:inherit;color:inherit}
+ :is(#desktopTreasure,#desktopPets) button:focus-visible{outline:2px solid #f1d28e;outline-offset:2px}
+ :is(#desktopTreasure,#desktopPets) button:disabled{cursor:default;opacity:.45}
+ :is(#desktopTreasure,#desktopPets) h2,:is(#desktopTreasure,#desktopPets) h3{color:#edcf8a;margin:8px 0;font-family:serif}
  .dt-header,.dt-player{display:flex;align-items:center;gap:30px;padding:10px 18px;border:1px solid #af9154;border-radius:10px;background:#062729b3}
  .dt-header{justify-content:space-between;margin-bottom:8px}.dt-header strong{font: bold 34px serif;color:#efd291}.dt-header span{font:24px serif;margin-left:24px;color:#efd291}
  .dt-player>div{margin-right:auto}.dt-player small{display:block;margin-top:5px}.dt-player b{color:#f0d39b}.dt-player span{white-space:nowrap}

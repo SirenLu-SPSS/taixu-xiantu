@@ -1,0 +1,12 @@
+#desktopPets .dt-illustrated{animation:pet-breathe 7s ease-in-out infinite;transform-origin:50% 65%;will-change:transform}
+#desktopPets .pet-showcase{isolation:isolate;contain:paint;background-color:#042527}
+#desktopPets .dt-showcase h2,#desktopPets .dt-showcase>p{position:relative;z-index:3}
+.pet-aura{position:absolute;pointer-events:none;z-index:1;left:10%;right:10%;height:19%;bottom:9%;border:2px solid #f2cc7777;border-radius:50%;box-shadow:0 0 18px #e5b95866,inset 0 0 22px #57e8b84d;animation:pet-aura-pulse 4s ease-in-out infinite}
+.pet-aura:before{content:"";position:absolute;inset:-18px;border:1px dashed #a9f9d996;border-radius:50%;animation:pet-ring-turn 24s linear infinite}
+.pet-sparks{position:absolute;inset:16% 5% 8%;pointer-events:none;z-index:2;opacity:.6;background:radial-gradient(circle at 14% 66%,#e9d89c 0 2px,transparent 4px),radial-gradient(circle at 86% 43%,#a0f9d9 0 2px,transparent 4px),radial-gradient(circle at 24% 28%,#a0f9d9 0 1px,transparent 3px),radial-gradient(circle at 72% 78%,#e9d89c 0 2px,transparent 4px),radial-gradient(circle at 83% 17%,#e9d89c 0 1px,transparent 3px),radial-gradient(circle at 38% 87%,#a0f9d9 0 2px,transparent 4px);animation:pet-spark-rise 6s ease-in-out infinite}
+.pet-growth-quote{border:1px solid #4e706055;border-radius:8px;padding:12px;margin:12px 0}.pet-growth-quote p{line-height:1.8}.pet-growth-quote small{color:#b4d8ca}
+@keyframes pet-breathe{0%,100%{transform:scale(1.015) translateY(0)}50%{transform:scale(1.04) translateY(-6px)}}
+@keyframes pet-aura-pulse{0%,100%{opacity:.35;transform:scale(.88)}50%{opacity:.8;transform:scale(1.08)}}
+@keyframes pet-ring-turn{to{transform:rotate(360deg)}}
+@keyframes pet-spark-rise{0%,100%{opacity:.2;transform:translateY(15px)}50%{opacity:.8;transform:translateY(-25px)}}
+@media(prefers-reduced-motion:reduce){#desktopPets .dt-illustrated,.pet-aura,.pet-aura:before,.pet-sparks{animation:none;will-change:auto}}
