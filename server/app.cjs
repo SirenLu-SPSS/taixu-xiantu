@@ -12,7 +12,13 @@ function validateSave(save){
  if(!save||save.version!==2||typeof save.name!=='string'||!save.name.trim()||save.name.length>12||!save.equipment||Array.isArray(save.equipment)||typeof save.equipment!=='object'||!Array.isArray(save.inventory)||!Number.isInteger(save.realm)||save.realm<0||save.realm>30)throw fail(400,'存檔格式不正確，原檔案未變更');
  return save;
 }
-async function body(req){let size=0,chunks=[];for await(const chunk of req){size+=chunk.length;if(size>2*1024*1024)throw fail(413,'存檔超過 2 MB，請匯出備份並聯絡管理員');chunks.push(chunk);}try{return JSON.parse(Buffer.concat(chunks).toString())}catch{throw fail(400,'資料格式錯誤')}}
+const MAX_SAVE_BYTES=16*1024*1024;
+function body(req){return new Promise((resolve,reject)=>{
+ let size=0,chunks=[],oversized=false;
+ req.on('data',chunk=>{size+=chunk.length;if(oversized)return;if(size>MAX_SAVE_BYTES){oversized=true;chunks=[];reject(fail(413,'存檔超過 16 MB，請先匯出備份；原有雲端進度未變更'));return;}chunks.push(chunk);});
+ req.on('end',()=>{if(oversized)return;try{resolve(JSON.parse(Buffer.concat(chunks).toString()))}catch{reject(fail(400,'資料格式錯誤'))}});
+ req.on('aborted',()=>reject(fail(400,'上傳中斷，請保留本機存檔後重試')));req.on('error',reject);
+});}
 function createApp(pool,{origins=[],trustProxy=false,rateLimit=20}={}){
  const attempts=new Map(),dummyPassword=passwordHash('unavailable-account');let hashing=0;
  function throttle(key){const now=Date.now();if(attempts.size>10000)for(const [k,v]of attempts)if(v.until<now)attempts.delete(k);if(attempts.size>10000)throw fail(503,'服務忙碌，請稍後重試');const old=attempts.get(key),v=old&&old.until>now?old:{count:0,until:now+900000};if(++v.count>rateLimit)throw fail(429,'嘗試次數過多，請 15 分鐘後再試');attempts.set(key,v);}
@@ -83,4 +89,4 @@ function createApp(pool,{origins=[],trustProxy=false,rateLimit=20}={}){
   }catch(error){const status=error.status||(error.code==='23505'?409:503);reply({error:error.status?error.message:error.code==='23505'?'此帳號已有人使用':'伺服器暫時無法儲存，請保留本機備份'},status);}
  });
 }
-module.exports={createApp,passwordHash,validateSave};
+module.exports={createApp,passwordHash,validateSave,MAX_SAVE_BYTES};

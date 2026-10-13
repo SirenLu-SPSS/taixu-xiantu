@@ -22,4 +22,15 @@ test('account service: persistence, ownership, 5 slots, revisions and recovery',
  await t.test('invalid payload rejected without modifying save',async()=>{assert.equal((await api('/api/characters/'+character.id,{token:a.token,method:'PUT',data:{revision:8,save:{version:1}}})).status,400);assert.equal((await api('/api/characters/'+character.id,{token:a.token})).body.revision,8);});
  await t.test('recovery rotates secret, invalidates other sessions and preserves characters',async()=>{const r=await api('/api/auth/recover',{method:'POST',data:{username:'player_one',password:'new-password-123',recoveryCode:a.recoveryCode}});assert.equal(r.status,200);assert.notEqual(r.body.recoveryCode,a.recoveryCode);assert.equal((await api('/api/me',{token:a.token})).status,401);assert.equal((await api('/api/characters',{token:r.body.token})).body.characters.length,5);assert.equal((await api('/api/auth/recover',{method:'POST',data:{username:'player_one',password:'new-password-123',recoveryCode:a.recoveryCode}})).status,401);assert.equal((await api('/api/auth/logout',{token:r.body.token,method:'POST'})).status,200);assert.equal((await api('/api/me',{token:r.body.token})).status,401);});
  await t.test('login rate limit and preflight',async()=>{await new Promise(r=>server.close(r));server=createApp(pool,{origins:['http://game.test'],rateLimit:2});await new Promise(r=>server.listen(0,'127.0.0.1',r));url='http://127.0.0.1:'+server.address().port;for(let i=0;i<2;i++)assert.equal((await api('/api/auth/login',{method:'POST',data:{username:'bad'}})).status,400);assert.equal((await api('/api/auth/login',{method:'POST',data:{username:'bad'}})).status,429);assert.equal((await api('/api/characters',{method:'OPTIONS'})).status,204);});
+ await t.test('large UTF-8 characters upload and update beyond 2MB, oversized requests retain cloud revision',async()=>{
+  const large={...fixture('大型存檔'),notes:'修仙'.repeat(600000)};
+  const created=await api('/api/characters',{token:b.token,method:'POST',data:{save:large}});assert.equal(created.status,201);
+  const id=created.body.id,loaded=(await api('/api/characters/'+id,{token:b.token})).body;assert.deepEqual(loaded.save,large);
+  const next={...large,notes:large.notes+'完整升級進度'};
+  assert.equal((await api('/api/characters/'+id,{token:b.token,method:'PUT',data:{revision:1,save:next}})).status,200);
+  const tooLarge={...fixture(),notes:'x'.repeat(16*1024*1024)};
+  const rejected=await api('/api/characters/'+id,{token:b.token,method:'PUT',data:{revision:2,save:tooLarge}});assert.equal(rejected.status,413);assert.match(rejected.body.error,/16 MB/);
+  const preserved=(await api('/api/characters/'+id,{token:b.token})).body;assert.equal(preserved.revision,2);assert.deepEqual(preserved.save,next);
+ });
+
 });

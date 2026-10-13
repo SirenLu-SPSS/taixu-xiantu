@@ -3,6 +3,8 @@
  'use strict';
  const API=window.TAIXU_ACCOUNT_API||'',AUTH='TAIXU_ACCOUNT_SESSION_V1',GUEST=SAVE+'_GUEST_BACKUP',OWNER=SAVE+'_OWNER',CACHE='TAIXU_CLOUD_CACHE_V1';
  let session=null,active=null,timer=null,flight=null,serial=0,conflict=false;
+ let wakeFlight=null;
+ function wakeAccountService(){if(!API||wakeFlight)return;wakeFlight=fetch(API+'/health',{cache:'no-store',credentials:'omit',signal:AbortSignal.timeout(120000)}).catch(()=>null).finally(()=>{wakeFlight=null;});}
  let writer=crypto.randomUUID();try{writer=sessionStorage.getItem('TAIXU_SAVE_WRITER')||writer;sessionStorage.setItem('TAIXU_SAVE_WRITER',writer)}catch{}
  try{session=JSON.parse(sessionStorage.getItem(AUTH)||'null')}catch{}
  const read=key=>{try{return JSON.parse(storage.getItem(key)||'null')}catch{return null}},write=(key,value)=>storage.setItem(key,JSON.stringify(value));
@@ -15,7 +17,7 @@
  function authStore(value){session=value;try{if(value)sessionStorage.setItem(AUTH,JSON.stringify(value));else sessionStorage.removeItem(AUTH)}catch{}statusText(value?'已登入 '+value.username+' · 每帳號最多 5 位人物':'尚未綁定帳號 · 本機進度可匯入雲端');}
  async function request(path,method='GET',data){
   if(!API)throw Error('帳號存檔服務尚未啟用，本機存檔仍可正常使用');
-  let response;try{response=await fetch(API+path,{method,headers:{...(data?{'Content-Type':'application/json'}:{}),...(session?{Authorization:'Bearer '+session.token}:{})},body:data?JSON.stringify(data):undefined,signal:AbortSignal.timeout(25000),cache:'no-store',credentials:'omit'})}catch{throw Error('無法連線到雲端，進度已保留於本機');}
+  let response;try{response=await fetch(API+path,{method,headers:{...(data?{'Content-Type':'application/json'}:{}),...(session?{Authorization:'Bearer '+session.token}:{})},body:data?JSON.stringify(data):undefined,signal:AbortSignal.timeout(120000),cache:'no-store',credentials:'omit'})}catch{throw Error('帳號服務尚未回應，可能正在喚醒或網路中斷；進度已保留於本機，請稍後重試');}
   const result=await response.json();if(!response.ok){const e=Error(result.error||'伺服器忙碌');e.status=response.status;throw e;}return result;
  }
  function download(save,name='太虛仙途_存檔'){const a=document.createElement('a'),url=URL.createObjectURL(new Blob([JSON.stringify(save,null,2)],{type:'application/json'}));a.href=url;a.download=name+'.json';a.click();setTimeout(()=>URL.revokeObjectURL(url),1000);}
@@ -36,8 +38,9 @@
  const baseSave=save;save=function(quiet=false){baseSave(quiet);if(!active&&!read(OWNER))backupGuest();if(active&&cacheCurrent()){clearTimeout(timer);timer=setTimeout(flush,1000);if(!quiet)note('已存本機，正在同步雲端')}};
  const baseTitle=startTitle;startTitle=function(){baseTitle();statusText(session?'已登入 '+session.username+' · 每帳號最多 5 位人物':'尚未綁定帳號 · 本機進度可匯入雲端');};
  function errorAt(id,e){const el=$(id);if(el)el.textContent=e.message;else note(e.message);}
- function busyAction(id,action){const el=$(id);if(!el)return;el.onclick=async()=>{el.disabled=true;try{await action()}catch(e){errorAt('accountError',e)}finally{if(el.isConnected)el.disabled=false;}};}
+ function busyAction(id,action){const el=$(id);if(!el)return;el.onclick=async()=>{const label=el.textContent,message=$('accountError');el.disabled=true;el.textContent='連線中…';if(message)message.textContent='正在連線到帳號服務…';const waiting=setTimeout(()=>{if(message?.isConnected)message.textContent='免費帳號服務可能正在喚醒，首次連線約需 1 分鐘，請稍候…';},5000);try{await action()}catch(e){errorAt('accountError',e)}finally{clearTimeout(waiting);if(el.isConnected){el.disabled=false;el.textContent=label;}}};}
  function authForm(mode='login'){
+  wakeAccountService();
   const register=mode==='register',recover=mode==='recover';
   modal(register?'綁定帳號 · 建立雲端仙籍':recover?'使用救援碼重設密碼':'登入帳號',`<div class="account-form"><p>同一帳號可跨裝置管理 5 位人物。註冊不會覆蓋既有本機存檔。</p><label for="accountUsername">帳號</label><input id="accountUsername" autocomplete="username" maxlength="32" placeholder="4–32 位英文、數字或底線"><label for="accountPassword">${recover?'新密碼':'密碼'}</label><input id="accountPassword" type="password" autocomplete="${register||recover?'new-password':'current-password'}" minlength="10" maxlength="128" placeholder="至少 10 字元">${register?'<label for="accountConfirm">再次輸入密碼</label><input id="accountConfirm" type="password" autocomplete="new-password" maxlength="128">':''}${recover?'<label for="recoveryCode">救援碼</label><input id="recoveryCode" autocomplete="off" maxlength="48">':''}<p id="accountError" role="alert"></p><button id="accountSubmit" class="btn gold">${register?'建立帳號':recover?'重設並登入':'登入'}</button></div>`,[{text:'返回'},{text:register?'已有帳號':'建立帳號',fn:()=>authForm(register?'login':'register')},...(!register&&!recover?[{text:'忘記密碼',fn:()=>authForm('recover')}]:[])]);
   busyAction('accountSubmit',async()=>{
@@ -85,5 +88,5 @@
  window.addEventListener('online',()=>{if(!conflict)flush()});
  document.addEventListener('visibilitychange',()=>{if(document.hidden&&active)flush()});
  // Reload never silently uploads the legacy SAVE buffer into a cloud character.
- authStore(session);if(session)request('/api/me').catch(e=>{if(e.status===401)authStore(null);else statusText(e.message)});
+ wakeAccountService();authStore(session);const checkedSession=session;if(checkedSession)request('/api/me').catch(e=>{if(session!==checkedSession)return;if(e.status===401)authStore(null);else statusText(e.message)});
 })();
