@@ -11,6 +11,20 @@
    const asset=new URL('./src/assets/mobile-toolbar/'+b.dataset.mobileIcon+'.webp',document.baseURI);
    b.style.setProperty('--mobile-toolbar-art','url("'+asset.href+'")');
    b.setAttribute('aria-label',label);b.title=label;
+   if(b.tagName==='SUMMARY'&&['sell','dismantle'].includes(entry?.[1])&&!b.dataset.mobileQualityPicker){
+    b.dataset.mobileQualityPicker='true';b.addEventListener('click',event=>{
+     if(!window.matchMedia('(max-width:760px)').matches)return;
+     event.preventDefault();b.parentElement.open=false;
+     const selling=entry[1]==='sell',menu=b.parentElement,selected=Array.from(menu.querySelectorAll('input:checked'),input=>Number(input.value));
+     modal(selling?'批量販售 · 選擇品階':'批量拆解 · 選擇品階','<p>勾選要'+(selling?'販售':'拆解')+'的裝備品階，可複選。</p><div class="mobile-quality-picker">'+[0,1,2,3,4].map(q=>'<label><input type="checkbox" data-mobile-bulk-quality="'+q+'" '+(selected.includes(q)?'checked':'')+'><span>'+characterQuality(q)+'</span></label>').join('')+'</div><p>鎖定與穿戴中的裝備會保留。</p>',[{text:'取消'},{text:selling?'一次販售':'一次拆解',style:'gold',fn:()=>{
+      const qualities=Array.from(document.querySelectorAll('[data-mobile-bulk-quality]:checked'),input=>Number(input.dataset.mobileBulkQuality));
+      if(!qualities.length)return note('請至少勾選一種品階');
+      for(const input of menu.querySelectorAll('input'))input.checked=qualities.includes(Number(input.value));
+      if(selling)bagBulkSale(qualities);else showBulkDismantle(qualities);
+     }}]);
+    });
+   }
+
    const count=label.match(/未領取匣\s*·\s*(\d+)/);b.dataset.mobileCount=count&&Number(count[1])?count[1]:'';
   });
  }
