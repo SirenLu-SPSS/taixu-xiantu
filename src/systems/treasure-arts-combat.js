@@ -4,8 +4,8 @@ const TreasureArtsCombat=(()=>{
  const T=typeof TreasureArts!=='undefined'?TreasureArts:require('./treasure-arts.js');
  const distance=(a,b)=>Math.hypot(a.x-b.x,a.y-b.y),alive=e=>e&&e.hp>0;
  function create(random=Math.random){return {time:0,random,cooldowns:{},projectiles:[],zones:[],events:[],activeEffects:{},shield:0,shieldUntil:0,buffUntil:0,scene:null,signature:'',hits:0};}
- function track(s,entry,duration){const f=entry.a.effect;s.activeEffects=s.activeEffects||{};s.activeEffects[entry.a.id]={id:entry.a.id,name:entry.a.name,assetId:entry.a.assetId,shield:!!f.shield,start:s.time,until:Math.max(s.activeEffects[entry.a.id]?.until||0,s.time+Math.max(.45,duration)),source:entry.it?.id};}
- function statuses(s){return Object.values(s.activeEffects||{}).filter(e=>e.until>s.time&&(!e.shield||s.shield>0)).map(e=>({...e,remaining:e.until-s.time}));}
+ function track(s,entry,duration){const f=entry.a.effect;s.activeEffects=s.activeEffects||{};for(const [id,e] of Object.entries(s.activeEffects))if(id!==entry.a.id&&e.name===entry.a.name)delete s.activeEffects[id];s.activeEffects[entry.a.id]={id:entry.a.id,name:entry.a.name,assetId:entry.a.assetId,shield:!!f.shield,start:s.time,until:s.time+Math.max(.45,duration),source:entry.it?.id};}
+ function statuses(s){const unique=new Map();for(const e of Object.values(s.activeEffects||{}).sort((a,b)=>(b.start||0)-(a.start||0))){if(e.until<=s.time||(e.shield&&s.shield<=0))continue;const key=e.name||e.id;if(!unique.has(key))unique.set(key,{...e,remaining:e.until-s.time});}return [...unique.values()].slice(0,14);}
  function event(s,kind,e,assetId){s.events.push({kind,x:e.x,y:e.y,until:s.time+.45,assetId});if(s.events.length>A.limits.events)s.events.shift();}
  function ready(s,entry){return (s.cooldowns[entry.a.id]||0)<=s.time;}
  function reserve(s,entry){s.cooldowns[entry.a.id]=s.time+entry.a.cooldown;}

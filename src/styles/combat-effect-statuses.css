@@ -2,3 +2,7 @@
 .combat-effect-statuses[hidden]{display:none}.combat-effect-status{flex:0 0 36px;width:30px;height:36px;text-align:center;background:#0b252ac9;border:1px solid #91b8ab66;border-radius:6px;color:#e7f4ed;overflow:hidden}.combat-effect-status img{display:block;width:23px;height:23px;object-fit:contain;margin:1px auto 0}.combat-effect-status small{display:block;font:9px/10px sans-serif;text-shadow:0 1px 2px #000}
 @media(max-width:600px){.combat-effect-statuses{right:5px;top:78px;bottom:83px;width:28px;gap:3px}.combat-effect-status{width:26px;height:32px;flex-basis:32px}.combat-effect-status img{width:20px;height:20px}.combat-effect-status small{font-size:8px}}
 .combat-effect-status{pointer-events:auto}
+
+.combat-effect-statuses{display:grid;grid-template-columns:repeat(7,30px);grid-auto-rows:36px;align-content:start;gap:4px;width:234px;bottom:auto;max-height:76px}
+@media(max-width:600px){.combat-effect-statuses{grid-template-columns:repeat(7,26px);grid-auto-rows:32px;gap:3px;width:200px;max-height:67px;bottom:auto}}
+.combat-effect-statuses[hidden]{display:none}
