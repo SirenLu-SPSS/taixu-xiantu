@@ -3,12 +3,13 @@
 (()=>{
  const heading=document.querySelector('.character-bag-heading');
  if(!heading)return;
- const icons=[[/萬寶|尋寶/,'shop','商店'],[/鍛造/,'forge','鍛造'],[/未領取/,'mail','領取'],[/販售/,'sell','販售'],[/拆解/,'dismantle','拆解'],[/整理/,'organize','整理'],[/殘卷/,'scroll','殘卷'],[/寶石/,'gem','寶石'],[/品階/,'promote','升階'],[/一鍵合成/,'merge','合成'],[/傳承/,'inherit','傳承']];
+ const legendButton=document.createElement('button');legendButton.className='btn line mobile-bag-legend';legendButton.textContent='一鍵合成傳說';legendButton.onclick=()=>{const ids=[...new Set([...p.inventory.map(e=>e.id),...Object.values(p.equipment)])],items=ids.map(id=>p.economy?.instances[id]).filter(it=>it&&(EconomyData.templates[it.baseId]||it.template)?.type==='equip'&&[2,3].includes(it.quality)&&!it.mergedInto&&!it.dismantled);modal('裝備傳說 · 選擇主裝備','<p>選擇保留的紫品或金品裝備。</p>'+items.map(it=>'<button class="btn line" data-mobile-legend-main="'+it.id+'">'+escapeHTML((EconomyData.templates[it.baseId]||it.template).name)+' · '+characterQuality(it.quality)+'</button>').join('')+(!items.length?'<p>沒有紫品或金品裝備。</p>':''),[{text:'返回'}]);document.querySelectorAll('[data-mobile-legend-main]').forEach(b=>b.onclick=()=>showEquipmentAutoLegend(b.dataset.mobileLegendMain));};heading.append(legendButton);
+ const icons=[[/一鍵合成傳說/,'legend','傳說'],[/萬寶|尋寶/,'shop','商店'],[/鍛造/,'forge','鍛造'],[/未領取/,'mail','領取'],[/販售/,'sell','販售'],[/拆解/,'dismantle','拆解'],[/整理/,'organize','整理'],[/殘卷/,'scroll','殘卷'],[/寶石/,'gem','寶石'],[/品階/,'promote','升階'],[/一鍵合成/,'merge','合成'],[/傳承/,'inherit','傳承']];
  function decorate(){
   heading.querySelectorAll(':scope > button,:scope > details > summary').forEach(b=>{
    const label=b.textContent.trim(),entry=icons.find(([pattern])=>pattern.test(label));
    b.dataset.mobileIcon=entry?.[1]||'merge';b.dataset.mobileLabel=entry?.[2]||label.slice(0,4);
-   const asset=new URL('./src/assets/mobile-toolbar/'+b.dataset.mobileIcon+'.webp',document.baseURI);
+   const asset=new URL('./src/assets/mobile-toolbar/'+(b.dataset.mobileIcon==='legend'?'promote':b.dataset.mobileIcon)+'.webp',document.baseURI);
    b.style.setProperty('--mobile-toolbar-art','url("'+asset.href+'")');
    b.setAttribute('aria-label',label);b.title=label;
    if(b.tagName==='SUMMARY'&&['sell','dismantle'].includes(entry?.[1])&&!b.dataset.mobileQualityPicker){

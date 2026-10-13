@@ -24,6 +24,7 @@ economyItem=function(id){
  }
  const button=document.createElement('button');button.className='btn line';button.textContent='裝備傳承';button.disabled=BagTools.locked(p,id);button.onclick=()=>showTypedInheritance('equip',id);$('modalActions').append(button);
  const gems=document.createElement('button');gems.className='btn line';gems.textContent='一鍵配寶石';gems.disabled=BagTools.locked(p,id)||!item.sockets.length;gems.onclick=()=>showCompanionAutoGems(id);$('modalActions').insertBefore(gems,[...$('modalActions').children].find(b=>b.dataset.equipmentAction==='sell'||b.dataset.equipmentAction==='dismantle'||b.textContent.startsWith('出售')||b.textContent==='拆解')||null);
+ if([2,3].includes(item.quality)){const legend=document.createElement('button');legend.className='btn line';legend.textContent='一鍵合成傳說';legend.disabled=BagTools.locked(p,id);legend.onclick=()=>showEquipmentAutoLegend(id);$('modalActions').append(legend);}
  decorateEquipmentActions();
 };
 const equipmentDetailSlot=showCharacterSlot;
@@ -105,4 +106,10 @@ function showCompanionAutoGems(id,mode='balanced',replace=true){
   if(BagTools.locked(p,id))return note('請先解鎖'+label);const fresh=companionAutoGemPlan(item,p.inventory,EconomyData.templates,TreasureArts.byId,mode,replace);if(JSON.stringify(fresh)!==JSON.stringify(plan))return showCompanionAutoGems(id,mode,replace);
   const sim=applyCompanionGemPlan(p,id,plan,replace);if(!sim)return note('背包空間不足或寶石已變動，未更動配置');p.inventory=sim.inventory;item.sockets=sim.economy.instances[id].sockets;economyHydrate();save(true);renderAll();reopen();note('配石成功：'+modes[mode]);
  }}]);$('modalActions').lastElementChild.disabled=!plan.length;$('companionGemMode').onchange=e=>showCompanionAutoGems(id,e.target.value,replace);$('companionGemReplace').onchange=e=>showCompanionAutoGems(id,mode,e.target.value==='replace');
+}
+
+function showEquipmentAutoLegend(id){
+ const item=p.economy.instances[id],plan=CompanionMerge.autoLegendPlan(p,id);equipmentReturnId=id;
+ const reason=(plan.reason||'').replaceAll('主法寶','主裝備').replaceAll('法寶','裝備');
+ modal('裝備 · 一鍵合成傳說','<p>'+escapeHTML((EconomyData.templates[item.baseId]||item.template).name)+' · '+characterQuality(item.quality)+'</p><p>沿用一鍵傳說合成：三紫升金、三金升傳說；自動搭配同境界、同部位材料，優先金品，不足時以三紫補一金。保留本體等級、強化、寶石與穿戴位置；鎖定、穿戴中、強化或鑲嵌過的裝備不作材料。</p><p>額外成長及詞條繼承機率與法寶一鍵傳說相同。</p>'+(plan.ok?'<p>消耗：金品 ×'+plan.gold+'、紫品 ×'+plan.purple+'；靈石 0。</p>':'<p role="alert">素材不足或不可合成：'+escapeHTML(reason)+'</p>'),[{text:'返回詳情',fn:()=>{equipmentReturnId=null;showItem(id);}},{text:'確認一鍵升傳說',style:'gold',fn:()=>{const fresh=CompanionMerge.autoLegendPlan(p,id);if(JSON.stringify(fresh)!==JSON.stringify(plan))return showEquipmentAutoLegend(id);const result=CompanionMerge.autoLegend(p,id);if(!result.ok)return showEquipmentAutoLegend(id);economyHydrate();save(true);renderAll();equipmentReturnId=null;showItem(id);note('傳說裝備合成成功');}}]);$('modalActions').lastElementChild.disabled=!plan.ok;
 }
