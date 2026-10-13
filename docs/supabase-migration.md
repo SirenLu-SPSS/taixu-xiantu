@@ -24,3 +24,9 @@
 ## 驗證
 
 `node --test tests/account-migration.test.cjs` 驗證完整複製、來源凍結、重啟冪等、失敗回滾與非空目標保護。正式切換另需 Supabase 與 Render 上線檢查。
+
+## 2026-10-13 完成紀錄
+
+正式搬移驗證通過：3 帳號、6 人物、4 sessions、1 歷史存檔。四表逐筆 SHA-256 一致，Supabase 表啟用 RLS，Data API 保持關閉。正式 API 已測試註冊、兩個工作階段讀取、五人物上限、帳號隔離、版本衝突及密碼救援，測試建立的假帳號已清理。完整本機測試 319 項通過。
+
+使用 Supabase 官方 prod-ca-2021.crt，verify-full 驗證 CA 與主機名稱。DATABASE_URL 已改用 Supabase Session pooler，搬移目標與獨立密碼環境變數已清空；舊 Render 資料庫保持凍結備份。遊戲及 API 網址維持原網址，兩者仍在免費 Render 服務上。
