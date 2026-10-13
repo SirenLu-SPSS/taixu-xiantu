@@ -19,3 +19,5 @@
 }
 @media(prefers-reduced-motion:reduce){.dt-large-art{animation:none}}
 .dt-showcase .dt-illustrated{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;padding:0;filter:none;animation:none}.dt-showcase:has(.dt-illustrated) h2,.dt-showcase:has(.dt-illustrated) p{background:#062329cb;padding:5px 12px;border-radius:6px;margin:4px 0}.dt-showcase:has(.dt-illustrated) .dt-power{position:relative;z-index:1;margin-top:auto;background:#062329cc;border:1px solid #b3985b;border-radius:6px}
+
+.dt-showcase .dt-large-art:not(.dt-illustrated){width:128px;max-height:128px;min-height:0;flex:none;margin:auto;padding:0}
