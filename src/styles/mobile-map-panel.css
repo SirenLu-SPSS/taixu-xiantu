@@ -1,0 +1,25 @@
+@media(max-width:760px){
+ .mobile-map-panel{margin:8px 0 12px;border:1px solid #a88e5e70;border-radius:15px;background:#0d2b30;box-shadow:inset 0 1px #d8c28d15;overflow:hidden}
+ #game[data-view="manage"] .mobile-map-panel{display:none}
+ .mobile-map-panel .scene-top{display:grid;grid-template-columns:minmax(0,1fr) 36px;gap:5px 8px;align-items:center;margin:0;padding:8px 10px;border:0;border-radius:0;background:linear-gradient(100deg,#102d35ed,#102d35b8),url('../assets/art/mountains.webp') center 45%/cover}
+ .mobile-map-panel .scene-top>div:first-child{min-width:0}
+ .mobile-map-panel .scene-top .mini-label{display:none}
+ .mobile-map-panel .scene-top h2{font-size:16px;line-height:1.4;margin:0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+ .mobile-map-panel:not(.is-expanded) #sceneDescription{display:none}
+ .mobile-map-panel #sceneDescription{font-size:10px;line-height:1.5;margin:4px 0 0;overflow-wrap:anywhere}
+ .mobile-map-toggle{grid-column:2;grid-row:1;width:36px;height:36px;padding:0;border:1px solid #baa06a80;border-radius:8px;background:#102e34b8;color:#f0d397;font-size:21px;cursor:pointer}
+ .mobile-map-toggle:focus-visible{outline:2px solid #ebcf94;outline-offset:2px}
+ .mobile-map-panel .scene-tools{grid-column:1/-1;grid-row:2;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:5px;margin:0;width:100%}
+ .mobile-map-panel .scene-tools button{min-width:0;min-height:38px;height:38px;padding:3px 2px;font-size:10px;line-height:1.3;white-space:normal;border-radius:8px;letter-spacing:0}
+ .mobile-map-panel-body[hidden]{display:none!important}
+ .mobile-map-panel-body{padding:0 8px 8px;display:grid;gap:7px}
+ .mobile-map-panel .journey-bar{margin:0;padding:8px;border-radius:10px;grid-template-columns:minmax(0,1fr);gap:6px}
+ .mobile-map-panel .journey-bar b{font-size:12px}
+ .mobile-map-panel .journey-bar p{font-size:10px;margin:3px 0 0;line-height:1.4}
+ .mobile-map-panel .journey-actions{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:5px}
+ .mobile-map-panel .journey-actions button{min-width:0;min-height:40px;padding:4px 2px;font-size:10px;line-height:1.3;white-space:normal;border-radius:8px}
+ .mobile-map-panel .encounter-strip{margin:0;min-height:44px;padding:5px 8px;border-radius:10px;gap:6px}
+ .mobile-map-panel .encounter-info{min-width:0;font-size:11px;overflow-wrap:anywhere}
+ .mobile-map-panel .encounter-strip>div:last-child{display:flex;gap:4px;flex-shrink:0}
+ .mobile-map-panel .encounter-strip .btn{min-height:34px;padding:4px 8px;font-size:11px}
+}
