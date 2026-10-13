@@ -1,0 +1,2 @@
+const {test}=require('node:test'),assert=require('node:assert/strict'),{compactResource}=require('../src/ui/mobile-top-profile.js');
+test('mobile resource display uses ten-thousand units without changing raw input',()=>{assert.equal(compactResource('9,999'),'9,999');assert.equal(compactResource('10,000'),'1萬');assert.equal(compactResource('123,659'),'12.37萬');assert.equal(compactResource('9,050,000'),'905萬');assert.equal(compactResource('57'),'57');assert.equal(compactResource('0'),'0');assert.equal(compactResource('unavailable'),'unavailable');});

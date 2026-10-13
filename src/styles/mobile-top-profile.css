@@ -1,0 +1,19 @@
+.mobile-top-realm,.mobile-top-states,.mobile-top-resources{display:none!important}
+@media(max-width:600px){
+ #game .top{grid-template-columns:54px minmax(0,1fr) 76px;grid-template-rows:auto auto;gap:7px 7px;padding:calc(7px + env(safe-area-inset-top)) 8px 7px;border:1px solid #b49c6577;border-radius:14px;background:linear-gradient(105deg,#092a30f2,#06232bf5),url('../assets/art/mountains.webp') center/cover}
+ #game .top .brand,#game .top .resources,#game .top #realmName{display:none}
+ #game .top .portrait-avatar{grid-column:1;grid-row:1;width:54px;height:58px;min-width:54px;min-height:58px;max-height:58px;align-self:center;border-radius:50%;border:1px solid #cfb778;box-shadow:none!important}
+ #game .top .character-head>div{grid-column:2;grid-row:1;display:flex;align-items:center;align-content:center;flex-wrap:wrap;gap:4px;min-width:0;padding:0}
+ #game .top .character-head strong{font-size:14px;line-height:17px;max-width:100%;flex-shrink:1}
+ #game .top .mobile-top-realm{display:block!important;max-width:100%;min-width:0;min-height:24px;padding:3px 5px;font-size:10px;line-height:14px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;color:#efd49a;border:1px solid #739d7b;border-radius:10px;background:#123e36}
+ #game .top .mobile-top-states{display:flex!important;flex-basis:100%;gap:4px;min-width:0}
+ #game .top .mobile-top-states button{min-width:0;min-height:26px;padding:3px 5px;font-size:10px;line-height:15px;border:1px solid #64716f;border-radius:9px;background:#293b3e;color:#b1bcba;white-space:nowrap}
+ #game .top .mobile-top-states button.is-on{border-color:#65b78d;background:#12473d;color:#a9edcf}
+ #game .top .top-actions{grid-column:3;grid-row:1;align-self:center;gap:4px;padding:0}
+ #game .top .top-actions #legendBell{min-width:36px!important;max-width:36px;width:36px;padding:2px;font-size:10px}
+ #game .top .mobile-top-resources{display:grid!important;grid-column:1/-1;grid-row:2;grid-template-columns:repeat(3,minmax(0,1fr));border:1px solid #7a947c80;border-radius:10px;background:#08282e;overflow:hidden;padding:5px 0}
+ #game .top .mobile-top-resources button{display:flex;justify-content:center;align-items:center;gap:4px;min-width:0;min-height:27px;padding:2px 3px;border:0;border-right:1px solid #91b0a255;border-radius:0;background:transparent;font-size:10px;white-space:nowrap;color:#c1d9d2}
+ #game .top .mobile-top-resources button:last-child{border-right:0}
+ #game .top .mobile-top-resources b{min-width:0;overflow:hidden;text-overflow:ellipsis;font-size:11px;color:#efd092;font-variant-numeric:tabular-nums}
+ .mobile-full-resource{font-size:24px;color:#efd092;text-align:center;overflow-wrap:anywhere;font-variant-numeric:tabular-nums}
+}
