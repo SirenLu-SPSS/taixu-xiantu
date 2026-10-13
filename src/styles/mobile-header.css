@@ -41,3 +41,11 @@
  #mobileHeaderMenu svg{width:20px;height:20px;display:block}
  #game .top .top-actions #legendBell{height:36px;min-height:36px!important;min-width:36px!important;max-width:58px}
 }
+
+@media(max-width:760px){
+ #game .top .resources>span{display:grid;grid-template-columns:34px minmax(0,1fr);gap:3px;font-size:10px;align-items:baseline}
+ #game .top .resources>span:before{display:none}
+ #game .top .resources b{text-align:left;width:100%;font-size:10px}
+}
+
+@media(max-width:760px){#game .top{grid-template-columns:72px minmax(0,1fr) 100px}}
