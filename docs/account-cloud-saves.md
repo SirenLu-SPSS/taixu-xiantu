@@ -40,3 +40,7 @@
 - 本機暫存仍依瀏覽器保存；尚未同步前清除瀏覽器資料會失去離線進度。設定提供匯出。
 - session 關閉分頁後需重新登入，雲端人物不受影響。
 - 更新 schema 只採新增資料表與索引，不清空現有玩家記錄。
+
+## 2026-10-13 試用部署
+
+每帳號上限為 5 位人物。使用免費帳號 Web Service 與免費 PostgreSQL，資料庫於 2026-11-12 到期，屆時需遷移或升級才能繼續保存。免費 Web Service 閒置後首次登入可能需要等待喚醒。API: https://taixu-player-accounts-trial.onrender.com。新首頁素材由 ComfyUI Qwen Image 2.1 生成，CSS 景深與光暈動畫遵循減少動態效果設定，進入遊戲後停止。
