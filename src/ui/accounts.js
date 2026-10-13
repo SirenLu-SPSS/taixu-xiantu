@@ -23,8 +23,10 @@
  function download(save,name='太虛仙途_存檔'){const a=document.createElement('a'),url=URL.createObjectURL(new Blob([JSON.stringify(save,null,2)],{type:'application/json'}));a.href=url;a.download=name+'.json';a.click();setTimeout(()=>URL.revokeObjectURL(url),1000);}
  function backupGuest(){const raw=storage.getItem(SAVE);if(raw&&!read(OWNER))storage.setItem(GUEST,raw);}
  function cacheCurrent(){if(!active||!p)return;const record={...active,save:JSON.parse(JSON.stringify(p)),pending:true,stamp:Date.now(),serial:++serial,writer,writeId:crypto.randomUUID()};const key=cacheKey(active.owner,active.id);if(!write(key+':working:'+writer,record)||!write(key,record)){note('本機儲存空間不足，請立即匯出備份');return false;}active=record;return true;}
+ function scheduleFlush(){if(timer===null)timer=setTimeout(()=>{timer=null;flush();},15000);}
  async function flush(){
   if(flight)return flight;if(!active?.pending||!session||active.owner!==session.username||conflict)return !active?.pending;
+  clearTimeout(timer);timer=null;
   const captured={...active};statusText('正在同步 '+captured.save.name+'…');
   flight=(async()=>{try{
    const result=await request('/api/characters/'+captured.id,'PUT',{revision:captured.revision,save:captured.save});
@@ -33,9 +35,9 @@
    if(latest?.writer===writer)write(key,next);
    if(active?.id===captured.id&&active.owner===captured.owner){active=next;statusText(next.pending?'新進度待同步':'雲端已儲存 · '+new Date(result.updated_at).toLocaleString('zh-TW'));}
    return !next.pending;
-  }catch(e){if(e.status===409)conflict=true;statusText(e.message);if(e.status===401)note('登入已過期；本機進度已保留，請重新登入');return false;}finally{flight=null;if(active?.pending&&!conflict&&session)timer=setTimeout(flush,30000);}})();return flight;
+  }catch(e){if(e.status===409)conflict=true;statusText(e.message);if(e.status===401)note('登入已過期；本機進度已保留，請重新登入');return false;}finally{flight=null;if(active?.pending&&!conflict&&session)scheduleFlush();}})();return flight;
  }
- const baseSave=save;save=function(quiet=false){baseSave(quiet);if(!active&&!read(OWNER))backupGuest();if(active&&cacheCurrent()){clearTimeout(timer);timer=setTimeout(flush,1000);if(!quiet)note('已存本機，正在同步雲端')}};
+ const baseSave=save;save=function(quiet=false){baseSave(quiet);if(!active&&!read(OWNER))backupGuest();if(active&&cacheCurrent()){if(quiet)scheduleFlush();else{flush();note('已存本機，正在同步雲端')}}};
  const baseTitle=startTitle;startTitle=function(){baseTitle();statusText(session?'已登入 '+session.username+' · 每帳號最多 5 位人物':'尚未綁定帳號 · 本機進度可匯入雲端');};
  function errorAt(id,e){const el=$(id);if(el)el.textContent=e.message;else note(e.message);}
  function busyAction(id,action){const el=$(id);if(!el)return;el.onclick=async()=>{const label=el.textContent,message=$('accountError');el.disabled=true;el.textContent='連線中…';if(message)message.textContent='正在連線到帳號服務…';const waiting=setTimeout(()=>{if(message?.isConnected)message.textContent='免費帳號服務可能正在喚醒，首次連線約需 1 分鐘，請稍候…';},5000);try{await action()}catch(e){errorAt('accountError',e)}finally{clearTimeout(waiting);if(el.isConnected){el.disabled=false;el.textContent=label;}}};}
@@ -72,7 +74,7 @@
  async function logout(){
   if(active&&p){save(true);await flush();if(active.pending&&!confirm('雲端尚未同步，進度會保留在本機，重新登入相同帳號可繼續。確定登出？'))return;}
   try{await request('/api/auth/logout','POST')}catch{}
-  clearTimeout(timer);active=null;conflict=false;authStore(null);p=null;const guest=read(GUEST);if(guest){storage.setItem(SAVE,JSON.stringify(guest));write(OWNER,null);}closeModal();startTitle();
+  clearTimeout(timer);timer=null;active=null;conflict=false;authStore(null);p=null;const guest=read(GUEST);if(guest){storage.setItem(SAVE,JSON.stringify(guest));write(OWNER,null);}closeModal();startTitle();
  }
  const oldCreate=$('createCharacter').onclick;$('createCharacter').onclick=async()=>{
   if(!session){backupGuest();oldCreate();if($('creator').classList.contains('hidden')){write(OWNER,null);backupGuest();}return;}
@@ -84,7 +86,7 @@
  $('continueGame').onclick=()=>session?showCharacters():showLocal();
  function showLocal(){const data=localRecord();if(!data)return authForm();modal('續寫前緣 · 本機人物',`<p><b>${escapeHTML(data.name)}</b></p><p>${escapeHTML(REALMS[data.realm]?.name||'')} · ${new Date(data.lastSeen||Date.now()).toLocaleString('zh-TW')}</p><p>尚未綁定帳號，此進度只保存在目前瀏覽器。綁定後可匯入雲端。</p>`,[{text:'返回'},{text:'綁定帳號',fn:()=>authForm('register')},{text:'繼續修行',style:'gold',fn:()=>{active=null;write(OWNER,null);storage.setItem(SAVE,JSON.stringify(data));if(load()){closeModal();startGame();}}}]);}
  button.onclick=()=>session?showCharacters():authForm();
- const oldSettings=$('settings').onclick;$('settings').onclick=()=>{oldSettings();const el=document.createElement('button');el.className='btn line';el.textContent='帳號／雲端人物管理';el.onclick=()=>session?showCharacters():authForm();$('modalActions').append(el);const label=document.createElement('p');label.id='cloudSaveStatus';label.setAttribute('role','status');label.textContent=active?'此人物已綁定 '+active.owner+'，每次存檔會先存本機再同步雲端。'+status.textContent:'此人物尚未綁定帳號，請登入後匯入本機人物。';$('modalContent').append(label);};
+ const oldSettings=$('settings').onclick;$('settings').onclick=()=>{oldSettings();const el=document.createElement('button');el.className='btn line';el.textContent='帳號／雲端人物管理';el.onclick=()=>session?showCharacters():authForm();$('modalActions').append(el);const label=document.createElement('p');label.id='cloudSaveStatus';label.setAttribute('role','status');label.textContent=active?'此人物已綁定 '+active.owner+'，每 15 秒自動同步雲端，手動儲存立即同步；離線時先保留本機進度。'+status.textContent:'此人物尚未綁定帳號，請登入後匯入本機人物。';$('modalContent').append(label);};
  window.addEventListener('online',()=>{if(!conflict)flush()});
  document.addEventListener('visibilitychange',()=>{if(document.hidden&&active)flush()});
  // Reload never silently uploads the legacy SAVE buffer into a cloud character.
