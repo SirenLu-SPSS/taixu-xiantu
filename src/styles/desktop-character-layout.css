@@ -1,0 +1,68 @@
+@media(min-width:1024px){
+ #characterScreen .character-shell{max-width:1800px;padding:14px 24px 24px}
+ #characterScreen .character-header{gap:14px}
+ #characterScreen .character-header h1{font-size:30px;margin-left:auto}
+ #characterScreen .dc-resources{display:flex;gap:8px;margin-left:auto}
+ #characterScreen .dc-resources span{border:1px solid #af965c88;border-radius:9px;background:#06272ccc;padding:10px 14px;color:#d2e5dd;font-size:13px;white-space:nowrap}
+ #characterScreen .dc-resources b{color:#f0d28f;font-variant-numeric:tabular-nums}
+ #characterScreen :is(.character-header,.character-bag-heading,.character-pagination,.dc-companion-actions) .btn,#characterScreen .character-bag-heading select{min-height:40px;height:40px;min-width:104px;padding:7px 12px;font-size:13px;display:inline-flex;align-items:center;justify-content:center;box-sizing:border-box}
+ #characterScreen #characterSummary{display:grid;grid-template-columns:minmax(230px,1fr) minmax(0,2fr);gap:8px 20px;margin:12px 0 8px;padding:10px 14px;border:1px solid #b69b5d77;border-radius:12px;background:#08262bd9}
+ #characterScreen .dc-identity{display:flex;align-items:center;gap:14px;flex-wrap:wrap}
+ #characterScreen .dc-identity h2{font-size:23px;overflow-wrap:anywhere}
+ #characterScreen .dc-identity>span{font-size:12px;color:#9dd9c7}
+ #characterScreen .character-vitals{grid-column:2;grid-row:1;align-items:center;justify-content:flex-end;gap:8px 18px;font-size:12px}
+ #characterScreen .character-vitals b{font-weight:500;font-variant-numeric:tabular-nums}
+ #characterScreen .character-qi{gap:15px;font-size:11px}
+ #characterScreen .loadout-drag-help{font-size:11px;margin:5px 0 10px}
+ #characterScreen .character-stage{--pet-width:290px;--treasure-width:290px;grid-template-columns:var(--pet-width) minmax(0,1fr) var(--treasure-width);gap:12px;align-items:stretch;min-height:600px;padding:12px;position:relative;overflow:hidden}
+ #characterScreen .character-stage.dc-pet-folded{--pet-width:44px}
+ #characterScreen .character-stage.dc-treasure-folded{--treasure-width:44px}
+ #characterScreen .character-companions{align-self:stretch;display:flex;align-items:stretch;gap:7px;min-width:0;border:1px solid #b69b5d88;border-radius:12px;padding:10px;background:#06262bd9}
+ #characterScreen .dc-companion-heading{display:flex;flex-wrap:wrap;align-items:center;gap:6px 10px;min-width:0}
+ #characterScreen .dc-companion-heading h3{font-size:24px;margin-right:auto}
+ #characterScreen .dc-companion-heading>small{font-size:11px;color:#abd7c5}
+ #characterScreen .dc-fold{height:30px;min-height:30px;font-size:11px;padding:4px 7px}
+ #characterScreen .character-companion{display:grid;grid-template-columns:22px 54px minmax(0,1fr);grid-template-rows:auto auto auto;gap:1px 8px;align-items:center;min-height:61px;padding:5px 8px;position:relative;text-align:left;overflow:visible}
+ #characterScreen .character-companion .dc-order{grid-column:1;grid-row:1/4;display:grid;place-items:center;font-style:normal;font-size:20px;color:#ecd18f}
+ #characterScreen .character-companion img{grid-column:2;grid-row:1/4;width:52px;height:52px;border-radius:7px;margin:0;object-fit:cover}
+ #characterScreen .character-companion>span:not(.equipped-gems){grid-column:3;font-size:13px;overflow:hidden;white-space:nowrap;text-overflow:ellipsis;padding-right:8px}
+ #characterScreen .character-companion>small{grid-column:3;font-size:11px;color:#bbdbcc}
+ #characterScreen .dc-unit-power{grid-column:3;font-size:11px;color:#e6ce95}
+ #characterScreen .character-companion .equipped-gems{right:2px}
+ #characterScreen .companion-slot-locked{opacity:.5;min-height:48px}
+ #characterScreen .dc-companion-actions{display:flex;gap:6px;margin-top:auto;padding-top:3px}
+ #characterScreen .dc-companion-actions .btn{flex:1;min-width:0;font-size:12px;padding:6px}
+ #characterScreen .dc-pet-folded #characterPets,#characterScreen .dc-treasure-folded #characterTreasures{padding:6px;overflow:hidden}
+ #characterScreen .dc-pet-folded #characterPets>:not(.dc-companion-heading),#characterScreen .dc-treasure-folded #characterTreasures>:not(.dc-companion-heading){display:none}
+ #characterScreen .dc-pet-folded #characterPets .dc-companion-heading>:not(.dc-fold),#characterScreen .dc-treasure-folded #characterTreasures .dc-companion-heading>:not(.dc-fold){display:none}
+ #characterScreen .dc-pet-folded #characterPets .dc-fold,#characterScreen .dc-treasure-folded #characterTreasures .dc-fold{writing-mode:vertical-rl;height:auto;min-height:110px;min-width:30px;padding:8px 4px}
+ #characterScreen .character-doll{grid-template-columns:72px minmax(0,1fr) 72px;gap:5px;min-height:580px}
+ #characterScreen .character-slot{height:82px;min-height:82px;padding:3px;overflow:visible}
+ #characterScreen .character-slot img{width:42px;height:42px}
+ #characterScreen .character-slot small{font-size:9px;overflow:hidden}
+ #characterScreen .doll-slots{gap:7px}
+ #characterScreen #characterBody{width:100%;height:550px;max-height:580px}
+ #characterScreen .character-bag{margin-top:12px;padding:14px}
+ #characterScreen .character-bag-heading{gap:8px}
+ #characterScreen .character-categories{display:flex;flex-wrap:wrap;gap:8px;margin-top:10px}
+ #characterScreen .character-categories button{min-width:104px;min-height:40px;height:40px;padding:6px 12px;font-size:13px;flex:0 1 auto}
+ #characterScreen .character-categories img{width:24px;height:24px}
+ #characterScreen .character-items{grid-template-columns:repeat(10,minmax(0,1fr));gap:9px;max-height:300px;padding:6px}
+ #characterScreen .character-item{aspect-ratio:1.15;max-height:115px;overflow:visible}
+ #characterScreen .character-item span{overflow:hidden}
+ #characterScreen .character-pagination{margin-top:10px;gap:16px}
+}
+@media(min-width:1024px) and (max-width:1279px){
+ #characterScreen .character-shell{padding:12px 16px}
+ #characterScreen .dc-resources span{padding:8px;font-size:12px}
+ #characterScreen .character-stage{grid-template-columns:44px minmax(0,1fr) 44px}
+ #characterScreen .character-companions{position:absolute;top:12px;bottom:12px;width:285px;z-index:6;box-shadow:0 8px 24px #0007;background:#082b2efc}
+ #characterScreen #characterPets{left:12px}
+ #characterScreen #characterTreasures{right:12px}
+ #characterScreen .dc-pet-folded #characterPets,#characterScreen .dc-treasure-folded #characterTreasures{width:44px;box-shadow:none}
+ #characterScreen .character-doll{grid-column:2}
+ #characterScreen #characterSummary{grid-template-columns:1fr}
+ #characterScreen .character-vitals{grid-column:1;grid-row:auto;justify-content:flex-start}
+}
+@media(min-width:1280px) and (max-width:1499px){#characterScreen .character-stage{--pet-width:250px;--treasure-width:250px}#characterScreen .character-doll{grid-template-columns:64px minmax(0,1fr) 64px}}
+@media(min-width:1024px) and (max-width:1279px){#characterScreen .character-companions{overflow-y:auto;overscroll-behavior:contain;scrollbar-width:thin}#characterScreen .character-companion{flex-shrink:0}#characterScreen .dc-companion-actions{flex-shrink:0}}
