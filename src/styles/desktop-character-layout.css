@@ -75,3 +75,15 @@
 @media(min-width:1024px) and (max-width:1279px){
  #characterScreen .character-doll{max-width:520px}
 }
+/* Current map scenery with quiet realm-colored energy, below the figure. */
+.dc-ground-aura{display:none}
+@media(min-width:1024px){
+ #characterScreen .character-stage{background-image:linear-gradient(90deg,#05252be0,#06282b85 36%,#06282b85 64%,#05252be0),linear-gradient(#092c3866,#051e27aa),var(--dc-map-art);background-size:cover;background-position:center;isolation:isolate}
+ #characterScreen .doll-figure{isolation:isolate}
+ #characterScreen .doll-halo{width:100%;aspect-ratio:1;top:13%;border-color:var(--dc-aura-color);opacity:.16;background:radial-gradient(ellipse,var(--dc-aura-color),transparent 64%);box-shadow:0 0 0 10px #ead69408;animation:dc-aura-breathe 8s ease-in-out infinite;pointer-events:none}
+ #characterScreen .dc-ground-aura{display:block;position:absolute;left:50%;bottom:-48px;width:min(100%,360px);aspect-ratio:1;background:var(--dc-aura-art) center/contain no-repeat;opacity:.24;transform:translateX(-50%) scaleY(.3);animation:dc-aura-turn 100s linear infinite;pointer-events:none;z-index:0}
+ #characterScreen .character-stage[data-character-effects="false"] :is(.doll-halo,.dc-ground-aura){display:none;animation:none}
+}
+@keyframes dc-aura-breathe{0%,100%{opacity:.12;transform:scale(.97)}50%{opacity:.19;transform:scale(1.02)}}
+@keyframes dc-aura-turn{from{transform:translateX(-50%) scaleY(.3) rotate(0deg)}to{transform:translateX(-50%) scaleY(.3) rotate(360deg)}}
+@media(prefers-reduced-motion:reduce){#characterScreen :is(.doll-halo,.dc-ground-aura){animation:none!important}}
