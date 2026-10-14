@@ -66,3 +66,12 @@
 }
 @media(min-width:1280px) and (max-width:1499px){#characterScreen .character-stage{--pet-width:250px;--treasure-width:250px}#characterScreen .character-doll{grid-template-columns:64px minmax(0,1fr) 64px}}
 @media(min-width:1024px) and (max-width:1279px){#characterScreen .character-companions{overflow-y:auto;overscroll-behavior:contain;scrollbar-width:thin}#characterScreen .character-companion{flex-shrink:0}#characterScreen .dc-companion-actions{flex-shrink:0}}
+/* Keep equipment close to the figure even when companion panels are folded. */
+@media(min-width:1024px){
+ #characterScreen .character-doll{width:100%;max-width:580px;justify-self:center}
+ #characterScreen .doll-figure{overflow:hidden}
+ #characterScreen .doll-halo{max-width:100%;left:0}
+}
+@media(min-width:1024px) and (max-width:1279px){
+ #characterScreen .character-doll{max-width:520px}
+}
