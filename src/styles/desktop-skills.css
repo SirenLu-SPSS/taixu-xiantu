@@ -6,3 +6,5 @@
 
 #desktopSkills .ds-filters [aria-pressed=true]{color:#173435}
 .ds-showcase>img{object-fit:contain;background:#04272b}.ds-slots select{background:#0c3538;color:#d9e8df;border:1px solid #4b7069;border-radius:4px}#desktopSkills .btn.gold{color:#173435}
+
+.ds-detail-heading{display:flex;align-items:center;flex-wrap:wrap;gap:6px 14px}.ds-upgrade-notice{color:#91e3b4;font-size:13px;line-height:1.5}
