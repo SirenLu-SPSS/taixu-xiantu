@@ -4,6 +4,7 @@ const HighRealms=(()=>{
  function normalize(p){const v=p.highRealms||{},hadSlots=!!v.slots;const defaults={version:1,slots:Array(8).fill(null),auto:{},cooldowns:{},claims:{},spawnSequence:0};for(const [key,value] of Object.entries(defaults))if(v[key]===undefined)v[key]=value;p.highRealms=v;const h=v;if(!hadSlots)h.slots=['attack','flame','sword','heal',null,null,null,null];h.slots=Array.from({length:8},(_,i)=>h.slots[i]||null);p.skills=p.skills||{};return h;}
  function canEnter(p,map){return !!map&&p.realm>=map.level&&(!map.finished||p.finished);}
  function skill(id){return D.skills.find(s=>s.id===id);}
+ function effective(p,id){const s=skill(id),S=typeof SkillProgression!=='undefined'?SkillProgression:require('./skill-progression.js');return S.effective(s,p.skills?.[id]||1);}
  function learned(p,id){return id==='attack'||(['flame','sword','heal'].includes(id)?(p.skills[id]||0)>0:!!skill(id)&&(p.skills[id]||0)>0);}
  function assign(p,slot,id){const h=normalize(p);if(!Number.isInteger(slot)||slot<0||slot>7||(id&&!learned(p,id)))return false;const old=h.slots.indexOf(id);if(id&&old>=0&&old!==slot)h.slots[old]=h.slots[slot];h.slots[slot]=id||null;return true;}
  function learn(p,book){const s=D.skills.find(s=>s.bookId===book);if(!s||p.realm<s.realm)return {ok:false,reason:'境界不足'};if(p.skills[s.id])return {ok:false,reason:'已學會，重複技能書保留於背包'};if(!E.take(p,book,1))return {ok:false,reason:'技能書不足'};p.skills[s.id]=1;normalize(p);return {ok:true,skill:s};}
@@ -16,6 +17,6 @@ const HighRealms=(()=>{
  function targets(list,origin,radius,max){return list.filter(e=>e.hp>0&&Math.hypot(e.x-origin.x,e.y-origin.y)<=radius).sort((a,b)=>Math.hypot(a.x-origin.x,a.y-origin.y)-Math.hypot(b.x-origin.x,b.y-origin.y)).slice(0,max);}
  function ready(p,id,now,stats){const h=normalize(p),s=skill(id);return !!s&&learned(p,id)&&p.mp>=s.cost&&now>=(h.cooldowns[id]||0)&&now>=(h.silencedUntil||0);}
  function autoEligible(p,s,stats,nearby){const cfg=p.highRealms.auto[s.id]||{},mode=s.mode;if(cfg.enabled===false)return false;if(['heal','revive','restore','cleanse'].includes(mode))return p.hp<stats.hp*(cfg.hpThreshold||.55);if(mode==='mana')return p.mp<stats.mp*(cfg.mpThreshold||.45);if(['aoe','multi','chain','meteor','burn','slow','silence'].includes(mode))return nearby>=(cfg.minTargets||2);return nearby>0;}
- return {normalize,canEnter,skill,learned,assign,learn,give,reward,targets,ready,autoEligible};
+ return {normalize,canEnter,skill,effective,learned,assign,learn,give,reward,targets,ready,autoEligible};
 })();
 if(typeof module!=='undefined')module.exports=HighRealms;

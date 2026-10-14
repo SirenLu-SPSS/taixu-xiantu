@@ -1,0 +1,20 @@
+'use strict';
+const SkillProgression=(()=>{
+ const D=typeof HighRealmData!=='undefined'?HighRealmData:require('../data/high-realms.js');
+ const base={flame:{id:'flame',name:'離火真訣',mode:'burn',realm:0,rarity:1,cost:14,cooldown:1800},sword:{id:'sword',name:'萬劍歸宗',mode:'multi',realm:0,rarity:1,cost:25,cooldown:3500},heal:{id:'heal',name:'青木回春',mode:'heal',realm:0,rarity:1,cost:20,cooldown:6500},heart:{id:'heart',name:'太乙長生功',mode:'cultivate',realm:0,rarity:1,cost:0,cooldown:0}};
+ const categories=[['all','全部'],['attack','攻擊'],['defense','防禦'],['support','輔助'],['movement','身法']];
+ function skill(id){return D.skills.find(s=>s.id===id)||base[id];}
+ const cap=s=>[30,30,30,30,30,40,45,50,60][s.realm||0]||30;
+ const tier=s=>[1,1,2,2,3,4,4,5,6][s.realm||0]||1;
+ const quality=s=>s.rarity??((s.realm||0)>=8?4:(s.realm||0)>=7?3:2);
+ function category(s){return ['dash','dashStrike','teleport'].includes(s.mode)?'movement':['shield','armor','revive'].includes(s.mode)?'defense':['heal','mana','restore','reveal','companion','cultivate','clone','cleanse'].includes(s.mode)?'support':'attack';}
+ function gemKind(s){if(/雷/.test(s.name))return 'thunder';if(/冰|寒/.test(s.name))return 'frost';if(/火|焚|炎|離火/.test(s.name))return 'fire';if(/劍|斬/.test(s.name))return 'pierce';return {heal:'vital',revive:'vital',restore:'life',mana:'mana',shield:'armor',armor:'armor',dash:'wind',teleport:'wind',dashStrike:'wind',cultivate:'wisdom',cleanse:'life'}[s.mode]||'wisdom';}
+ const count=(p,id)=>(p.inventory||[]).filter(e=>e.id===id).reduce((n,e)=>n+e.count,0);
+ function quote(p,id){const s=skill(id),level=p.skills?.[id]||0;if(!s)return {ok:false,reason:'未知技能'};const limit=cap(s),gem='gem_'+gemKind(s)+'_'+tier(s),cost={stones:Math.round(70*(level+1)*2**Math.floor((s.realm||0)/2)),[gem]:1+Math.floor(level/10)};if(quality(s)===4)cost.jade=1+Math.floor(level/20);const result={skill:s,level,cap:limit,cost,gem};if(!Number.isSafeInteger(level)||level<1)return {...result,ok:false,reason:'請先取得並學習技能書'};if((p.realm||0)<(s.realm||0))return {...result,ok:false,reason:'人物境界不足'};if(level>=limit)return {...result,ok:false,reason:'已達卷書境界上限'};if((p.stones||0)<cost.stones||(p.jade||0)<(cost.jade||0)||Object.entries(cost).some(([key,n])=>!['stones','jade'].includes(key)&&count(p,key)<n))return {...result,ok:false,reason:'靈石、對應寶石或仙玉不足'};return {...result,ok:true};}
+ function advance(p,id){const q=quote(p,id);if(!q.ok)return q;for(const [key,n]of Object.entries(q.cost)){if(key==='stones'||key==='jade'){p[key]-=n;continue;}let left=n;for(const e of p.inventory){if(e.id!==key)continue;const used=Math.min(left,e.count);e.count-=used;left-=used;if(!left)break;}}p.inventory=p.inventory.filter(e=>e.count>0);p.skills[id]=q.level+1;return {...q,after:q.level+1};}
+ const factor=level=>1+(Math.max(1,level||1)-1)*.025;
+ function effective(s,level){return s?{...s,potency:factor(level),power:s.power*factor(level)}:s;}
+ function effect(s,level){const f=factor(level);if(s.id==='flame')return Math.round((1.6+.25*level)*100)+'% 攻擊傷害';if(s.id==='sword')return Math.round((2.4+.32*level)*100)+'% 攻擊傷害';if(s.id==='heal')return Math.round(Math.min(1,.26+.04*level)*100)+'% 最大氣血恢復';if(s.id==='heart')return '+'+(level*1.5).toFixed(1)+'／秒基礎靈氣吸收';if(s.mode==='restore')return Math.round(.2*f*100)+'% 氣血、'+Math.round(.25*f*100)+'% 真元恢復';if(s.mode==='revive')return Math.round(.35*f*100)+'% 氣血恢復、'+Math.round(.25*f*100)+'% 護盾';if(['heal','mana','cleanse'].includes(s.mode))return Math.round((s.mode==='cleanse'?.15:.35)*f*100)+'% '+(s.mode==='mana'?'真元':'氣血')+'恢復';if(s.mode==='shield')return Math.round(.25*f*100)+'% 最大氣血護盾';if(['armor','reveal','companion','cultivate'].includes(s.mode))return '+'+Math.round((s.mode==='reveal'?.15:.35)*f*100)+'% 對應增益';if(['dash','teleport'].includes(s.mode))return Math.round(180*f)+' 距離位移';if(s.mode==='clone')return Math.round(.45*f*100)+'% 攻擊力分身傷害';return Math.round(s.power*f*100)+'% 攻擊傷害';}
+ return {base,categories,skill,cap,tier,quality,category,gemKind,count,quote,advance,factor,effective,effect};
+})();
+if(typeof module!=='undefined')module.exports=SkillProgression;
